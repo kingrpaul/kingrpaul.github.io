@@ -1,0 +1,7 @@
+===========
+Profile GUI
+===========
+
+.. autoclass:: dosepro.Application
+  :members:
+  :undoc-members:

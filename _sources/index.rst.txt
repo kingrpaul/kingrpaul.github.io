@@ -1,15 +1,33 @@
-.. include:: ../README.rst
+.. image:: avatar.jpg
+    :width: 100px
+    :height: 100px
+    :scale: 50 %
+    :alt: alternate text
+    :align: left
+
+===========
+My Homepage
+===========
+
 
 .. toctree::
-    :maxdepth: 1
+    :maxdepth: 3
     :caption: Items
 
-    labs/paulking/profile.rst
-    labs/paulking/gui.rst
+    projects.rst
+    publications.rst
+    media.rst
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+Experienced, results-oriented, with a progressive record of innovation and success in quality enhancement and program development; mature judgment & prescient vision in diverse environments; proactive stewardship, valuing excellence that is patient focused & mission driven. 
+
+Specialties: Quality improvement, planning and clinical program development, regulatory compliance, and health care technology management.
+
+
+
+
+.. xx Note:: sphinx-autobuild docs docs/_build/html
+          http://127.0.0.1:8000
+..    Gallery
+
+.. include:: README.rst
