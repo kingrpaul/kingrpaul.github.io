@@ -1,6 +1,6 @@
-============
-Repositories
-============
+===========
+GitHub Docs
+===========
 
 .. toctree::
     :maxdepth: 3

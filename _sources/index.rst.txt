@@ -5,14 +5,14 @@
     :alt: alternate text
     :align: left
 
-===========
-My Homepage
-===========
+====
+Home
+====
 
 
 .. toctree::
     :maxdepth: 3
-    :caption: Items
+    :caption: Menu
 
     projects.rst
     publications.rst
@@ -20,8 +20,7 @@ My Homepage
 
 
 Experienced, results-oriented, with a progressive record of innovation and success in quality enhancement and program development; mature judgment & prescient vision in diverse environments; proactive stewardship, valuing excellence that is patient focused & mission driven. 
-
-Specialties: Quality improvement, planning and clinical program development, regulatory compliance, and health care technology management.
+Quality improvement, planning and clinical program development, regulatory compliance, & health care technology management.
 
 
 
