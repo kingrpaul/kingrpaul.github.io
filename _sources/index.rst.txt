@@ -1,26 +1,33 @@
-.. GitHub IO documentation master file, created by
-   sphinx-quickstart on Wed Apr  3 09:36:07 2019.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. image:: avatar.jpg
+    :width: 100px
+    :height: 100px
+    :scale: 50 %
+    :alt: alternate text
+    :align: left
 
-Welcome to GitHub IO's documentation!
-=====================================
+====
+Home
+====
+
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :maxdepth: 3
+    :caption: Menu
 
-`Link text <http://www.google.com/>`_
+    projects.rst
+    publications.rst
+    media.rst
+    notes.rst
 
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+Experienced, results-oriented, with a progressive record of innovation and success in quality enhancement and program development; mature judgment & prescient vision in diverse environments; proactive stewardship, valuing excellence that is patient focused & mission driven. 
+Quality improvement, planning and clinical program development, regulatory compliance, & health care technology management.
 
 
 
-.. image:: doc/mypdf.pdf
+
+.. xx Note:: sphinx-autobuild docs docs/_build/html
+          http://127.0.0.1:8000
+..    Gallery
+
+.. include:: README.rst

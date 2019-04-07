@@ -8,4 +8,5 @@ GitHub Docs
 
     profile.rst
     dosepro.rst
+    sinogram.rst
 
