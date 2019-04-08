@@ -11,23 +11,15 @@ Home
 
 
 .. toctree::
-    :maxdepth: 2
-    :caption: Menu
+    :maxdepth: 1
+    :caption: Groups
 
     projects.rst
     publications.rst
-    media.rst
+    press.rst
     notes.rst
 
 
-Experienced, results-oriented, with a progressive record of innovation and success in quality enhancement and program development; mature judgment & prescient vision in diverse environments; proactive stewardship, valuing excellence that is patient focused & mission driven. 
-Quality improvement, planning and clinical program development, regulatory compliance, & health care technology management.
-
-
-
-
-.. xx Note:: sphinx-autobuild docs docs/_build/html
-          http://127.0.0.1:8000
-..    Gallery
-
-.. include:: README.rst
+Experienced & results-oriented; progressive record of innovation & success in quality enhancement, planning, 
+program development, regulatory compliance, & health care technology mgmt; mature judgment & prescient vision 
+in diverse environments; proactive stewardship, valuing excellence that is patient focused & mission driven. 

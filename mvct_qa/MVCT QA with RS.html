@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Tomotherapy HDA MVCT QA with RayStation-6 &#8212; kingrpaul 2019 documentation</title>
+    <title>HDA MVCT QA w/Ray6 &#8212; kingrpaul 2019 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -33,15 +33,15 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="tomotherapy-hda-mvct-qa-with-raystation-6">
-<h1>Tomotherapy HDA MVCT QA with RayStation-6<a class="headerlink" href="#tomotherapy-hda-mvct-qa-with-raystation-6" title="Permalink to this headline">¶</a></h1>
-<p>rpk - 2018_06_28</p>
-<div class="section" id="at-tomotherapy">
-<h2>At Tomotherapy<a class="headerlink" href="#at-tomotherapy" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="hda-mvct-qa-w-ray6">
+<h1>HDA MVCT QA w/Ray6<a class="headerlink" href="#hda-mvct-qa-w-ray6" title="Permalink to this headline">¶</a></h1>
+<p>Tomotherapy HDA MVCT QA with RayStation-6</p>
+<div class="section" id="at-tomo">
+<h2>At Tomo<a class="headerlink" href="#at-tomo" title="Permalink to this headline">¶</a></h2>
+<p><em>Before Starting:</em> powered up, software running, 5-minute warmup, AIRSCANS</p>
 <dl class="docutils">
-<dt><strong>Before Starting:</strong> powered up, software running, 5-minute warmup, AIRSCANS</dt>
+<dt>Select Patient: ‘_CT Number Calibration’ [ normal pitch, 2mm slices x 19 ]</dt>
 <dd><ul class="first last simple">
-<li>Select Patient: ‘_CT Number Calibration’ [ normal pitch, 2mm slices x 19 ]</li>
 <li>Select all slices -&gt; Accept slices … Prepare scan -&gt; OK -&gt; Setup -&gt; Yes</li>
 </ul>
 </dd>
@@ -61,11 +61,11 @@
 </ul>
 </dd>
 </dl>
-<img alt="../_images/mvct_qa_2.png" src="../_images/mvct_qa_2.png" />
 <p>Insert density plugs w/test pattern pointed in, orient plug side into gantry</p>
-<div class="figure" id="id1">
-<a class="reference internal image-reference" href="../_images/mvct_qa_1.png"><img alt="Cheese Phantom" src="../_images/mvct_qa_1.png" style="width: 146.0px; height: 144.0px;" /></a>
-<p class="caption"><span class="caption-text">Cheese phantom</span></p>
+<blockquote>
+<div><div class="figure" id="id1">
+<img alt="../_images/mvct_qa_1.png" src="../_images/mvct_qa_1.png" />
+<p class="caption"><span class="caption-text">Cheese Phantom</span></p>
 <div class="legend">
 <table border="1" class="docutils">
 <colgroup>
@@ -90,6 +90,7 @@
 </table>
 </div>
 </div>
+</div></blockquote>
 <dl class="docutils">
 <dt>Select Patient: ‘ZZ-06_TomoPhant’, plan-3</dt>
 <dd><ul class="first last simple">
@@ -121,9 +122,9 @@
 </ul>
 </dd>
 <dt>Patient Modeling / Structure Definition / ROI Tools</dt>
-<dd><ul class="first">
-<li><p class="first">New ROI geometry / Structure templates / Create structures from template…</p>
-</li>
+<dd><dl class="first docutils">
+<dt>New ROI geometry / Structure templates / Create structures from template…</dt>
+<dd><ul class="first last">
 <li><p class="first">Template -&gt; ‘MVCT QA’</p>
 </li>
 <li><p class="first">Initialization -&gt; ‘Align image centers’</p>
@@ -134,12 +135,16 @@
 </li>
 <li><p class="first">Double-click ROIs, record ‘Intensity Avg’, click ‘Cancel’</p>
 </li>
-<li><dl class="first docutils">
-<dt>Center: 24.66 … calculate +/- 40 as HU range,  e.g. -15 → 60</dt>
-<dd><table border="1" class="first last docutils">
+<li><p class="first">Center: 24.66 … calculate +/- 40 as HU range,  e.g. -15 → 60</p>
+<blockquote>
+<div><div class="figure" id="id2">
+<img alt="../_images/mvct_qa_2.png" src="../_images/mvct_qa_2.png" />
+<p class="caption"><span class="caption-text">Cheese Phantom</span></p>
+</div>
+<table border="1" class="docutils">
 <colgroup>
-<col width="38%" />
-<col width="63%" />
+<col width="29%" />
+<col width="71%" />
 </colgroup>
 <tbody valign="top">
 <tr class="row-odd"><td>Q1</td>
@@ -156,37 +161,53 @@
 </tr>
 </tbody>
 </table>
-</dd>
-</dl>
+</div></blockquote>
 </li>
 </ul>
-<p>New ROI geometry / Thresholding / Gray level threshold …
-Set threshold levels -&gt; ‘-15’ [HU] ‘60’
-Output / Create geometry for: / Existing ROI -&gt;  ‘+/- 40 HU’ and click ‘OK’
-Are you sure that you want to replace the existing geometry: -&gt; ‘Yes’
-New ROI geometry / Algebra and margins / ROI algebra …</p>
-<blockquote>
-<div><ul class="simple">
+</dd>
+</dl>
+<p>New ROI geometry / Thresholding / Gray level threshold …</p>
+<p>Set threshold levels -&gt; ‘-15’ [HU] ‘60’</p>
+<p>Output / Create geometry for: / Existing ROI -&gt;  ‘+/- 40 HU’ and click ‘OK’</p>
+<p>Are you sure that you want to replace the existing geometry: -&gt; ‘Yes’</p>
+<dl class="docutils">
+<dt>New ROI geometry / Algebra and margins / ROI algebra …</dt>
+<dd><ul class="first last simple">
 <li>Expression A -&gt; ‘+/- 40 HU’</li>
 <li>Operator     -&gt; ‘intersection’</li>
 <li>Expression B -&gt; ‘center_slice’</li>
 <li>Ouput -&gt; no expansion, Create geometry for: / Existing ROI / ‘noise_volume’ -&gt; OK</li>
 </ul>
-</div></blockquote>
-<p>Are you sure that you want to replace the existing geometry: -&gt; ‘Yes’, long delay
-Inspect ‘noise_volume’ for artifacts
-Double-click ROIs, record ‘Volume [cm3]’, click ‘Cancel’</p>
-<blockquote class="last">
-<div>noise_volume: 33.89
-center_slice: 45.30
-Calculate %-enclosed: 78% vs tolerance of 65%,</div></blockquote>
 </dd>
-<dt>Patient Modeling / Structure Definition / POI Tools</dt>
-<dd><ul class="first last">
-<li><p class="first">Adjust pin_1, pin_2, and pin_3 to center of metal pins in the image slice</p>
-</li>
-<li><p class="first">Double-click POIs, record coordinates R-L, I-S, P-A, click ‘Cancel’</p>
-<table border="1" class="docutils">
+</dl>
+<p>Are you sure that you want to replace the existing geometry: -&gt; ‘Yes’, long delay</p>
+<p>Inspect ‘noise_volume’ for artifacts</p>
+<p>Double-click ROIs, record ‘Volume [cm3]’, click ‘Cancel’</p>
+<blockquote class="last">
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="71%" />
+<col width="29%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>noise_volume</td>
+<td>33.89</td>
+</tr>
+<tr class="row-even"><td>center_slice</td>
+<td>45.30</td>
+</tr>
+</tbody>
+</table>
+<p>Calculate %-enclosed: 78% vs tolerance of 65%,</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>Patient Modeling / Structure Definition / POI Tools</p>
+<blockquote>
+<div><p>Adjust pin_1, pin_2, and pin_3 to center of metal pins in the image slice</p>
+<p>Double-click POIs, record coordinates R-L, I-S, P-A, click ‘Cancel’</p>
+<blockquote>
+<div><table border="1" class="docutils">
 <colgroup>
 <col width="25%" />
 <col width="25%" />
@@ -211,41 +232,60 @@ Calculate %-enclosed: 78% vs tolerance of 65%,</div></blockquote>
 </tr>
 </tbody>
 </table>
-</li>
-</ul>
-</dd>
+</div></blockquote>
+</div></blockquote>
+<dl class="docutils">
 <dt>Patient Data / Patient Information -&gt; ‘Close’</dt>
 <dd><ul class="first last simple">
 <li>Modifications must be saved before closing the current patient.</li>
 <li>Do you want to save the changes? -&gt; ‘Yes’</li>
 </ul>
 </dd>
-<dt>Patient Data / Patient Information</dt>
-<dd><ul class="first simple">
-<li>Import new patient -&gt; [‘Storage SCP’, ‘ZZ-06_TomoPhant’, ‘CT Series’]
--‘Import’  -&gt; if prompted, ‘Create a new patient’ then ‘OK’</li>
+</dl>
+<p>Patient Data / Patient Information</p>
+<blockquote>
+<div><p>Import new patient -&gt; [‘Storage SCP’, ‘ZZ-06_TomoPhant’, ‘CT Series’]</p>
+<p>‘Import’  -&gt; if prompted, ‘Create a new patient’ then ‘OK’</p>
+<dl class="docutils">
+<dt>Image Sets / Properties</dt>
+<dd><ul class="first last simple">
+<li>confirm correct density table, then ‘OK’</li>
 </ul>
-<p class="last">Image Sets / Properties
-confirm correct density table, then ‘OK’</p>
-</dd>
-<dt>Patient Modeling / Structure Definition / ROI Tools</dt>
-<dd><p class="first">Inspect for number of high-contrast objects visible:  4
-New ROI geometry / Create New ROI -&gt;     ‘bone’, ‘liquid_water’, ‘air’
-Use the brush on single slice, structure covers about central half of the plug
-Double-click ROIs, record ‘Intensity Avg’, click ‘Cancel’</p>
-<blockquote class="last">
-<div>bone:          651.48
-liquid_water:    6.44
-air:          -911.74</div></blockquote>
 </dd>
 </dl>
+</div></blockquote>
+<p>Patient Modeling / Structure Definition / ROI Tools</p>
+<blockquote>
+<div><p>Inspect for number of high-contrast objects visible:  4</p>
+<p>New ROI geometry / Create New ROI -&gt;     ‘bone’, ‘liquid_water’, ‘air’</p>
+<p>Use the brush on single slice, structure covers about central half of the plug</p>
+<p>Double-click ROIs, record ‘Intensity Avg’, click ‘Cancel’</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="40%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>bone</td>
+<td>651.48</td>
+</tr>
+<tr class="row-even"><td>liquid_water</td>
+<td>6.44</td>
+</tr>
+<tr class="row-odd"><td>air</td>
+<td>-911.74</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</div></blockquote>
 </div>
 <div class="section" id="at-excel">
 <h2>At Excel<a class="headerlink" href="#at-excel" title="Permalink to this headline">¶</a></h2>
+<p>VI.B.2.a, VI.B.2.b</p>
 <blockquote>
 <div><dl class="docutils">
-<dt>VI.B.2.a, VI.B.2.b</dt>
-<dd><dl class="first last docutils">
 <dt>Constancy</dt>
 <dd><ul class="first last simple">
 <li>Tomo HU +/- 10 from expected, phantom=25, air=-1000</li>
@@ -262,33 +302,43 @@ air:          -911.74</div></blockquote>
 </dl>
 </dd>
 <dt>SNR of NLT 28 dB</dt>
-<dd><blockquote class="first">
-<div>i.e. NLT 65% (typical 75%) of center volume within 40 HU of mean value</div></blockquote>
-<dl class="last docutils">
-<dt>Pin-to-pin distances within 1 mm of true value</dt>
 <dd><ul class="first last simple">
-<li>pin_2-&gt;3  101.2 mm expected</li>
-<li>pin_1-&gt;2  148.0 mm</li>
-<li>pin_1-&gt;3  226.7 mm</li>
+<li>i.e. NLT 65% (typical 75%) of center volume within 40 HU of mean value</li>
 </ul>
 </dd>
 </dl>
-</dd>
-</dl>
-</dd>
-<dt>VI.B.2.c, VI.B.2.d, VI.B.2.e</dt>
-<dd><p class="first">NLT 3 resolution objects visible (1.6 mm)
-Density objects within tolerance of expected HU</p>
-<blockquote class="last">
-<div><ul class="simple">
-<li>Cortical Bone -&gt; Expect:  668.8  Tolerance: 50 HU (6%)</li>
-<li>Water         -&gt; Expect:    0.0  Tolerance: 30 HU (10%)</li>
-<li>Air           -&gt; Expect: -916.3  Tolerance: reasonableness</li>
-</ul>
+<p>Pin-to-pin distances within 1 mm of true value</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>&#160;</td>
+<td>Expected</td>
+</tr>
+<tr class="row-even"><td>pin_2-&gt;3</td>
+<td>101.2 mm</td>
+</tr>
+<tr class="row-odd"><td>pin_1-&gt;2</td>
+<td>148.0 mm</td>
+</tr>
+<tr class="row-even"><td>pin_1-&gt;3</td>
+<td>226.7 mm</td>
+</tr>
+</tbody>
+</table>
 </div></blockquote>
-</dd>
-</dl>
 </div></blockquote>
+<p>VI.B.2.c, VI.B.2.d, VI.B.2.e</p>
+<blockquote>
+<div><p>NLT 3 resolution objects visible (1.6 mm)</p>
+<p>Density objects within tolerance of expected HU</p>
+<blockquote>
+<div></div></blockquote>
+</div></blockquote>
+<p>rpk - 06/28/2018</p>
 </div>
 </div>
 
@@ -309,15 +359,12 @@ Density objects within tolerance of expected HU</p>
 
 
 <h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Menu</span></p>
+<p class="caption"><span class="caption-text">Groups</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../projects.html">GitHub Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../projects.html">Docs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../publications.html">Pubs</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../media.html">Media</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../notes.html">Notes</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Tomotherapy HDA MVCT QA with RayStation-6</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../press.html">Press</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../notes.html">Notes</a></li>
 </ul>
 
 <div class="relations">
@@ -342,14 +389,6 @@ Density objects within tolerance of expected HU</p>
     </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
-
-
-
-
-
-
-
-
         </div>
       </div>
       <div class="clearer"></div>
@@ -359,7 +398,7 @@ Density objects within tolerance of expected HU</p>
       
       |
       Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
       
       |
       <a href="../_sources/mvct_qa/MVCT QA with RS.rst.txt"

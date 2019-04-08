@@ -1,12 +1,11 @@
-===========
-GitHub Docs
-===========
+====
+Docs
+====
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 1
     :caption: Items
 
     profile.rst
-    dosepro.rst
     sinogram.rst
 
