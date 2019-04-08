@@ -11,7 +11,7 @@ Home
 
 
 .. toctree::
-    :maxdepth: 3
+    :maxdepth: 2
     :caption: Menu
 
     projects.rst

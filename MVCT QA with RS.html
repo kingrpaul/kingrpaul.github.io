@@ -1,0 +1,240 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Tomotherapy HDA MVCT QA with RayStation-6 &#8212; kingrpaul 2019 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="tomotherapy-hda-mvct-qa-with-raystation-6">
+<h1>Tomotherapy HDA MVCT QA with RayStation-6<a class="headerlink" href="#tomotherapy-hda-mvct-qa-with-raystation-6" title="Permalink to this headline">¶</a></h1>
+<p>rpk - 2018_06_28</p>
+<div class="section" id="at-tomotherapy">
+<h2>At Tomotherapy<a class="headerlink" href="#at-tomotherapy" title="Permalink to this headline">¶</a></h2>
+<p>Before Starting: powered up, software running, 5-minute warmup, AIRSCANS</p>
+<p>Select Patient: ‘_CT Number Calibration’ [ normal pitch, 2mm slices x 19 ]</p>
+<p>Select all slices -&gt; Accept slices … Prepare scan -&gt; OK -&gt; Setup -&gt; Yes</p>
+<p>Setup cheese phantom (+ PWx20), green lasers</p>
+<p>Main -&gt; Ready -&gt; Yes …   Key -&gt; Image -&gt; Key</p>
+<p>Record air-HU and water-HU from screen -&gt; OK</p>
+<p>Tools -&gt; Clear selected patient</p>
+<p>Tools -&gt; Dicom Options -&gt; Export Items</p>
+<p>Export to: RaySearch … select correct ‘CTrue Image’ (4 slices)</p>
+<p>Send Now -&gt; Close</p>
+<p>Insert density plugs w/test pattern pointed in, orient plug side into gantry</p>
+</div>
+<div class="section" id="at-raystation">
+<h2>At RayStation<a class="headerlink" href="#at-raystation" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>Patient Data / Patient Information</dt>
+<dd>Import new patient -&gt; [ ‘Storage SCP’, ‘_CT Number Calibration’, ‘CT Series’]
+‘Import’  -&gt; if prompted, ‘Create a new patient’ then ‘OK’
+Image Sets / Properties
+confirm correct density table, then ‘OK’</dd>
+<dt>Patient Modeling / Structure Definition / ROI Tools</dt>
+<dd><p class="first">New ROI geometry / Structure templates / Create structures from template…
+Template -&gt; ‘MVCT QA’
+Initialization -&gt; ‘Align image centers’
+Structures -&gt; ‘Select All’
+OK, then confirm contour alignment
+Double-click ROIs, record ‘Intensity Avg’, click ‘Cancel’</p>
+<blockquote>
+<div><blockquote>
+<div>Center: 24.66 … calculate +/- 40 as HU range,  e.g. -15 → 60</div></blockquote>
+<dl class="docutils">
+<dt>Q1:  1.85</dt>
+<dd>Q2:  2.79
+Q3: 17.66
+Q4: 13.21</dd>
+</dl>
+</div></blockquote>
+<p>New ROI geometry / Thresholding / Gray level threshold …
+Set threshold levels -&gt; ‘-15’ [HU] ‘60’
+Output / Create geometry for: / Existing ROI -&gt;  ‘+/- 40 HU’ and click ‘OK’
+Are you sure that you want to replace the existing geometry: -&gt; ‘Yes’
+New ROI geometry / Algebra and margins / ROI algebra …</p>
+<blockquote>
+<div>Expression A -&gt; ‘+/- 40 HU’
+Operator     -&gt; ‘intersection’
+Expression B -&gt; ‘center_slice’
+Ouput -&gt; no expansion, Create geometry for: / Existing ROI / ‘noise_volume’ -&gt; OK</div></blockquote>
+<p>Are you sure that you want to replace the existing geometry: -&gt; ‘Yes’, long delay
+Inspect ‘noise_volume’ for artifacts
+Double-click ROIs, record ‘Volume [cm3]’, click ‘Cancel’</p>
+<blockquote class="last">
+<div>noise_volume: 33.89
+center_slice: 45.30
+Calculate %-enclosed: 78% vs tolerance of 65%,</div></blockquote>
+</dd>
+<dt>Patient Modeling / Structure Definition / POI Tools</dt>
+<dd><p class="first">Adjust pin_1, pin_2, and pin_3 to center of metal pins in the image slice
+Double-click POIs, record coordinates R-L, I-S, P-A, click ‘Cancel’</p>
+<blockquote class="last">
+<div>pin_1:  9.37, 0.05,  11.23
+pin_2: 14.52, 0.05,  -2.63
+pin_3:  9.50, 0.05, -11.37</div></blockquote>
+</dd>
+<dt>Patient Data / Patient Information -&gt; ‘Close’</dt>
+<dd>Modifications must be saved before closing the current patient.
+Do you want to save the changes? -&gt; ‘Yes’</dd>
+<dt>Patient Data / Patient Information</dt>
+<dd><dl class="first docutils">
+<dt>Import new patient -&gt; [‘Storage SCP’, ‘ZZ-06_TomoPhant’, ‘CT Series’]</dt>
+<dd>‘Import’  -&gt; if prompted, ‘Create a new patient’ then ‘OK’</dd>
+</dl>
+<p class="last">Image Sets / Properties
+confirm correct density table, then ‘OK’</p>
+</dd>
+<dt>Patient Modeling / Structure Definition / ROI Tools</dt>
+<dd><p class="first">Inspect for number of high-contrast objects visible:  4
+New ROI geometry / Create New ROI -&gt;     ‘bone’, ‘liquid_water’, ‘air’
+Use the brush on single slice, structure covers about central half of the plug
+Double-click ROIs, record ‘Intensity Avg’, click ‘Cancel’</p>
+<blockquote class="last">
+<div>bone:          651.48
+liquid_water:    6.44
+air:          -911.74</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+<div class="section" id="at-excel">
+<h2>At Excel<a class="headerlink" href="#at-excel" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><dl class="docutils">
+<dt>VI.B.2.a, VI.B.2.b</dt>
+<dd><dl class="first last docutils">
+<dt>Constancy</dt>
+<dd>Tomo HU +/- 10 from expected, phantom=25, air=-1000</dd>
+<dt>Uniformity</dt>
+<dd><dl class="first last docutils">
+<dt>Each quadrant periphery within 25 HU of center</dt>
+<dd>center = phantom slice, radius 1 -&gt; 12 cm (excl outer 3 cm)
+Q1, Q2, Q3, Q4 = slice quadrant, radius 13 -&gt; 14 cm</dd>
+</dl>
+</dd>
+<dt>SNR of NLT 28 dB</dt>
+<dd><blockquote class="first">
+<div>i.e. NLT 65% (typical 75%) of center volume within 40 HU of mean value</div></blockquote>
+<dl class="last docutils">
+<dt>Pin-to-pin distances within 1 mm of true value</dt>
+<dd>pin_2-&gt;3  101.2 mm expected
+pin_1-&gt;2  148.0 mm
+pin_1-&gt;3  226.7 mm</dd>
+</dl>
+</dd>
+</dl>
+</dd>
+<dt>VI.B.2.c, VI.B.2.d, VI.B.2.e</dt>
+<dd><p class="first">NLT 3 resolution objects visible (1.6 mm)
+Density objects within tolerance of expected HU</p>
+<blockquote class="last">
+<div>Cortical Bone -&gt; Expect:  668.8  Tolerance: 50 HU (6%)
+Water         -&gt; Expect:    0.0  Tolerance: 30 HU (10%)
+Air           -&gt; Expect: -916.3  Tolerance: reasonableness</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">kingrpaul</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Menu</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="projects.html">GitHub Docs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Pubs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notes.html">Notes</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, RPK.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/MVCT QA with RS.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
