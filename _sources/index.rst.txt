@@ -1,4 +1,4 @@
-.. image:: avatar.jpg
+.. image:: home_ico.jpg
     :width: 100px
     :height: 100px
     :scale: 50 %
@@ -14,10 +14,11 @@ Home
     :maxdepth: 1
     :caption: groups
 
-    projs/projs.rst
+    code/code.rst
     pubs/pubs.rst
     press/press.rst
     notes/notes.rst
+    pics/pics.rst
 
 
 Experienced & results-oriented; progressive record of innovation & success in quality enhancement, planning, 

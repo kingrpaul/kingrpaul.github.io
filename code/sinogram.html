@@ -1,0 +1,186 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sinogram &#8212; kingrpaul 2019 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="sinogram">
+<h1>Sinogram<a class="headerlink" href="#sinogram" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="sinogram.read_csv_file">
+<code class="descclassname">sinogram.</code><code class="descname">read_csv_file</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#read_csv_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.read_csv_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>read sinogram from csv file</p>
+<p>Return patient ID and sinogram array produced by reading a RayStation
+sinogram CSV file with the provided file name.</p>
+<dl class="docutils">
+<dt>file_name <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>long file name of csv file</dd>
+</dl>
+<p>document_id, array</p>
+<p>Files are produced by ExportTomoSinogram.py, Brandon Merz,
+RaySearch customer forum, 1/18/2018.
+File first row contains demographics.
+Subsequent rows correspond to couch positions.
+Leaf-open time range from zero to one.</p>
+<p>“Patient name: ANONYMOUS^PATIENT, ID: 00000”,,,,,,,,,
+,0,0,0,0,0,0,0,0,0,0,0,0,0.39123373,0.366435635 …</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sinogram.read_bin_file">
+<code class="descclassname">sinogram.</code><code class="descname">read_bin_file</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#read_bin_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.read_bin_file" title="Permalink to this definition">¶</a></dt>
+<dd><p>read sinogram from binary file</p>
+<p>Return sinogram np.array produced by reading an Accuray sinogram
+BIN file with the provided file name.</p>
+<dl class="docutils">
+<dt>file_name <span class="classifier-delimiter">:</span> <span class="classifier">str</span></dt>
+<dd>long file name of csv file</dd>
+</dl>
+<p>sinogram : np.array</p>
+<p>BIN files are sinograms stored in binary format used in
+Tomotherapy calibration plans.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sinogram.crop">
+<code class="descclassname">sinogram.</code><code class="descname">crop</code><span class="sig-paren">(</span><em>sinogram</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#crop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.crop" title="Permalink to this definition">¶</a></dt>
+<dd><p>crop sinogram</p>
+<p>Return a symmetrically cropped sinogram, such that always-closed
+leaves are excluded and the sinogram center is maintained.</p>
+<p>sinogram : np.array</p>
+<p>sinogram : np.array</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sinogram.unshuffle">
+<code class="descclassname">sinogram.</code><code class="descname">unshuffle</code><span class="sig-paren">(</span><em>sinogram</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#unshuffle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.unshuffle" title="Permalink to this definition">¶</a></dt>
+<dd><p>unshuffle singram by angle</p>
+<p>Return a list of 51 sinograms, by unshuffling the provided
+sinogram; so that all projections in the result correspond
+to the same gantry rotation angle, analogous to a fluence map.</p>
+<p>sinogram : np.array</p>
+<p>unshuffled: list of sinograms</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sinogram.make_histogram">
+<code class="descclassname">sinogram.</code><code class="descname">make_histogram</code><span class="sig-paren">(</span><em>sinogram</em>, <em>num_bins=10</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#make_histogram"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.make_histogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>make a leaf-open-time histogram</p>
+<p>Return a histogram of leaf-open-times for the provided sinogram
+comprised of the specified number of bins, in the form of a list
+of tuples: [(bin, count)…] where bin is a 2-element array setting
+the bounds and count in the number leaf-open-times in the bin.</p>
+<p>sinogram : np.array
+num_bins : int</p>
+<dl class="docutils">
+<dt>histogram <span class="classifier-delimiter">:</span> <span class="classifier">list of tuples: [(bin, count)…]</span></dt>
+<dd>bin is a 2-element array</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="sinogram.find_modulation_factor">
+<code class="descclassname">sinogram.</code><code class="descname">find_modulation_factor</code><span class="sig-paren">(</span><em>sinogram</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#find_modulation_factor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.find_modulation_factor" title="Permalink to this definition">¶</a></dt>
+<dd><p>read sinogram from csv file</p>
+<p>Calculate the ratio of the maximum leaf open time (assumed
+fully open) to the mean leaf open time, as determined over all
+non-zero leaf open times, where zero is interpreted as blocked
+versus modulated.</p>
+<p>sinogram : np.array</p>
+<p>modulation factor : float</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">kingrpaul</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">groups</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../pubs/pubs.html">pubs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../press/press.html">press</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">notes</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, RPK.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../_sources/code/sinogram.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

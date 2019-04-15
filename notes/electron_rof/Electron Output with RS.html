@@ -42,10 +42,10 @@
 <p>Pre-Start: cut &amp; pour block, power up, run software, 5-min warmup, AIRSCANS</p>
 <dl class="docutils">
 <dt>Select Patient: ‘STEREOPHAN, IMAGING’ [ fine pitch, 1mm slices ]</dt>
-<dd><ul class="first">
+<dd><ul class="first last">
 <li><p class="first">Select slices -&gt; Accept slices … Prepare scan -&gt; OK -&gt; Setup -&gt; Yes</p>
-<blockquote>
-<div><table border="1" class="docutils">
+<p>+/- cm scan</p>
+<table border="1" class="docutils">
 <colgroup>
 <col width="11%" />
 <col width="15%" />
@@ -71,37 +71,38 @@
 </tr>
 </tbody>
 </table>
-<p>+/- cm scan</p>
-</div></blockquote>
 </li>
 </ul>
-<dl class="last docutils">
-<dt>Setup electron block, green lasers at insert center-exit [Figure 1]</dt>
-<dd><ul class="first last simple">
+</dd>
+</dl>
+<p>Setup electron block, green lasers at insert center-exit</p>
+<blockquote>
+<div><div class="figure" id="id1">
+<img alt="../../_images/figure1.png" src="../../_images/figure1.png" />
+<p class="caption"><span class="caption-text">Figure 1</span></p>
+</div>
+<ul class="simple">
 <li>Main -&gt; Ready -&gt; Yes …   Key -&gt; Image -&gt; Key -&gt;   check image for voids</li>
 </ul>
-</dd>
-<dt>Tools -&gt; Clear selected patient -&gt; Tools -&gt; Dicom Options -&gt; Export Items</dt>
-<dd><ul class="first last simple">
+</div></blockquote>
+<p>Tools -&gt; Clear selected patient -&gt; Tools -&gt; Dicom Options -&gt; Export Items</p>
+<blockquote>
+<div><ul class="simple">
 <li>Export to: RaySearch … select correct ‘CTrue Image’ -&gt; Send Now -&gt; Close</li>
 </ul>
-</dd>
-</dl>
-</dd>
-</dl>
+</div></blockquote>
 </div>
 <div class="section" id="at-raystation">
 <h2>At RayStation<a class="headerlink" href="#at-raystation" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>Patient Data / Patient Information</dt>
-<dd><ul class="first last simple">
+<p>Patient Data / Patient Information</p>
+<blockquote>
+<div><ul class="simple">
 <li>Import new patient -&gt; [ ‘Storage SCP’, ‘STEREOPHAN, IMAGING’, ‘CT Series’]</li>
 <li>‘Import’  -&gt; if prompted, ‘Create a new patient’ then ‘OK’</li>
 <li>Edit patient data -&gt; [Patient ID, First name, Last name] -&gt; ‘OK’ -&gt; ‘Yes’</li>
 <li>Image Sets / Properties -&gt; confirm correct density table -&gt; ‘OK’</li>
 </ul>
-</dd>
-</dl>
+</div></blockquote>
 <p>Patient Modeling / Structure Definition / ROI Tools</p>
 <blockquote>
 <div><ul>
@@ -124,24 +125,22 @@ Output / New ROI / Name: air_gap, Type: undefined] -&gt; ‘OK’</p>
 <dt>New ROI geometry / Basic shapes / Create box ROI…</dt>
 <dd><p class="first">[ R-L/I-S/P-A from below, Center: Geometric Center of ROI: aperture,
 Output / New ROI / Name: phantom, Type: undefined] -&gt; ‘OK’</p>
-<blockquote class="last">
-<div><table border="1" class="docutils">
+<table border="1" class="last docutils">
 <colgroup>
 <col width="6%" />
-<col width="13%" />
-<col width="17%" />
-<col width="17%" />
-<col width="4%" />
-<col width="10%" />
-<col width="17%" />
-<col width="17%" />
+<col width="12%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
+<col width="16%" />
 </colgroup>
 <thead valign="bottom">
 <tr class="row-odd"><th class="head">&#160;</th>
 <th class="head">6x6</th>
 <th class="head">10x6</th>
 <th class="head">10x10</th>
-<th class="head" colspan="2">15x15</th>
+<th class="head">15x15</th>
 <th class="head">20x20</th>
 <th class="head">25x25</th>
 </tr>
@@ -150,91 +149,96 @@ Output / New ROI / Name: phantom, Type: undefined] -&gt; ‘OK’</p>
 <tr class="row-even"><td>6E</td>
 <td>8,8, 4</td>
 <td>12,12, 4</td>
-<td colspan="3">12,12, 4|17,17, 4</td>
+<td>12,12, 4</td>
+<td>17,17, 4</td>
 <td>22,22, 4</td>
 <td>27,27, 4</td>
 </tr>
 <tr class="row-odd"><td>9E</td>
 <td>8,8, 6</td>
 <td>12,12, 6</td>
-<td colspan="3">12,12, 6|17,17, 6</td>
+<td>12,12, 6</td>
+<td>17,17, 6</td>
 <td>22,22, 6</td>
 <td>27,27, 6</td>
 </tr>
 <tr class="row-even"><td>12E</td>
 <td>8,8, 8</td>
 <td>12,12, 8</td>
-<td colspan="3">12,12, 8|17,17, 8</td>
+<td>12,12, 8</td>
+<td>17,17, 8</td>
 <td>22,22, 8</td>
 <td>27,27, 8</td>
 </tr>
 <tr class="row-odd"><td>16E</td>
 <td>8,8,10</td>
 <td>12,12,10</td>
-<td colspan="3">12,12,10|17,17,10</td>
+<td>12,12,10</td>
+<td>17,17,10</td>
 <td>22,22,10</td>
 <td>27,27,10</td>
 </tr>
 <tr class="row-even"><td>20E</td>
 <td>8,8,12</td>
 <td>12,12,12</td>
-<td colspan="3">12,12,12|17,17,12</td>
+<td>12,12,12</td>
+<td>17,17,12</td>
 <td>22,22,12</td>
 <td>27,27,12</td>
 </tr>
 </tbody>
 </table>
-</div></blockquote>
 </dd>
 </dl>
-<p>Translate: ‘air_gap’ to bottom of block, ‘phantom’ to bottom of ‘air_gap’</p>
+</li>
+<li><p class="first">Translate: ‘air_gap’ to bottom of block, ‘phantom’ to bottom of ‘air_gap’</p>
 </li>
 </ul>
 </div></blockquote>
 <p>Plan Design / Plan Setup</p>
 <blockquote>
-<div><dl class="docutils">
-<dt>New plan+ -&gt; Do you want to save the changes? -&gt; ‘Yes’</dt>
-<dd><dl class="first last docutils">
-<dt>[Name: Cutout, Planned by: you, Patient Treatment position: HFS,</dt>
-<dd><p class="first">Modality: Electrons, Treatment Technique: Applicator and cutout,
+<div><ul>
+<li><p class="first">New plan+ -&gt; Do you want to save the changes? -&gt; ‘Yes’</p>
+<p>[Name: Cutout, Planned by: you, Patient Treatment position: HFS,
+Modality: Electrons, Treatment Technique: Applicator and cutout,
 Treatment machine: Clinac-iXsn3694, Create setup beams: No,
 Dose prescription: 180 cGy x 1fx,  ROI / phantom,
 Prescription type: Dose at volume%: 0, Auto scale:Yes] -&gt; ‘OK’</p>
-<blockquote class="last">
-<div><dl class="docutils">
-<dt>Grid Settings</dt>
-<dd>[ Resolution: 0.10, Use Uniform Resolution:Yes, Set default size ] -&gt; OK
-In planning windows, Rt-click, Edit dose grid, adjust to include aperture</dd>
-</dl>
+<blockquote>
+<div><p>Grid Settings</p>
+<blockquote>
+<div><p>[ Resolution: 0.10, Use Uniform Resolution:Yes, Set default size ] -&gt; OK
+In planning windows, Rt-click, Edit dose grid, adjust to include aperture</p>
 </div></blockquote>
-</dd>
-</dl>
-</dd>
-<dt>Beams / Add</dt>
-<dd><blockquote class="first">
-<div>[Name: 01, Description: AP Electron, MeV: 6, Isocenter Name: SSD=100,
-Isocenter Location: “Center of ROI: phantom”, copy position,</div></blockquote>
-<p>Angles:180/180/180, Applicator: Varian 6x6, Cutout name: cutout,
-Cerrobend, 1.7 cm] -&gt; ‘OK’</p>
-<blockquote class="last">
-<div><p>Overwrite “SSD [cm] To surface” to 100</p>
+</div></blockquote>
+</li>
+<li><p class="first">Beams / Add</p>
+<p>[ Name: 01, Description: AP Electron, MeV: 6, Isocenter Name:
+SSD=100, Isocenter Location: “Center of ROI: phantom”, copy
+position, Angles:180/180/180, Applicator: Varian 6x6, Cutout
+name: cutout, Cerrobend, 1.7 cm] -&gt; ‘OK’</p>
+<p>Overwrite “SSD [cm] To surface” to 100</p>
 <p>Setup Beams -&gt; Delete, Delete, Delete (if present)</p>
+</li>
+</ul>
 </div></blockquote>
-</dd>
-</dl>
-</div></blockquote>
-<dl class="docutils">
-<dt>Plan Design / Electron Beam Design / Treat and Protect</dt>
-<dd><blockquote class="first">
+<p>Plan Design / Electron Beam Design / Treat and Protect</p>
+<blockquote>
 <div><p>Treat=aperture, Protect=’‘, Margins= 0,0,0,0 -&gt; ‘Conform all beams’
 Settings / Number of histories per cm2 = 1,000,000 -&gt; ‘OK’</p>
-<blockquote>
-<div>Final dose -&gt; long wait -&gt; [Figure 2]</div></blockquote>
+<p>Final dose -&gt; long wait -&gt;</p>
+<div class="figure" id="id2">
+<img alt="../../_images/figure2.png" src="../../_images/figure2.png" />
+<p class="caption"><span class="caption-text">Figure 2</span></p>
+</div>
 </div></blockquote>
-<p class="last">Ctrl-P -&gt; ‘Yes’, ‘Yes’, ‘Yes’ -&gt; Template: ‘Electron - Clinical Sim’ [Figure 3]</p>
-</dd>
-</dl>
+<p>Ctrl-P -&gt; ‘Yes’, ‘Yes’, ‘Yes’ -&gt; Template: ‘Electron - Clinical Sim’</p>
+<blockquote>
+<div><div class="figure" id="id3">
+<img alt="../../_images/figure3.png" src="../../_images/figure3.png" />
+<p class="caption"><span class="caption-text">Figure 3</span></p>
+</div>
+</div></blockquote>
 </div>
 </div>
 

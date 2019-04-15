@@ -2,4 +2,101 @@
 Varian Rails w/Ray6
 ===================
 
-Etc
+2018_07_25
+
+Can we “shoot through the rails” of the Clinac iX when planning with RayStation?
+
+Existing rules for handling the couch-top in Pinnacle planning and Varian delivery are as follows:
+
+  (1) always treat using the imaging couch-top
+
+  (2) never treat through the rails
+
+  (3) never treat through the edge of the couch
+
+  (4) except in special cases, use rails-in or rails-out; do not plan to adjust between beams 
+
+  (5) if treating through the couch
+
+    (a) put the whole field through the couch
+
+    (b) be cognizant of the bolus effect, ~½ cm equivalent
+
+    (c) correct the MU for attenuation, 2-8%
+
+ .. figure:: figure1.png
+
+    Figure 1
+
+.. figure:: figure2.png
+
+   Figure 2
+
+.. figure:: figure3.png
+
+   Figure 3
+
+A Varian couch-top planning model is available, though from an unknown source. 
+Direct use of this model does not integrate well with Pinnacle’s workflow. 
+RayStation’s patient modeling tools are more sophisticated. 
+This couch-top model was ported to RayStation and converted to a template, 
+which can then be be workably applied to each patient.
+
+Is this model, used with RayStation, dosimetrically accurate?
+
+During beam modeling, measurements were made using MapCheck, in it’s calibration sleeve, 
+below 10 cm of plastic water. Detectors were at an effective depth of ~13 cm from the front 
+and ~4 cm from the rear. 
+
+MapCheck was recalibrated and benchmark calculations and measurements were made 
+using isocentric, AP, open, 20x20 fields. 
+
+.. figure:: figure4.png
+
+   Figure 4
+
+Reasonable agreement was seen. 
+
+.. figure:: figure5.png
+
+   Figure 5
+
+.. figure:: figure6.png
+
+   Figure 6
+
+The same 20x20 beam was calculated and measured from the posterior. 
+
+.. figure:: figure7.png
+
+   Figure 7
+
+Note that attenuation by the rails is on the order of 15%.
+
+.. figure:: figure8.png
+
+   Figure 8
+
+.. figure:: figure9.png
+
+   Figure 9
+
+Findings:
+
+  (1) Using RayStation, this couch-top model does a ‘good job’ of predicting the magnitude of the disruption in dose.
+
+  (2) The rollers and clips, that are part of the couch top but are excluded from the model, produce a small effect that can be ignored.
+
+  (3) The rails close symmetrically and the rails-in model is symmetric. Yet, ~1 cm dose position error was seen in the left rail. There is no machine readout of rail position and correctness depends on manual verification. Rail centering, adequate to achieve gamma-analysis “PASS”, requires some finesse. 
+
+  (4) CT-sim couch is fixed / centered and precisely planning for a non-centered couch ( lat ≠ 100 cm) is not straightforward. Indexing of immobilization is occasionally impractical and use of the lock-bar at the time of treatment is not machine-verified in any case. So, again, correctness depends on manual verification.
+
+Conclusion: 
+
+  (1) When planning with RayStation, generally maintain the existing rules. Do not routinely treat through the rails or couch edges.
+
+  (2) Routinely apply the couch-top model in treatment planning. Use it to account for transmission through the couch and as an aid in avoiding the rails. Discontinue manual use of couch transmission factors.
+
+  (3) Any intentional treatment through the rails is to be treated as a special procedure, cognizant of the real potential for meaningful dose placement errors.
+
+  (4) Correctness of treatment dose continues to depend on manual verification.

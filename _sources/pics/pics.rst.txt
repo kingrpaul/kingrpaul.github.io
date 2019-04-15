@@ -1,0 +1,7 @@
+====
+pics
+====
+
+.. figure:: 2010_JARMC_Group_Photo.jpg
+
+      2010 JARMC Cancer Center

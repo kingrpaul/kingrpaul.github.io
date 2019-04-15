@@ -1,0 +1,12 @@
+========
+Sinogram
+========
+
+.. autofunction:: sinogram.read_csv_file
+.. autofunction:: sinogram.read_bin_file
+.. autofunction:: sinogram.crop
+.. autofunction:: sinogram.unshuffle
+.. autofunction:: sinogram.make_histogram
+.. autofunction:: sinogram.find_modulation_factor
+
+.. ## sphinx-autobuild docs docs/_build/html  ########

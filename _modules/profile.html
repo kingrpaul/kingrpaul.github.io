@@ -101,7 +101,7 @@
 
 <span class="c1"># pylint: disable = C0103, C0121, W0102</span>
 
-<div class="viewcode-block" id="Profile"><a class="viewcode-back" href="../projs/profile.html#profile.Profile">[docs]</a><span class="k">class</span> <span class="nc">Profile</span><span class="p">():</span>
+<div class="viewcode-block" id="Profile"><a class="viewcode-back" href="../code/profile.html#profile.Profile">[docs]</a><span class="k">class</span> <span class="nc">Profile</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;  One-dimensional distribution of intensity vs position.</span>
 
 <span class="sd">    Attributes</span>
@@ -129,7 +129,7 @@
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
-<div class="viewcode-block" id="Profile.__init__"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([]),</span>
+<div class="viewcode-block" id="Profile.__init__"><a class="viewcode-back" href="../code/profile.html#profile.Profile.__init__">[docs]</a>    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([]),</span>
                  <span class="n">y</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([]),</span> <span class="n">meta</span><span class="o">=</span><span class="p">{}):</span>
         <span class="sd">&quot;&quot;&quot; create profile</span>
 
@@ -154,11 +154,11 @@
             <span class="bp">self</span><span class="o">.</span><span class="n">interp</span> <span class="o">=</span> <span class="n">interpolate</span><span class="o">.</span><span class="n">interp1d</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">,</span>
                                                <span class="n">bounds_error</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.__len__"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.__len__">[docs]</a>    <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.__len__"><a class="viewcode-back" href="../code/profile.html#profile.Profile.__len__">[docs]</a>    <span class="k">def</span> <span class="nf">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; # data points  &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.__eq__"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.__eq__">[docs]</a>    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>  <span class="c1"># SAME DATA POINTS</span>
+<div class="viewcode-block" id="Profile.__eq__"><a class="viewcode-back" href="../code/profile.html#profile.Profile.__eq__">[docs]</a>    <span class="k">def</span> <span class="nf">__eq__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>  <span class="c1"># SAME DATA POINTS</span>
         <span class="sd">&quot;&quot;&quot; same data points &quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">x</span><span class="p">)</span> <span class="ow">and</span> \
            <span class="n">np</span><span class="o">.</span><span class="n">array_equal</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">other</span><span class="o">.</span><span class="n">y</span><span class="p">)</span> <span class="ow">and</span> \
@@ -167,11 +167,11 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="kc">False</span></div>
 
-<div class="viewcode-block" id="Profile.__copy__"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.__copy__">[docs]</a>    <span class="k">def</span> <span class="nf">__copy__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.__copy__"><a class="viewcode-back" href="../code/profile.html#profile.Profile.__copy__">[docs]</a>    <span class="k">def</span> <span class="nf">__copy__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; deep copy &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="n">copy</span><span class="o">.</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.__str__"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.__str__">[docs]</a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.__str__"><a class="viewcode-back" href="../code/profile.html#profile.Profile.__str__">[docs]</a>    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Examples</span>
 <span class="sd">        --------</span>
@@ -187,28 +187,28 @@
         <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;&#39;</span>  <span class="c1"># EMPTY PROFILE</span></div>
 
-<div class="viewcode-block" id="Profile.__add__"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.__add__">[docs]</a>    <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.__add__"><a class="viewcode-back" href="../code/profile.html#profile.Profile.__add__">[docs]</a>    <span class="k">def</span> <span class="nf">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; shift right &quot;&quot;&quot;</span>
         <span class="n">new_x</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">other</span>
         <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">new_x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span></div>
     <span class="fm">__radd__</span> <span class="o">=</span> <span class="fm">__add__</span>
     <span class="fm">__iadd__</span> <span class="o">=</span> <span class="fm">__add__</span>
 
-<div class="viewcode-block" id="Profile.__sub__"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.__sub__">[docs]</a>    <span class="k">def</span> <span class="nf">__sub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.__sub__"><a class="viewcode-back" href="../code/profile.html#profile.Profile.__sub__">[docs]</a>    <span class="k">def</span> <span class="nf">__sub__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; shift left &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">-=</span> <span class="n">other</span>
         <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span></div>
     <span class="fm">__rsub__</span> <span class="o">=</span> <span class="fm">__sub__</span>
     <span class="fm">__isub__</span> <span class="o">=</span> <span class="fm">__sub__</span>
 
-<div class="viewcode-block" id="Profile.__mul__"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.__mul__">[docs]</a>    <span class="k">def</span> <span class="nf">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.__mul__"><a class="viewcode-back" href="../code/profile.html#profile.Profile.__mul__">[docs]</a>    <span class="k">def</span> <span class="nf">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; scale y &quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">*=</span> <span class="n">other</span>
         <span class="k">return</span> <span class="bp">self</span></div>
     <span class="fm">__rmul__</span> <span class="o">=</span> <span class="fm">__mul__</span>
     <span class="fm">__imul__</span> <span class="o">=</span> <span class="fm">__mul__</span>
 
-<div class="viewcode-block" id="Profile.from_lists"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.from_lists">[docs]</a>    <span class="k">def</span> <span class="nf">from_lists</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">{}):</span>
+<div class="viewcode-block" id="Profile.from_lists"><a class="viewcode-back" href="../code/profile.html#profile.Profile.from_lists">[docs]</a>    <span class="k">def</span> <span class="nf">from_lists</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">{}):</span>
         <span class="sd">&quot;&quot;&quot;  import x and y lists</span>
 
 <span class="sd">        Parameters</span>
@@ -234,7 +234,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.from_tuples"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.from_tuples">[docs]</a>    <span class="k">def</span> <span class="nf">from_tuples</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">list_of_tuples</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">{}):</span>
+<div class="viewcode-block" id="Profile.from_tuples"><a class="viewcode-back" href="../code/profile.html#profile.Profile.from_tuples">[docs]</a>    <span class="k">def</span> <span class="nf">from_tuples</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">list_of_tuples</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">{}):</span>
         <span class="sd">&quot;&quot;&quot;  import list of (x,y) tuples</span>
 
 <span class="sd">        Parameters</span>
@@ -256,7 +256,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.from_pulse"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.from_pulse">[docs]</a>    <span class="k">def</span> <span class="nf">from_pulse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">centre</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">domain</span><span class="p">,</span> <span class="n">increment</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">{}):</span>
+<div class="viewcode-block" id="Profile.from_pulse"><a class="viewcode-back" href="../code/profile.html#profile.Profile.from_pulse">[docs]</a>    <span class="k">def</span> <span class="nf">from_pulse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">centre</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">domain</span><span class="p">,</span> <span class="n">increment</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">{}):</span>
         <span class="sd">&quot;&quot;&quot; create pulse of unit height</span>
 
 <span class="sd">        Parameters</span>
@@ -285,7 +285,7 @@
                 <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_lists</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.from_snc_profiler"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.from_snc_profiler">[docs]</a>    <span class="k">def</span> <span class="nf">from_snc_profiler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">axis</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.from_snc_profiler"><a class="viewcode-back" href="../code/profile.html#profile.Profile.from_snc_profiler">[docs]</a>    <span class="k">def</span> <span class="nf">from_snc_profiler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">axis</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; import profile form SNC Profiler file</span>
 
 <span class="sd">        Parameters</span>
@@ -341,7 +341,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;axis must be &#39;tvs&#39; or &#39;rad&#39;&quot;</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.from_narrow_png"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.from_narrow_png">[docs]</a>    <span class="k">def</span> <span class="nf">from_narrow_png</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">step_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.from_narrow_png"><a class="viewcode-back" href="../code/profile.html#profile.Profile.from_narrow_png">[docs]</a>    <span class="k">def</span> <span class="nf">from_narrow_png</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">step_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; import from png file</span>
 
 <span class="sd">        Source file is a full color PNG, sufficiently narrow that</span>
@@ -407,7 +407,7 @@
         <span class="n">zipped_profile</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">downsampled_distances</span><span class="p">,</span> <span class="n">downsampled_density</span><span class="p">))</span>
         <span class="k">return</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_tuples</span><span class="p">(</span><span class="n">zipped_profile</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.get_y"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.get_y">[docs]</a>    <span class="k">def</span> <span class="nf">get_y</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.get_y"><a class="viewcode-back" href="../code/profile.html#profile.Profile.get_y">[docs]</a>    <span class="k">def</span> <span class="nf">get_y</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; y-value at distance x</span>
 
 <span class="sd">        Return a y value based on interpolation of source data for a</span>
@@ -427,7 +427,7 @@
         <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">nan</span></div>
 
-<div class="viewcode-block" id="Profile.get_x"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.get_x">[docs]</a>    <span class="k">def</span> <span class="nf">get_x</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.get_x"><a class="viewcode-back" href="../code/profile.html#profile.Profile.get_x">[docs]</a>    <span class="k">def</span> <span class="nf">get_x</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; tuple of x-values at intensity y</span>
 
 <span class="sd">        Return distance values based on interpolation of source data for a</span>
@@ -457,7 +457,7 @@
                 <span class="n">dists</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">val</span><span class="p">)</span>
         <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">dists</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.get_increment"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.get_increment">[docs]</a>    <span class="k">def</span> <span class="nf">get_increment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.get_increment"><a class="viewcode-back" href="../code/profile.html#profile.Profile.get_increment">[docs]</a>    <span class="k">def</span> <span class="nf">get_increment</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; minimum step-size increment</span>
 
 <span class="sd">        Returns</span>
@@ -471,7 +471,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">steps</span><span class="o">.</span><span class="n">min</span><span class="p">()</span></div>
 
-<div class="viewcode-block" id="Profile.plot"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.plot">[docs]</a>    <span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o-&#39;</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.plot"><a class="viewcode-back" href="../code/profile.html#profile.Profile.plot">[docs]</a>    <span class="k">def</span> <span class="nf">plot</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o-&#39;</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; profile plot</span>
 
 <span class="sd">        Parameters</span>
@@ -487,7 +487,7 @@
         <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
         <span class="k">return</span></div>
 
-<div class="viewcode-block" id="Profile.slice_segment"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.slice_segment">[docs]</a>    <span class="k">def</span> <span class="nf">slice_segment</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start</span><span class="o">=-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.slice_segment"><a class="viewcode-back" href="../code/profile.html#profile.Profile.slice_segment">[docs]</a>    <span class="k">def</span> <span class="nf">slice_segment</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">start</span><span class="o">=-</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">inf</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; slice between given end-points</span>
 
 <span class="sd">        Resulting profile is comprised of those points in the source</span>
@@ -515,7 +515,7 @@
 
         <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">new_y</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.resample_x"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.resample_x">[docs]</a>    <span class="k">def</span> <span class="nf">resample_x</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.resample_x"><a class="viewcode-back" href="../code/profile.html#profile.Profile.resample_x">[docs]</a>    <span class="k">def</span> <span class="nf">resample_x</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; resampled x-values at a given increment</span>
 
 <span class="sd">        Resulting profile has stepsize of the indicated step based on</span>
@@ -536,7 +536,7 @@
         <span class="n">new_y</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">interp</span><span class="p">(</span><span class="n">new_x</span><span class="p">)</span>
         <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">new_y</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.resample_y"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.resample_y">[docs]</a>    <span class="k">def</span> <span class="nf">resample_y</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.resample_y"><a class="viewcode-back" href="../code/profile.html#profile.Profile.resample_y">[docs]</a>    <span class="k">def</span> <span class="nf">resample_y</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">step</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; resampled y-values at a given increment</span>
 
 <span class="sd">        Resulting profile has nonuniform step-size, but each step</span>
@@ -574,7 +574,7 @@
 
         <span class="k">return</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_lists</span><span class="p">(</span><span class="n">resamp_x</span><span class="p">,</span> <span class="n">resamp_y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.make_normal_y"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.make_normal_y">[docs]</a>    <span class="k">def</span> <span class="nf">make_normal_y</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.make_normal_y"><a class="viewcode-back" href="../code/profile.html#profile.Profile.make_normal_y">[docs]</a>    <span class="k">def</span> <span class="nf">make_normal_y</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; normalised to dose at distance</span>
 
 <span class="sd">        Source profile values multiplied by scaling factor to yield the specified dose at</span>
@@ -597,7 +597,7 @@
         <span class="n">new_y</span> <span class="o">=</span> <span class="n">norm_factor</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span>
         <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="n">new_y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.get_edges"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.get_edges">[docs]</a>    <span class="k">def</span> <span class="nf">get_edges</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.get_edges"><a class="viewcode-back" href="../code/profile.html#profile.Profile.get_edges">[docs]</a>    <span class="k">def</span> <span class="nf">get_edges</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; x-values of profile edges (left, right)</span>
 
 <span class="sd">        Notes</span>
@@ -614,7 +614,7 @@
         <span class="n">rt_edge</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">[</span><span class="n">dydx</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">dydx</span><span class="p">))]</span>
         <span class="k">return</span> <span class="p">(</span><span class="n">lt_edge</span><span class="p">,</span> <span class="n">rt_edge</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.make_normal_x"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.make_normal_x">[docs]</a>    <span class="k">def</span> <span class="nf">make_normal_x</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.make_normal_x"><a class="viewcode-back" href="../code/profile.html#profile.Profile.make_normal_x">[docs]</a>    <span class="k">def</span> <span class="nf">make_normal_x</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; normalised to distance at edges</span>
 
 <span class="sd">        Source profile distances multiplied by scaling factor to yield unit distance</span>
@@ -648,7 +648,7 @@
 
         <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">new_x</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.slice_umbra"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.slice_umbra">[docs]</a>    <span class="k">def</span> <span class="nf">slice_umbra</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.slice_umbra"><a class="viewcode-back" href="../code/profile.html#profile.Profile.slice_umbra">[docs]</a>    <span class="k">def</span> <span class="nf">slice_umbra</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; umbra central 80%</span>
 
 <span class="sd">        Source dose profile sliced to include only the central region between beam edges.</span>
@@ -666,7 +666,7 @@
 
         <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">new_x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">new_y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.slice_penumbra"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.slice_penumbra">[docs]</a>    <span class="k">def</span> <span class="nf">slice_penumbra</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.slice_penumbra"><a class="viewcode-back" href="../code/profile.html#profile.Profile.slice_penumbra">[docs]</a>    <span class="k">def</span> <span class="nf">slice_penumbra</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; penumbra (20 -&gt; 80%, 80 -&gt; 20%)</span>
 
 <span class="sd">        Source dose profile sliced to include only the penumbral edges, where the dose</span>
@@ -695,7 +695,7 @@
             <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">penum</span><span class="p">)</span>
         <span class="k">return</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">result</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.slice_shoulders"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.slice_shoulders">[docs]</a>    <span class="k">def</span> <span class="nf">slice_shoulders</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.slice_shoulders"><a class="viewcode-back" href="../code/profile.html#profile.Profile.slice_shoulders">[docs]</a>    <span class="k">def</span> <span class="nf">slice_shoulders</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; shoulders (penumbra -&gt; umbra, umbra -&gt; penumbra)</span>
 
 <span class="sd">        Source dose profile sliced to include only the profile shoulders,</span>
@@ -725,7 +725,7 @@
 
         <span class="k">return</span> <span class="p">(</span><span class="n">lt_should</span><span class="p">,</span> <span class="n">rt_should</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.slice_tails"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.slice_tails">[docs]</a>    <span class="k">def</span> <span class="nf">slice_tails</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.slice_tails"><a class="viewcode-back" href="../code/profile.html#profile.Profile.slice_tails">[docs]</a>    <span class="k">def</span> <span class="nf">slice_tails</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; tails (-&gt; penumbra, penumbra -&gt;)</span>
 
 <span class="sd">        Source dose profile sliced to include only the profile tail,</span>
@@ -754,7 +754,7 @@
 
         <span class="k">return</span> <span class="p">(</span><span class="n">lt_tail</span><span class="p">,</span> <span class="n">rt_tail</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.get_flatness"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.get_flatness">[docs]</a>    <span class="k">def</span> <span class="nf">get_flatness</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.get_flatness"><a class="viewcode-back" href="../code/profile.html#profile.Profile.get_flatness">[docs]</a>    <span class="k">def</span> <span class="nf">get_flatness</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; dose range relative to mean</span>
 
 <span class="sd">        Calculated as the dose range normalized to mean dose.</span>
@@ -767,7 +767,7 @@
         <span class="n">dose</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">slice_umbra</span><span class="p">()</span><span class="o">.</span><span class="n">y</span>
         <span class="k">return</span> <span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">dose</span><span class="p">)</span><span class="o">-</span><span class="nb">min</span><span class="p">(</span><span class="n">dose</span><span class="p">))</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">dose</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.get_symmetry"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.get_symmetry">[docs]</a>    <span class="k">def</span> <span class="nf">get_symmetry</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.get_symmetry"><a class="viewcode-back" href="../code/profile.html#profile.Profile.get_symmetry">[docs]</a>    <span class="k">def</span> <span class="nf">get_symmetry</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; max point diff relative to mean</span>
 
 <span class="sd">        Calculated as the maximum difference between corresponding points</span>
@@ -781,7 +781,7 @@
         <span class="n">dose</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">slice_umbra</span><span class="p">()</span><span class="o">.</span><span class="n">y</span>
         <span class="k">return</span> <span class="nb">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">subtract</span><span class="p">(</span><span class="n">dose</span><span class="p">,</span> <span class="n">dose</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">dose</span><span class="p">)))</span></div>
 
-<div class="viewcode-block" id="Profile.make_symmetric"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.make_symmetric">[docs]</a>    <span class="k">def</span> <span class="nf">make_symmetric</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.make_symmetric"><a class="viewcode-back" href="../code/profile.html#profile.Profile.make_symmetric">[docs]</a>    <span class="k">def</span> <span class="nf">make_symmetric</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; avg of corresponding points</span>
 
 <span class="sd">        Created by averaging over corresponding +/- distances,</span>
@@ -804,7 +804,7 @@
 
         <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">new_x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">new_y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.make_centered"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.make_centered">[docs]</a>    <span class="k">def</span> <span class="nf">make_centered</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.make_centered"><a class="viewcode-back" href="../code/profile.html#profile.Profile.make_centered">[docs]</a>    <span class="k">def</span> <span class="nf">make_centered</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; shift to align edges</span>
 
 <span class="sd">        Created by shifting the profile based on edge locations.</span>
@@ -817,7 +817,7 @@
 
         <span class="k">return</span> <span class="bp">self</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">get_edges</span><span class="p">())</span></div>
 
-<div class="viewcode-block" id="Profile.make_flipped"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.make_flipped">[docs]</a>    <span class="k">def</span> <span class="nf">make_flipped</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.make_flipped"><a class="viewcode-back" href="../code/profile.html#profile.Profile.make_flipped">[docs]</a>    <span class="k">def</span> <span class="nf">make_flipped</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; flip L -&gt; R</span>
 
 <span class="sd">        Created by reversing the sequence of y values.</span>
@@ -830,7 +830,7 @@
 
         <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">y</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">meta</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span></div>
 
-<div class="viewcode-block" id="Profile.align_to"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.align_to">[docs]</a>    <span class="k">def</span> <span class="nf">align_to</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.align_to"><a class="viewcode-back" href="../code/profile.html#profile.Profile.align_to">[docs]</a>    <span class="k">def</span> <span class="nf">align_to</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; shift self to align to other</span>
 
 <span class="sd">        Calculated using shift that produces greatest peak correlation between</span>
@@ -884,7 +884,7 @@
         <span class="k">else</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span> <span class="o">+</span> <span class="n">best_offset</span></div>
 
-<div class="viewcode-block" id="Profile.cross_calibrate"><a class="viewcode-back" href="../projs/profile.html#profile.Profile.cross_calibrate">[docs]</a>    <span class="k">def</span> <span class="nf">cross_calibrate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reference</span><span class="p">,</span> <span class="n">measured</span><span class="p">):</span>
+<div class="viewcode-block" id="Profile.cross_calibrate"><a class="viewcode-back" href="../code/profile.html#profile.Profile.cross_calibrate">[docs]</a>    <span class="k">def</span> <span class="nf">cross_calibrate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reference</span><span class="p">,</span> <span class="n">measured</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; density mapping, reference -&gt; measured</span>
 
 <span class="sd">        Calculated by overlaying intensity curves and observing values at</span>
@@ -921,7 +921,7 @@
 
         <span class="k">return</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_tuples</span><span class="p">(</span><span class="n">calib_curve</span><span class="p">)</span></div></div>
 
-<div class="viewcode-block" id="UserInterface"><a class="viewcode-back" href="../projs/profile.html#profile.UserInterface">[docs]</a><span class="k">class</span> <span class="nc">UserInterface</span><span class="p">(</span><span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">):</span>
+<div class="viewcode-block" id="UserInterface"><a class="viewcode-back" href="../code/profile.html#profile.UserInterface">[docs]</a><span class="k">class</span> <span class="nc">UserInterface</span><span class="p">(</span><span class="n">tk</span><span class="o">.</span><span class="n">Frame</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; Graphical User Interface for Profile Class</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
@@ -1388,10 +1388,11 @@
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">groups</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="../projs/projs.html">projs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../code/code.html">code</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../pubs/pubs.html">pubs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../press/press.html">press</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pics/pics.html">pics</a></li>
 </ul>
 
 <div class="relations">
