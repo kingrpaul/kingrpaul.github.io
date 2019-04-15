@@ -1,0 +1,309 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>e- Blk w/TomoHDA &amp; Ray6 &#8212; kingrpaul 2019 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Varian Rails w/Ray6" href="../ray_varian_rails/Varian Rails with RS.html" />
+    <link rel="prev" title="MVCT QA w/TomoHDA &amp; Ray6" href="../mvct_qa/MVCT QA with RS.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="e-blk-w-tomohda-ray6">
+<h1>e- Blk w/TomoHDA &amp; Ray6<a class="headerlink" href="#e-blk-w-tomohda-ray6" title="Permalink to this headline">¶</a></h1>
+<p>2018_07_25</p>
+<div class="section" id="at-tomo">
+<h2>At Tomo<a class="headerlink" href="#at-tomo" title="Permalink to this headline">¶</a></h2>
+<p>Pre-Start: cut &amp; pour block, power up, run software, 5-min warmup, AIRSCANS</p>
+<dl class="docutils">
+<dt>Select Patient: ‘STEREOPHAN, IMAGING’ [ fine pitch, 1mm slices ]</dt>
+<dd><ul class="first">
+<li><p class="first">Select slices -&gt; Accept slices … Prepare scan -&gt; OK -&gt; Setup -&gt; Yes</p>
+<blockquote>
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="15%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+<col width="19%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>6x6</td>
+<td>10x6</td>
+<td>10x10</td>
+<td>15x15</td>
+<td>20x20</td>
+<td>25x25</td>
+</tr>
+<tr class="row-even"><td>4</td>
+<td>4</td>
+<td>6</td>
+<td>9</td>
+<td>12</td>
+<td>14</td>
+</tr>
+</tbody>
+</table>
+<p>+/- cm scan</p>
+</div></blockquote>
+</li>
+</ul>
+<dl class="last docutils">
+<dt>Setup electron block, green lasers at insert center-exit [Figure 1]</dt>
+<dd><ul class="first last simple">
+<li>Main -&gt; Ready -&gt; Yes …   Key -&gt; Image -&gt; Key -&gt;   check image for voids</li>
+</ul>
+</dd>
+<dt>Tools -&gt; Clear selected patient -&gt; Tools -&gt; Dicom Options -&gt; Export Items</dt>
+<dd><ul class="first last simple">
+<li>Export to: RaySearch … select correct ‘CTrue Image’ -&gt; Send Now -&gt; Close</li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+</div>
+<div class="section" id="at-raystation">
+<h2>At RayStation<a class="headerlink" href="#at-raystation" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>Patient Data / Patient Information</dt>
+<dd><ul class="first last simple">
+<li>Import new patient -&gt; [ ‘Storage SCP’, ‘STEREOPHAN, IMAGING’, ‘CT Series’]</li>
+<li>‘Import’  -&gt; if prompted, ‘Create a new patient’ then ‘OK’</li>
+<li>Edit patient data -&gt; [Patient ID, First name, Last name] -&gt; ‘OK’ -&gt; ‘Yes’</li>
+<li>Image Sets / Properties -&gt; confirm correct density table -&gt; ‘OK’</li>
+</ul>
+</dd>
+</dl>
+<p>Patient Modeling / Structure Definition / ROI Tools</p>
+<blockquote>
+<div><ul>
+<li><p class="first">Set Coronal view, all axes on block center -&gt; Rt-click, Preset, Inner ear</p>
+</li>
+<li><dl class="first docutils">
+<dt>New ROI geometry / Create new ROI… [Name: aperture, Type:PTV] -&gt; ‘OK’</dt>
+<dd><p class="first last">Outline block opening w/Spline tool -&gt; Set Transversal view</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>New ROI geometry / Basic shapes / Create box ROI…</dt>
+<dd><p class="first last">[ R-L/I-S/P-A = 10/10/5, Center: Geometric Center of ROI: aperture,
+Output / New ROI / Name: air_gap, Type: undefined] -&gt; ‘OK’</p>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>New ROI geometry / Basic shapes / Create box ROI…</dt>
+<dd><p class="first">[ R-L/I-S/P-A from below, Center: Geometric Center of ROI: aperture,
+Output / New ROI / Name: phantom, Type: undefined] -&gt; ‘OK’</p>
+<blockquote class="last">
+<div><table border="1" class="docutils">
+<colgroup>
+<col width="6%" />
+<col width="13%" />
+<col width="17%" />
+<col width="17%" />
+<col width="4%" />
+<col width="10%" />
+<col width="17%" />
+<col width="17%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">&#160;</th>
+<th class="head">6x6</th>
+<th class="head">10x6</th>
+<th class="head">10x10</th>
+<th class="head" colspan="2">15x15</th>
+<th class="head">20x20</th>
+<th class="head">25x25</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>6E</td>
+<td>8,8, 4</td>
+<td>12,12, 4</td>
+<td colspan="3">12,12, 4|17,17, 4</td>
+<td>22,22, 4</td>
+<td>27,27, 4</td>
+</tr>
+<tr class="row-odd"><td>9E</td>
+<td>8,8, 6</td>
+<td>12,12, 6</td>
+<td colspan="3">12,12, 6|17,17, 6</td>
+<td>22,22, 6</td>
+<td>27,27, 6</td>
+</tr>
+<tr class="row-even"><td>12E</td>
+<td>8,8, 8</td>
+<td>12,12, 8</td>
+<td colspan="3">12,12, 8|17,17, 8</td>
+<td>22,22, 8</td>
+<td>27,27, 8</td>
+</tr>
+<tr class="row-odd"><td>16E</td>
+<td>8,8,10</td>
+<td>12,12,10</td>
+<td colspan="3">12,12,10|17,17,10</td>
+<td>22,22,10</td>
+<td>27,27,10</td>
+</tr>
+<tr class="row-even"><td>20E</td>
+<td>8,8,12</td>
+<td>12,12,12</td>
+<td colspan="3">12,12,12|17,17,12</td>
+<td>22,22,12</td>
+<td>27,27,12</td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
+</dd>
+</dl>
+<p>Translate: ‘air_gap’ to bottom of block, ‘phantom’ to bottom of ‘air_gap’</p>
+</li>
+</ul>
+</div></blockquote>
+<p>Plan Design / Plan Setup</p>
+<blockquote>
+<div><dl class="docutils">
+<dt>New plan+ -&gt; Do you want to save the changes? -&gt; ‘Yes’</dt>
+<dd><dl class="first last docutils">
+<dt>[Name: Cutout, Planned by: you, Patient Treatment position: HFS,</dt>
+<dd><p class="first">Modality: Electrons, Treatment Technique: Applicator and cutout,
+Treatment machine: Clinac-iXsn3694, Create setup beams: No,
+Dose prescription: 180 cGy x 1fx,  ROI / phantom,
+Prescription type: Dose at volume%: 0, Auto scale:Yes] -&gt; ‘OK’</p>
+<blockquote class="last">
+<div><dl class="docutils">
+<dt>Grid Settings</dt>
+<dd>[ Resolution: 0.10, Use Uniform Resolution:Yes, Set default size ] -&gt; OK
+In planning windows, Rt-click, Edit dose grid, adjust to include aperture</dd>
+</dl>
+</div></blockquote>
+</dd>
+</dl>
+</dd>
+<dt>Beams / Add</dt>
+<dd><blockquote class="first">
+<div>[Name: 01, Description: AP Electron, MeV: 6, Isocenter Name: SSD=100,
+Isocenter Location: “Center of ROI: phantom”, copy position,</div></blockquote>
+<p>Angles:180/180/180, Applicator: Varian 6x6, Cutout name: cutout,
+Cerrobend, 1.7 cm] -&gt; ‘OK’</p>
+<blockquote class="last">
+<div><p>Overwrite “SSD [cm] To surface” to 100</p>
+<p>Setup Beams -&gt; Delete, Delete, Delete (if present)</p>
+</div></blockquote>
+</dd>
+</dl>
+</div></blockquote>
+<dl class="docutils">
+<dt>Plan Design / Electron Beam Design / Treat and Protect</dt>
+<dd><blockquote class="first">
+<div><p>Treat=aperture, Protect=’‘, Margins= 0,0,0,0 -&gt; ‘Conform all beams’
+Settings / Number of histories per cm2 = 1,000,000 -&gt; ‘OK’</p>
+<blockquote>
+<div>Final dose -&gt; long wait -&gt; [Figure 2]</div></blockquote>
+</div></blockquote>
+<p class="last">Ctrl-P -&gt; ‘Yes’, ‘Yes’, ‘Yes’ -&gt; Template: ‘Electron - Clinical Sim’ [Figure 3]</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">kingrpaul</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">groups</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../projs/projs.html">projs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../pubs/pubs.html">pubs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../press/press.html">press</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../notes.html">notes</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../notes.html">notes</a><ul>
+      <li>Previous: <a href="../mvct_qa/MVCT QA with RS.html" title="previous chapter">MVCT QA w/TomoHDA &amp; Ray6</a></li>
+      <li>Next: <a href="../ray_varian_rails/Varian Rails with RS.html" title="next chapter">Varian Rails w/Ray6</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, RPK.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../../_sources/notes/electron_rof/Electron Output with RS.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

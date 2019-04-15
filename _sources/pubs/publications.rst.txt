@@ -1,0 +1,28 @@
+====
+Pubs
+====
+
+
+2000, Radioimmunoguided Surgery Using Prostascint for Supraclav Mets :download:`[article] <./pubs/2000 - Anderson -RADIOIMMUNOGUIDED SURGERY USING INDIUM-111.pdf>`
+
+2001, Geometry function of a linear brachytherapy source, JACMP :download:`[article] <./pubs/ACM00069 -- Geometry function of a linear brachytherapy source.pdf>`
+
+2001, In Regard to the ABS Recommendations for Pd-103 Brachytherapy :download:`[article] <./pubs/2001-King-In Regard to the ABS Recommendations for Pd103 Brachytherapy.pdf>`
+
+2001, A simple method for electron energy constancy measurement, JACMP :download:`[article] <./pubs/ACM00051 -- A simple method for electron energy constancy.pdf>`
+
+2004, Reviewer: Radiologic Science for Technologists, 8th Edition, Bushong `[link] <http://amzn.to/23gKJdt>`_
+
+2007, Comment on IMRT administered at greater than 10 MV, Med Phys :download:`[letter] <./pubs/Comment on IMRT should not be administered at photon energies greater.pdf>`
+
+2008, Comment on the interplay effect in prost IMRT delivery, Med Phys :download:`[letter] <./pubs/2008-King-Comment on Quantifying the interplay effect in prostate IMRT delivery using a convolution based method.pdf>`
+
+2010, Therapists should not have to wear personnel dosimetry badges, Med Phys :download:`[article]  <./pubs/2010-King-Radiation therapists should not have to wear personnel dosimetry badges MPH002401.pdf>`
+
+2012, The New Professional's Resume, NPSC Report, AAPM Newsletter :download:`[article]  <./pubs/2012_05_07 - King - AAPM Newsletter New Professional Resume.pdf>`
+
+2013, Estimation of Eff Fld Size with Leaf-Based Algorithm, SU-E-T-7, AAPM :download:`[abstract]  <./pubs/2013_06_01 - KingRPCheungAA - Estimation of Effective Field Size with Leaf-Based Algorithm.pdf>` :download:`[poster] <./pubs/2013_06_28 - AAPM 2013 - Estimation of Effective Field Size.pptx>`
+     
+2013, Role of step size & dwell time in inverse opt for prost impl, J Med Phys `[link] <http://www.jmp.org.in/article.asp?issn=0971-6203;year=2013;volume=38;issue=3;spage=148;epage=154;aulast=Manikandan>`_  :download:`[article] <./pubs/JMedPhys383148-2183013_060350.pdf>`
+
+2014, Simplifying Assumption for Determining Sc and Sp, SU-E-T-293, AAPM :download:`[poster] <./pubs/2014_06_24 - King etal - Simplifying Assumption for Determining Sc and Sp.pdf>`

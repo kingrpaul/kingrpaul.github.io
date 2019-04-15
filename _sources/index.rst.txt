@@ -12,12 +12,12 @@ Home
 
 .. toctree::
     :maxdepth: 1
-    :caption: Groups
+    :caption: groups
 
-    projects.rst
-    publications.rst
-    press.rst
-    notes.rst
+    projs/projs.rst
+    pubs/pubs.rst
+    press/press.rst
+    notes/notes.rst
 
 
 Experienced & results-oriented; progressive record of innovation & success in quality enhancement, planning, 
