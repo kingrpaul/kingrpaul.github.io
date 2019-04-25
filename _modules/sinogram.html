@@ -33,7 +33,7 @@
           <div class="body" role="main">
             
   <h1>Source code for sinogram</h1><div class="highlight"><pre>
-<span></span><span class="c1"># Copyright (C) 2018 King Paul</span>
+<span></span><span class="c1"># Copyright (C) 2018 Paul King</span>
 
 <span class="c1"># This program is free software: you can redistribute it and/or modify</span>
 <span class="c1"># it under the terms of the GNU Affero General Public License as published</span>
@@ -60,13 +60,13 @@
 
 
 <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">@author: king.r.paul@gmail.com</span>
+<span class="sd">Tomo Sinogram Tools</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
 <span class="kn">from</span> <span class="nn">string</span> <span class="k">import</span> <span class="n">digits</span> <span class="k">as</span> <span class="n">DIGITS</span>
 <span class="kn">from</span> <span class="nn">string</span> <span class="k">import</span> <span class="n">ascii_letters</span> <span class="k">as</span> <span class="n">LETTERS</span>
 <span class="kn">import</span> <span class="nn">csv</span>
-
+<span class="kn">import</span> <span class="nn">re</span><span class="o">,</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="k">if</span> <span class="s1">&#39;pymedphys&#39;</span> <span class="ow">in</span> <span class="vm">__file__</span><span class="p">:</span>
@@ -76,82 +76,97 @@
     <span class="k">except</span> <span class="ne">ValueError</span><span class="p">:</span>
         <span class="k">pass</span>
 
+<span class="k">class</span> <span class="nc">Sinogram</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; Two dimensional distribution of leaf-open-time vs position.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ##### INCOMPLETE DOCSTRING</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    </span>
+
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    Leaf-open time range 0-&gt;1.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">{}):</span>
+        <span class="sd">&quot;&quot;&quot; create profile</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        data : np.array</span>
+<span class="sd">            2d array projections, each of length 64</span>
+<span class="sd">        meta : dict, optional</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">data</span> <span class="o">=</span> <span class="n">data</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">meta</span> <span class="o">=</span> <span class="n">meta</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">shape</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">data</span><span class="o">.</span><span class="n">shape</span>
+    
 
 <div class="viewcode-block" id="read_csv_file"><a class="viewcode-back" href="../code/sinogram.html#sinogram.read_csv_file">[docs]</a><span class="k">def</span> <span class="nf">read_csv_file</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; read sinogram from csv file</span>
 
-<span class="sd">    Return patient ID and sinogram array produced by reading a RayStation</span>
-<span class="sd">    sinogram CSV file with the provided file name.</span>
+<span class="sd">    Produced by reading a RayStation sinogram CSV file.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    file_name : str</span>
-<span class="sd">        long file name of csv file</span>
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">    document_id, array</span>
+<span class="sd">    sinogram : np.ndarray-like</span>
 
 <span class="sd">    Notes</span>
 <span class="sd">    -----</span>
-<span class="sd">    Files are produced by ExportTomoSinogram.py, Brandon Merz,</span>
-<span class="sd">    RaySearch customer forum, 1/18/2018.</span>
-<span class="sd">    File first row contains demographics.</span>
-<span class="sd">    Subsequent rows correspond to couch positions.</span>
-<span class="sd">    Leaf-open time range from zero to one.</span>
-
-<span class="sd">    Examples</span>
-<span class="sd">    --------</span>
-<span class="sd">    &quot;Patient name: ANONYMOUS^PATIENT, ID: 00000&quot;,,,,,,,,,</span>
-<span class="sd">    ,0,0,0,0,0,0,0,0,0,0,0,0,0.39123373,0.366435635 ...</span>
+<span class="sd">    As produced by ExportTomoSinogram.py, Brandon Merz, RaySearch </span>
+<span class="sd">    customer forum, 1/18/2018. File first row contains demographics. </span>
+<span class="sd">    Subsequent rows correspond to couch positions. </span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">csvfile</span><span class="p">:</span>
-
-        <span class="n">pat_name</span><span class="p">,</span> <span class="n">pat_num</span> <span class="o">=</span> <span class="n">csvfile</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;ID:&#39;</span><span class="p">)</span>
-        <span class="n">pat_name</span> <span class="o">=</span> <span class="n">pat_name</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Patient name:&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
-
-        <span class="n">pat_name_last</span><span class="p">,</span> <span class="n">pat_name_first</span> <span class="o">=</span> <span class="n">pat_name</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;^&#39;</span><span class="p">)</span>
-        <span class="n">pat_name_last</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">pat_name_last</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">LETTERS</span><span class="p">])</span>
-        <span class="n">pat_name_first</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">pat_name_first</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">LETTERS</span><span class="p">])</span>
-        <span class="n">pat_num</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">([</span><span class="n">c</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">pat_num</span> <span class="k">if</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">DIGITS</span><span class="p">])</span>
-
-        <span class="n">document_id</span> <span class="o">=</span> <span class="n">pat_num</span> <span class="o">+</span> <span class="s1">&#39; - &#39;</span> <span class="o">+</span> <span class="n">pat_name_last</span> <span class="o">+</span> <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="n">pat_name_first</span>
+        <span class="n">pat_id</span> <span class="o">=</span> <span class="n">csvfile</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+        <span class="n">meta</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;document_id&#39;</span><span class="p">:</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;ID: (\d*)&#39;</span><span class="p">,</span> <span class="n">pat_id</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>  <span class="o">+</span>\
+                       <span class="s1">&#39; - &#39;</span> <span class="o">+</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;name: (\w*)\^&#39;</span><span class="p">,</span> <span class="n">pat_id</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span>\
+                        <span class="s1">&#39;, &#39;</span> <span class="o">+</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;\^(.*), ID:&#39;</span><span class="p">,</span> <span class="n">pat_id</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)}</span>
         <span class="n">reader</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">csvfile</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
-        <span class="n">array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-
-    <span class="k">return</span> <span class="n">document_id</span><span class="p">,</span> <span class="n">array</span></div>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">([</span><span class="n">line</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">reader</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">Sinogram</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span></div>
 
 
 <div class="viewcode-block" id="read_bin_file"><a class="viewcode-back" href="../code/sinogram.html#sinogram.read_bin_file">[docs]</a><span class="k">def</span> <span class="nf">read_bin_file</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; read sinogram from binary file</span>
 
-<span class="sd">    Return sinogram np.array produced by reading an Accuray sinogram</span>
-<span class="sd">    BIN file with the provided file name.</span>
+<span class="sd">    Produced by Accuray sinogram BIN files, as used in calibration plans.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    file_name : str</span>
-<span class="sd">        long file name of csv file</span>
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">    sinogram : np.array</span>
-
-<span class="sd">    Notes</span>
-<span class="sd">    -----</span>
-<span class="sd">    BIN files are sinograms stored in binary format used in</span>
-<span class="sd">    Tomotherapy calibration plans.</span>
+<span class="sd">    sinogram : np.array-like</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">leaf_open_times</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fromfile</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span> <span class="n">count</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
-    <span class="n">num_leaves</span> <span class="o">=</span> <span class="mi">64</span>
-    <span class="n">num_projections</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">leaf_open_times</span><span class="p">)</span><span class="o">/</span><span class="n">num_leaves</span><span class="p">)</span>
-    <span class="n">sinogram</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">leaf_open_times</span><span class="p">,</span> <span class="p">(</span><span class="n">num_projections</span><span class="p">,</span> <span class="n">num_leaves</span><span class="p">))</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fromfile</span><span class="p">(</span><span class="n">file_name</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span> <span class="n">count</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">//</span><span class="mi">64</span><span class="p">,</span> <span class="mi">64</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">Sinogram</span><span class="p">(</span><span class="n">data</span><span class="p">)</span></div>
 
-    <span class="k">return</span> <span class="n">sinogram</span></div>
+
+
+    <span class="c1"># leaf_open_times = np.fromfile(file_name, dtype=float, count=-1, sep=&#39;&#39;)</span>
+    <span class="c1"># num_leaves = 64</span>
+    <span class="c1"># num_projections = int(len(leaf_open_times)/num_leaves)</span>
+    <span class="c1"># sinogram = np.reshape(leaf_open_times, (num_projections, num_leaves))</span>
+    <span class="c1"># return sinogram</span>
 
 
 <div class="viewcode-block" id="crop"><a class="viewcode-back" href="../code/sinogram.html#sinogram.crop">[docs]</a><span class="k">def</span> <span class="nf">crop</span><span class="p">(</span><span class="n">sinogram</span><span class="p">):</span>
@@ -269,6 +284,7 @@
     <span class="n">modulation_factor</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">lfts</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">lfts</span><span class="p">)</span>
 
     <span class="k">return</span> <span class="n">modulation_factor</span></div>
+
 </pre></div>
 
           </div>

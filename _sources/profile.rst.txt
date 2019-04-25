@@ -2,7 +2,7 @@
 Dose Profile
 ============
 
-.. autoclass:: dosepro.Application
+.. autoclass:: profile.UserInterface
   :no-members:
   :undoc-members:
 
