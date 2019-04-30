@@ -34,27 +34,19 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="sinogram">
-<h1>Sinogram<a class="headerlink" href="#sinogram" title="Permalink to this headline">¶</a></h1>
-<dl class="function">
-<dt id="sinogram.read_csv_file">
-<code class="descclassname">sinogram.</code><code class="descname">read_csv_file</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#read_csv_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.read_csv_file" title="Permalink to this definition">¶</a></dt>
-<dd><p>read sinogram from csv file</p>
-<p>Produced by reading a RayStation sinogram CSV file.</p>
-<p>file_name : str</p>
-<p>sinogram : np.ndarray-like</p>
-<p>As produced by ExportTomoSinogram.py, Brandon Merz, RaySearch 
-customer forum, 1/18/2018. File first row contains demographics. 
-Subsequent rows correspond to couch positions.</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="sinogram.read_bin_file">
-<code class="descclassname">sinogram.</code><code class="descname">read_bin_file</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#read_bin_file"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.read_bin_file" title="Permalink to this definition">¶</a></dt>
-<dd><p>read sinogram from binary file</p>
-<p>Produced by Accuray sinogram BIN files, as used in calibration plans.</p>
-<p>file_name : str</p>
-<p>sinogram : np.array-like</p>
+  <div class="section" id="module-sinogram">
+<span id="sinogram"></span><h1>Sinogram<a class="headerlink" href="#module-sinogram" title="Permalink to this headline">¶</a></h1>
+<p>For importing, analyzing, and converting tomotherapy sinograms.</p>
+<dl class="class">
+<dt id="sinogram.Sinogram">
+<em class="property">class </em><code class="descclassname">sinogram.</code><code class="descname">Sinogram</code><span class="sig-paren">(</span><em>data</em>, <em>meta={}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#Sinogram"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.Sinogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>array of 64-element projections arrays</p>
+<p>Leaf-open-times (0-&gt;1) collected into 64-element projection arrays,
+which are then collected into the Sinogram array of arbitrary length.</p>
+<blockquote>
+<div>data : np.array
+meta : dict, optional
+shape: 2-tuple</div></blockquote>
 </dd></dl>
 
 <dl class="function">
@@ -68,42 +60,86 @@ leaves are excluded and the sinogram center is maintained.</p>
 </dd></dl>
 
 <dl class="function">
+<dt id="sinogram.from_bin">
+<code class="descclassname">sinogram.</code><code class="descname">from_bin</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#from_bin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.from_bin" title="Permalink to this definition">¶</a></dt>
+<dd><p>read sinogram from binary file</p>
+<p>Produced by Accuray sinogram BIN files, as used in calibration plans.</p>
+<p>file_name : str</p>
+<p>sinogram : np.array-like</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sinogram.from_csv">
+<code class="descclassname">sinogram.</code><code class="descname">from_csv</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#from_csv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.from_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>get sinogram from csv file</p>
+<p>Produced by reading a RayStation sinogram CSV file.</p>
+<p>file_name: str</p>
+<p>sinogram: np.ndarray-like</p>
+<p>As produced by ExportTomoSinogram.py, Brandon Merz, RaySearch 
+customer forum, 1/18/2018. File first row contains demographics. 
+Subsequent rows correspond to couch positions.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sinogram.get_mod_factor">
+<code class="descclassname">sinogram.</code><code class="descname">get_mod_factor</code><span class="sig-paren">(</span><em>sinogram</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#get_mod_factor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.get_mod_factor" title="Permalink to this definition">¶</a></dt>
+<dd><p>modulation factor</p>
+<p>Ratio of max to mean leaf open time, over all non-zero values.</p>
+<p>sinogram : np.array</p>
+<p>modulation factor : float</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sinogram.make_histogram">
+<code class="descclassname">sinogram.</code><code class="descname">make_histogram</code><span class="sig-paren">(</span><em>sinogram</em>, <em>bins=10</em>, <em>file_name=''</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#make_histogram"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.make_histogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>make a leaf-open-time histogram</p>
+<p>Return a histogram of leaf-open-times for the provided sinogram. If a 
+filename is provided, then a grapn of the histogram is saved at that
+location.</p>
+<p>sinogram : np.array</p>
+<p>bins : int, optional</p>
+<p>file_name : string, optional</p>
+<p>histogram : np.array</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sinogram.to_png">
+<code class="descclassname">sinogram.</code><code class="descname">to_png</code><span class="sig-paren">(</span><em>sinogram</em>, <em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#to_png"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.to_png" title="Permalink to this definition">¶</a></dt>
+<dd><p>get png image file from sinogram</p>
+<p>sinogram : np.ndarray-like</p>
+<p>file_name : str</p>
+<p>None</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="sinogram.to_unshuff_pdf">
+<code class="descclassname">sinogram.</code><code class="descname">to_unshuff_pdf</code><span class="sig-paren">(</span><em>sinogram</em>, <em>file_name=''</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#to_unshuff_pdf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.to_unshuff_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>export unshuffled sinogram to pdf</p>
+<p>Convert a sinogram into an unshuffled PDF fluence map collection, by
+separating leaf pattern into the 51 discrete tomotherapy angles.</p>
+<p>sinogram : np.array
+file_name : str, optional</p>
+<blockquote>
+<div>supplied -&gt; save to file, no supplied -&gt; show on display</div></blockquote>
+</dd></dl>
+
+<dl class="function">
 <dt id="sinogram.unshuffle">
 <code class="descclassname">sinogram.</code><code class="descname">unshuffle</code><span class="sig-paren">(</span><em>sinogram</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#unshuffle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.unshuffle" title="Permalink to this definition">¶</a></dt>
 <dd><p>unshuffle singram by angle</p>
 <p>Return a list of 51 sinograms, by unshuffling the provided
 sinogram; so that all projections in the result correspond
 to the same gantry rotation angle, analogous to a fluence map.</p>
-<p>sinogram : np.array</p>
+<p>sinogram: np.array</p>
+<blockquote>
+<div>Returns</div></blockquote>
 <p>unshuffled: list of sinograms</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sinogram.make_histogram">
-<code class="descclassname">sinogram.</code><code class="descname">make_histogram</code><span class="sig-paren">(</span><em>sinogram</em>, <em>num_bins=10</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#make_histogram"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.make_histogram" title="Permalink to this definition">¶</a></dt>
-<dd><p>make a leaf-open-time histogram</p>
-<p>Return a histogram of leaf-open-times for the provided sinogram
-comprised of the specified number of bins, in the form of a list
-of tuples: [(bin, count)…] where bin is a 2-element array setting
-the bounds and count in the number leaf-open-times in the bin.</p>
-<p>sinogram : np.array
-num_bins : int</p>
-<dl class="docutils">
-<dt>histogram <span class="classifier-delimiter">:</span> <span class="classifier">list of tuples: [(bin, count)…]</span></dt>
-<dd>bin is a 2-element array</dd>
-</dl>
-</dd></dl>
-
-<dl class="function">
-<dt id="sinogram.find_modulation_factor">
-<code class="descclassname">sinogram.</code><code class="descname">find_modulation_factor</code><span class="sig-paren">(</span><em>sinogram</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#find_modulation_factor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.find_modulation_factor" title="Permalink to this definition">¶</a></dt>
-<dd><p>read sinogram from csv file</p>
-<p>Calculate the ratio of the maximum leaf open time (assumed
-fully open) to the mean leaf open time, as determined over all
-non-zero leaf open times, where zero is interpreted as blocked
-versus modulated.</p>
-<p>sinogram : np.array</p>
-<p>modulation factor : float</p>
+<dl class="class">
+<dt id="gui.GUI">
+<em class="property">class </em><code class="descclassname">gui.</code><code class="descname">GUI</code><span class="sig-paren">(</span><em>parent</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gui.html#GUI"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gui.GUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Graphical User Interface for Sinogram Class</p>
 </dd></dl>
 
 </div>
