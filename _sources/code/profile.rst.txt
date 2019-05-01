@@ -2,11 +2,11 @@
 Dose Profile
 ============
 
-.. autoclass:: profile.UserInterface
+.. autoclass:: prof_gui.GUI
   :no-members:
   :undoc-members:
 
-.. autoclass:: profile.Profile
+.. autoclass:: prof_test.Profile
   :members:
   :special-members:
 
