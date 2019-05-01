@@ -34,114 +34,110 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="module-sinogram">
-<span id="sinogram"></span><h1>Sinogram<a class="headerlink" href="#module-sinogram" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-sino_funct">
+<span id="sinogram"></span><h1>Sinogram<a class="headerlink" href="#module-sino_funct" title="Permalink to this headline">¶</a></h1>
 <p>For importing, analyzing, and converting tomotherapy sinograms.</p>
-<dl class="class">
-<dt id="sinogram.Sinogram">
-<em class="property">class </em><code class="descclassname">sinogram.</code><code class="descname">Sinogram</code><span class="sig-paren">(</span><em>data</em>, <em>meta={}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#Sinogram"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.Sinogram" title="Permalink to this definition">¶</a></dt>
-<dd><p>array of 64-element projections arrays</p>
-<p>Leaf-open-times (0-&gt;1) collected into 64-element projection arrays,
-which are then collected into the Sinogram array of arbitrary length.</p>
-<blockquote>
-<div>data : np.array
-meta : dict, optional
-shape: 2-tuple</div></blockquote>
+<dl class="docutils">
+<dt><strong>GUI</strong></dt>
+<dd><dl class="first last class">
+<dt id="sino_gui.GUI">
+<em class="property">class </em><code class="descclassname">sino_gui.</code><code class="descname">GUI</code><span class="sig-paren">(</span><em>parent</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_gui.html#GUI"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_gui.GUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Graphical User Interface for Sinogram Class</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sinogram.crop">
-<code class="descclassname">sinogram.</code><code class="descname">crop</code><span class="sig-paren">(</span><em>sinogram</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#crop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.crop" title="Permalink to this definition">¶</a></dt>
-<dd><p>crop sinogram</p>
-<p>Return a symmetrically cropped sinogram, such that always-closed
-leaves are excluded and the sinogram center is maintained.</p>
-<p>sinogram : np.array</p>
-<p>sinogram : np.array</p>
+</dd>
+<dt><strong>Class</strong></dt>
+<dd><dl class="first last class">
+<dt id="sino_funct.Sinogram">
+<em class="property">class </em><code class="descclassname">sino_funct.</code><code class="descname">Sinogram</code><span class="sig-paren">(</span><em>data</em>, <em>meta={}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#Sinogram"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.Sinogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>array of 64-element projection arrays</p>
+<dl class="docutils">
+<dt>shape: 2-tuple</dt>
+<dd>(number of projections, number of leaves&lt;=64)</dd>
+<dt>data <span class="classifier-delimiter">:</span> <span class="classifier">np.array</span></dt>
+<dd>0 &lt;= leaf-open-time &lt;= 1</dd>
+</dl>
+<p>meta : dict, optional</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sinogram.from_bin">
-<code class="descclassname">sinogram.</code><code class="descname">from_bin</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#from_bin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.from_bin" title="Permalink to this definition">¶</a></dt>
-<dd><p>read sinogram from binary file</p>
-<p>Produced by Accuray sinogram BIN files, as used in calibration plans.</p>
+</dd>
+<dt><strong>Get From</strong></dt>
+<dd><dl class="first function">
+<dt id="sino_funct.from_csv">
+<code class="descclassname">sino_funct.</code><code class="descname">from_csv</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#from_csv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.from_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>csv file -&gt; sinogram</p>
+<p>From RayStation clinical sinogram CSV file as extracted by
+ExportTomoSinogram.py, Brandon Merz, RaySearch customer forum, 1/18/2018.</p>
+<p>file_name : str</p>
+<p>sinogram : np.ndarray-like</p>
+</dd></dl>
+
+<dl class="last function">
+<dt id="sino_funct.from_bin">
+<code class="descclassname">sino_funct.</code><code class="descname">from_bin</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#from_bin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.from_bin" title="Permalink to this definition">¶</a></dt>
+<dd><p>binary file -&gt; sinogram</p>
+<p>From Accuray sinogram BIN files, as used in calibration plans.</p>
 <p>file_name : str</p>
 <p>sinogram : np.array-like</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sinogram.from_csv">
-<code class="descclassname">sinogram.</code><code class="descname">from_csv</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#from_csv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.from_csv" title="Permalink to this definition">¶</a></dt>
-<dd><p>get sinogram from csv file</p>
-<p>Produced by reading a RayStation sinogram CSV file.</p>
-<p>file_name: str</p>
-<p>sinogram: np.ndarray-like</p>
-<p>As produced by ExportTomoSinogram.py, Brandon Merz, RaySearch 
-customer forum, 1/18/2018. File first row contains demographics. 
-Subsequent rows correspond to couch positions.</p>
+</dd>
+<dt><strong>Send To</strong></dt>
+<dd><dl class="first function">
+<dt id="sino_funct.to_png">
+<code class="descclassname">sino_funct.</code><code class="descname">to_png</code><span class="sig-paren">(</span><em>sinogram</em>, <em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#to_png"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.to_png" title="Permalink to this definition">¶</a></dt>
+<dd><p>sinogram -&gt; png image file</p>
+<p>sinogram : np.ndarray-like</p>
+<p>file_name : str</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sinogram.get_mod_factor">
-<code class="descclassname">sinogram.</code><code class="descname">get_mod_factor</code><span class="sig-paren">(</span><em>sinogram</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#get_mod_factor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.get_mod_factor" title="Permalink to this definition">¶</a></dt>
-<dd><p>modulation factor</p>
-<p>Ratio of max to mean leaf open time, over all non-zero values.</p>
+<dl class="last function">
+<dt id="sino_funct.to_unshuff_pdf">
+<code class="descclassname">sino_funct.</code><code class="descname">to_unshuff_pdf</code><span class="sig-paren">(</span><em>sinogram</em>, <em>file_name=''</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#to_unshuff_pdf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.to_unshuff_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>export unshuffled sinogram to pdf</p>
+<p>Convert sinogram into unshuffled PDF fluence map collection, separating 
+leaf pattern into the 51 tomotherapy angles. Display instead, if 
+destination file_name not supplied.</p>
 <p>sinogram : np.array</p>
-<p>modulation factor : float</p>
+<p>file_name : str, optional</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sinogram.make_histogram">
-<code class="descclassname">sinogram.</code><code class="descname">make_histogram</code><span class="sig-paren">(</span><em>sinogram</em>, <em>bins=10</em>, <em>file_name=''</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#make_histogram"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.make_histogram" title="Permalink to this definition">¶</a></dt>
-<dd><p>make a leaf-open-time histogram</p>
-<p>Return a histogram of leaf-open-times for the provided sinogram. If a 
-filename is provided, then a grapn of the histogram is saved at that
-location.</p>
+</dd>
+<dt><strong>Edit</strong></dt>
+<dd><dl class="first last function">
+<dt id="sino_funct.crop">
+<code class="descclassname">sino_funct.</code><code class="descname">crop</code><span class="sig-paren">(</span><em>uncropped</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#crop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.crop" title="Permalink to this definition">¶</a></dt>
+<dd><p>crop sinogram</p>
+<p>Return symmetrically cropped sinogram, excluding usused opposing leaf pairs.</p>
+<p>uncropped : Sinogram</p>
+<p>cropped : Sinogram</p>
+</dd></dl>
+
+</dd>
+<dt><strong>Analyze</strong></dt>
+<dd><dl class="first function">
+<dt id="sino_funct.get_mod_factor">
+<code class="descclassname">sino_funct.</code><code class="descname">get_mod_factor</code><span class="sig-paren">(</span><em>sinogram</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#get_mod_factor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.get_mod_factor" title="Permalink to this definition">¶</a></dt>
+<dd><p>modulation factor</p>
+<p>Ratio of max leaf open time to mean over all non-zero values.</p>
+<p>sinogram : np.array-like</p>
+<p>modulation_factor : float</p>
+</dd></dl>
+
+<dl class="last function">
+<dt id="sino_funct.get_histogram">
+<code class="descclassname">sino_funct.</code><code class="descname">get_histogram</code><span class="sig-paren">(</span><em>sinogram</em>, <em>bins=10</em>, <em>file_name=''</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#get_histogram"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.get_histogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>make leaf-open-time histogram</p>
+<p>Return histogram of leaf-open-times. If file_name provided, then histogram 
+saved as a graph.</p>
 <p>sinogram : np.array</p>
 <p>bins : int, optional</p>
 <p>file_name : string, optional</p>
 <p>histogram : np.array</p>
 </dd></dl>
 
-<dl class="function">
-<dt id="sinogram.to_png">
-<code class="descclassname">sinogram.</code><code class="descname">to_png</code><span class="sig-paren">(</span><em>sinogram</em>, <em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#to_png"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.to_png" title="Permalink to this definition">¶</a></dt>
-<dd><p>get png image file from sinogram</p>
-<p>sinogram : np.ndarray-like</p>
-<p>file_name : str</p>
-<p>None</p>
-</dd></dl>
-
-<dl class="function">
-<dt id="sinogram.to_unshuff_pdf">
-<code class="descclassname">sinogram.</code><code class="descname">to_unshuff_pdf</code><span class="sig-paren">(</span><em>sinogram</em>, <em>file_name=''</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#to_unshuff_pdf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.to_unshuff_pdf" title="Permalink to this definition">¶</a></dt>
-<dd><p>export unshuffled sinogram to pdf</p>
-<p>Convert a sinogram into an unshuffled PDF fluence map collection, by
-separating leaf pattern into the 51 discrete tomotherapy angles.</p>
-<p>sinogram : np.array
-file_name : str, optional</p>
-<blockquote>
-<div>supplied -&gt; save to file, no supplied -&gt; show on display</div></blockquote>
-</dd></dl>
-
-<dl class="function">
-<dt id="sinogram.unshuffle">
-<code class="descclassname">sinogram.</code><code class="descname">unshuffle</code><span class="sig-paren">(</span><em>sinogram</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sinogram.html#unshuffle"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sinogram.unshuffle" title="Permalink to this definition">¶</a></dt>
-<dd><p>unshuffle singram by angle</p>
-<p>Return a list of 51 sinograms, by unshuffling the provided
-sinogram; so that all projections in the result correspond
-to the same gantry rotation angle, analogous to a fluence map.</p>
-<p>sinogram: np.array</p>
-<blockquote>
-<div>Returns</div></blockquote>
-<p>unshuffled: list of sinograms</p>
-</dd></dl>
-
-<dl class="class">
-<dt id="gui.GUI">
-<em class="property">class </em><code class="descclassname">gui.</code><code class="descname">GUI</code><span class="sig-paren">(</span><em>parent</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/gui.html#GUI"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#gui.GUI" title="Permalink to this definition">¶</a></dt>
-<dd><p>Graphical User Interface for Sinogram Class</p>
-</dd></dl>
-
+</dd>
+</dl>
 </div>
 
 
