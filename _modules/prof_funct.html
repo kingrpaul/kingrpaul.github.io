@@ -81,6 +81,8 @@
 
 <span class="kn">from</span> <span class="nn">functools</span> <span class="k">import</span> <span class="n">partial</span>
 <span class="kn">import</span> <span class="nn">PIL</span>
+<span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">re</span>
 
 <span class="n">add_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="vm">__file__</span><span class="p">,</span> <span class="s1">&#39;..&#39;</span><span class="p">,</span><span class="s1">&#39;..&#39;</span><span class="p">,</span><span class="s1">&#39;..&#39;</span><span class="p">,</span><span class="s1">&#39;..&#39;</span><span class="p">))</span>
 <span class="n">add_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">add_path</span><span class="p">,</span> <span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="s1">&#39;dosepro&#39;</span><span class="p">,</span> <span class="s1">&#39;_labs&#39;</span><span class="p">,</span> <span class="s1">&#39;paulking&#39;</span><span class="p">)</span>
@@ -356,7 +358,7 @@
 
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">image_file</span> <span class="o">=</span> <span class="n">PIL</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
-        <span class="k">assert</span> <span class="n">image_file</span><span class="o">.</span><span class="n">mode</span> <span class="o">==</span> <span class="s1">&#39;RGB&#39;</span>
+        <span class="c1"># assert image_file.mode == &#39;RGB&#39;</span>
         <span class="n">dpi_horiz</span><span class="p">,</span> <span class="n">dpi_vert</span> <span class="o">=</span> <span class="n">image_file</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;dpi&#39;</span><span class="p">]</span>
 
         <span class="n">image_array</span> <span class="o">=</span> <span class="n">mpimg</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
@@ -396,6 +398,42 @@
 
         <span class="n">zipped_profile</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">downsampled_distances</span><span class="p">,</span> <span class="n">downsampled_density</span><span class="p">))</span>
         <span class="k">return</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_tuples</span><span class="p">(</span><span class="n">zipped_profile</span><span class="p">)</span></div>
+
+    
+<div class="viewcode-block" id="Profile.from_raystation_line"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.from_raystation_line">[docs]</a>    <span class="k">def</span> <span class="nf">from_raystation_line</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot; import from raystation plan csv file</span>
+
+<span class="sd">        Source file is a line-dose distribution created by RayStation-6.</span>
+<span class="sd">        </span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        file_name : str</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        Profile</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">meta</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">ray_file</span><span class="p">:</span>
+            <span class="n">contents</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ray_file</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;RayStationVersion&#39;</span><span class="p">,</span> <span class="s1">&#39;PatientName&#39;</span><span class="p">,</span> <span class="s1">&#39;PatientId&#39;</span><span class="p">,</span> 
+                    <span class="s1">&#39;CoordinateSystem&#39;</span><span class="p">,</span><span class="s1">&#39;LineName&#39;</span><span class="p">,</span> <span class="s1">&#39;DoseName&#39;</span><span class="p">,</span> 
+                    <span class="s1">&#39;DoseEngine&#39;</span><span class="p">,</span> <span class="s1">&#39;TreatmentMachine&#39;</span><span class="p">):</span>
+            <span class="n">regex</span> <span class="o">=</span> <span class="n">key</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;:\W+(.{1,})\n&#39;</span>
+            <span class="n">meta</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">contents</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="n">data</span> <span class="o">=</span> <span class="n">contents</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;#X [cm];Y [cm];Z [cm];Dose [cGy]&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;##&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
+        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+        <span class="n">distance</span> <span class="o">=</span> <span class="p">(</span>  <span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>  <span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> 
+                      <span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>  <span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> 
+                      <span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>  <span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
+        <span class="n">distance</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">-</span> <span class="n">distance</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
+        <span class="n">dose</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span>
+        <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">distance</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">dose</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span></div>
+
 
 <div class="viewcode-block" id="Profile.get_y"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.get_y">[docs]</a>    <span class="k">def</span> <span class="nf">get_y</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; y-value at distance x</span>
@@ -913,9 +951,6 @@
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">prof_gui</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">prof_gui</span><span class="o">.</span><span class="n">GUI</span><span class="p">)</span>
-
-
     <span class="n">root</span> <span class="o">=</span> <span class="n">tk</span><span class="o">.</span><span class="n">Tk</span><span class="p">()</span>
     <span class="n">prof_gui</span><span class="o">.</span><span class="n">GUI</span><span class="p">(</span><span class="n">root</span><span class="p">)</span><span class="o">.</span><span class="n">pack</span><span class="p">(</span><span class="n">side</span><span class="o">=</span><span class="s2">&quot;top&quot;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="s2">&quot;both&quot;</span><span class="p">,</span> <span class="n">expand</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
     <span class="n">root</span><span class="o">.</span><span class="n">mainloop</span><span class="p">()</span>

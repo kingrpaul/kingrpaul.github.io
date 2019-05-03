@@ -9,4 +9,4 @@ Sinogram
 .. autofunction:: sinogram.make_histogram
 .. autofunction:: sinogram.find_modulation_factor
 
-.. sphinx-autobuild docs docs/_build/html  ########
+.. ## sphinx-autobuild docs docs/_build/html  ########
