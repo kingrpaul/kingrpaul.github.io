@@ -27,4 +27,4 @@ pubs
 
 2014, Simplifying Assumption for Determining Sc and Sp, SU-E-T-293, AAPM :download:`[poster] <./pdf/2014_06_24 - King etal - Simplifying Assumption for Determining Sc and Sp.pdf>`
 
-2019, Simplistic Tomotherapy Model Predicts RayStation Treatment Times Within 20% for First 16 Plans, PO-GePV-T-278, AAPM :download:`[poster] <./pdf/2019_05_19 - Simplistic Tomotherapy Model Predicts RayStation Treatment Times Within 20% for First 16 Plans.pdf>`
+2019, Simplistic Tomotherapy Model Predicts RayStation Treatment Times Within 20% for First 16 Plans, PO-GePV-T-278, AAPM :download:`[poster] <./pdf/2019_05_19_Simplistic_Tomotherapy_Model_Predicts_RayStation_Treatment_Times_Within_20pct_for_First_16_Plans.pdf>`
