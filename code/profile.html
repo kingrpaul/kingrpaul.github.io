@@ -663,7 +663,7 @@ except at the endpoints.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.resample_x">
-<code class="descname">resample_x</code><span class="sig-paren">(</span><em>step</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.resample_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.resample_x" title="Permalink to this definition">¶</a></dt>
+<code class="descname">resample_x</code><span class="sig-paren">(</span><em>step=None</em>, <em>begin=None</em>, <em>end=None</em>, <em>num_points=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.resample_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.resample_x" title="Permalink to this definition">¶</a></dt>
 <dd><p>resampled x-values at a given increment</p>
 <p>Resulting profile has stepsize of the indicated step based on
 linear interpolation over the points of the source profile.</p>
@@ -671,11 +671,19 @@ linear interpolation over the points of the source profile.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>step</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – sampling increment</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>step</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – </li>
+<li><strong>begin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – </li>
+<li><strong>end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – </li>
+<li><strong>num_points</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – </li>
+</ul>
+</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#prof_test.Profile" title="prof_test.Profile">Profile</a></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#prof_test.Profile" title="prof_test.Profile">Profile</a></p>
+</td>
 </tr>
 </tbody>
 </table>
