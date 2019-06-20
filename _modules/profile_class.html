@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>prof_funct &#8212; kingrpaul 2019 documentation</title>
+    <title>profile_class &#8212; kingrpaul 2019 documentation</title>
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
@@ -32,7 +32,7 @@
 
           <div class="body" role="main">
             
-  <h1>Source code for prof_funct</h1><div class="highlight"><pre>
+  <h1>Source code for profile_class</h1><div class="highlight"><pre>
 <span></span><span class="c1"># Copyright (C) 2019 Paul King</span>
 
 <span class="c1"># This program is free software: you can redistribute it and/or modify</span>
@@ -86,13 +86,7 @@
 <span class="kn">import</span> <span class="nn">time</span>
 <span class="kn">import</span> <span class="nn">pwlf</span>
 
-
-<span class="n">add_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="vm">__file__</span><span class="p">,</span> <span class="s1">&#39;..&#39;</span><span class="p">,</span><span class="s1">&#39;..&#39;</span><span class="p">,</span><span class="s1">&#39;..&#39;</span><span class="p">,</span><span class="s1">&#39;..&#39;</span><span class="p">))</span>
-<span class="n">add_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">add_path</span><span class="p">,</span> <span class="s1">&#39;src&#39;</span><span class="p">,</span> <span class="s1">&#39;dosepro&#39;</span><span class="p">,</span> <span class="s1">&#39;_labs&#39;</span><span class="p">,</span> <span class="s1">&#39;paulking&#39;</span><span class="p">)</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">add_path</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">profile</span> <span class="k">import</span> <span class="n">Profile</span>
-
-<span class="n">NumpyFunction</span> <span class="o">=</span> <span class="n">Callable</span><span class="p">[[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">],</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]</span>
+<span class="c1"># NumpyFunction = Callable[[np.ndarray], np.ndarray]</span>
 
 <span class="c1"># pylint: disable = C0103, C0121, W0102</span>
 
@@ -108,19 +102,9 @@
 <span class="sd">    meta : dict, optional</span>
 <span class="sd">        metadata</span>
 
-<span class="sd">    Examples</span>
-<span class="sd">    --------</span>
-<span class="sd">    ``profiler = Profile().from_profiler(&quot;C:\\profiler.prs&quot;)``</span>
-
-<span class="sd">    ``film = Profile().from_narrow_png(&quot;C:\\image.png&quot;)``</span>
-
-<span class="sd">    ``profiler.cross_calibrate(film).plot(marker=&#39;o&#39;)``</span>
-
-<span class="sd">    .. image:: calib_curve.png</span>
-
 <span class="sd">    Notes</span>
 <span class="sd">    -----</span>
-<span class="sd">    Requires Python PIL.</span>
+<span class="sd">    Requires PIL.  https://pypi.org/project/PIL/</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
@@ -202,346 +186,6 @@
         <span class="k">return</span> <span class="bp">self</span></div>
     <span class="fm">__rmul__</span> <span class="o">=</span> <span class="fm">__mul__</span>
     <span class="fm">__imul__</span> <span class="o">=</span> <span class="fm">__mul__</span>
-
-<div class="viewcode-block" id="Profile.from_lists"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.from_lists">[docs]</a>    <span class="k">def</span> <span class="nf">from_lists</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">{}):</span>
-        <span class="sd">&quot;&quot;&quot;  import x and y lists</span>
-
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        x : list</span>
-<span class="sd">            List of float x values</span>
-<span class="sd">        y : list</span>
-<span class="sd">            List of float y values</span>
-<span class="sd">        meta : dict, optional</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-<span class="sd">        Profile</span>
-
-<span class="sd">        Examples</span>
-<span class="sd">        --------</span>
-<span class="sd">        ``profile = Profile().fron_lists(x_list,data_list)``</span>
-
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
-        <span class="bp">self</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Profile.from_tuples"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.from_tuples">[docs]</a>    <span class="k">def</span> <span class="nf">from_tuples</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">list_of_tuples</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">{}):</span>
-        <span class="sd">&quot;&quot;&quot;  import list of (x,y) tuples</span>
-
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        list_of_tuples : [(float x, float y), ...]</span>
-<span class="sd">        meta : dict, optional</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-<span class="sd">        Profile</span>
-
-<span class="sd">        Examples</span>
-<span class="sd">        --------</span>
-<span class="sd">        ``profile = Profile().fron_lists(list_of_tuples)``</span>
-
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">list_of_tuples</span><span class="p">))[</span><span class="mi">0</span><span class="p">])</span>
-        <span class="n">y</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">list_of_tuples</span><span class="p">))[</span><span class="mi">1</span><span class="p">])</span>
-        <span class="bp">self</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Profile.from_pulse"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.from_pulse">[docs]</a>    <span class="k">def</span> <span class="nf">from_pulse</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">centre</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">domain</span><span class="p">,</span> <span class="n">increment</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="p">{}):</span>
-        <span class="sd">&quot;&quot;&quot; create pulse of unit height</span>
-
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        centre : float</span>
-<span class="sd">        width : float</span>
-<span class="sd">        domain : tuple</span>
-<span class="sd">            (x_left, x_right)</span>
-<span class="sd">        increment : float</span>
-<span class="sd">        meta : dict, optional</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-<span class="sd">        Profile</span>
-
-
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">x_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">domain</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">domain</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">increment</span><span class="p">,</span> <span class="n">increment</span><span class="p">)</span>
-        <span class="n">y</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">x_vals</span><span class="p">:</span>
-            <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span><span class="n">centre</span> <span class="o">+</span> <span class="n">width</span><span class="o">/</span><span class="mf">2.0</span><span class="p">):</span>
-                <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.0</span><span class="p">)</span>
-            <span class="k">elif</span> <span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;</span> <span class="p">(</span><span class="n">centre</span> <span class="o">+</span> <span class="n">width</span><span class="o">/</span><span class="mf">2.0</span><span class="p">):</span>
-                <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">1.0</span><span class="p">)</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_lists</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Profile.from_snc_profiler"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.from_snc_profiler">[docs]</a>    <span class="k">def</span> <span class="nf">from_snc_profiler</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">axis</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot; import profile form SNC Profiler file</span>
-
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        file_name : string</span>
-<span class="sd">            file name with path, .prs</span>
-<span class="sd">        axis : string</span>
-<span class="sd">            &#39;tvs&#39; or &#39;rad&#39;</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-<span class="sd">        Profile</span>
-
-<span class="sd">        Raises</span>
-<span class="sd">        ------</span>
-<span class="sd">        TypeError</span>
-<span class="sd">            if axis invalid</span>
-
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">profiler_file</span><span class="p">:</span>
-            <span class="n">munge</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">profiler_file</span><span class="o">.</span><span class="n">readlines</span><span class="p">())</span>
-            <span class="n">munge</span> <span class="o">=</span> <span class="n">munge</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;: &#39;</span><span class="p">,</span> <span class="s1">&#39;:&#39;</span><span class="p">)</span>
-            <span class="n">munge</span> <span class="o">=</span> <span class="n">munge</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; Time:&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Time:&#39;</span><span class="p">)</span>  <span class="c1"># BREAK 2-ITEM ROWS</span>
-            <span class="n">munge</span> <span class="o">=</span> <span class="n">munge</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39; Revision:&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Revision:&#39;</span><span class="p">)</span>
-            <span class="n">munge</span> <span class="o">=</span> <span class="n">munge</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Energy:&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Energy:&#39;</span><span class="p">)</span>
-            <span class="n">munge</span> <span class="o">=</span> <span class="n">munge</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Dose:&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Dose:&#39;</span><span class="p">)</span>
-            <span class="n">munge</span> <span class="o">=</span> <span class="n">munge</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Collimator Angle:&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">Collimator Angle:&#39;</span><span class="p">)</span>
-            <span class="n">munge</span> <span class="o">=</span> <span class="n">munge</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;TYPE&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># DISCARD NON-METADATA</span>
-            <span class="n">munge</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">munge</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">and</span> <span class="s1">&#39;:&#39;</span> <span class="ow">in</span> <span class="n">i</span><span class="p">]</span>
-            <span class="n">munge</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">munge</span> <span class="k">if</span> <span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>  <span class="c1"># DISCARD EMPTY ITEMS</span>
-            <span class="n">meta</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">munge</span><span class="p">)</span>
-
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">profiler_file</span><span class="p">:</span>
-            <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">profiler_file</span><span class="o">.</span><span class="n">readlines</span><span class="p">():</span>
-                <span class="k">if</span> <span class="n">row</span><span class="p">[:</span><span class="mi">11</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Calibration&quot;</span> <span class="ow">and</span> <span class="s2">&quot;File&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">row</span><span class="p">:</span>
-                    <span class="n">calibs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">())[</span><span class="mi">1</span><span class="p">:]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-                <span class="k">elif</span> <span class="n">row</span><span class="p">[:</span><span class="mi">5</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Data:&quot;</span><span class="p">:</span>
-                    <span class="n">counts</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">5</span><span class="p">:</span><span class="mi">145</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-                <span class="k">elif</span> <span class="n">row</span><span class="p">[:</span><span class="mi">15</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&quot;Dose Per Count:&quot;</span><span class="p">:</span>
-                    <span class="n">dose_per_count</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">row</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="o">-</span><span class="mi">1</span><span class="p">]))</span>
-        <span class="n">dose</span> <span class="o">=</span> <span class="n">counts</span> <span class="o">*</span> <span class="n">dose_per_count</span> <span class="o">*</span> <span class="n">calibs</span>
-
-        <span class="n">x_vals</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">11.2</span> <span class="o">+</span> <span class="mf">0.4</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">57</span><span class="p">)]</span>
-        <span class="n">x_prof</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">x_vals</span><span class="p">,</span> <span class="n">dose</span><span class="p">[:</span><span class="mi">57</span><span class="p">]))</span>
-        <span class="n">y_vals</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">16.4</span> <span class="o">+</span> <span class="mf">0.4</span><span class="o">*</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">83</span><span class="p">)]</span>
-        <span class="n">y_prof</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">y_vals</span><span class="p">,</span> <span class="n">dose</span><span class="p">[</span><span class="mi">57</span><span class="p">:]))</span>
-
-        <span class="k">if</span> <span class="n">axis</span> <span class="o">==</span> <span class="s1">&#39;tvs&#39;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_tuples</span><span class="p">(</span><span class="n">x_prof</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="n">axis</span> <span class="o">==</span> <span class="s1">&#39;rad&#39;</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_tuples</span><span class="p">(</span><span class="n">y_prof</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;axis must be &#39;tvs&#39; or &#39;rad&#39;&quot;</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Profile.from_narrow_png"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.from_narrow_png">[docs]</a>    <span class="k">def</span> <span class="nf">from_narrow_png</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">,</span> <span class="n">step_size</span><span class="o">=</span><span class="mf">0.1</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot; import from png file</span>
-
-<span class="sd">        Source file is a full color PNG, sufficiently narrow that</span>
-<span class="sd">        density is uniform along its short dimension. The image density along</span>
-<span class="sd">        its long dimension is reflective of a dose distribution.</span>
-
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        file_name : str</span>
-<span class="sd">        step-size : float, optional</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-<span class="sd">        Profile</span>
-
-<span class="sd">        Raises</span>
-<span class="sd">        ------</span>
-<span class="sd">        ValueError</span>
-<span class="sd">            if aspect ratio &lt;= 5, i.e. not narrow</span>
-<span class="sd">        AssertionError</span>
-<span class="sd">            if step_size &lt;= 12.7 over dpi, i.e. small</span>
-
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">image_file</span> <span class="o">=</span> <span class="n">PIL</span><span class="o">.</span><span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
-        <span class="c1"># assert image_file.mode == &#39;RGB&#39;</span>
-        <span class="n">dpi_horiz</span><span class="p">,</span> <span class="n">dpi_vert</span> <span class="o">=</span> <span class="n">image_file</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s1">&#39;dpi&#39;</span><span class="p">]</span>
-
-        <span class="n">image_array</span> <span class="o">=</span> <span class="n">mpimg</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span>
-
-        <span class="c1"># DIMENSIONS TO AVG ACROSS DIFFERENT FOR HORIZ VS VERT IMG</span>
-        <span class="k">if</span> <span class="n">image_array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="o">*</span><span class="n">image_array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span>    <span class="c1"># VERT</span>
-            <span class="n">image_vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">image_array</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-            <span class="n">pixel_size_in_cm</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.54</span> <span class="o">/</span> <span class="n">dpi_vert</span><span class="p">)</span>
-        <span class="k">elif</span> <span class="n">image_array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="o">*</span><span class="n">image_array</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]:</span>  <span class="c1"># HORIZ</span>
-            <span class="n">image_vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">image_array</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
-            <span class="n">pixel_size_in_cm</span> <span class="o">=</span> <span class="p">(</span><span class="mf">2.54</span> <span class="o">/</span> <span class="n">dpi_horiz</span><span class="p">)</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;The PNG file is not a narrow strip.&#39;</span><span class="p">)</span>
-        <span class="k">assert</span> <span class="n">step_size</span> <span class="o">&gt;</span> <span class="mi">5</span> <span class="o">*</span> <span class="n">pixel_size_in_cm</span><span class="p">,</span> <span class="s2">&quot;step size too small&quot;</span>
-
-        <span class="k">if</span> <span class="n">image_vector</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">image_vector</span> <span class="o">=</span> <span class="n">image_vector</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># SO ZERO DISTANCE IS MID-PIXEL</span>
-
-        <span class="n">length_in_cm</span> <span class="o">=</span> <span class="n">image_vector</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">pixel_size_in_cm</span>
-        <span class="n">full_resolution_distances</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="n">length_in_cm</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span>
-                                              <span class="n">length_in_cm</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span>
-                                              <span class="n">pixel_size_in_cm</span><span class="p">)</span>
-
-        <span class="c1"># TO MOVE FROM FILM RESOLUTION TO DESIRED PROFILE RESOLUTION</span>
-        <span class="n">num_pixels_to_avg_over</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">step_size</span><span class="o">/</span><span class="n">pixel_size_in_cm</span><span class="p">)</span>
-        <span class="n">sample_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">num_pixels_to_avg_over</span><span class="o">/</span><span class="mi">2</span><span class="p">,</span>
-                                   <span class="nb">len</span><span class="p">(</span><span class="n">full_resolution_distances</span><span class="p">),</span>
-                                   <span class="n">num_pixels_to_avg_over</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
-        <span class="n">downsampled_distances</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">full_resolution_distances</span><span class="p">[</span><span class="n">sample_indices</span><span class="p">])</span>
-
-        <span class="n">downsampled_density</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">sample_indices</span><span class="p">:</span>  <span class="c1"># AVERAGE OVER THE SAMPLING WINDOW</span>
-            <span class="n">avg_density</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span>
-                <span class="n">image_vector</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">idx</span> <span class="o">-</span> <span class="n">num_pixels_to_avg_over</span> <span class="o">/</span> <span class="mi">2</span><span class="p">):</span>
-                             <span class="nb">int</span><span class="p">(</span><span class="n">idx</span> <span class="o">+</span> <span class="n">num_pixels_to_avg_over</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)])</span>
-            <span class="n">downsampled_density</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">avg_density</span><span class="p">)</span>
-
-        <span class="n">zipped_profile</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">downsampled_distances</span><span class="p">,</span> <span class="n">downsampled_density</span><span class="p">))</span>
-        <span class="k">return</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_tuples</span><span class="p">(</span><span class="n">zipped_profile</span><span class="p">)</span></div>
-
-    
-<div class="viewcode-block" id="Profile.from_raystation_line"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.from_raystation_line">[docs]</a>    <span class="k">def</span> <span class="nf">from_raystation_line</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot; import from raystation plan csv file</span>
-
-<span class="sd">        Source file is a line-dose distribution created by RayStation-6.</span>
-<span class="sd">        </span>
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        file_name : str</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-<span class="sd">        Profile</span>
-
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="n">meta</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">ray_file</span><span class="p">:</span>
-            <span class="n">contents</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">ray_file</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">(</span><span class="s1">&#39;RayStationVersion&#39;</span><span class="p">,</span> <span class="s1">&#39;PatientName&#39;</span><span class="p">,</span> <span class="s1">&#39;PatientId&#39;</span><span class="p">,</span> 
-                    <span class="s1">&#39;CoordinateSystem&#39;</span><span class="p">,</span><span class="s1">&#39;LineName&#39;</span><span class="p">,</span> <span class="s1">&#39;DoseName&#39;</span><span class="p">,</span> 
-                    <span class="s1">&#39;DoseEngine&#39;</span><span class="p">,</span> <span class="s1">&#39;TreatmentMachine&#39;</span><span class="p">):</span>
-            <span class="n">regex</span> <span class="o">=</span> <span class="n">key</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;:\W+(.{1,})\n&#39;</span>
-            <span class="n">meta</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">contents</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-
-        <span class="n">data</span> <span class="o">=</span> <span class="n">contents</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;#X [cm];Y [cm];Z [cm];Dose [cGy]&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;##&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">reader</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;;&#39;</span><span class="p">)</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">data</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-        <span class="n">distance</span> <span class="o">=</span> <span class="p">(</span>  <span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>  <span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> 
-                      <span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>  <span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> 
-                      <span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>  <span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span>
-        <span class="n">distance</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">-</span> <span class="n">distance</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
-        <span class="n">dose</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span>
-        <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">distance</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">dose</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span></div>
-
-<div class="viewcode-block" id="Profile.from_rfa_ascii"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.from_rfa_ascii">[docs]</a>    <span class="k">def</span> <span class="nf">from_rfa_ascii</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot; import from rfa scan csv file</span>
-
-<span class="sd">        Source file is as produced by Omnipro Accept.</span>
-<span class="sd">        </span>
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        file_name : str</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-<span class="sd">        Profile</span>
-
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
-
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">rfa_file</span><span class="p">:</span>
-            <span class="n">contents</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">rfa_file</span><span class="p">)</span>
-
-        <span class="n">num_measurments</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;:MSR\W+(\d+)&#39;</span><span class="p">,</span> <span class="n">contents</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
-
-        <span class="n">contents</span> <span class="o">=</span> <span class="n">contents</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;:EOM #&#39;</span><span class="p">)[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-
-        <span class="k">for</span> <span class="n">idx</span><span class="p">,</span> <span class="n">measurement</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">contents</span><span class="p">):</span>
-            <span class="n">meta</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>
-            <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">(</span> <span class="p">(</span><span class="s1">&#39;%DAT&#39;</span><span class="p">,</span> <span class="s1">&#39;date&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;%TIM&#39;</span><span class="p">,</span> <span class="s1">&#39;time&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;%SSD&#39;</span><span class="p">,</span> <span class="s1">&#39;SSD&#39;</span><span class="p">),</span> 
-                        <span class="p">(</span><span class="s1">&#39;%WEG&#39;</span><span class="p">,</span> <span class="s1">&#39;wedge&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;%PTS&#39;</span><span class="p">,</span> <span class="s1">&#39;num_pts&#39;</span><span class="p">)):</span>
-                <span class="n">regex</span> <span class="o">=</span> <span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;\W+(.{1,})\n&#39;</span>
-                <span class="n">meta</span><span class="p">[</span><span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">measurement</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-
-            <span class="n">key</span> <span class="o">=</span> <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="si">%F</span><span class="s1">SZ&#39;</span><span class="p">,</span> <span class="s1">&#39;field_size&#39;</span><span class="p">)</span>
-            <span class="n">regex</span> <span class="o">=</span> <span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;\W+(.+)\t(.+)\n&#39;</span>
-            <span class="n">meta</span><span class="p">[</span><span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">measurement</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> 
-                            <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">measurement</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
-
-            <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="p">((</span><span class="s1">&#39;%STS&#39;</span><span class="p">,</span> <span class="s1">&#39;start_pt&#39;</span><span class="p">),</span> <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;</span><span class="si">%E</span><span class="s1">DS&#39;</span><span class="p">,</span> <span class="s1">&#39;end_pt&#39;</span><span class="p">)):</span>
-                <span class="n">regex</span> <span class="o">=</span> <span class="n">key</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;\W+(.+)\t(.+)\t(.+) #&#39;</span>
-                <span class="n">meta</span><span class="p">[</span><span class="n">key</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">=</span> <span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">measurement</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
-                                <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">measurement</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">(),</span>
-                                <span class="n">re</span><span class="o">.</span><span class="n">search</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="n">measurement</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">strip</span><span class="p">())</span>
-
-            <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([(</span><span class="n">m</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\t</span><span class="s1">&#39;</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">for</span> <span class="n">m</span> <span class="ow">in</span> <span class="n">measurement</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> <span class="k">if</span> <span class="s1">&#39;=&#39;</span> <span class="ow">in</span> <span class="n">m</span><span class="p">])</span>
-            <span class="n">data</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-            <span class="n">distance</span> <span class="o">=</span> <span class="p">(</span>  <span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>  <span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> 
-                        <span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>  <span class="p">)</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> 
-                        <span class="p">(</span><span class="n">data</span><span class="p">[:,</span><span class="mi">2</span><span class="p">]</span> <span class="o">-</span> <span class="n">data</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>  <span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mf">0.5</span> <span class="o">/</span> <span class="mi">10</span>
-            <span class="n">distance</span> <span class="o">=</span> <span class="n">distance</span> <span class="o">-</span> <span class="n">distance</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">distance</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="p">]</span>
-
-            <span class="n">dose</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">3</span><span class="p">]</span>
-            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">distance</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">dose</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">))</span>
-        <span class="k">return</span> <span class="n">result</span></div>
-
-<div class="viewcode-block" id="Profile.from_pinnacle_ascii"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.from_pinnacle_ascii">[docs]</a>    <span class="k">def</span> <span class="nf">from_pinnacle_ascii</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot; import from pinnacle full ASCII file</span>
-
-<span class="sd">        Source file is as produced by Pinnacle TPS.</span>
-<span class="sd">        </span>
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        file_name : str</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-<span class="sd">        Profile</span>
-
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">file_name</span><span class="p">)</span> <span class="k">as</span> <span class="n">pinn_file</span><span class="p">:</span>
-            <span class="n">contents</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">pinn_file</span><span class="p">)</span>
-
-        <span class="n">row1</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(\w</span><span class="si">{15}</span><span class="s1">)\n&#39;</span>
-        <span class="k">assert</span> <span class="s1">&#39;PinnDoseProfile&#39;</span> <span class="ow">in</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">row1</span><span class="p">,</span> <span class="n">contents</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-
-        <span class="n">row2</span> <span class="o">=</span> <span class="n">row1</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;(\d+)\s(\d+\.?\d*)\n&#39;</span>
-        <span class="n">energy</span><span class="p">,</span> <span class="n">ssd</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">row2</span><span class="p">,</span> <span class="n">contents</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
-
-        <span class="n">row3</span> <span class="o">=</span> <span class="n">row2</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;(\d+\.?\d*)\s(\d+\.?\d*)\s(\d+\.?\d*)\s(\d+\.?\d*)\n&#39;</span>
-        <span class="n">jaws</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">row3</span><span class="p">,</span> <span class="n">contents</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
-       
-        <span class="n">row4</span> <span class="o">=</span> <span class="n">row3</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;WedgeName\s+&quot;(.+)&quot;\n&#39;</span>
-        <span class="n">wedge</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">row4</span><span class="p">,</span> <span class="n">contents</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
-
-        <span class="n">row5</span> <span class="o">=</span> <span class="n">row4</span> <span class="o">+</span> <span class="sa">r</span><span class="s1">&#39;(\d+)\n&#39;</span>
-        <span class="n">num_profiles</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">row5</span><span class="p">,</span> <span class="n">contents</span><span class="p">)</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span>
-        <span class="k">assert</span> <span class="nb">int</span><span class="p">(</span><span class="n">num_profiles</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="s1">&#39;(^De|XP|YP)&#39;</span><span class="p">,</span> <span class="n">contents</span><span class="p">))</span>
-
-        <span class="n">hdr</span> <span class="o">=</span> <span class="sa">r</span><span class="s1">&#39;(De.+|XP.+|YP.+)\s(-?\d+\.\d+)\s(-?\d+\.\d+)\n(\d+)&#39;</span>
-        <span class="n">p_type</span><span class="p">,</span> <span class="n">dpth</span><span class="p">,</span> <span class="n">offset</span><span class="p">,</span> <span class="n">num_pt</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">re</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">hdr</span><span class="p">,</span> <span class="n">contents</span><span class="p">)))</span>
-
-        <span class="n">regex</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;De.+|XP.+|YP.+\s-?\d+\.\d+&#39;</span><span class="p">)</span>
-        <span class="n">contents</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">regex</span><span class="p">,</span> <span class="s1">&#39;*break*&#39;</span><span class="p">,</span> <span class="n">contents</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;*break*&#39;</span><span class="p">)[</span><span class="mi">1</span><span class="p">:]</span>
-
-        <span class="n">result</span> <span class="o">=</span> <span class="p">[]</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">num_profiles</span><span class="p">)):</span>
-            <span class="n">meta</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">p_type</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s1">&#39;energy&#39;</span><span class="p">:</span> <span class="n">energy</span><span class="p">,</span> <span class="s1">&#39;ssd&#39;</span><span class="p">:</span> <span class="n">ssd</span><span class="p">,</span> <span class="s1">&#39;jaws&#39;</span><span class="p">:</span> <span class="n">jaws</span><span class="p">,</span> 
-                    <span class="s1">&#39;wedge&#39;</span><span class="p">:</span> <span class="n">wedge</span><span class="p">,</span> <span class="s1">&#39;depth&#39;</span><span class="p">:</span> <span class="n">dpth</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="s1">&#39;offset&#39;</span><span class="p">:</span> <span class="n">offset</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> 
-                    <span class="s1">&#39;num_points&#39;</span><span class="p">:</span> <span class="n">num_pt</span><span class="p">[</span><span class="n">i</span><span class="p">]}</span>
-            <span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">c</span><span class="o">.</span><span class="n">split</span><span class="p">()</span> <span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">contents</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span> 
-                             <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">split</span><span class="p">())</span><span class="o">==</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-            <span class="n">x</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
-            <span class="n">y</span> <span class="o">=</span> <span class="n">data</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
-            <span class="n">result</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">))</span>
-
-        <span class="k">return</span> <span class="n">result</span></div>
 
 
 <div class="viewcode-block" id="Profile.get_y"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.get_y">[docs]</a>    <span class="k">def</span> <span class="nf">get_y</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
@@ -723,7 +367,7 @@
             <span class="n">resamp_x</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp_x</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
             <span class="n">resamp_y</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temp_y</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>
 
-        <span class="k">return</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_lists</span><span class="p">(</span><span class="n">resamp_x</span><span class="p">,</span> <span class="n">resamp_y</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span></div>
+        <span class="k">return</span> <span class="n">Profile</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">resamp_x</span><span class="p">),</span> <span class="n">y</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">resamp_y</span><span class="p">),</span> <span class="n">meta</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">meta</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="Profile.make_normal_y"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.make_normal_y">[docs]</a>    <span class="k">def</span> <span class="nf">make_normal_y</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mf">1.0</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot; normalised to dose at distance</span>
@@ -1033,81 +677,7 @@
         <span class="k">if</span> <span class="n">flipped</span><span class="p">:</span>
             <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">make_flipped</span><span class="p">()</span> <span class="o">+</span> <span class="n">best_offset</span>
         <span class="k">else</span><span class="p">:</span>
-            <span class="k">return</span> <span class="bp">self</span> <span class="o">+</span> <span class="n">best_offset</span></div>
-
-<div class="viewcode-block" id="Profile.cross_calibrate"><a class="viewcode-back" href="../code/profile.html#prof_test.Profile.cross_calibrate">[docs]</a>    <span class="k">def</span> <span class="nf">cross_calibrate</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">reference</span><span class="p">,</span> <span class="n">measured</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot; density mapping, reference -&gt; measured</span>
-
-<span class="sd">        Calculated by overlaying intensity curves and observing values at</span>
-<span class="sd">        corresponding points. Note that the result is an unsmoothed, collection</span>
-<span class="sd">        of points.</span>
-
-<span class="sd">        Parameters</span>
-<span class="sd">        ----------</span>
-<span class="sd">        reference : string</span>
-<span class="sd">        measured : string</span>
-<span class="sd">            file names with path</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-<span class="sd">        Profile</span>
-
-<span class="sd">        &quot;&quot;&quot;</span>
-
-        <span class="n">reference</span> <span class="o">=</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_snc_profiler</span><span class="p">(</span><span class="n">reference</span><span class="p">,</span> <span class="s1">&#39;rad&#39;</span><span class="p">)</span>
-        <span class="n">measured</span> <span class="o">=</span> <span class="n">Profile</span><span class="p">()</span><span class="o">.</span><span class="n">from_narrow_png</span><span class="p">(</span><span class="n">measured</span><span class="p">)</span>
-        <span class="n">measured</span> <span class="o">=</span> <span class="n">measured</span><span class="o">.</span><span class="n">align_to</span><span class="p">(</span><span class="n">reference</span><span class="p">)</span>
-
-        <span class="n">dist_vals</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span>
-            <span class="nb">max</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">measured</span><span class="o">.</span><span class="n">x</span><span class="p">),</span> <span class="nb">min</span><span class="p">(</span><span class="n">reference</span><span class="o">.</span><span class="n">x</span><span class="p">)),</span>
-            <span class="nb">min</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">measured</span><span class="o">.</span><span class="n">x</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">reference</span><span class="o">.</span><span class="n">x</span><span class="p">)),</span>
-            <span class="nb">max</span><span class="p">(</span><span class="n">reference</span><span class="o">.</span><span class="n">get_increment</span><span class="p">(),</span> <span class="n">measured</span><span class="o">.</span><span class="n">get_increment</span><span class="p">()))</span>
-
-        <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="nb">float</span><span class="p">(</span><span class="n">measured</span><span class="o">.</span><span class="n">get_y</span><span class="p">(</span><span class="n">i</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dist_vals</span><span class="p">])</span>
-        <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="nb">float</span><span class="p">(</span><span class="n">reference</span><span class="o">.</span><span class="n">get_y</span><span class="p">(</span><span class="n">i</span><span class="p">))</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">dist_vals</span><span class="p">])</span>
-
-        <span class="n">seq</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argsort</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> 
-        <span class="n">x</span><span class="p">,</span><span class="n">y</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">seq</span><span class="p">],</span> <span class="n">y</span><span class="p">[</span><span class="n">seq</span><span class="p">]</span>
-
-        <span class="k">def</span> <span class="nf">is_monotonic</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-            <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">all</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">diff</span><span class="p">(</span><span class="n">func</span><span class="p">(</span><span class="n">x</span><span class="p">))</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">)</span>
-
-        <span class="k">def</span> <span class="nf">linear</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-            <span class="n">m</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">polyfit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
-            <span class="k">assert</span> <span class="n">m</span> <span class="o">&gt;</span> <span class="mi">0</span>
-            <span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-                <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">multiply</span><span class="p">(</span><span class="n">m</span><span class="p">,</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">b</span>
-            <span class="k">return</span> <span class="n">func</span>
-        
-        <span class="k">def</span> <span class="nf">piece_linear</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">num_pieces</span><span class="p">):</span>
-            <span class="n">my_pwlf</span> <span class="o">=</span> <span class="n">pwlf</span><span class="o">.</span><span class="n">PiecewiseLinFit</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
-            <span class="n">my_pwlf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">num_pieces</span><span class="p">)</span>
-            <span class="k">if</span> <span class="n">is_monotonic</span><span class="p">(</span><span class="n">my_pwlf</span><span class="o">.</span><span class="n">predict</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-                <span class="k">return</span>  <span class="n">my_pwlf</span><span class="o">.</span><span class="n">predict</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="kc">None</span>
-
-        <span class="n">start_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span>
-        <span class="n">last_func</span> <span class="o">=</span> <span class="n">linear</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">num_pieces</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">):</span>
-            <span class="k">if</span> <span class="p">(</span><span class="n">time</span><span class="o">.</span><span class="n">clock</span><span class="p">()</span> <span class="o">-</span> <span class="n">start_time</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">60</span><span class="p">:</span>
-                <span class="k">break</span>
-            <span class="n">next_func</span> <span class="o">=</span> <span class="n">piece_linear</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">num_pieces</span><span class="p">)</span>
-            <span class="k">if</span> <span class="ow">not</span> <span class="n">next_func</span><span class="p">:</span>
-                <span class="k">break</span>
-            <span class="k">if</span> <span class="n">next_func</span><span class="p">:</span>
-                <span class="n">last_func</span> <span class="o">=</span> <span class="n">next_func</span>
-
-        <span class="n">result</span> <span class="o">=</span> <span class="n">last_func</span>
-        <span class="c1"># print(time.clock() - start_time)</span>
-
-        <span class="c1"># plt.plot(x,y, &#39;ro&#39;)</span>
-        <span class="c1"># plt.plot(x,last_func(x))</span>
-        <span class="c1"># plt.show()</span>
-
-        <span class="k">return</span> <span class="n">result</span></div></div>
-
-
+            <span class="k">return</span> <span class="bp">self</span> <span class="o">+</span> <span class="n">best_offset</span></div></div>
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
     <span class="kn">import</span> <span class="nn">prof_gui</span>

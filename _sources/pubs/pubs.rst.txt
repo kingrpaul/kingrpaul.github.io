@@ -2,6 +2,7 @@
 pubs
 ====
 
+1990, CMOS Analog IC X-Ray Image Sensor Array :download:`[article] <./pdf/1990_05_10 - CMOS Analog IC X-Ray Image Sensor Array.pdf>`
 
 2000, Radioimmunoguided Surgery Using Prostascint for Supraclav Mets :download:`[article] <./pdf/2000 - Anderson -RADIOIMMUNOGUIDED SURGERY USING INDIUM-111.pdf>`
 
@@ -26,3 +27,5 @@ pubs
 2013, Role of step size & dwell time in inverse opt for prost impl, J Med Phys `[link] <http://www.jmp.org.in/article.asp?issn=0971-6203;year=2013;volume=38;issue=3;spage=148;epage=154;aulast=Manikandan>`_  :download:`[article] <./pdf/JMedPhys383148-2183013_060350.pdf>`
 
 2014, Simplifying Assumption for Determining Sc and Sp, SU-E-T-293, AAPM :download:`[poster] <./pdf/2014_06_24 - King etal - Simplifying Assumption for Determining Sc and Sp.pdf>`
+
+2019, Simplistic Tomotherapy Model Predicts RayStation Treatment Times Within 20% for First 16 Plans, PO-GePV-T-278, AAPM :download:`[poster] <./pdf/2019_05_19_Simplistic_Tomotherapy_Model_Predicts_RayStation_Treatment_Times_Within_20pct_for_First_16_Plans.pdf>`
