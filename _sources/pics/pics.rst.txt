@@ -19,4 +19,14 @@ pics
 
       2010 JARMC Cancer Center
 
-	  
+.. figure:: 2003_JARMC_CancerCenterLaunch.jpg
+
+      2003 Jeff Anderson Regional Cancer Center
+
+.. figure:: 1996_Baylor_School_of_Radiation_Therapy_Class_of_1996.jpg
+
+      1996 Baylor School of Radiation Therapy Graduating Class
+
+.. figure:: 1995_Baylor_School_of_Radiation_Therapy_Class_of_1995.jpg
+
+      1995 Baylor School of Radiation Therapy Graduating Class
