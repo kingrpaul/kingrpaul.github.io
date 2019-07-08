@@ -19,6 +19,14 @@ pics
 
       2010 JARMC Cancer Center
 
+.. figure:: 2010_USM_Group_Photo.jpg
+
+      2010 USM Hattiesburg, MS
+
+.. figure:: 2008_02_20_JARMC_ADAC_White_Paper.JPG
+
+      2008 ADAC White Paper
+
 .. figure:: 2003_JARMC_CancerCenterLaunch.jpg
 
       2003 Jeff Anderson Regional Cancer Center
