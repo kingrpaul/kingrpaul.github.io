@@ -1,5 +1,5 @@
 =====
-projs
+Projs
 =====
 
 .. toctree::
