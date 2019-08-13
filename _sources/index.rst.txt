@@ -1,5 +1,5 @@
-.. image:: avatar.jpg
-    :width: 86px
+.. image:: home_ico.jpg
+    :width: 100px
     :height: 100px
     :scale: 50 %
     :alt: alternate text

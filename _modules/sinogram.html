@@ -116,20 +116,20 @@
 
 
 <div class="viewcode-block" id="from_csv"><a class="viewcode-back" href="../code/sinogram.html#sinogram.from_csv">[docs]</a><span class="k">def</span> <span class="nf">from_csv</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; get sinogram from csv file</span>
+    <span class="sd">&quot;&quot;&quot; return sinogram from csv file</span>
 
 <span class="sd">    Produced by reading a RayStation sinogram CSV file.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    file_name : str</span>
+<span class="sd">    file_name: str</span>
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">    sinogram : np.ndarray-like</span>
+<span class="sd">    sinogram: np.ndarray-like</span>
 
-<span class="sd">    Notes</span>
-<span class="sd">    -----</span>
+<span class="sd">    Note</span>
+<span class="sd">    ----</span>
 <span class="sd">    As produced by ExportTomoSinogram.py, Brandon Merz, RaySearch </span>
 <span class="sd">    customer forum, 1/18/2018. File first row contains demographics. </span>
 <span class="sd">    Subsequent rows correspond to couch positions. </span>
@@ -147,7 +147,7 @@
 
 
 <div class="viewcode-block" id="from_bin"><a class="viewcode-back" href="../code/sinogram.html#sinogram.from_bin">[docs]</a><span class="k">def</span> <span class="nf">from_bin</span><span class="p">(</span><span class="n">file_name</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; read sinogram from binary file</span>
+    <span class="sd">&quot;&quot;&quot; return sinogram from binary file</span>
 
 <span class="sd">    Produced by Accuray sinogram BIN files, as used in calibration plans.</span>
 
@@ -166,11 +166,12 @@
     <span class="k">return</span> <span class="n">Sinogram</span><span class="p">(</span><span class="n">data</span><span class="p">)</span></div>
 
 <div class="viewcode-block" id="to_png"><a class="viewcode-back" href="../code/sinogram.html#sinogram.to_png">[docs]</a><span class="k">def</span> <span class="nf">to_png</span><span class="p">(</span><span class="n">sinogram</span><span class="p">,</span> <span class="n">file_name</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot; get png image file from sinogram</span>
+    <span class="sd">&quot;&quot;&quot; write png image file from sinogram</span>
 <span class="sd">    </span>
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    sinogram : np.ndarray-like</span>
+<span class="sd">	</span>
 <span class="sd">    file_name : str</span>
 
 <span class="sd">    Returns</span>
@@ -190,7 +191,7 @@
     <span class="n">plt</span><span class="o">.</span><span class="n">close</span><span class="p">()</span></div>
     
 
-<div class="viewcode-block" id="crop"><a class="viewcode-back" href="../code/sinogram.html#sinogram.crop">[docs]</a><span class="k">def</span> <span class="nf">crop</span><span class="p">(</span><span class="n">sinogram</span><span class="p">):</span>
+<div class="viewcode-block" id="crop"><a class="viewcode-back" href="../code/sinogram.html#sinogram.crop">[docs]</a><span class="k">def</span> <span class="nf">crop</span><span class="p">(</span><span class="n">uncropped</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; crop sinogram</span>
 
 <span class="sd">    Return a symmetrically cropped sinogram, such that always-closed</span>
@@ -198,22 +199,22 @@
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    sinogram : np.array</span>
+<span class="sd">    uncropped : np.array</span>
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">    sinogram : np.array</span>
+<span class="sd">    cropped : np.array</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="n">idx</span> <span class="o">=</span>  <span class="nb">list</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">sinogram</span><span class="o">.</span><span class="n">data</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+    <span class="n">idx</span> <span class="o">=</span>  <span class="nb">list</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">uncropped</span><span class="o">.</span><span class="n">data</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
     <span class="n">idx</span> <span class="o">=</span>  <span class="n">idx</span> <span class="ow">or</span> <span class="n">idx</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># SYMMETRIZE</span>
-    <span class="n">data</span> <span class="o">=</span> <span class="n">sinogram</span><span class="o">.</span><span class="n">data</span><span class="p">[:,</span> <span class="n">idx</span><span class="p">]</span>
+    <span class="n">data</span> <span class="o">=</span> <span class="n">uncropped</span><span class="o">.</span><span class="n">data</span><span class="p">[:,</span> <span class="n">idx</span><span class="p">]</span>
     <span class="n">meta</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;cropped&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
     <span class="k">return</span> <span class="n">Sinogram</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">meta</span><span class="o">=</span><span class="n">meta</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="unshuffle"><a class="viewcode-back" href="../code/sinogram.html#sinogram.unshuffle">[docs]</a><span class="k">def</span> <span class="nf">unshuffle</span><span class="p">(</span><span class="n">sinogram</span><span class="p">):</span>
+<div class="viewcode-block" id="unshuffle"><a class="viewcode-back" href="../code/sinogram.html#sinogram.unshuffle">[docs]</a><span class="k">def</span> <span class="nf">unshuffle</span><span class="p">(</span><span class="n">shuffled</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; unshuffle singram by angle</span>
 
 <span class="sd">    Return a list of 51 sinograms, by unshuffling the provided</span>
@@ -222,33 +223,33 @@
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    sinogram : np.array</span>
-
-<span class="sd">    Returns</span>
+<span class="sd">    shuffled: np.array</span>
+<span class="sd">	</span>
+<span class="sd">	Returns</span>
 <span class="sd">    -------</span>
 <span class="sd">    unshuffled: list of sinograms</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">unshufd</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">51</span><span class="p">)]</span>
+    <span class="n">unshuffled</span> <span class="o">=</span> <span class="p">[[]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">51</span><span class="p">)]</span>
     <span class="n">idx</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">prj</span> <span class="ow">in</span> <span class="n">sinogram</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
-        <span class="n">unshufd</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">prj</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">projection</span> <span class="ow">in</span> <span class="n">shuffled</span><span class="o">.</span><span class="n">data</span><span class="p">:</span>
+        <span class="n">unshuffled</span><span class="p">[</span><span class="n">idx</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">projection</span><span class="p">)</span>
         <span class="n">idx</span> <span class="o">=</span> <span class="p">(</span><span class="n">idx</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">%</span> <span class="mi">51</span>
-    <span class="k">return</span> <span class="n">unshufd</span></div>
+    <span class="k">return</span> <span class="n">unshuffled</span></div>
 
 
 <div class="viewcode-block" id="to_unshuff_pdf"><a class="viewcode-back" href="../code/sinogram.html#sinogram.to_unshuff_pdf">[docs]</a><span class="k">def</span> <span class="nf">to_unshuff_pdf</span><span class="p">(</span><span class="n">sinogram</span><span class="p">,</span> <span class="n">file_name</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot; export unshuffled sinogram to pdf</span>
 
-<span class="sd">    Convert a sinogram file into an unshuffled PDF fluence map collection, by</span>
-<span class="sd">    separating leaf pattern into the 51 discrete tomtherapy angles.</span>
+<span class="sd">    Convert a sinogram into an unshuffled PDF fluence map collection, by</span>
+<span class="sd">    separating leaf pattern into the 51 discrete tomotherapy angles.</span>
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    sinogram : np.array</span>
 <span class="sd">    file_name : str, optional</span>
 <span class="sd">        supplied -&gt; save to file, no supplied -&gt; show on display</span>
-
+<span class="sd">		</span>
 <span class="sd">    &quot;&quot;&quot;</span>
 
     <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mf">7.5</span><span class="p">,</span> <span class="mi">11</span><span class="p">))</span>
@@ -281,7 +282,9 @@
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
 <span class="sd">    sinogram : np.array</span>
+
 <span class="sd">    bins : int, optional</span>
+
 <span class="sd">    file_name : string, optional</span>
 
 <span class="sd">    Returns</span>
@@ -310,7 +313,7 @@
 
 <span class="sd">    Returns</span>
 <span class="sd">    -------</span>
-<span class="sd">    modulation factor : float</span>
+<span class="sd">    modulation_factor : float</span>
 
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">sinogram</span><span class="o">.</span><span class="n">data</span><span class="p">)</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">sinogram</span><span class="o">.</span><span class="n">data</span><span class="p">[</span><span class="n">sinogram</span><span class="o">.</span><span class="n">data</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">])</span></div>

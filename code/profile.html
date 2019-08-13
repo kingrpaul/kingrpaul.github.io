@@ -44,7 +44,7 @@
 
 <dl class="class">
 <dt id="prof_test.Profile">
-<em class="property">class </em><code class="descclassname">prof_test.</code><code class="descname">Profile</code><span class="sig-paren">(</span><em>x=array([]</em>, <em>dtype=float64)</em>, <em>y=array([]</em>, <em>dtype=float64)</em>, <em>meta={}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="descclassname">prof_test.</code><code class="descname">Profile</code><span class="sig-paren">(</span><em>x=array([]</em>, <em>dtype=float64)</em>, <em>y=array([]</em>, <em>dtype=float64)</em>, <em>meta={}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile" title="Permalink to this definition">¶</a></dt>
 <dd><p>One-dimensional distribution of intensity vs position.</p>
 <dl class="attribute">
 <dt id="prof_test.Profile.x">
@@ -64,23 +64,28 @@
 <dd><p><em>dict, optional</em> – metadata</p>
 </dd></dl>
 
+<p class="rubric">Examples</p>
+<p><code class="docutils literal notranslate"><span class="pre">profiler</span> <span class="pre">=</span> <span class="pre">Profile().from_profiler(&quot;C:\profiler.prs&quot;)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">film</span> <span class="pre">=</span> <span class="pre">Profile().from_narrow_png(&quot;C:\image.png&quot;)</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">profiler.cross_calibrate(film).plot(marker='o')</span></code></p>
+<img alt="../_images/calib_curve.png" src="../_images/calib_curve.png" />
 <p class="rubric">Notes</p>
-<p>Requires PIL.  <a class="reference external" href="https://pypi.org/project/PIL/">https://pypi.org/project/PIL/</a></p>
+<p>Requires Python PIL.</p>
 <dl class="method">
 <dt id="prof_test.Profile.__add__">
-<code class="descname">__add__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.__add__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__add__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__add__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.__add__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__add__" title="Permalink to this definition">¶</a></dt>
 <dd><p>shift right</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="prof_test.Profile.__copy__">
-<code class="descname">__copy__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.__copy__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__copy__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__copy__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.__copy__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__copy__" title="Permalink to this definition">¶</a></dt>
 <dd><p>deep copy</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="prof_test.Profile.__eq__">
-<code class="descname">__eq__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.__eq__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__eq__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__eq__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.__eq__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__eq__" title="Permalink to this definition">¶</a></dt>
 <dd><p>same data points</p>
 </dd></dl>
 
@@ -98,7 +103,7 @@
 
 <dl class="method">
 <dt id="prof_test.Profile.__init__">
-<code class="descname">__init__</code><span class="sig-paren">(</span><em>x=array([]</em>, <em>dtype=float64)</em>, <em>y=array([]</em>, <em>dtype=float64)</em>, <em>meta={}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__init__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>x=array([]</em>, <em>dtype=float64)</em>, <em>y=array([]</em>, <em>dtype=float64)</em>, <em>meta={}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__init__" title="Permalink to this definition">¶</a></dt>
 <dd><p>create profile</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -126,13 +131,13 @@ a new Profile.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.__len__">
-<code class="descname">__len__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.__len__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__len__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__len__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.__len__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__len__" title="Permalink to this definition">¶</a></dt>
 <dd><p># data points</p>
 </dd></dl>
 
 <dl class="method">
 <dt id="prof_test.Profile.__mul__">
-<code class="descname">__mul__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.__mul__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__mul__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__mul__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.__mul__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__mul__" title="Permalink to this definition">¶</a></dt>
 <dd><p>scale y</p>
 </dd></dl>
 
@@ -156,14 +161,14 @@ a new Profile.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.__str__">
-<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.__str__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__str__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.__str__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__str__" title="Permalink to this definition">¶</a></dt>
 <dd><p class="rubric">Examples</p>
 <p><code class="docutils literal notranslate"><span class="pre">Profile</span> <span class="pre">object:</span> <span class="pre">83</span> <span class="pre">pts</span> <span class="pre">|</span> <span class="pre">x</span> <span class="pre">(-16.4</span> <span class="pre">cm</span> <span class="pre">-&gt;</span> <span class="pre">16.4</span> <span class="pre">cm)</span> <span class="pre">|</span> <span class="pre">y</span> <span class="pre">(0.22</span> <span class="pre">-&gt;</span> <span class="pre">45.54)</span></code></p>
 </dd></dl>
 
 <dl class="method">
 <dt id="prof_test.Profile.__sub__">
-<code class="descname">__sub__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.__sub__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__sub__" title="Permalink to this definition">¶</a></dt>
+<code class="descname">__sub__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.__sub__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.__sub__" title="Permalink to this definition">¶</a></dt>
 <dd><p>shift left</p>
 </dd></dl>
 
@@ -175,7 +180,7 @@ a new Profile.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.align_to">
-<code class="descname">align_to</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.align_to"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.align_to" title="Permalink to this definition">¶</a></dt>
+<code class="descname">align_to</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.align_to"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.align_to" title="Permalink to this definition">¶</a></dt>
 <dd><p>shift self to align to other</p>
 <p>Calculated using shift that produces greatest peak correlation between
 the curves. Flips the curve left-to-right, if this creates a better fit.</p>
@@ -194,8 +199,175 @@ the curves. Flips the curve left-to-right, if this creates a better fit.</p>
 </dd></dl>
 
 <dl class="method">
+<dt id="prof_test.Profile.cross_calibrate">
+<code class="descname">cross_calibrate</code><span class="sig-paren">(</span><em>reference</em>, <em>measured</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.cross_calibrate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.cross_calibrate" title="Permalink to this definition">¶</a></dt>
+<dd><p>density mapping, reference -&gt; measured</p>
+<p>Calculated by overlaying intensity curves and observing values at
+corresponding points. Note that the result is an unsmoothed, collection
+of points.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>reference</strong> (<em>string</em>) – </li>
+<li><strong>measured</strong> (<em>string</em>) – file names with path</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#prof_test.Profile" title="prof_test.Profile">Profile</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="prof_test.Profile.from_lists">
+<code class="descname">from_lists</code><span class="sig-paren">(</span><em>x</em>, <em>y</em>, <em>meta={}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.from_lists"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.from_lists" title="Permalink to this definition">¶</a></dt>
+<dd><p>import x and y lists</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – List of float x values</li>
+<li><strong>y</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – List of float y values</li>
+<li><strong>meta</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em>, </em><em>optional</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#prof_test.Profile" title="prof_test.Profile">Profile</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p><code class="docutils literal notranslate"><span class="pre">profile</span> <span class="pre">=</span> <span class="pre">Profile().fron_lists(x_list,data_list)</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="prof_test.Profile.from_narrow_png">
+<code class="descname">from_narrow_png</code><span class="sig-paren">(</span><em>file_name</em>, <em>step_size=0.1</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.from_narrow_png"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.from_narrow_png" title="Permalink to this definition">¶</a></dt>
+<dd><p>import from png file</p>
+<p>Source file is a full color PNG, sufficiently narrow that
+density is uniform along its short dimension. The image density along
+its long dimension is reflective of a dose distribution.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file_name</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – </li>
+<li><strong>step-size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="#prof_test.Profile" title="prof_test.Profile">Profile</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> – if aspect ratio &lt;= 5, i.e. not narrow</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#AssertionError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">AssertionError</span></code></a> – if step_size &lt;= 12.7 over dpi, i.e. small</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="prof_test.Profile.from_pulse">
+<code class="descname">from_pulse</code><span class="sig-paren">(</span><em>centre</em>, <em>width</em>, <em>domain</em>, <em>increment</em>, <em>meta={}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.from_pulse"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.from_pulse" title="Permalink to this definition">¶</a></dt>
+<dd><p>create pulse of unit height</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>centre</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – </li>
+<li><strong>width</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – </li>
+<li><strong>domain</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)"><em>tuple</em></a>) – (x_left, x_right)</li>
+<li><strong>increment</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – </li>
+<li><strong>meta</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em>, </em><em>optional</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#prof_test.Profile" title="prof_test.Profile">Profile</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="prof_test.Profile.from_snc_profiler">
+<code class="descname">from_snc_profiler</code><span class="sig-paren">(</span><em>file_name</em>, <em>axis</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.from_snc_profiler"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.from_snc_profiler" title="Permalink to this definition">¶</a></dt>
+<dd><p>import profile form SNC Profiler file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>file_name</strong> (<em>string</em>) – file name with path, .prs</li>
+<li><strong>axis</strong> (<em>string</em>) – ‘tvs’ or ‘rad’</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference internal" href="#prof_test.Profile" title="prof_test.Profile">Profile</a></p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> – if axis invalid</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="prof_test.Profile.from_tuples">
+<code class="descname">from_tuples</code><span class="sig-paren">(</span><em>list_of_tuples</em>, <em>meta={}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.from_tuples"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.from_tuples" title="Permalink to this definition">¶</a></dt>
+<dd><p>import list of (x,y) tuples</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>list_of_tuples</strong> (<em>[</em><em>(</em><em>float x</em><em>, </em><em>float y</em><em>)</em><em>, </em><em>..</em><em>]</em>) – </li>
+<li><strong>meta</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em>, </em><em>optional</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#prof_test.Profile" title="prof_test.Profile">Profile</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<p><code class="docutils literal notranslate"><span class="pre">profile</span> <span class="pre">=</span> <span class="pre">Profile().fron_lists(list_of_tuples)</span></code></p>
+</dd></dl>
+
+<dl class="method">
 <dt id="prof_test.Profile.get_edges">
-<code class="descname">get_edges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.get_edges"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_edges" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_edges</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.get_edges"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_edges" title="Permalink to this definition">¶</a></dt>
 <dd><p>x-values of profile edges (left, right)</p>
 <p class="rubric">Notes</p>
 <p>Points of greatest positive and greatest negative gradient.</p>
@@ -213,7 +385,7 @@ the curves. Flips the curve left-to-right, if this creates a better fit.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.get_flatness">
-<code class="descname">get_flatness</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.get_flatness"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_flatness" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_flatness</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.get_flatness"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_flatness" title="Permalink to this definition">¶</a></dt>
 <dd><p>dose range relative to mean</p>
 <p>Calculated as the dose range normalized to mean dose.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -230,7 +402,7 @@ the curves. Flips the curve left-to-right, if this creates a better fit.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.get_increment">
-<code class="descname">get_increment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.get_increment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_increment" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_increment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.get_increment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_increment" title="Permalink to this definition">¶</a></dt>
 <dd><p>minimum step-size increment</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -246,7 +418,7 @@ the curves. Flips the curve left-to-right, if this creates a better fit.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.get_symmetry">
-<code class="descname">get_symmetry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.get_symmetry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_symmetry" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_symmetry</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.get_symmetry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_symmetry" title="Permalink to this definition">¶</a></dt>
 <dd><p>max point diff relative to mean</p>
 <p>Calculated as the maximum difference between corresponding points
 on opposite sides of the profile center, relative to mean dose.</p>
@@ -264,7 +436,7 @@ on opposite sides of the profile center, relative to mean dose.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.get_x">
-<code class="descname">get_x</code><span class="sig-paren">(</span><em>y</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.get_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_x" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_x</code><span class="sig-paren">(</span><em>y</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.get_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_x" title="Permalink to this definition">¶</a></dt>
 <dd><p>tuple of x-values at intensity y</p>
 <p>Return distance values based on interpolation of source data for a
 supplied y value.</p>
@@ -284,7 +456,7 @@ supplied y value.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.get_y">
-<code class="descname">get_y</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.get_y"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_y" title="Permalink to this definition">¶</a></dt>
+<code class="descname">get_y</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.get_y"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.get_y" title="Permalink to this definition">¶</a></dt>
 <dd><p>y-value at distance x</p>
 <p>Return a y value based on interpolation of source data for a
 supplied distance.</p>
@@ -304,7 +476,7 @@ supplied distance.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.make_centered">
-<code class="descname">make_centered</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.make_centered"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.make_centered" title="Permalink to this definition">¶</a></dt>
+<code class="descname">make_centered</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.make_centered"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.make_centered" title="Permalink to this definition">¶</a></dt>
 <dd><p>shift to align edges</p>
 <p>Created by shifting the profile based on edge locations.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -321,7 +493,7 @@ supplied distance.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.make_flipped">
-<code class="descname">make_flipped</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.make_flipped"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.make_flipped" title="Permalink to this definition">¶</a></dt>
+<code class="descname">make_flipped</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.make_flipped"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.make_flipped" title="Permalink to this definition">¶</a></dt>
 <dd><p>flip L -&gt; R</p>
 <p>Created by reversing the sequence of y values.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -338,7 +510,7 @@ supplied distance.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.make_normal_x">
-<code class="descname">make_normal_x</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.make_normal_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.make_normal_x" title="Permalink to this definition">¶</a></dt>
+<code class="descname">make_normal_x</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.make_normal_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.make_normal_x" title="Permalink to this definition">¶</a></dt>
 <dd><p>normalised to distance at edges</p>
 <p>Source profile distances multiplied by scaling factor to yield unit distance
 at beam edges. <a class="footnote-reference" href="#id3" id="id1">[1]</a> <a class="footnote-reference" href="#id4" id="id2">[2]</a></p>
@@ -370,7 +542,7 @@ in a small digital computer</td></tr>
 
 <dl class="method">
 <dt id="prof_test.Profile.make_normal_y">
-<code class="descname">make_normal_y</code><span class="sig-paren">(</span><em>x=0.0</em>, <em>y=1.0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.make_normal_y"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.make_normal_y" title="Permalink to this definition">¶</a></dt>
+<code class="descname">make_normal_y</code><span class="sig-paren">(</span><em>x=0.0</em>, <em>y=1.0</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.make_normal_y"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.make_normal_y" title="Permalink to this definition">¶</a></dt>
 <dd><p>normalised to dose at distance</p>
 <p>Source profile values multiplied by scaling factor to yield the specified dose at
 the specified distance. If distance is not specified, the central axis value is
@@ -398,7 +570,7 @@ specified, resulting curve is the conventional off-center-ratio.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.make_symmetric">
-<code class="descname">make_symmetric</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.make_symmetric"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.make_symmetric" title="Permalink to this definition">¶</a></dt>
+<code class="descname">make_symmetric</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.make_symmetric"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.make_symmetric" title="Permalink to this definition">¶</a></dt>
 <dd><p>avg of corresponding points</p>
 <p>Created by averaging over corresponding +/- distances,
 except at the endpoints.</p>
@@ -416,7 +588,7 @@ except at the endpoints.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.plot">
-<code class="descname">plot</code><span class="sig-paren">(</span><em>marker='o-'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.plot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.plot" title="Permalink to this definition">¶</a></dt>
+<code class="descname">plot</code><span class="sig-paren">(</span><em>marker='o-'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.plot"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.plot" title="Permalink to this definition">¶</a></dt>
 <dd><p>profile plot</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -434,7 +606,7 @@ except at the endpoints.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.resample_x">
-<code class="descname">resample_x</code><span class="sig-paren">(</span><em>step=None</em>, <em>begin=None</em>, <em>end=None</em>, <em>num_points=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.resample_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.resample_x" title="Permalink to this definition">¶</a></dt>
+<code class="descname">resample_x</code><span class="sig-paren">(</span><em>step</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.resample_x"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.resample_x" title="Permalink to this definition">¶</a></dt>
 <dd><p>resampled x-values at a given increment</p>
 <p>Resulting profile has stepsize of the indicated step based on
 linear interpolation over the points of the source profile.</p>
@@ -442,19 +614,11 @@ linear interpolation over the points of the source profile.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>step</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – </li>
-<li><strong>begin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – </li>
-<li><strong>end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – </li>
-<li><strong>num_points</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – </li>
-</ul>
-</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>step</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – sampling increment</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
-</td>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"></td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#prof_test.Profile" title="prof_test.Profile">Profile</a></p>
-</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#prof_test.Profile" title="prof_test.Profile">Profile</a></td>
 </tr>
 </tbody>
 </table>
@@ -462,7 +626,7 @@ linear interpolation over the points of the source profile.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.resample_y">
-<code class="descname">resample_y</code><span class="sig-paren">(</span><em>step</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.resample_y"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.resample_y" title="Permalink to this definition">¶</a></dt>
+<code class="descname">resample_y</code><span class="sig-paren">(</span><em>step</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.resample_y"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.resample_y" title="Permalink to this definition">¶</a></dt>
 <dd><p>resampled y-values at a given increment</p>
 <p>Resulting profile has nonuniform step-size, but each step
 represents and approximately equal step in dose.</p>
@@ -482,7 +646,7 @@ represents and approximately equal step in dose.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.slice_penumbra">
-<code class="descname">slice_penumbra</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.slice_penumbra"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.slice_penumbra" title="Permalink to this definition">¶</a></dt>
+<code class="descname">slice_penumbra</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.slice_penumbra"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.slice_penumbra" title="Permalink to this definition">¶</a></dt>
 <dd><p>penumbra (20 -&gt; 80%, 80 -&gt; 20%)</p>
 <p>Source dose profile sliced to include only the penumbral edges, where the dose
 transitions from 20% - 80% of the umbra dose, as precent at the umbra edge,
@@ -501,7 +665,7 @@ to support wedged profiles.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.slice_segment">
-<code class="descname">slice_segment</code><span class="sig-paren">(</span><em>start=-inf</em>, <em>stop=inf</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.slice_segment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.slice_segment" title="Permalink to this definition">¶</a></dt>
+<code class="descname">slice_segment</code><span class="sig-paren">(</span><em>start=-inf</em>, <em>stop=inf</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.slice_segment"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.slice_segment" title="Permalink to this definition">¶</a></dt>
 <dd><p>slice between given end-points</p>
 <p>Resulting profile is comprised of those points in the source
 profile whose distance values are not-less-than start and
@@ -528,7 +692,7 @@ not-greater-than stop.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.slice_shoulders">
-<code class="descname">slice_shoulders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.slice_shoulders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.slice_shoulders" title="Permalink to this definition">¶</a></dt>
+<code class="descname">slice_shoulders</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.slice_shoulders"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.slice_shoulders" title="Permalink to this definition">¶</a></dt>
 <dd><p>shoulders (penumbra -&gt; umbra, umbra -&gt; penumbra)</p>
 <p>Source dose profile sliced to include only the profile shoulders,
 outside the central 80% of of the profile but inside the region bounded
@@ -547,7 +711,7 @@ by the 20-80% transition.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.slice_tails">
-<code class="descname">slice_tails</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.slice_tails"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.slice_tails" title="Permalink to this definition">¶</a></dt>
+<code class="descname">slice_tails</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.slice_tails"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.slice_tails" title="Permalink to this definition">¶</a></dt>
 <dd><p>tails (-&gt; penumbra, penumbra -&gt;)</p>
 <p>Source dose profile sliced to include only the profile tail,
 outside the beam penumbra.</p>
@@ -565,7 +729,7 @@ outside the beam penumbra.</p>
 
 <dl class="method">
 <dt id="prof_test.Profile.slice_umbra">
-<code class="descname">slice_umbra</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/profile_class.html#Profile.slice_umbra"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.slice_umbra" title="Permalink to this definition">¶</a></dt>
+<code class="descname">slice_umbra</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/prof_funct.html#Profile.slice_umbra"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#prof_test.Profile.slice_umbra" title="Permalink to this definition">¶</a></dt>
 <dd><p>umbra central 80%</p>
 <p>Source dose profile sliced to include only the central region between beam edges.</p>
 <table class="docutils field-list" frame="void" rules="none">
