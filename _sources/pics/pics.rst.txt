@@ -2,6 +2,14 @@
 pics
 ====
 
+.. figure:: 2019_RayStation_Physics_NYC_small.jpg
+
+      2019 RayStation Physicist Training
+
+.. figure:: 2018_JARCC_Christmast_Dinner_small.jpg
+
+      2018 JARCC Christmas Party
+
 .. figure:: 2018_JARMC_TomoRayStationLaunch.jpg
 
       2018 JARMC Tomotherapy-RayStation Launch
@@ -41,3 +49,8 @@ pics
 .. figure:: 1995_Baylor_School_of_Radiation_Therapy_Class_of_1995.jpg
 
       1995 Baylor School of Radiation Therapy Graduating Class
+
+.. figure:: 1982_BCT_Plt_Photo_Ft_Jackson_SC_small.jpg
+
+      1982 Bravo Co 3rd Btn 1st BCT Bde Ft Jackson SC
+
