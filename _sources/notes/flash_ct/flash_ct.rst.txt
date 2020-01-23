@@ -1,0 +1,56 @@
+=====================
+Flash, microLinac, CT
+=====================
+
+2020_01_23
+
+FLASH-RT was intended as a way to freeze the motion of radiotherapy patients who can never quite be still, like a flash-cube might freeze a subject in photography. 
+Interesting as this was, the real excitement comes from the serendipitous discovery that healthy tissues are resistant to radiation, when it arrives quickly, in a 'flash'. 
+
+A FLASH radiotherapy treatment would need to be very fast, requiring a radiation beam about 100 times more powerful than clinically available today. 
+But, given time, we humans are very good at making machines more powerful; and when biology identifies a need, technology has a `tendency to meet it <https://www.genome.gov/human-genome-project>`_   . 
+
+Because of its radio-biological advantage, when FLASH-RT becomes available to the clinic, it must quickly become the standard of care. 
+Every facility in the country will be shopping for a new particle accelerator. 
+Whoever brings this to market first will be selling them faster than they can make them. 
+And, then Varian will introduce a knock-off.
+
+Electrical things tend to move faster than mechanical things and an accelerator can be electronically switched more quickly than it can be spun around on a rotating gantry.
+Fast electronic switching is central to the van-mobile FLASH-RT concept demonstrated by `SLAC <https://www6.slac.stanford.edu/about/slac-overview>`_, who hopes to achieve the necessary intensity.
+
+A set of lunch-box-sized mini-linacs mounted on a fixed-ring could be switched on and off quite quickly.
+This Stanford concept is called the `PHASER <http://med.stanford.edu/news/all-news/2019/01/researchers-aim-to-develop-radiation-therapy-with-short-exposure.html>`_ as the linacs would operate out of `phase <https://en.wikipedia.org/wiki/Phasor>`_ with each other. 
+
+More recently, SLAC `announced <https://news.stanford.edu/2020/01/02/accelerator-chip-research-fight-cancer/>`_ the creation of a tiny micro-linac "chip", which is powered by red light instead of microwaves.
+
+.. image:: https://media.npr.org/assets/img/2018/07/18/23138597881_adcdffc249_h-242f63c6993236cf7f7a8aa877cd7ac56f1f1751-s800-c85.jpg
+   :width: 300
+
+Switching a toothpick-sized micro-linac should be faster still than switching a lunchbox-sized mini-linac.
+But also, a solid state accelerator, driven by a laser-diode, should produce much less heat. 
+In the way that the solid-state transistor is more efficient and less expensive than a vacuum tube, which made computers more powerful, the micro-linac might play a crucial role in making medical accelerators more powerful.
+
+SLAC's micro-linac can accelerate electrons to 1-keV, but researchers intend to achieve 1-MeV by the end of `2020 <http://stanford.io/35XudWC>`_ . 
+This is nearly the energy of Cobalt-60.
+Perhaps the toothpick linac will become the basis for the clinical FLASH-RT technology that it seems clear is coming, whatever its form, in the not-too-distant future.
+
+While, it is unclear what has been the impact of clinical ultrasound becoming a cell-phone app available from `Amazon <http://amzn.to/360KGJA>`_,
+when the x-ray tube shrunk from `pounds to grams <https://www.researchgate.net/figure/Photographs-and-schematic-diagram-of-the-model-S700-Xoft-Axxent-X-Ray-Source-The-left_fig5_6646765>`_ , it replaced radioisotope brachytherapy. 
+And, this was probably a good thing. 
+
+Will there be an intracavitary linac? 
+
+Maybe. 
+But it seems unavoidable that, on the path from 1 keV to 1 MeV, will be a device that makes about 100 keV, a diagnostic energy. 
+If it becomes possible to build a solid-state accelerator, operating at diagnostic energies, with a small focal spot; then the diagnostic x-ray tube becomes obsolete.
+
+The `Tomotherapy <https://en.wikipedia.org/wiki/Tomotherapy>`_  concept was borrowed by radiotherapy from diagnostic radiology. 
+Tomo is essentially a megavoltage CT, in which the dose is the goal and the image is a side-effect. 
+It echoes the kilovoltage CT, in which the image is the goal and the dose is a side-effect. 
+
+Perhaps, next time around the inspiration will go the other way, by extending Stanford’s non-rotating treatment concept to a fixed CT imaging device.
+Electronically switching, in a flash, among micro-sources, fixed around a gantry, interspersed among detectors, and arranged around a full circle could add a whole new dimension to available image data, making possible a much better image for much less dose.
+
+The future could bring interesting times – but, in a good way - for both imaging and treatment.
+
+rpk - 01/23/2020

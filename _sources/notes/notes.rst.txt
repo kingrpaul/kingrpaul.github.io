@@ -9,3 +9,4 @@ notes
     ./mvct_qa/MVCT QA with RS.rst
     ./electron_rof/Electron Output with RS.rst
     ./ray_varian_rails/Varian Rails with RS.rst
+    ./flash_ct/flash_ct.rst
