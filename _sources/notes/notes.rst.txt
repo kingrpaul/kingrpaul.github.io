@@ -10,3 +10,4 @@ notes
     ./electron_rof/Electron Output with RS.rst
     ./ray_varian_rails/Varian Rails with RS.rst
     ./flash_ct/flash_ct.rst
+    ./ray_rx_scale/ray_rx_scale.rst
