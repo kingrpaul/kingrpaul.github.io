@@ -2,56 +2,128 @@
 RayStation X-Ray Prescription Scaling
 =====================================
 
-2020_02_04
+2020_02_05
 
-Regulations require that a prescription include a dose, its fractionation, and a site which is the destination for that dose1. 
+Regulations require that a prescription include a dose, its fractionation, 
+and a site which is the destination for that dose. [#f1]_ 
 
-When scaling a RayStation plan’s dose (sometimes called “normalizing”), the total treatment time is multiplied by a constant, so that the absolute dose is either increased or decreased, while the relative dose distribution remains unchanged. Dose scaling is a normal step in RayStation planning, necessary to make a plan conform to the prescription.
+When scaling a RayStation plan’s dose (sometimes called “normalizing”), the 
+total treatment time is multiplied by a constant, so that the absolute dose 
+is either increased or decreased, while the relative dose distribution remains 
+unchanged. Dose scaling is a normal step in RayStation planning, necessary to 
+make a plan conform to the prescription.
 
-The details of a plan’s scaling are more specific than is required for a prescription, so that a single dose prescription might rightly be described by a number of different dose scalings. RayStation is flexible in its ability to scale a plan to deliver any prescribed dose. And, the dose part of the dose prescription can itself be scaled by a percentage.2
+The details of a plan’s scaling are more specific than is required for a 
+prescription, so that a single dose prescription might rightly be described 
+by a number of different dose scalings. RayStation is flexible in its ability 
+to scale a plan to deliver any prescribed dose. And, the dose part of the dose 
+prescription can itself be scaled by a percentage. [#f2]_
 
-A specific prescription is one component of a RayStation plan and, in general, the desired normalization is entered as a prescription and the plan is then normalized to that prescription. But, RayStation does not require this and can scale a plan to some other set of criteria that is not the prescription. RayStation does not enforce the requirement that a plan fulfill its associated prescription. In general, however, scaling to the prescription is the right approach and other dose scalings are to be avoided. 
+A specific prescription is one component of a RayStation plan and, in general, 
+the desired normalization is entered as a prescription and the plan is then 
+normalized to that prescription. But, RayStation does not require this and can 
+scale a plan to some other set of criteria that is not the prescription. 
+RayStation does not enforce the requirement that a plan fulfill its associated 
+prescription. In general, however, scaling to the prescription is the right 
+approach and other dose scalings are to be avoided. 
 
-A plan dose can be scaled either to a dose-volume pair in a target’s dose-volume histogram (DVH), or to some geometric point in the dataset. There are three types of points used by RayStation and two of them can be used for dose scaling.
+A plan dose can be scaled either to a dose-volume pair in a target’s dose-volume 
+histogram (DVH), or to some geometric point in the dataset. There are three types 
+of points used by RayStation and two of them can be used for dose scaling.
 
-The three types of RayStation points are: [1] points of interest (POI) defined in the patient model, [2] dose specification points (DSP) defined in beam descriptions and [3] isocenters (ISO) defined as part of the plan. A plan’s dose can be scaled and prescribed to a POI or to a DSP, but not to an ISO. 
+The three types of RayStation points are: 
+(1) points of interest (POI) defined in the patient model, 
+(2) dose specification points (DSP) defined in beam descriptions and 
+(3) isocenters (ISO) defined as part of the plan. 
+A plan’s dose can be scaled and prescribed to a POI or to a DSP, 
+but not to an ISO.
 
-In general, in an x-ray plan, there will be one ISO and one DSP, and these will be at the same location. There will also be a POI of type “isocenter” at that same location. RayStation allows multiple ISOs in a plan but, in general, only one should be used. There is one DSP per beam but the number of POIs is not limited. 
+In general, in an x-ray plan, there will be one ISO and one DSP, 
+and these will be at the same location. There will also be a POI of type 
+“isocenter” at that same location. RayStation allows multiple ISOs in a plan 
+but, in general, only one should be used. There is one DSP per beam but the 
+number of POIs is not limited. 
 
-For x-ray planning, there will generally be two POIs: one of type “localization” and another of type “isocenter”. There will be one ISO at the same coordinates as the isocenter-type POI and one DSP at the same coordinates as the ISO. But, because RayStation is flexible, this is not enforced. It is easy for these points to become disconnected during planning and their coincidence must be checked. Confining complexity is imporant to RayStation planning. 
+For x-ray planning, there will generally be two POIs: one of type “localization” 
+and another of type “isocenter”. There will be one ISO at the same coordinates as 
+the isocenter-type POI and one DSP at the same coordinates as the ISO. But, because 
+RayStation is flexible, this is not enforced. It is easy for these points to become 
+disconnected during planning and their coincidence must be checked. 
+Confining complexity is imporant to RayStation planning. 
 
-Where practical and appropriate, dose should be scaled to the isocenter POI, which will be an appropriate ICRU reference point3; i.e. one that is relevant, representative, unambiguous, physically accurate, and clear of steep gradients. It is frequenty appropriate to specify the prescription in terms of a percentage of isocenter dose. 
+Where practical and appropriate, dose should be scaled to the isocenter POI, which 
+will be an appropriate ICRU reference point [#f3]_; i.e. one that is relevant, 
+representative, unambiguous, physically accurate, and clear of steep gradients. 
+It is frequenty appropriate to specify the prescription in terms of a percentage 
+of isocenter dose. 
 
-For Clinac planning, the localization POI will be labeled  “SETUP” and the isocenter POI will be labeled “ISO”. For Tomotherapy planning, the localization POI will be labeled “RED LASER” and the isocenter POI will be labeled “GREEN LASER”. In both bases, the localization POI will be red and the isocenter POI will be green. 
+For Clinac planning, the localization POI will be labeled  “SETUP” and the isocenter 
+POI will be labeled “ISO”. For Tomotherapy planning, the localization POI will be labeled 
+“RED LASER” and the isocenter POI will be labeled “GREEN LASER”. In both bases, the 
+localization POI will be red and the isocenter POI will be green. 
 
-Scaling dose using a dose-volume pair presents the problem of how to distill a dose distribution down to a single dose value. This is a problem which does not have a unique solution. In Appendix III, ICRU 50 considered the relative merits of using a central point dose, versus minimum dose, versus mean dose. 
+Scaling dose using a dose-volume pair presents the problem of how to distill a dose 
+distribution down to a single dose value. This is a problem which does not have a 
+unique solution. 
+In Appendix III, ICRU 50 considered the relative merits of using a central point dose, 
+versus minimum dose, versus mean dose. 
 
-When the variation in target dose is small, i.e. within +5%, the most meaningful distillation of a target’s dose distribution is the mean dose4. When dose variations are not small the minimum dose becomes the more appropriate value. As a result, quoting Brahme, “uniform and precise dose delivery is therefore one of the cornerstones of accurate radiation therapy”. 
+When the variation in target dose is small, i.e. within +5%, the most meaningful 
+distillation of a target’s dose distribution is the mean dose. [#f4]_ 
+When dose variations are not small the minimum dose becomes the more appropriate value. 
+As a result, quoting Brahme, “uniform and precise dose delivery is therefore one of the 
+cornerstones of accurate radiation therapy”. 
 
 
-Any consideration of a dose distribution’s quality should respect the inherent value of dose uniformity in the target. A dose distribution with an “ideal” target dose uniformity would have an integral DVH described by the step function as Vintegral = -H(D - Dprescribed) and a differential DVH described by the delta function as Vdifferential = δ(D - Dprescribed). But, nature abhors a right angle and no DVH is ever ideal. Still, target dose homogeneity should not be sacrificed except in exchange for some demonstrably significant benefit.
+Any consideration of a dose distribution’s quality should respect the inherent value of 
+dose uniformity in the target. A dose distribution with an “ideal” target dose uniformity 
+would have an integral DVH described by the step function as 
+Vintegral = -H(D - Dprescribed) 
+and a differential DVH described by the delta function as 
+V\ :sub:`differential`\ = δ(D - Dprescribed). 
+But, nature abhors a right angle and no DVH is ever ideal. Still, target dose homogeneity 
+should not be sacrificed except in exchange for some demonstrably significant benefit.
 
-It is always possible to optimize a target’s DVH by overcovering the target, i.e. by using an excessive planning margin. This is a bad idea. There were occasions, before availability of IMRT, and before Tomotherapy, when it might make sense to compromise on target dose homogeneity to achieve critical structure sparing – particularly when using sub-optimal beams. 
+It is always possible to optimize a target’s DVH by overcovering the target, 
+i.e. by using an excessive planning margin. This is a bad idea. 
+There were occasions, before availability of IMRT, and before Tomotherapy, 
+when it might make sense to compromise on target dose homogeneity to achieve critical 
+structure sparing – particularly when using sub-optimal beams. 
 
-Where the variation in target dose is large, ICRU-50 calls for both the dose and its variation to be reported. But using modern tools and methods, target dose homogeneity and critical structure sparing are no longer truly in competition.  
+Where the variation in target dose is large, ICRU-50 calls for both the dose and its 
+variation to be reported. But using modern tools and methods, target dose homogeneity 
+and critical structure sparing are no longer truly in competition.  
 
-One goal of planning should be for the target’s equivalent dose to be captured by its mean dose, not by it’s minimum dose. If the target’s dose variation is large, the target dose is described by its minimum dose, and the hot spots inside the target are by necessity produced at the expense of increased non-target integral dose, and to the detriment of the plan’s quality. The mean dose should also ideally be the dose at the ICRU reference point. All doses inside the target should be within +5% of that dose, so that “dose” and “mean dose” mean the same thing. 
+One goal of planning should be for the target’s equivalent dose to be captured by its 
+mean dose, not by it’s minimum dose. If the target’s dose variation is large, the target 
+dose is described by its minimum dose, and the hot spots inside the target are by necessity 
+produced at the expense of increased non-target integral dose, and to the detriment of the 
+plan’s quality. The mean dose should also ideally be the dose at the ICRU reference point. 
+All doses inside the target should be within +5% of that dose, so that “dose” and “mean dose” 
+mean the same thing. 
 
-RayStation does not support a prescribing to mean dose, but it does support prescribing to median dose. So long as the differential DVH is not skewed, the mean and median doses will be equal. So, median dose serves as a proxy for the mean and it is the median dose that should be used, in general, when scaling and prescribing to a DVH. 
+RayStation does not support a prescribing to mean dose, but it does support prescribing to 
+median dose. So long as the differential DVH is not skewed, the mean and median doses will be 
+equal. So, median dose serves as a proxy for the mean and it is the median dose that should 
+be used, in general, when scaling and prescribing to a DVH. 
 
-In an integral DVH that is optimal, 50% of the volume will be covered by the prescribed dose, 100% of the volume will be covered by 95% of the prescribed dose and none of the volume will exceed 105% of the prescribed dose. This DVH will have the characteristic rounded shoulder and toe that result from integrating a gaussian. 
+In an integral DVH that is optimal, 50% of the volume will be covered by the prescribed dose, 
+100% of the volume will be covered by 95% of the prescribed dose and none of the volume will 
+exceed 105% of the prescribed dose. This DVH will have the characteristic rounded shoulder 
+and toe that result from integrating a gaussian. 
 
-Where different regions are intended to receive different doses, these should be segmented as different structures. It has become a common practice, where it is appropriate for a single plan to simultaneously deliver different doses to different volumes at the same time, to delineate those targets from each other and to incorporate the intended dose into those target names.5  This is a good practice that enhances the treatment planning process by fully describing the goals of planning at the outset. Where different doses are intended, different sites should be specified. 
+Where different regions are intended to receive different doses, these should be segmented as 
+different structures. It has become a common practice, where it is appropriate for a single plan to simultaneously deliver different doses to different volumes at the same time, to delineate those targets from each other and to incorporate the intended dose into those target names. [#f5]_  This is a good practice that enhances the treatment planning process by fully describing the goals of planning at the outset. Where different doses are intended, different sites should be specified. 
 
 Where one volume, that is to receive a lower dose, abuts or encompasses another volume that is to receive a higher dose, the lower-dose volume is treated as a special case. Consider for example an outer volume that is to receive 4000 cGy surrounding an inner volume that is to receive 5000 cGy. The high-dose volume will be held to the usual 5% limits (4750 to 5250 cGy). The low-dose volume would be held to it’s usual lower limit of 3800 cGy. But instead of restricting it’s upper limit to 4200 cGy, it would instead be held to 5000 cGy. 
 
 _______________________
 
-1Miss. Code Ann. § 15-21-78 Rule 1.15.5 (2019).
-2RaySearch Laboratories AB, RayStation 9A User Manual, R Stockholm Sweden (2019).
-3ICRU, Report 50, Prescribing, recording, and reporting photon beam therapy (1993).
-4Brahme, Anders. “Dosimetric precision requirements in radiation therapy.” Acta radiologica. Oncology 23 5 (1984): 379-91 .
-5 AAPM TG-263, Standardizing Nomenclatures in Radiation Oncology. IJROBP 100. 10.1016/j.ijrobp (2017). 
+.. [#f1] Miss. Code Ann. § 15-21-78 Rule 1.15.5 (2019).
+.. [#f2] RaySearch Laboratories AB, RayStation 9A User Manual, R Stockholm Sweden (2019).
+.. [#f3] ICRU, Report 50, Prescribing, recording, and reporting photon beam therapy (1993).
+.. [#f4] Brahme, Anders. “Dosimetric precision requirements in radiation therapy.” Acta radiologica. Oncology 23 5 (1984): 379-91 .
+.. [#f5] AAPM TG-263, Standardizing Nomenclatures in Radiation Oncology. IJROBP 100. 10.1016/j.ijrobp (2017). 
 
 
-rpk - 02/04/2020
+rpk - 02/05/2020

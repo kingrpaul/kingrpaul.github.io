@@ -23,6 +23,6 @@ Home
 
 Experienced & results-oriented; progressive record of innovation & success in quality enhancement, planning, 
 program development, regulatory compliance, & health care technology mgmt; mature judgment & prescient vision 
-in diverse environments; proactive stewardship, valuing excellence that is patient focused & mission driven. 
+in diverse environments; proactive stewardship, valuing excellence that is patient focused & mission driven.
 
 .. ## sphinx-autobuild docs docs/_build/html
