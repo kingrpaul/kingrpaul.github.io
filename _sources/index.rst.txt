@@ -14,7 +14,7 @@ Home
     :maxdepth: 1
     :caption: groups
 
-    code/code.rst
+    # code/code.rst
     pubs/pubs.rst
     press/press.rst
     notes/notes.rst

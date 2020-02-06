@@ -16,8 +16,6 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="pubs" href="../pubs/pubs.html" />
-    <link rel="prev" title="Dose Profile" href="profile.html" />
    
   <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
   
@@ -34,21 +32,195 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="sinogram">
-<h1>Sinogram<a class="headerlink" href="#sinogram" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="module-sino_funct">
+<span id="sinogram"></span><h1>Sinogram<a class="headerlink" href="#module-sino_funct" title="Permalink to this headline">¶</a></h1>
+<p>For importing, analyzing, and converting tomotherapy sinograms.</p>
 <dl class="docutils">
 <dt><strong>GUI</strong></dt>
-<dd></dd>
+<dd><dl class="first last class">
+<dt id="sino_gui.GUI">
+<em class="property">class </em><code class="descclassname">sino_gui.</code><code class="descname">GUI</code><span class="sig-paren">(</span><em>parent</em>, <em>*args</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_gui.html#GUI"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_gui.GUI" title="Permalink to this definition">¶</a></dt>
+<dd><p>Graphical User Interface for Sinogram Class</p>
+</dd></dl>
+
+</dd>
 <dt><strong>Class</strong></dt>
-<dd></dd>
+<dd><dl class="first last class">
+<dt id="sino_funct.Sinogram">
+<em class="property">class </em><code class="descclassname">sino_funct.</code><code class="descname">Sinogram</code><span class="sig-paren">(</span><em>data</em>, <em>meta={}</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#Sinogram"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.Sinogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>array of 64-element projection arrays</p>
+<dl class="attribute">
+<dt id="sino_funct.Sinogram.shape">
+<code class="descname">shape</code><a class="headerlink" href="#sino_funct.Sinogram.shape" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>2-tuple</em> – (number of projections, number of leaves&lt;=64)</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sino_funct.Sinogram.data">
+<code class="descname">data</code><a class="headerlink" href="#sino_funct.Sinogram.data" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>np.array</em> – 0 &lt;= leaf-open-time &lt;= 1</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="sino_funct.Sinogram.meta">
+<code class="descname">meta</code><a class="headerlink" href="#sino_funct.Sinogram.meta" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>dict, optional</em></p>
+</dd></dl>
+
+</dd></dl>
+
+</dd>
 <dt><strong>Get From</strong></dt>
-<dd></dd>
+<dd><dl class="first function">
+<dt id="sino_funct.from_csv">
+<code class="descclassname">sino_funct.</code><code class="descname">from_csv</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#from_csv"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.from_csv" title="Permalink to this definition">¶</a></dt>
+<dd><p>csv file -&gt; sinogram</p>
+<p>From RayStation clinical sinogram CSV file as extracted by
+ExportTomoSinogram.py, Brandon Merz, RaySearch customer forum, 1/18/2018.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_name</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>sinogram</strong></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">np.ndarray-like</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="last function">
+<dt id="sino_funct.from_bin">
+<code class="descclassname">sino_funct.</code><code class="descname">from_bin</code><span class="sig-paren">(</span><em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#from_bin"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.from_bin" title="Permalink to this definition">¶</a></dt>
+<dd><p>binary file -&gt; sinogram</p>
+<p>From Accuray sinogram BIN files, as used in calibration plans.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_name</strong> (<em>str</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>sinogram</strong></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">np.array-like</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd>
 <dt><strong>Send To</strong></dt>
-<dd></dd>
+<dd><dl class="first function">
+<dt id="sino_funct.to_png">
+<code class="descclassname">sino_funct.</code><code class="descname">to_png</code><span class="sig-paren">(</span><em>sinogram</em>, <em>file_name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#to_png"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.to_png" title="Permalink to this definition">¶</a></dt>
+<dd><p>sinogram -&gt; png image file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sinogram</strong> (<em>np.ndarray-like</em>) – </li>
+<li><strong>file_name</strong> (<em>str</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="last function">
+<dt id="sino_funct.to_unshuff_pdf">
+<code class="descclassname">sino_funct.</code><code class="descname">to_unshuff_pdf</code><span class="sig-paren">(</span><em>sinogram</em>, <em>file_name=''</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#to_unshuff_pdf"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.to_unshuff_pdf" title="Permalink to this definition">¶</a></dt>
+<dd><p>export unshuffled sinogram to pdf</p>
+<p>Convert sinogram into unshuffled PDF fluence map collection, separating
+leaf pattern into the 51 tomotherapy angles. Display instead, if
+destination file_name not supplied.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>sinogram</strong> (<em>np.array</em>) – </li>
+<li><strong>file_name</strong> (<em>str</em><em>, </em><em>optional</em>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd>
 <dt><strong>Edit</strong></dt>
-<dd></dd>
+<dd><dl class="first last function">
+<dt id="sino_funct.crop">
+<code class="descclassname">sino_funct.</code><code class="descname">crop</code><span class="sig-paren">(</span><em>uncropped</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#crop"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.crop" title="Permalink to this definition">¶</a></dt>
+<dd><p>crop sinogram</p>
+<p>Return symmetrically cropped sinogram, excluding usused opposing leaf pairs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>uncropped</strong> (<a class="reference internal" href="#sino_funct.Sinogram" title="sino_funct.Sinogram"><em>Sinogram</em></a>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>cropped</strong></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#sino_funct.Sinogram" title="sino_funct.Sinogram">Sinogram</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd>
 <dt><strong>Analyze</strong></dt>
-<dd></dd>
+<dd><dl class="first function">
+<dt id="sino_funct.get_mod_factor">
+<code class="descclassname">sino_funct.</code><code class="descname">get_mod_factor</code><span class="sig-paren">(</span><em>sinogram</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#get_mod_factor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.get_mod_factor" title="Permalink to this definition">¶</a></dt>
+<dd><p>modulation factor</p>
+<p>Ratio of max leaf open time to mean over all non-zero values.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sinogram</strong> (<em>np.array-like</em>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>modulation_factor</strong></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">float</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="last function">
+<dt id="sino_funct.get_histogram">
+<code class="descclassname">sino_funct.</code><code class="descname">get_histogram</code><span class="sig-paren">(</span><em>sinogram</em>, <em>bins=10</em>, <em>file_name=''</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/sino_funct.html#get_histogram"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#sino_funct.get_histogram" title="Permalink to this definition">¶</a></dt>
+<dd><p>make leaf-open-time histogram</p>
+<p>Return histogram of leaf-open-times. If file_name provided, then histogram
+saved as a graph.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>sinogram</strong> (<em>np.array</em>) – </li>
+<li><strong>bins</strong> (<em>int</em><em>, </em><em>optional</em>) – </li>
+<li><strong>file_name</strong> (<em>string</em><em>, </em><em>optional</em>) – </li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>histogram</strong></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">np.array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd>
 </dl>
 </div>
 
@@ -70,8 +242,7 @@
 
 <h3>Navigation</h3>
 <p class="caption"><span class="caption-text">groups</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="code.html">code</a></li>
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="../pubs/pubs.html">pubs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../press/press.html">press</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../notes/notes.html">notes</a></li>
@@ -82,10 +253,6 @@
 <h3>Related Topics</h3>
 <ul>
   <li><a href="../index.html">Documentation overview</a><ul>
-  <li><a href="code.html">code</a><ul>
-      <li>Previous: <a href="profile.html" title="previous chapter">Dose Profile</a></li>
-      <li>Next: <a href="../pubs/pubs.html" title="next chapter">pubs</a></li>
-  </ul></li>
   </ul></li>
 </ul>
 </div>
