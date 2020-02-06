@@ -78,7 +78,7 @@ cornerstones of accurate radiation therapy”.
 Any consideration of a dose distribution’s quality should respect the inherent value of 
 dose uniformity in the target. A dose distribution with an “ideal” target dose uniformity 
 would have an integral DVH described by the step function as 
-V\ :sub:`differential`\  = -H(D - D\ :sub:`prescribed`\ ) 
+V\ :sub:`integral`\  = -H(D - D\ :sub:`prescribed`\ ) 
 and a differential DVH described by the delta function as 
 V\ :sub:`differential`\ = δ(D - D\ :sub:`prescribed`\). 
 But, nature abhors a right angle and no DVH is ever ideal. Still, target dose homogeneity 
