@@ -2,6 +2,10 @@
 pics
 ====
 
+.. figure:: 2020_Xoft_Physics_SanJoseCA.jpg
+
+      2020 Xoft Physicist Training
+
 .. figure:: 2019_RayStation_Physics_NYC_small.jpg
 
       2019 RayStation Physicist Training
