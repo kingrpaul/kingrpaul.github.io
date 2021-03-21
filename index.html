@@ -20,12 +20,12 @@ body {font-size:16px;}
     <h3 class="w3-padding-64"><b>king.r.paul<br></b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">home</a> 
+    <h2><a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">home</a></h2>
     <a href="#press" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">press</a> 
     <a href="#notes" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">notes</a> 
     <a href="#pubs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">pubs</a> 
-    <!-- <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">contact</a> -->
     <a href="#pics" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">pics</a> 
+    <a href="#wikimedia" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">wikimedia</a>
   </div>
 </nav>
 
@@ -63,11 +63,11 @@ body {font-size:16px;}
   <div class="w3-container" id="notes" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-red"><b>notes</b></h1>
     <hr style="width:50px;border:5px solid red" class="w3-round">
-      <p><a href="./notes/mvct_qa/MVCT-QA-with-RS.html">MVCT QA w/TomoHDA &amp; Ray6</a></p>
-      <p><a href="./notes/electron_rof/Electron Output with RS.html">e- Blk w/TomoHDA &amp; Ray6</a></p>
-      <p><a href="./notes/ray_varian_rails/Varian Rails with RS.html">Varian Rails w/Ray6</a></p>
-      <p><a href="./notes/flash_ct/flash_ct.html">Flash, microLinac, CT</a></p>
-      <p><a href="./notes/ray_rx_scale/ray_rx_scale.html">RayStation X-Ray Rx Scaling</a></p>
+      <p><a href="./notes/mvct_qa/MVCT-QA-with-RS.html" target="_blank">MVCT QA w/TomoHDA &amp; Ray6</a></p>
+      <p><a href="./notes/electron_rof/Electron Output with RS.html" target="_blank">e- Blk w/TomoHDA &amp; Ray6</a></p>
+      <p><a href="./notes/ray_varian_rails/Varian Rails with RS.html" target="_blank">Varian Rails w/Ray6</a></p>
+      <p><a href="./notes/flash_ct/flash_ct.html" target="_blank">Flash, microLinac, CT</a></p>
+      <p><a href="./notes/ray_rx_scale/ray_rx_scale.html" target="_blank">RayStation X-Ray Rx Scaling</a></p>
   </div>
 
   <!-- pubs -->
@@ -90,31 +90,6 @@ body {font-size:16px;}
     <p>1990, CMOS Analog IC X-Ray Image Sensor Array <a class="reference download internal" href="./_downloads/1990_05_10 - CMOS Analog IC X-Ray Image Sensor Array.pdf" download="" target="_blank"><code class="xref download docutils literal notranslate"><span class="pre">[article]</span></code></a></p>
   </div>
   
-  <!-- contact -->
-  <!-- 
-  <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>contact</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    <form action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input w3-border" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input w3-border" type="text" name="Message" required>
-      </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-    </form>  
-  </div>
-   -->
-
-
   <!-- Photo grid (modal) -->
   <div class="w3-row-padding">
     <h1 class="w3-xxxlarge w3-text-red"  id="pics"><b>pics</b></h1>
@@ -149,6 +124,23 @@ body {font-size:16px;}
       <img id="img01" class="w3-image">
       <p id="caption"></p>
     </div>
+  </div>
+
+  <!-- wikimedia -->
+
+  <div class="w3-row-padding">
+    <h1 class="w3-xxxlarge w3-text-red"  id="wikimedia"><b>wikimedia</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <div class="w3-half">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/2020_10_03_-_Hattiesburg_MS_-_Paul_B_Johnson_Marker.png/343px-2020_10_03_-_Hattiesburg_MS_-_Paul_B_Johnson_Marker.png" style="width:100%" onclick="onClick(this)" alt="Paul B Johnson Marker, Hattiesburg, Mississippi">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Ronnie_Van_Zant_Mausoleum%2C_Orange_Park%2C_Florida.jpg/320px-Ronnie_Van_Zant_Mausoleum%2C_Orange_Park%2C_Florida.jpg" style="width:100%" onclick="onClick(this)" alt="Ronnie Van Zant Mausoleum, Orange Park, Florida">
+    </div>
+
+    <div class="w3-half">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Warrior_Tombigbee_Waterway_Marker%2C_Tuscaloosa%2C_Alabama.jpg/373px-Warrior_Tombigbee_Waterway_Marker%2C_Tuscaloosa%2C_Alabama.jpg" style="width:100%" onclick="onClick(this)" alt="Warrior Tombigbee Waterway Marker, Tuscaloosa, Alabama">
+    </div>
+
   </div>
 
 
