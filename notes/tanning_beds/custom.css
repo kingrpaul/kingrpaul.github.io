@@ -1,18 +1,10 @@
 body {
   font: 400 15px/1.8 Lato, sans-serif;
   color: #777;
-}
-
-.light_purple {
-  background-color: #F8E6FF;
-}
-
-.lighter_purple {
   background-color: #fcf5ff;
-  
 }
 
-h1 {
+h1,.glyphicon {
   color: #7030a0;
 }
 
@@ -32,21 +24,27 @@ p {
   text-indent: 2em;
 }
 
-td {
+summary  {
   text-align: left;
 }
 
-tooltip {
-  align-text: center;
-}
 
-.glyphicon {
-  color:#7030a0;
+td {
+  text-align: left;
 }
 
 .container {
   padding: 80px 120px;
 }
+
+@media only screen and (max-width: 768px) {
+  summary {
+    padding: 20px 30px;
+  }
+  
+}
+
+
 
 .well {
   background-color: #F8E6FF;
