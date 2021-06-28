@@ -38,7 +38,7 @@ td {
 }
 
 @media only screen and (max-width: 768px) {
-  summary {
+  .summary {
     padding: 20px 30px;
   }
   
