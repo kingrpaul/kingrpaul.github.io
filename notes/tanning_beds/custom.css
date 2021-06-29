@@ -4,8 +4,12 @@ body {
   background-color: #fcf5ff;
 }
 
-h1,.glyphicon {
+h1, h3, .glyphicon {
   color: #7030a0;
+}
+
+.purple {
+  color:  #7030a0;
 }
 
 h1 small {
@@ -25,9 +29,10 @@ p {
 }
 
 .container {
-  padding: 80px 120px;
+  padding: 40px 60px;
 }
 
+/* body { padding-top: 70px; }*/
 
 .well {
   background-color: #F8E6FF;
