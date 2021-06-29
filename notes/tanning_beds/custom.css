@@ -24,25 +24,11 @@ p {
   text-indent: 2em;
 }
 
-summary  {
-  text-align: left;
-}
-
-
-td {
-  text-align: left;
-}
-
 .container {
   padding: 80px 120px;
 }
 
-@media only screen and (max-width: 768px) {
-  .summary {
-    padding: 20px 30px;
-  }
-  
-}
+
 
 
 
