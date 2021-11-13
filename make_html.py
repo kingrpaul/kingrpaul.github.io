@@ -107,7 +107,6 @@ notes =  [
 
 # print(make_rows(*notes))
 
-
 pubs =  [
     ['2019<br/>Simplistic Tomotherapy Model Predicts RayStation Treatment Times Within 20&#37; for First 16 Plans, PO-GePV-T-278, AAPM', 
         [("./_downloads/2019_SimplisticTomotherapyModel.pdf",
