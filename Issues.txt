@@ -1,0 +1,4 @@
+(1) include the RCTC document into the site
+(2) Add social buttons to to the site
+(3) add aamd reviewer certificate
+(4) add video links via youtube

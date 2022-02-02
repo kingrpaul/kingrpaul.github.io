@@ -1,0 +1,232 @@
+/* Colors of Finland, https://www.truecolorsfinland.fi/palette */
+:root {
+    --lt_olive: #b5993b;
+    --lt_grey: #9b9b9e;
+    --lt_blue: #90bcf2;
+    --blue_grey: #889dba;
+    --med_blue: #4c79b7;
+    --tan: #e2b3a4;
+    --dk_olive: #8b7519;
+    --black: #0a0202;
+    --med_grey: #757577;
+    --dk_grey: #505759;
+
+    --navy: #22577E;
+    --blue: #5584AC;
+    --teal: #95D1CC;
+    --beige: #F6F2D4;
+}
+
+/* ELEMENTS */
+
+body {
+    background-color: #f9f0ed;
+    color: var(--black);
+    font-family: 'Source Serif 4', sans-serif;
+    font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans 3', sans-serif;
+    color: var(--black);
+}
+
+h6 {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    color: var(--med_grey);
+}
+
+a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.text-link {
+    font-weight: lighter;
+}
+
+.text-link:hover, .text-link > p:hover {
+    font-weight: lighter;
+    background-color: white;
+}
+
+.icon-link:hover {
+    opacity: 70%;
+    background-color: white;
+}
+
+.web-address {
+    font-size:smaller;
+}
+
+.img-hover:hover {
+    opacity: 50%;
+    background-color: white;
+}
+
+a:visited {
+    color: var(--black);
+}
+
+ul>h5 {
+    margin-bottom: 0.5em;
+}
+
+ul {
+    background-color: inherit !important;
+    border: none !important;
+}
+
+li {
+    background-color: inherit !important;
+    border: none !important;
+    list-style-type: none;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+h3~p {
+    padding-left: 0.5rem;
+    margin: 0;
+}
+
+
+/* BOOTSTRAP CLASSES */
+
+.navbar, .navbar-nav {
+    background-color: var(--med_blue) !important;
+}
+
+
+
+/* CUSTOM CLASSES */
+
+.navbar-name {
+    font-family: 'Source Sans 3', sans-serif;
+    display: inline-block;
+    margin: 0 3rem;
+}
+
+.navbar-photo {
+    height: 3.5rem;
+    border-radius: 100%;
+}
+
+.profile-img {
+    border-radius: 20%;
+}
+
+.list-item-org {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    text-decoration: underline;
+    margin: auto auto 0 0;
+}
+
+.web-address {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    white-space: nowrap;
+}
+
+.web-address:hover {
+    background-color: white;
+    font-weight: normal;
+}
+
+.apa_cite>li {
+    padding: 0 0 0 4rem;
+    text-indent: -2em;
+}
+
+
+.list-subhead {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 0.9rem;
+    text-decoration: underline;
+}
+
+.inline-icon {
+    diplay: inline;
+    height: 1.4rem;
+}
+
+.book-caption {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: smaller;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.state-icon {
+    display: inline;
+    height: 3rem;
+    padding: 0;
+    margin: -7rem;
+
+}
+
+.org-blurb {
+    font-size: smaller;
+    color: #444444;
+    margin-bottom: 1rem;
+}
+
+.hoverable-img:hover {
+    opacity: .85;
+    border: 5px solid var(--lt_blue);
+}
+
+/* IDs */
+
+#summary {
+    padding: 1% 8% 1% 8%;
+    border: #0a0202 box-shadow: 10px 5px 5px black;
+}
+
+
+.icon {
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+  .ce-year
+  {
+    display:block;
+    font-size: 1.2rem;      
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem 0 0 1rem;
+}
+
+  .ce-title
+  {
+      font-size: 1.2rem;      
+      font-weight: normal;
+      margin: 0;
+  }
+
+  .ce-instructor
+  {
+    display:block;
+    font-size: 1rem;     
+    color: var(--blue_grey);
+    margin: 0.3rem 0 0.3rem 0;
+  }
+
+  .ce-description
+  {
+    display:block;
+    font-size: 0.9rem;    
+    margin: 0;
+    color: var(--dk_grey);
+
+  }

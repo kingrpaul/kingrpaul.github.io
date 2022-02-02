@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- BOILERPLATE -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+
+  <!-- METADATA -->
+  <title>Varian Rails w/Ray6</title>
+  <meta name="author" content="{Paul King}">
+  <meta name="description" content="This document describes validation of Varian linac rails with RayStation planning.">
+  <meta name="keywords" content="
+    RayStation,Medical physics,Radiation therapy,Varian, Clinac iX, 
+    Radiobiology, Radiation oncologist,RaySearch Laboratories, 
+    Radiation therapy, cancer radiation therapy, radiation oncology, 
+    cancer treatment, cancer radiation treatment
+    " />
+
+    <!-- BOOSTRAP 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
+
+  <!-- JQUERY -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- FONTS & GLYPHS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+34&display=swap" rel="stylesheet">
+
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <!-- LOAD NAVBAR ####################################### -->
+  <div id="_navbar"></div>
+  <script>
+    $('#_navbar').load('navbar.html');
+  </script>
+
+  <div class="container">
+    <h1>Varian Rails w/Ray6</h1>
+    <h2 class="small text-secondary">2018_07_25</h2>
+    <hr />
+    <p>Can we “shoot through the rails” of the Clinac iX when planning with RayStation?</p>
+    <p>Existing rules for handling the couch-top in Pinnacle planning and Varian delivery are as follows:</p>
+    <ol type="1" class="">
+      <li class="">always treat using the imaging couch-top</li>
+      <li>never treat through the rails</li>
+      <li class="">never treat through the edge of the couch</li>
+      <li class="">except in special cases, use rails-in or rails-out; do not plan to adjust between beams</li>
+      <li class="">if treating through the couch
+        <ol type="a" class="">
+          <li class="">put the whole field through the couch</li>
+          <li class="">be cognizant of the bolus effect, ~½ cm equivalent</li>
+          <li class="">correct the MU for attenuation, 2-8%</li>
+        </ol>
+      </li>
+    </ol>
+
+    <!-- ############## -->
+    <figure class="figure">
+      <img src="img/note_varian_rails_ray/figure11.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption text-end">Figure 1</figcaption>
+    </figure>
+
+    <!-- ############## -->
+    <figure class="figure">
+      <img src="img/note_varian_rails_ray/figure21.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption text-end">Figure 2</figcaption>
+    </figure>
+
+    <!-- ############## -->
+    <figure class="figure">
+      <img src="img/note_varian_rails_ray/figure31.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption text-end">Figure 3</figcaption>
+    </figure>
+
+    <p>A Varian couch-top planning model is available, though from an unknown source. Direct use of this model does
+      not integrate well with Pinnacle’s workflow. RayStation’s patient modeling tools are more sophisticated. This
+      couch-top model was ported to RayStation and converted to a template, which can then be be workably applied to
+      each patient.</p>
+    <p>Is this model, used with RayStation, dosimetrically accurate?</p>
+    <p>During beam modeling, measurements were made using MapCheck, in it’s calibration sleeve, below 10 cm of plastic
+      water. Detectors were at an effective depth of ~13 cm from the front and ~4 cm from the rear.</p>
+    <p>MapCheck was recalibrated and benchmark calculations and measurements were made using isocentric, AP, open,
+      20x20 fields.</p>
+
+
+    <!-- ############## -->
+    <figure class="figure">
+      <img src="img/note_varian_rails_ray/figure4.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption text-end">Figure 4</figcaption>
+    </figure>
+
+    <p>Reasonable agreement was seen.</p>
+
+    <!-- ############## -->
+    <figure class="figure">
+      <img src="img/note_varian_rails_ray/figure5.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption text-end">Figure 5</figcaption>
+    </figure>
+
+    <!-- ############## -->
+    <figure class="figure">
+      <img src="img/note_varian_rails_ray/figure6.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption text-end">Figure 6</figcaption>
+    </figure>
+
+    <p>The same 20x20 beam was calculated and measured from the posterior.</p>
+
+
+    <!-- ############## -->
+    <figure class="figure">
+      <img src="img/note_varian_rails_ray/figure7.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption text-end">Figure 7</figcaption>
+    </figure>
+
+    <p>Note that attenuation by the rails is on the order of 15%.</p>
+
+
+    <!-- ############## -->
+    <figure class="figure">
+      <img src="img/note_varian_rails_ray/figure8.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption text-end">Figure 8</figcaption>
+    </figure>
+
+    <!-- ############## -->
+    <figure class="figure">
+      <img src="img/note_varian_rails_ray/figure9.png" class="figure-img img-fluid rounded" alt="...">
+      <figcaption class="figure-caption text-end">Figure 9</figcaption>
+    </figure>
+
+    <br />
+    <h4>Findings:</h4>
+    <ol class="">
+      <li>Using RayStation, this couch-top model does a ‘good job’ of predicting the magnitude of the disruption in
+        dose.</li>
+      <li>The rollers and clips, that are part of the couch top but are excluded from the model, produce a small
+        effect that can be ignored.</li>
+      <li>The rails close symmetrically and the rails-in model is symmetric. Yet, ~1 cm dose position error was seen
+        in the left rail. There is no machine readout of rail position and correctness depends on manual verification.
+        Rail centering, adequate to achieve gamma-analysis “PASS”, requires some finesse.</li>
+      <li>CT-sim couch is fixed / centered and precisely planning for a non-centered couch ( lat ≠ 100 cm) is not
+        straightforward. Indexing of immobilization is occasionally impractical and use of the lock-bar at the time of
+        treatment is not machine-verified in any case. So, again, correctness depends on manual verification.</li>
+    </ol>
+    <h4>Conclusion:</h4>
+    <ol class="">
+      <li>When planning with RayStation, generally maintain the existing rules. Do not routinely treat through the
+        rails or couch edges.</li>
+      <li>Routinely apply the couch-top model in treatment planning. Use it to account for transmission through the
+        couch and as an aid in avoiding the rails. Discontinue manual use of couch transmission factors.</li>
+      <li>Any intentional treatment through the rails is to be treated as a special procedure, cognizant of the real
+        potential for meaningful dose placement errors.</li>
+      <li>Correctness of treatment dose continues to depend on manual verification.</li>
+    </ol>
+  </div>
+
+  <div class="container footer">
+    &copy; <a href="https://kingrpaul.github.io/" target="_blank">rpk</a> - 07/25/2018
+  </div>
+</body>
+
+</html>

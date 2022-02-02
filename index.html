@@ -1,78 +1,658 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>king.r.paul</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Jeff Anderson Regional Cancer Center">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    position: relative;
-  }
-  ul.nav-pills {
-    top: 20px;
-    position: fixed;
-  }
-  .carousel-inner {
-    width:100%; height:
-     500px !important;
-     } 
-  img { max-width:100%; max-height:100%;}
-  </style>
+    <!-- BOILERPLATE -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+
+    <!-- METADATA -->
+    <title>homepage</title>
+    <meta name="author" content="{Paul King}">
+    <meta name="description"
+        content="This document describes validation of Varian linac rails with RayStation planning.">
+    <meta name="keywords" content="
+    RayStation,Medical physics,Radiation therapy,Varian, Clinac iX, 
+    Radiobiology, Radiation oncologist,RaySearch Laboratories, 
+    Radiation therapy, cancer radiation therapy, radiation oncology, 
+    cancer treatment, cancer radiation treatment
+    " />
+
+    <!-- BOOSTRAP 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- FONTS & GLYPHS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+34&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
+
 <body>
+    <!-- LOAD NAVBAR ####################################### -->
+    <div id="_navbar"></div>
+    <script>
+        $('#_navbar').load('navbar.html');
+    </script>
 
-<!-- Make notes into a drop-down and include the header on the notes. -->
-<!-- Maybe use javascript to include the header. -->
+    <!-- #################################################### -->
+    <section class="container row org-blurb" id="summary">
+        <p>
+            Experienced & results-oriented; progressive record of innovation & success in quality enhancement, planning,
+            program development, regulatory compliance, & health care technology management; mature judgment &amp;
+            prescient vision in diverse environments; proactive stewardship, valuing excellence that is patient focused
+            & mission driven.
+        </p>
+        <p style="font-size: 0.8rem;"><em>"And one man in his time plays many parts."</em></p>
+    </section>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="https://en.gravatar.com/kingrpaul" target="_blank"><img src="https://secure.gravatar.com/avatar/f3ef8b36fd1e4983dc51c1abc6b9650e" class="thumbnail rounded" alt="Paul King"> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link active" href=".\index.html">home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\press.html">press</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\notes.html">notes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\pubs.html">pubs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\pics.html">pics</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\wiki.html">wiki</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\ebooks.html">ebooks</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\safe.html">safe</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link active" href=".\press.html">Press</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href=".\press.html">Press</a>
-        </li> -->
-      </ul>
-    </div>
-  </nav>
+    <!-- #################################################### -->
+    <section class="container row" id="experience">
+        <hr>
+        <h3>Medical Physicist</h3>
+        <div class="col-lg-8">
+            <h3 class="list-subhead ms-2">Mississippi</h3>
+            <ul class="list-group">
+                <li class="list-group-item ms-2">
+                    <a target="_blank" href="https://www.painlessskincancertreatment.com/">
+                        Painless Skin CancerTreatment
+                    </a>
+                </li>
+                <li class="list-group-item ms-2">
+                    <a target="_blank" href="https://www.andersonregional.org/">
+                        Jeff Anderson Regional Medical Center <br>
+                        Feb 1997 &mdash; Feb 2020 <br>
+                        <div class="container text-secondary"><small>
+                                Previously also: Deland & Noell Oncologics, Forrest General Hospital, Hattiesburg
+                                Clinics, Riley
+                                Memorial Hospital, Rush Foundation Hospital, Greenwood Leflore Hospital, Wayne General
+                                Hospital,
+                                Marion General Hospital, Southern Bone and Joint, Total Pain Care of Meridian, South
+                                Central Regional
+                                Medical Center, Sumner Clinic, Belzoni’s Gorton Clinic, and Cleveland’s Family Medical
+                                Clinic
+                            </small>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <h3 class="list-subhead ms-2">Texas</h3>
+            <ul class="list-group">
+                <li class="list-group-item ms-2">
+                    <a href="#">
+                        Sammons Cancer Center at Baylor University Medical Center<br>
+                        May 1995 &mdash; Jan 1997
+                    </a>
+                </li>
+            </ul>
+
+
+            <h3 class="list-subhead ms-2">California</h3>
+            <ul class="list-group">
+                <li class="list-group-item ms-2">
+                    <a href="#">
+                        Prowess Medical Physics Group<br>
+                        Sep 1991 &mdash; May 1995
+                    </a>
+                </li>
+            </ul>
+
+            <h3 class="list-subhead ms-2">Florida</h3>
+            <ul class="list-group">
+                <li class="list-group-item ms-2">
+                    <a href="#">
+                        Santa Fe HealthCare<br>
+                        Aug 1990 &mdash; Sep 1991
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+
+        <div class="col-lg-4">
+            <div class="row ms-0">
+                <div class="col-lg-10 col-sm-5">
+                    <a href="./doc2015MississippiHospitals.html" class="img-hover">
+                    <img class="img-fluid img-thumbnail p-2" src="img/fig1.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- #################################################### -->
+    <section class="container row" id="student">
+        <hr>
+        <h3>Student</h3>
+        <div class="card-group">
+            <div class="card" style="background-color:inherit; border:none;">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <img src="icon/uf.png" style="height:3rem;" alt="uf">
+                    </li>
+                    <li class="list-group-item">
+                        <p>MS, Medical Physics</p>
+                        <p>Aug 1990</p>
+                    </li>
+                    <li class="list-group-item">
+                        <p>BSEE, Electrical Engineering</p>
+                        <p>Dec 1988</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="card" style="background-color: inherit; border:none;">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <img src="icon/usm.png" style="height:3rem;" alt="usm">
+                    </li>
+                    <li class="list-group-item">MPH, Health Svcs Administration<br>May 2010</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- #################################################### -->
+    <section class="container row" id="instructor">
+        <hr>
+        <h3>Instructor</h3>
+        <div class="col-lg-6">
+            <div class="card" style="background-color:inherit; border:none;">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <img src="icon/bumc.png" style="height:3rem;" alt="uf">
+                    </li>
+                    <li class="list-group-item">
+                        <p>Baylor School of Radiation Therapy</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">Medical Radionuclides</li>
+                            <li class="list-group-item">Radiation Dosimetry</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="row">
+                <div class="col-6 p-2">
+                    <a href="images/1995_DallasTXBaylorSchoolofRT.jpg" class="img-hover" target="_blank">
+                        <img class="img-fluid" src="img/bumc_rtt_95.jpg" alt="uf">
+                    </a>
+                </div>
+                <div class="col-6 p-2">
+                    <a href="images/1996_DallasTXBaylorSchoolofRT.jpg" class="img-hover" target="_blank">
+                        <img class="img-fluid" gim src="img/bumc_rtt_96.jpg" alt="uf">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- #################################################### -->
+    <section class="container row" id="author">
+        <hr>
+        <h3>Author</h3>
+        <ul class="list-group apa_cite">
+            <!-- 2019 ----------------- -->
+            <li class="list-group-item apa_cite">
+                King, P., Sawyers, C., Anderson, S., Gaddam, K., Dulaney, C., Jordan, R., &amp; Thompson, G. (2019).
+                Simplistic Tomotherapy Model Predicts RayStation Treatment Times Within 20% for First 16 Plans, AAPM
+                61<sup>st</sup>
+                Annual Meeting &amp; Exhibition, PO-GePV-T-278,
+                <a class="text-link web-address" target="_blank"
+                    href="https://w3.aapm.org/meetings/2019AM/programInfo/programAbs.php?&shid[]=1481&sid=8165&aid=43946">
+                    https://w3.aapm.org/meetings/2019AM/programInfo/programAbs.php</a></li>
+            <!-- 2014 ----------------- -->
+            <li class="list-group-item apa_cite">
+                King, R., Cheung, A., Anderson, R., C., Thompson, G., &amp; Fletcher, M. (2014).
+                Simplifying Assumption for Determining Sc and Sp,
+                AAPM 56<sup>th</sup> Annual Meeting &amp; Exhibition, SU-E-T-293,
+                <a class="text-link web-address" target="_blank"
+                    href="https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4888625">
+                    https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4888625</a></li>
+            <!-- 2013 ----------------- -->
+            <li class="list-group-item apa_cite">
+                Manikandan A, Sarkar B, Rajendran VT, King P, Sresty NM, Holla R, Kotur S, &amp; Nadendla S. (2013).
+                Role of step size and max dwell time in anatomy based inverse optimization for prostate implants,
+                Journal of Medical Physics 38 (3)148-154.
+                <a class="text-link web-address" target="_blank"
+                    href=" https://www.jmp.org.in/text.asp?2013/38/3/148/116380">
+                    https://www.jmp.org.in/text.asp?2013/38/3/148/116380</a></li>
+            <!-- 2013 ----------------- -->
+            <li class="list-group-item apa_cite">
+                King, R. &amp; Cheung, A. (2013).
+                Estimation of Effective Field Size With a Leaf-Based Algorithm,
+                AAPM 55<sup>th</sup> Annual Meeting &amp; Exhibition, , SU-E-T-7,
+                <a class="text-link web-address" target="_blank"
+                    href="https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4814441">
+                    https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4814441</a>
+            </li>
+            <!-- 2012 ----------------- -->
+            <li class="list-group-item apa_cite">
+                King, R. (2012). The New Professional’s Resume,
+                Newsletter of the AAPM, 37(3), 24.
+                <a class="text-link web-address" target="_blank"
+                    href="https://issuu.com/aapmdocs/docs/3703-aapmnews_a6d8ca964cf770">https://issuu.com/aapmdocs/docs/3703-aapmnews_a6d8ca964cf770</a>
+            </li>
+            <!-- 2010 ----------------- -->
+            <li class="list-group-item apa_cite">
+                Dube, S., King, R.P. and Orton, C.G. (2010), Radiation therapists should not have to wear personnel
+                dosimetry badges. Medical Physics, 37: 2401-2403.
+                <a class="text-link web-address" target="_blank" href="https://doi.org/10.1118/1.3371682">
+                    https://doi.org/10.1118/1.3371682</a>
+            </li>
+            <!-- 2008 ----------------- -->
+            <li class="list-group-item apa_cite">
+                King, R.P., Anderson, R.S. and Kandagatla, K.K. (2008), Comment on “Quantifying the interplay effect
+                in
+                prostate IMRT delivery using a convolution-based method” [Med. Phys., – (2008)]. Medical Physics,
+                35:
+                5955-5956.
+                <a class="text-link web-address" target="_blank"
+                    href="https://doi.org/10.1118/1.3013551">https://doi.org/10.1118/1.3013551</a></li>
+            </li>
+            <!-- 2007 ----------------- -->
+            <li class="list-group-item apa_cite">
+                King, R., Anderson, R., &amp; Kandagatla, K. (2007). Comment on "IMRT should not be administered at
+                photon
+                energies greater than 10 MV [Med. Phys. 34, 1877–1879 (2007)]", Medical Physics 34(9), 3696.
+                <a class="text-link web-address" target="_blank"
+                    href="https://doi.org/10.1118/1.2767971">https://doi.org/10.1118/1.2767971</a></li>
+            <!-- 2001 ----------------- -->
+            <li class="list-group-item apa_cite">
+                King, R. P., & Anderson, R. S. (2001). A simple method for electron energy constancy measurement.
+                Journal of
+                applied clinical medical physics, 2(1), 51–53.
+                <a class="text-link web-address" target="_blank"
+                    href="https://doi.org/10.1120/jacmp.v2i1.2628">https://doi.org/10.1120/jacmp.v2i1.2628</a></li>
+            </li>
+            <!-- 2001 ----------------- -->
+            <li class="list-group-item apa_cite">
+                King, P., & Anderson, R. S. (2001). In regard to the American Brachytherapy Society recommendations
+                for
+                <sup>103</sup>palladium brachytherapy. Beyer et al. IJROBP 2000;47:273-275. International journal of
+                radiation oncology, biology, physics, 49(3), 899.
+                <a class="text-link web-address" target="_blank"
+                    href="https://doi.org/10.1016/s0360-3016(00)01393-6">https://doi.org/10.1016/s0360-3016(00)01393-6</a>
+            </li>
+            <!-- 2001 ----------------- -->
+            <li class="list-group-item apa_cite">
+                King, R. P., Anderson, R. S., & Mills, M. D. (2001). Geometry function of a linear brachytherapy
+                source.
+                Journal of applied clinical medical physics, 2(2), 69–72.
+                <a class="text-link web-address" target="_blank"
+                    href="https://doi.org/10.1120/jacmp.v2i2.2615">https://doi.org/10.1120/jacmp.v2i2.2615</a>
+            </li>
+            <!-- 2000 ----------------- -->
+            <li class="list-group-item apa_cite">
+                Anderson, R.S., Eifert, B., Tartt, S., & King, P. (2000). Radioimmunoguided surgery using indium-111
+                capromab pendetide (PROSTASCINT) to diagnose supraclavicular metastasis from prostate cancer.
+                Urology,
+                56 4,
+                669. <a class="text-link web-address" target="_blank"
+                    href="https://doi.org/10.1016/s0090-4295(00)00715-9">https://doi.org/10.1016/s0090-4295(00)00715-9</a>
+            </li>
+            <!-- 1990 ----------------- -->
+            <li class="list-group-item apa_cite">
+                King, P., Fox, R., Eisenstadt, W., Ferris, D., Jacobs, A., &amp; Cox, J. (1990). CMOS Analog IC
+                X-Ray
+                Image
+                Sensor Array. Second Annual Florida Microelectronics Conference, Proceedings 139-142.
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- #################################################### -->
+    <section class="container row" id="instructor">
+        <hr>
+        <h3>Reviewer</h3>
+        <div class="col-lg-9">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h3 class="list-subhead">Journal</h3>
+                    <p>
+                        <a class="" target="_blank" href="https://www.meddos.org/">
+                            Journal: Medical Dosimetry
+                        </a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-9">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h3 class="list-subhead">Book</h3>
+                    <p>
+                        <a class="" target="_blank"
+                            href="https://catalog.loc.gov/vwebv/search?searchCode=LCCN&searchArg=2012419303&searchType=1&permalink=y">
+                            Radiologic Science for Technologists, 8<sup>th</sup> Edition, Bushong
+                        </a>
+                    </p>
+                </li>
+            </ul>
+        </div>
+
+    </section>
+
+    <!-- #################################################### -->
+    <section class="container row" id="innovator">
+        <hr>
+        <!-- INCLUDE THE DOCUMENTS -->
+
+        <div class="col-lg-6">
+            <h3>Innovator</h3>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <!-- <h3 class="list-subhead">Journal</h3> -->
+                    <p>Model 515 eCheck Device</p>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <!-- <h3 class="list-subhead">Journal</h3> -->
+                    <p>Conformal Arc Hybrid IMRT Treatment Technique</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+            <div class="row ms-0">
+                <div class="col-lg-6 col-sm-7">
+                    <img style="height:15rem;" class="img-fluid img-thumbnail p-2" src="img/fig4.jpg" alt="">
+                </div>
+                <div class="col-lg-6 col-sm-7">
+                    <img style="height:15rem;" class="img-fluid img-thumbnail" src="img/fig2.jpg" alt="">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- #################################################### -->
+    <section class="container row" id="member">
+        <hr>
+        <h3>Member</h3>
+
+        <div class="col-lg-6">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h3 class="list-subhead">American Association of Physicists in Medicine</h3>
+                    <p>Professional Economics Committee</p>
+                    <p>New Professionals Subcommittee</p>
+                    <p>Biological Effects Subcommittee</p>
+                    <p>Radiation Oncology Safety Stakeholders Initiative</p>
+                    <p>ACMP Membership Committee (Chair)</p>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h3 class="list-subhead">Jeff Anderson Regional Medical Center</h3>
+                    <p>Radiation Safety Committee (Chair &amp; RSO)</p>
+                    <p>Emergency Department Task Group (Lean-6σ)</p>
+                    <p>Cardiology Operations Task Group (Lean-6σ)</p>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h3 class="list-subhead">Mississippi School for Mathematics and Science</h3>
+                    <p>Advisory Board</p>
+                    <p>Student Selection Committee</p>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h3 class="list-subhead"></h3>
+                    <p>Accuray Customer Advisory Board</p>
+                    <p>Mississippi Radiation Response Volunteer Corps</p>
+                </li>
+            </ul>
+        </div>
+        <!-- Guidepoint -->
+        </ul>
+
+        <div class="col-lg-6">
+            <div class="row ms-0">
+                <div class="col-lg-10 col-sm-7">
+                    <img class="img-fluid img-thumbnail p-2" src="img/fig3.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- #################################################### -->
+    <section class="container row" id="tester">
+        <hr>
+        <h3>Evaluator / Clinical αβ Site</h3>
+        <div class="col-lg-9">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h3 class="list-subhead">Vendor Administrator</h3>
+                    <p>Prowess 3000</p>
+                    <p>Prowess FS<sup>2</sup></p>
+                </li>
+            </ul>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h3 class="list-subhead">Customer Tester</h3>
+                    <p>Pinnacle<sup>3</sup> SmartArc</p>
+                    <p>RayStation + Tomotherapy</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- #################################################### -->
+    <section class="container row" id="contributor">
+        <hr>
+        <h3>Contributor</h3>
+
+        <ul class="list-group ms-3">
+            <!-- #################################################### -->
+            <a class="icon-link" target="_blank" href="https://en.wikipedia.org/wiki/Special:Contributions/Pairko">
+                <div class="card list-group-item" style="background-color: inherit; border:0;">
+                    <h5 class="card-title list-subhead">Wikipedia</h5>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img src="icon/wikipedia.png" style="max-height:3rem;" class="img-fluid"
+                                alt="wikipedia">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="card-body">
+                                <p class="card-text"><small class="text-muted text-left">The Free Encyclopedia.</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </a>
+            <!-- #################################################### -->
+            <a class="icon-link" target="_blank" href="https://commons.wikimedia.org/w/index.php?title=Special:ListFiles/Pairko&ilshowall=1">
+                <div class="card list-group-item" style="background-color: inherit; border:0;">
+                    <h5 class="card-title list-subhead">Wikimedia Commons</h5>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img src="icon/wikimedia.png" style="max-height:3rem;" class="img-fluid"
+                                alt="wikimedia">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="card-body">
+                                <p class="card-text"><small class="text-muted text-left">A collection of freely usable media files.</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </a>
+            <!-- #################################################### -->
+            <a class="icon-link" target="_blank" href="https://api.safecast.org/en-US/users/1108/measurements">
+                <div class="card list-group-item" style="background-color: inherit; border:0;">
+                    <h5 class="card-title list-subhead">Safecast</h5>
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img src="icon/safecast.png" style="max-height:3rem;" class="img-fluid"
+                                alt="wikipedia">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="card-body">
+                                <p class="card-text"><small class="text-muted text-left">Collects and maintains a global, open dataset of background radiation measurements.</small>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </a>
+        </ul>
+
+
+
+        <!-- INCLUDE STD-EBOOKS INTO THE LIST WITHOUT BREAKING THE COVER GALLERY -->
+
+
+        <!-- #################################################### -->
+        <ul class="list-group">
+            <li class="list-group-item">
+                <h3 class="list-subhead">Standard E-Books</h3>
+                <p class="org-blurb">
+                    <img class="m-2" style="height:3rem;" src="icon/books.png" alt="books">
+                    Produces professional-quality, open source, new editions of public domain ebooks.
+                </p>
+                <div class="row ms-5">
+                    <!-- POLLYANNA -->
+                    <div class="col-6 col-sm-3 col-xl-2">
+                        <img class="card-img-top hoverable-img" src="img/cover/150x225_pollyanna.png" alt="pollyanna"
+                            data-toggle="tooltip"
+                            title="An orphan’s unrelenting optimism sees her through adversity and lifts up her new community.">
+                        <p class="book-caption">
+                            2020
+                            <a href="https://standardebooks.org/ebooks/eleanor-h-porter/pollyanna" target="_blank">
+                                <img class="inline-icon icon-link" src="svg/se.svg" alt="standard ebooks">
+                            </a>
+                            <a href="https://github.com/kingrpaul/eleanor-h-porter_pollyanna" target="_blank">
+                                <img class="inline-icon icon-link" src="svg/github.svg" alt="github">
+                            </a>
+                        </p>
+                    </div>
+                    <!-- POLLYANNA GROWS UP -->
+                    <div class="col-6 col-sm-3 col-xl-2">
+                        <img class="card-img-top hoverable-img" src="img/cover/150x225_pollyanna_grows_up.png"
+                            alt="pollyanna grows up" data-toggle="tooltip"
+                            title="The second book about Pollyanna Whittier follows the events of her life in Boston at age 13 and then in rural Vermont at the age of 20.">
+                        <p class="book-caption">
+                            2021
+                            <a href="https://standardebooks.org/ebooks/eleanor-h-porter/pollyanna-grows-up"
+                                target="_blank">
+                                <img class="inline-icon icon-link" src="svg/se.svg" alt="standard ebooks">
+                            </a>
+                            <a href="https://github.com/kingrpaul/eleanor-h-porter_pollyanna-grows-up" target="_blank">
+                                <img class="inline-icon icon-link" src="svg/github.svg" alt="github">
+                            </a>
+                        </p>
+                    </div>
+                    <!-- THE PLASTIC AGE -->
+                    <div class="col-6 col-sm-3 col-xl-2">
+                        <img class="card-img-top hoverable-img" src="img/cover/150x225_plastic_age.png"
+                            alt="the plastic age" data-toggle="tooltip"
+                            title="This novel tells the story of Hugh Carver’s experience as an undergraduate student at Sanford College, a fictional, upscale, liberal arts school in Jazz Age New England.">
+
+                        <p class="book-caption">
+                            2021
+                            <a href="https://standardebooks.org/ebooks/percy-marks/the-plastic-age" target="_blank">
+                                <img class="inline-icon icon-link" src="svg/se.svg" alt="standard ebooks">
+                            </a>
+                            <a href="https://github.com/kingrpaul/percy-marks_the-plastic-age" target="_blank">
+                                <img class="inline-icon icon-link" src="svg/github.svg" alt="github">
+                            </a>
+                        </p>
+                    </div>
+                    <!--  HUMBUGS OF THE WORLD -->
+                    <div class="col-6 col-sm-3 col-xl-2">
+                        <img class="card-img-top hoverable-img" src="img/cover/150x225_humbugs.png"
+                            alt="humbugs of the world" data-toggle="tooltip"
+                            title="American archetype and cultural founding father, Phineas Taylor Barnum shares a varied collection of anecdotes that he deems “humbugs”—fodder for the gullible, deserving of skepticism—with the stated goal of making his fellow citizens a little wiser and more skeptical.">
+
+                        <p class="book-caption">
+                            2021
+                            <a href="https://standardebooks.org/ebooks/p-t-barnum/the-humbugs-of-the-world"
+                                target="_blank">
+                                <img class="inline-icon icon-link" src="svg/se.svg" alt="standard ebooks">
+                            </a>
+                            <a href="https://github.com/kingrpaul/p-t-barnum_the-humbugs-of-the-world" target="_blank">
+                                <img class="inline-icon icon-link" src="svg/github.svg" alt="github">
+                            </a>
+                        </p>
+                    </div>
+                    <!-- ALGERNON BLACKWOOD -->
+                    <div class="col-6 col-sm-3 col-xl-2">
+                        <img class="card-img-top hoverable-img" src="img/cover/150x225_blackwood.png"
+                            alt="short fiction of algernon blackwood" data-toggle="tooltip"
+                            title="These are short fiction works of the genuinely curious character Algernon Blackwood, a prolific English writer mostly known for his deeply atmospheric, intensely human, and often quasi-autobiographical works of “weird fiction.">
+
+                        <p class="book-caption">
+                            2020
+                            <a href="" target="_blank">
+                                <img class="inline-icon icon-link d-none" src="svg/se.svg" alt="standard ebooks">
+                            </a>
+                            <a href="https://github.com/kingrpaul/algernon-blackwood_short-fiction" target="_blank">
+                                <img class="inline-icon icon-link" src="svg/github.svg" alt="github">
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        </div>
+
+    </section>
+
+    <!-- #################################################### -->
+    <section class="container row" id="soldier">
+        <hr>
+        <h3>Soldier</h3>
+        <div class="col-lg-6">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <p>C &amp; E
+                        <img style="height: 1.4rem;" class="profile-img mx-2" src="./icon/sig_corp.png" alt="" />
+                        <img style="height: 1.4rem;" class="profile-img mx-2" src="./icon/sp4.png" alt="" />
+                    </p>
+                    <p>JCRX Flintlock ’84</p>
+                    <p>AAM (’84) &amp; ARCOM (’85) </p>
+            </ul>
+        </div>
+        <div class="col-lg-6">
+            <div class="row ms-0">
+                <div class="col-lg-10 col-sm-7">
+                    <img style="height:12rem;" class="img-fluid img-thumbnail p-2" src="img/fig5.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- #################################################### -->
 
 </body>
+
 </html>

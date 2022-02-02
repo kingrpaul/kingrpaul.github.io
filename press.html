@@ -1,167 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>king.r.paul</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Jeff Anderson Regional Cancer Center">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="shortcut icon" href="favicon.ico" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <style>
-  body {
-    position: relative;
-  }
-  ul.nav-pills {
-    top: 20px;
-    position: fixed;
-  }
-  .carousel-inner {
-    width:100%; height:
-     500px !important;
-     } 
-  img { max-width:100%; max-height:100%;}
-  </style>
-</head>
-<body>
+  <head>
+    <title>king.r.paul</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="news items and press releases">
+    <meta name="keywords" content="medical physics, jeff anderson regional cancer center">
+    <meta name="author" content="Paul King">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="icon" href="favicon.ico">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="https://en.gravatar.com/kingrpaul" target="_blank"><img src="https://secure.gravatar.com/avatar/f3ef8b36fd1e4983dc51c1abc6b9650e" class="thumbnail rounded" alt="Paul King"> </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+34&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
   
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href=".\index.html">home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href=".\press.html">press</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\notes.html">notes</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\pubs.html">pubs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\pics.html">pics</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\wiki.html">wiki</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\ebooks.html">ebooks</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href=".\safe.html">safe</a>
-        </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link active" href=".\press.html">Press</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" href=".\press.html">Press</a>
-        </li> -->
-      </ul>
-    </div>
-  </nav>
-
-
+  <body>
+      <!-- LOAD NAVBAR ####################################### -->
+      <div id="_navbar"></div>
+      <script>
+          $('#_navbar').load('navbar.html');
+      </script>
+  
+  
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 text-primary">
-
-      <!-- press -->
-      <div id="section1" class="">
-        <!-- <h1>press</h1> -->
-
-        <ul class="list-group text-secondary">
-        
+        <div id="section1" class="">
+          <ul class="list-group text-secondary">
           <li class="list-group-item">
-            <div class="row">
-                <div class="col-11">
-                    2019<br/>Anderson Regional Cancer Center is the first center in the United States to treat cancer patients using RayStation and the TomoTherapy Treatment Delivery System
-                </div>
-                <div class="col-1">
-                    <a class="" href="./_downloads/2019_ARCCIsTheFirstCenterInTheUS.pdf" target="_blank">
-                        <span class="material-icons">attachment</span>
-                    </a>
-                    <a class="" href="./_downloads/2019_ARCCFirstInTheUSToTreat.pdf" target="_blank">
-                        <span class="material-icons">attachment</span>
-                    </a>
-                </div>
-            </div>
-            </li>
-            <li class="list-group-item">
-            <div class="row">
-                <div class="col-11">
-                    2018<br/>RaySearch Receives First Order for the RayCare Oncology Information System
-                </div>
-                <div class="col-1">
-                    <a class="" href="./_downloads/2018_FirstOrderFo RayCare.pdf" target="_blank">
-                        <span class="material-icons">attachment</span>
-                    </a>
-                </div>
-            </div>
-            </li>
-            <li class="list-group-item">
-            <div class="row">
-                <div class="col-11">
-                    2015<br/>Anderson First in State to Offer TomoTherapy for Cancer Patients
-                </div>
-                <div class="col-1">
-                    <a class="" href="./_downloads/2015_AndersonFirstInState.pdf" target="_blank">
-                        <span class="material-icons">attachment</span>
-                    </a>
-                </div>
-            </div>
-            </li>
-            <li class="list-group-item">
-            <div class="row">
-                <div class="col-11">
-                    2014<br/>Anderson Regional Cancer Center prides itself on providing world class care close to home
-                </div>
-                <div class="col-1">
-                    <a class="" href="./_downloads/2014_WorldClassCancerCenter.png" target="_blank">
-                        <span class="material-icons">attachment</span>
-                    </a>
-                </div>
-            </div>
-            </li>
-            <li class="list-group-item">
-            <div class="row">
-                <div class="col-11">
-                    2008<br/>Conformal arc radiotherapy planned with Pinnacle3, Jeff Anderson Regional Cancer Center
-                </div>
-                <div class="col-1">
-                    <a class="" href="./_downloads/2008_ConformalArcRadiotherapy.pdf" target="_blank">
-                        <span class="material-icons">attachment</span>
-                    </a>
-                </div>
-            </div>
-            </li>
-            <li class="list-group-item">
-            <div class="row">
-                <div class="col-11">
-                    2003<br/>Jeff Anderson Celebrates 75th Anniversary with Opening of Jeff Anderson Regional Cancer Center
-                </div>
-                <div class="col-1">
-                    <a class="" href="./_downloads/2003_JeffAndersonCelebrates_.pdf" target="_blank">
-                        <span class="material-icons">attachment</span>
-                    </a>
-                </div>
-            </div>
-            </li>
+            <a class="" href="./_downloads/2019_ARCCIsTheFirstCenterInTheUS.html">
+              <div class="row">
+                <div class="col-sm-1"><span class="material-icons">attachment</span></div>
+                <div class="col-sm-1 text-secondary">2019</div>
+                <div class="col-sm-10 text-secondary">Anderson Regional Cancer Center is the first center in the United States to treat cancer patients using RayStation and the TomoTherapy Treatment Delivery System</div>
+              </div>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a class="" href="./_downloads/2019_ARCCFirstInTheUSToTreat.html">
+              <div class="row">
+                <div class="col-sm-1"><span class="material-icons">attachment</span></div>
+                <div class="col-sm-1 text-secondary">2019</div>
+                <div class="col-sm-10 text-secondary">Anderson Regional Cancer Center is the first center in the United States to treat cancer patients using RayStation and the TomoTherapy Treatment Delivery System</div>
+              </div>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a class="" href="./_downloads/2018_FirstOrderFo RayCare.html">
+              <div class="row">
+                <div class="col-sm-1"><span class="material-icons">attachment</span></div>
+                <div class="col-sm-1 text-secondary">2018</div>
+                <div class="col-sm-10 text-secondary">RaySearch Receives First Order for the RayCare Oncology Information System</div>
+              </div>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a class="" href="./_downloads/2015_AndersonFirstInState.html">
+              <div class="row">
+                <div class="col-sm-1"><span class="material-icons">attachment</span></div>
+                <div class="col-sm-1 text-secondary">2015</div>
+                <div class="col-sm-10 text-secondary">Anderson First in State to Offer TomoTherapy for Cancer Patients</div>
+              </div>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a class="" href="./_downloads/2014_WorldClassCancerCenter.html">
+              <div class="row">
+                <div class="col-sm-1"><span class="material-icons">attachment</span></div>
+                <div class="col-sm-1 text-secondary">2014</div>
+                <div class="col-sm-10 text-secondary">Anderson Regional Cancer Center prides itself on providing world class care close to home</div>
+              </div>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a class="" href="./_downloads/2008_ConformalArcRadiotherapy.html">
+              <div class="row">
+                <div class="col-sm-1"><span class="material-icons">attachment</span></div>
+                <div class="col-sm-1 text-secondary">2008</div>
+                <div class="col-sm-10 text-secondary">Conformal arc radiotherapy planned with Pinnacle3, Jeff Anderson Regional Cancer Center</div>
+              </div>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a class="" href="./_downloads/2003_JeffAndersonCelebrates_.html">
+              <div class="row">
+                <div class="col-sm-1"><span class="material-icons">attachment</span></div>
+                <div class="col-sm-1 text-secondary">2003</div>
+                <div class="col-sm-10 text-secondary">Jeff Anderson Celebrates 75th Anniversary with Opening of Jeff Anderson Regional Cancer Center</div>
+              </div>
+            </a>
+          </li>
+          <li class="list-group-item">
+            <a class="" href="./_downloads/2000_JeffAndersonTeamPPioneers.html">
+              <div class="row">
+                <div class="col-sm-1"><span class="material-icons">image</span></div>
+                <div class="col-sm-1 text-secondary">2000</div>
+                <div class="col-sm-10 text-secondary">Jeff Anderson team pioneers prostate cancer treatment</div>
+              </div>
+            </a>
+          </li>
 
           </ul>
           </div>
     </div>
   </div>
 </div>
-
 </body>
 </html>
