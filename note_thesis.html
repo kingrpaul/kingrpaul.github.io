@@ -80,6 +80,7 @@
 			margin-top: 3px;
 			margin-bottom: 3px;
 		}
+
 		#thesis p {
 			font-size: 0.9rem;
 			text-indent: 3rem;
@@ -91,10 +92,12 @@
 
 		section {
 			margin-bottom: 1.5rem;
+			max-width: 85rem;
 		}
 
 		figure {
 			margin-top: 1.5rem;
+			max-width: 60rem;
 		}
 
 		figcaption {
@@ -135,6 +138,31 @@
 			margin-top: auto;
 			margin-bottom: auto;
 		}
+
+		.container-fluid {
+			padding: 2rem;
+		}
+
+		@media (max-width:30rem) {
+			.container-fluid {
+				padding: 10px;
+			}
+
+			#thesis h2 {
+				font-size: 1rem;
+				margin-bottom:10px;
+			}
+
+			p {
+				line-height: 1.2rem;
+			}
+
+			section {
+				margin-bottom: 0.5rem;
+			}
+
+		}
+		}
 	</style>
 </head>
 
@@ -145,28 +173,28 @@
 		$('#_navbar').load('navbar.html');
 	</script>
 
-	<div class="container-fluid" style="padding:2rem;" id="thesis">
+	<div class="container-fluid" style="" id="thesis">
 
-		<section class=" id="title">
+		<section class=" id=" title">
 
-		<h1>The Metal-Oxide-Semiconductor Capacitor As The Fundamental Sensor Element Of A Digital Radiography
-			System</h1>
+			<h1>The Metal-Oxide-Semiconductor Capacitor As The Fundamental Sensor Element Of A Digital Radiography
+				System</h1>
 
 
-		<h5 class="text-center mt-5">&copy;<time datetime="1990-08">1990</time></h5>
-		<h5 class="text-center mt-3">By</h5>
-		<h5 class="text-center mt-3">ROBERT PAUL KING, JR.</h5>
+			<h5 class="text-center mt-5">&copy;<time datetime="1990-08">1990</time></h5>
+			<h5 class="text-center mt-3">By</h5>
+			<h5 class="text-center mt-3">ROBERT PAUL KING, JR.</h5>
 
-		<div style="max-width:23rem; " class="mx-auto text-uppercase">
-			<h5 class="text-center mt-5">
-				A Thesis Presented to the Graduate School of the University of Florida in Partial
-				Fulfillment of the Requirements for the Degree of <br class="my-0">Master of Science</h5>
-			<h5 class="text-center mt-3">University of Florida</h5>
-		</div>
-		</p>
+			<div style="max-width:23rem; " class="mx-auto text-uppercase">
+				<h5 class="text-center mt-5">
+					A Thesis Presented to the Graduate School of the University of Florida in Partial
+					Fulfillment of the Requirements for the Degree of <br class="my-0">Master of Science</h5>
+				<h5 class="text-center mt-3">University of Florida</h5>
+			</div>
+			</p>
 
-		<h5>Chairperson: Alan M. Jacobs</h5>
-		<h5>Major Department: Nuclear Engineering Sciences</h5>
+			<h5>Chairperson: Alan M. Jacobs</h5>
+			<h5>Major Department: Nuclear Engineering Sciences</h5>
 		</section>
 
 
