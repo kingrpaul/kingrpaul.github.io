@@ -16,7 +16,7 @@
 	<meta name="author" content="{Paul King}">
 	<meta name="description"
 		content="A Thesis Presented to the Graduate School of the University of Florida in Partial Fulfillment of the Requirements for the Degree of Master of Science.">
-	<meta name="keywords" content="medical physics, medical imaging, radiography, digital imaging, digital radiography, 
+	<meta name="keywords" content="medical physics, medical imaging, radiography, digital imaging, digital radiography, uf,
 	metal-oxide-semiconductor, MOSIS, zerbst plot, quantum efficiency, MOS capacitor, General Imaging Corporation,
 	Air Force, Alan Jacobs, John Cox, Robert Fox, William Eisenstadt, Nuclear Engineering Sciences, Electrical Engineering
     " />
@@ -46,116 +46,63 @@
 	<link rel="stylesheet" href="css/styles.css">
 
 	<style>
-		body {
+		#thesis {
 			font-family: 'Courier New', monospace;
 		}
 
-		h1,
-		h2,
-		h3,
-		h4 {
+		#thesis h1 {
+			font-size: 1.5rem;
+			margin: 0 18%;
 			text-align: center;
-			margin-top: 3rem;
+			text-transform: uppercase;
 		}
 
-		h1 {
-			font-size: x-large;
+		#thesis h2 {
+			font-size: 1.3rem;
+			text-align: center;
 		}
 
-		h4,
-		h5 {
+		#thesis h3 {
+			font-size: 1.2rem;
+			text-align: center;
 			text-decoration: underline;
+			margin: 1rem 0;
 		}
 
-		h4 {
-			margin-bottom: 1.8rem;
+		#thesis h4 {
+			font-size: 1.1rem;
+			text-decoration: underline;
+			margin: 1rem 0;
 		}
 
-		h3.subhead {
-			margin-top: 0;
+		#thesis h5 {
+			font-size: 1rem;
 		}
-
-
-		p {
+		#thesis p {
+			font-size: 0.9rem;
 			text-indent: 3rem;
 		}
 
-		#title {
-			margin-top: 2rem;
+		#thesis li {
+			font-size: 0.9rem;
 		}
 
-		#abstract header {
-			margin-left: 15%;
-			margin-right: 15%;
-			font-size: smaller;
-			font-style: italic;
+		section {
+			margin-bottom: 1.5rem;
 		}
 
-		br {
-			margin-bottom: 1rem;
-		}
-
-		.centered {
-			text-align: center;
+		figure {
+			margin-top: 1.5rem;
 		}
 
 		figcaption {
 			margin-top: 1rem;
 		}
 
-		/* p,
-		figcaption, li {
-			font-size: larger;
-		} */
-
-		.certification {
-			margin-top: 2.5rem;
-			text-indent: 4rem;
-		}
-
 		.signature-block {
+			margin-top: 3rem;
 			text-indent: 0;
 			margin-left: 55%;
-			line-height: 0.6rem;
-		}
-
-		hr {
-			margin-top: 3rem;
-			width: 40%;
-			margin-left: 55%;
-			border: 1px solid black;
-
-		}
-
-		.by {
-			text-align: center;
-		}
-
-		.author {
-			margin-top: 3rem;
-			text-align: center;
-			text-indent: 0;
-		}
-
-		.copyright {
-			text-align: center;
-			font-size: 1.1rem;
-		}
-
-		.subtitle {
-			text-align: center;
-			text-indent: 0;
-			color: #555;
-			font-size: 1rem;
-			margin: 6rem 15% 2rem 15%;
-			text-transform: uppercase;
-
-		}
-
-		.department {
-			text-align: left;
-			text-indent: 0;
-			line-height: 1rem;
 		}
 
 		msubsup>mo,
@@ -164,8 +111,6 @@
 		}
 
 		.reference-list>li {
-			font-size: 1rem;
-			color: #555;
 			list-style-type: decimal;
 		}
 
@@ -173,64 +118,74 @@
 			display: block;
 			margin: 1rem;
 		}
+
+		/* signature line */
+		hr {
+			width: 40%;
+			border-top: 3px solid black;
+		}
+
+		/* chapter name, second h2 */
+		h2+h2 {
+			margin: 0 auto 2rem;
+		}
+
+		/* formula number */
+		.col-sm+.col-sm {
+			margin-top: auto;
+			margin-bottom: auto;
+		}
 	</style>
 </head>
 
 <body>
-    <!-- LOAD NAVBAR ####################################### -->
-    <div id="_navbar"></div>
-    <script>
-        $('#_navbar').load('navbar.html');
-    </script>
+	<!-- LOAD NAVBAR ####################################### -->
+	<div id="_navbar"></div>
+	<script>
+		$('#_navbar').load('navbar.html');
+	</script>
 
-	<div class="container" id="">
+	<div class="container-fluid" style="padding:2rem;" id="thesis">
 
-		<section id="title">
-			<header>
-				<h3>The Metal-Oxide-Semiconductor Capacitor As The Fundamental Sensor Element Of A Digital Radiography
-					System</h3>
-			</header>
-			<p class="author">
-				<span class="copyright">&copy;<time datetime="1990-08">1990</time></span>
-				<br>
-				By
-				<br>
-				ROBERT PAUL KING, JR.
-			</p>
+		<section class=" id="title">
 
-			<p class="subtitle">A Thesis Presented to the Graduate School of the University of Florida in Partial
-				Fulfillment of the Requirements for the Degree of Master of Science
-				<br>
-				University of Florida
-			</p>
+		<h1>The Metal-Oxide-Semiconductor Capacitor As The Fundamental Sensor Element Of A Digital Radiography
+			System</h1>
 
-			<p class="department">Chairperson: Alan M. Jacobs</p>
-			<p class="department">Major Department: Nuclear Engineering Sciences</p>
+
+		<h5 class="text-center mt-5">&copy;<time datetime="1990-08">1990</time></h5>
+		<h5 class="text-center mt-3">By</h5>
+		<h5 class="text-center mt-3">ROBERT PAUL KING, JR.</h5>
+
+		<div style="max-width:23rem; " class="mx-auto text-uppercase">
+			<h5 class="text-center mt-5">
+				A Thesis Presented to the Graduate School of the University of Florida in Partial
+				Fulfillment of the Requirements for the Degree of <br class="my-0">Master of Science</h5>
+			<h5 class="text-center mt-3">University of Florida</h5>
+		</div>
+		</p>
+
+		<h5>Chairperson: Alan M. Jacobs</h5>
+		<h5>Major Department: Nuclear Engineering Sciences</h5>
 		</section>
 
 
 		</header>
 
 		<section id="acknowledgements">
-			<header>
-				<h3>
-					<span>Acknowledgements</span>
-				</h3>
-			</header>
-			<p>This work was made possible by funding from General Imaging Corporation and the U. S. Air Force, and for
-				this I wish to express sincere appreciation. In addition, I would like to thank Dr. Alan Jacobs, my
-				thesis advisor, for creating a situation such that I am able to be involved with a project as
-				stimulating and rewarding as this one and for his guidance and intellectual support during this work.
-				Also, I wish to thank Dr. John Cox, Dr. Robert Fox, and Dr. William Eisenstadt for their continuing
-				guidance and advice during this work.</p>
+			<h2>Acknowledgements</h3>
+				<p>This work was made possible by funding from General Imaging Corporation and the U. S. Air Force, and
+					for
+					this I wish to express sincere appreciation. In addition, I would like to thank Dr. Alan Jacobs, my
+					thesis advisor, for creating a situation such that I am able to be involved with a project as
+					stimulating and rewarding as this one and for his guidance and intellectual support during this
+					work.
+					Also, I wish to thank Dr. John Cox, Dr. Robert Fox, and Dr. William Eisenstadt for their continuing
+					guidance and advice during this work.</p>
 		</section>
 
 		<section id="abstract">
-			<header>
-				<h3>
-					<span>Abstract</span>
-				</h3>
-			</header>
+			<h2>Abstract</h2>
 			<p>The suitability of the metal-oxide-semiconductor (MOS) capacitor for use in radiography, especially
 				medical radiography, is investigated. Radiography and the parameters of a radiographic sensor are
 				described. The quantum limitation on radiography is described and exposure limitations are used to
@@ -258,11 +213,8 @@
 
 		<section id="chapter-1">
 			<header>
-				<h3>
-					<span>Chapter</span>
-					<span>1</span>
-				</h3>
-				<h3 class="subhead">INTRODUCTION</h3>
+				<h2>Chapter 1</h2>
+				<h2>INTRODUCTION</h2>
 			</header>
 			<p>The research reported here was conducted as part of an ongoing effort to develop a large scale, solid
 				state electronic device for use as a digital sensor in both medical and industrial radiography. Though
@@ -325,19 +277,16 @@
 		</section>
 
 		<section id="chapter-2">
-			<header>
-				<h3>
-					<span>Chapter</span>
-					<span>2</span>
-				</h3>
-				<h3 class="subhead">THE DIGITAL RADIOGRAPHY PROCESS</h3>
-			</header>
-			<h4>Radiography</h4>
+
+			<h2>Chapter 2</h2>
+			<h2>THE DIGITAL RADIOGRAPHY PROCESS</h2>
+
+			<h3>Radiography</h3>
 			<p>When an object of unknown composition and internal structure is illuminated by a beam of penetrating
 				radiation whose properties are known, properties of the radiation which exits the object can be measured
 				to draw conclusions about the composition and structure of the object. If the objective of this process
 				is to learn how materials are distributed in the object, then this process is known as radiography.</p>
-			<h5>Image Formation</h5>
+			<h4>Image Formation</h4>
 			<p>In radiography, information about the composition of the object is encoded on the properties of the
 				carrier beam. By possessing knowledge about the encoding processes and the carrier beam, it is possible
 				to decode information about the object from measured properties of the emerging radiation. As a
@@ -453,7 +402,7 @@
 				scattered radiation from reaching the image sensor. Any scattered radiation which is detected by the
 				image sensor contributes undesired information to the image. This undesired information mimics image
 				noise. </p>
-			<h5>Image Sensing</h5>
+			<h4>Image Sensing</h4>
 			<p>As the beam exits the object, it must be intercepted by an image sensor which is able to measure the
 				uncollided flux and its spatial variation with x and y. Unfortunately, it is not always a simple matter
 				to isolate the uncollided from the scattered flux or distinguish between them. The function of the image
@@ -471,7 +420,7 @@
 				dose required to obtain a diagnostic quality image. In the industrial environment, lead intensifying
 				screens are more common and are used to reduce the time required to acquire an image of sufficient
 				quality.</p>
-			<h5>Digital Radiography</h5>
+			<h4>Digital Radiography</h4>
 			<p>If the image sensor is intentionally discretized both spatially and in its response variable, it is said
 				to be a digital radiography sensor. Radiography is performed with fields of radiation made up of
 				discrete quanta. These quanta undergo binary interactions (Compton scatter and photoelectric absorption
@@ -492,7 +441,7 @@
 				addition, each x-ray photon which is absorbed must give rise to a significant change in the radiographic
 				sensor. For digital imaging, the charge generated by an x-ray photon absorbed in a pixel must correspond
 				to a resolvable grey level for that pixel.</p>
-			<h5>Radiation Source</h5>
+			<h4>Radiation Source</h4>
 			<p>To exploit the different energy dependencies of the interaction probabilities of body constituents,
 				filtered bremsstrahlung x-ray sources are used which have controllable peak energies. Typically,
 				diagnostic exams use peak energies between 50 and 120 kev. To achieve acceptable contrast, mammographic
@@ -511,7 +460,9 @@
 				energy lies somewhere in the range listed, the average energy in a spectrum lies below its peak, and
 				imaging beams are hardened before they reach the sensor. Therefore this is a reasonable approximation.
 			</p>
-			<h5>Logarithmic Detection</h5>
+
+			<h4>Logarithmic Detection</h4>
+
 			<p>Metal halide film was the first and remains the most popular radiography sensor. Microscopic grains in a
 				piece of radiographic film change their state and become optically opaque as they are exposed.
 				Therefore, radiographic film records image information by darkening in response to exposure. As film
@@ -533,7 +484,9 @@
 				optical path length at a given position), the resulting graph is known as a Hurter and Driffield (H&D)
 				Plot. If P(x,y) is the description of the object which is of interest, an electronic image can be
 				processed to yield a linear H&D Plot. </p>
-			<h5>Photon Stopping and Amplification</h5>
+
+			<h4>Photon Stopping and Amplification</h4>
+
 			<p>Radiographic film is virtually transparent to x-rays and any x-ray which interacts with it produces a
 				very small response. Since medical radiography must get the greatest possible information for the
 				smallest possible exposure, steps are taken to improve the cross section and response of film to x-rays.
@@ -560,7 +513,7 @@
 				course, amplification cannot provide image information which was not acquired by the sensor. Good sensor
 				performance is still required and a sensor which is completely saturated during an exposure still relays
 				no information.</p>
-			<h5>Resolution and Contrast</h5>
+			<h4>Resolution and Contrast</h4>
 			<p>As described above, enhancing the sensor's ability to absorb x-ray photons is done at the expense of
 				spatial resolution. In addition, the greatest possible image information must be extracted using the
 				smallest possible exposure, i.e. the smallest possible number of photons. To extract all available image
@@ -645,7 +598,7 @@
 				may be desired. Therefore as a compromise, a geometric sensor resolution of 5 mm<sup>-1</sup> (i.e. a
 				pixel size of
 				100 μm) has been established for development of the sensor under consideration. </p>
-			<h5>The Nyquist Criterion</h5>
+			<h4>The Nyquist Criterion</h4>
 			<p>The spatial version of the Nyquist criterion states that to avoid aliasing, the sampling frequency of a
 				quantizer (and a digital sensor is a spatial quantizer) must be at least twice the spatial bandwidth of
 				the signal. The arguments of the previous section show that image information at frequencies greater
@@ -670,13 +623,10 @@
 
 		<section id="chapter-3">
 			<header>
-				<h3>
-					<span>Chapter</span>
-					<span>3</span>
-				</h3>
-				<h3 class="subhead">THE METAL-OXIDE-SEMICONDUCTOR (MOS) CAPACITOR</h3>
+				<h2>Chapter3</h2>
+				<h2>THE METAL-OXIDE-SEMICONDUCTOR (MOS) CAPACITOR</h2>
 			</header>
-			<h4>Device Structure</h4>
+			<h3>Device Structure</h3>
 			<p>A MOS capacitor is formed when a layer of electrical conductor (the metal) is closely coupled to a thin
 				layer of electrical dielectric (the oxide) which is in turn closely coupled to a thick layer of doped
 				semiconductor (the semiconductor). Though actual dimensions differ significantly from device to device,
@@ -696,7 +646,7 @@
 				<figcaption>Figure 3-1: Geometric Description of the Metal-Oxide-Semiconductor Capacitor</figcaption>
 			</figure>
 
-			<h4>The Effect of Bias</h4>
+			<h3>The Effect of Bias</h3>
 			<p>The unbiased ideal MOS capacitor has no net charge in either the metal or the semiconductor. The oxide is
 				assumed to have no free charge of either sign. To bias the MOS capacitor, the metal gate is connected to
 				an external voltage (charge) source. The substrate is made of an n-doped semiconductor and the majority
@@ -737,7 +687,7 @@
 			<p>The reason that this mode of operation is important for the present application is that the device does
 				not instantly reach equilibrium (i.e. there is a transient). Energy is required to create ehps and thus
 				an MOS capacitor can be used to measure energy.</p>
-			<h4>Thermal Generation</h4>
+			<h3>Thermal Generation</h3>
 			<p>The energy necessary to create an ehp can come solely from the thermal energy of the crystal. In the
 				absence of illumination, a biased capacitor will eventually decay from deep depletion to inversion due
 				only to thermal generation. The thermal generation rate increases with the temperature of the device and
@@ -748,7 +698,7 @@
 				contributor. The other contributor to this component is charges which are generated outside the SCR but
 				diffuse into the SCR. This component leads to a generation rate which is modeled as being independent of
 				the volume of the SCR.</p>
-			<h4>Photogeneration</h4>
+			<h3>Photogeneration</h3>
 			<p>The energy required to excite an electron across the bandgap yielding an ehp need not be thermal. If an
 				optical photon whose energy is greater than the bandgap enters the MOS capacitor semiconductor, then it
 				may give up its energy to create an ehp. Not every photon which impinges on a MOS capacitor produces an
@@ -775,7 +725,7 @@
 				coefficient) should not be large when compared to the depletion layer depth. Light doping and high bias
 				voltages lead to deep depletion layers. If deep optical photon penetration becomes a concern, light
 				doping and high bias may be called for in order to create a very deep depletion layer.</p>
-			<h4>Ionization Due to Energetic Radiation</h4>
+			<h3>Ionization Due to Energetic Radiation</h3>
 			<p>Optical photons are not the only radiation which can create ehp's in a semiconductor. Energetic charged
 				particles (e.g. electrons, protons, and alpha particles) which pass through a semiconductor create ehps
 				by exciting lattice electrons across the bandgap through direct Coulombic interactions. The high-energy
@@ -799,20 +749,17 @@
 
 		<section id="chapter-4">
 			<header>
-				<h3>
-					<span>Chapter</span>
-					<span>4</span>
-				</h3>
-				<h4>THE MOS CAPACITOR AS A DIGITAL RADIOGRAPHIC SENSOR ELEMENT</h4>
+				<h2>Chapter 4</h2>
+				<h2>THE MOS CAPACITOR AS A DIGITAL RADIOGRAPHIC SENSOR ELEMENT</h2>
 			</header>
-			<h4>Configuration and Operation</h4>
+			<h3>Configuration and Operation</h3>
 			<p>To perform digital radiography, an image sensor which can detect the presence of and variations in an
 				x-ray field is required. When exposed to stimuli such as heat, light or ionizing radiation, the biased
 				MOS capacitor responds by producing and collecting mobile charge carriers whose presence can be
 				measured. The objective is to configure an array of MOS capacitors such that when it is exposed to an
 				x-ray field each of the MOS capacitors collects a quantity of charge which is related in a meaningful
 				way to the local intensity of the x-ray field.</p>
-			<h5>Field Intensification</h5>
+			<h4>Field Intensification</h4>
 			<p>As discussed in Chapter 3, silicon is essentially transparent to high energy photons and as discussed in
 				Chapter 2, a scintillating phosphor layer should be incorporated in the sensor element design to
 				increase the sensitivity of the sensor. Light emitting phosphor screens are typically used in medical
@@ -827,16 +774,14 @@
 				iodide [CsI(Tl)]) be placed over the MOS capacitor to improve its sensitivity to x-rays. Though the
 				phosphor PSF can be deconvolved from a digital image, the thickness of the phosphor layer will be
 				somewhat driven by the resolution considerations presented in Chapter 2.</p>
-			<h5>Signal Readout and Processing</h5>
+			<h4>Signal Readout and Processing</h4>
 			<p>The issue of how best to read the accumulated charge from the MOS capacitor is not addressed in this
 				work. However, the following general principles are noted:</p>
-			<ol>
-				<li>To have sufficient resolution and sensitivity and not have large gaps in the imaging plane, the
-					amplification, readout, digitization, and processing circuits cannot occupy the same silicon surface
-					as the MOS capacitor sensor elements.</li>
-				<li>To avoid significant problems with transmission line capacitance, readout circuitry should be
-					co-planar with the imaging sensor array.</li>
-			</ol>
+			<p>1. To have sufficient resolution and sensitivity and not have large gaps in the imaging plane, the
+				amplification, readout, digitization, and processing circuits cannot occupy the same silicon surface
+				as the MOS capacitor sensor elements.</p>
+			<p>2. To avoid significant problems with transmission line capacitance, readout circuitry should be
+				co-planar with the imaging sensor array.</p>
 			<p>One possible solution to these problems which has been proposed is to place the imaging plane and the
 				readout plane on separate silicon slabs, facing each other, electrically connected by inter-plane metal
 				contacts, and separated by the phosphor layer.</p>
@@ -855,7 +800,7 @@
 				more area will likely be lost due to in-plane wiring. The fill factor will be driven by the achievable
 				properties of the MOS capacitor and the constraints of the readout circuits. The maximum reasonably
 				achievable fill factor is estimated to be approximately 75%.</p>
-			<h5>Exposure Cycle</h5>
+			<h4>Exposure Cycle</h4>
 			<p>The exposure cycle of a MOS capacitor used in this manner is one of x-ray photon illumination, optical
 				conversion, electronic conversion, collection, and readout. Incoming x-ray photons forming an x-ray
 				image interact with the intensifying phosphor layer. Visible photons are emitted by the phosphor
@@ -866,7 +811,7 @@
 				amplifiers, converts the charge stored under each MOS capacitor into a voltage. Analog to digital
 				converters (A/Ds) put these voltages into a digital format and this set of digital values is made
 				available to a computer for processing and display.</p>
-			<h5>The MOS capacitor Response</h5>
+			<h4>The MOS capacitor Response</h4>
 			<p>Based upon the discussion in Chapter 3, one possible way to try to think of the MOS capacitor is as a
 				fluence detector for optical photons. In other words, the charge which accumulates under the gate is
 				expected to be directly proportional to the number of optical photons which impinge on the MOS
@@ -887,89 +832,84 @@
 				better discriminate between optically thin regions than between optically thick regions. This is the
 				effect seen when a sensor does not lose its sensitivity during an exposure as described in Chapter 2.
 			</p>
-			<h4>Expected System Performance</h5>
-				<p>Since a sensor element configuration has been proposed, the next step is to evaluate its suitability.
-					For clarity, the sensor element configuration description is repeated here. The sensor element is a
-					square region which is 100 μm long on each side. It has an estimated fill factor of 75%, i.e. 75% of
-					the available sensor element area is occupied by the sensitive area of a MOS capacitor. The average
-					available exposure across all sensor elements is 500 μR (i.e. approximately 1100 x-ray photons are
-					incident per pixel). The sensor is covered by a layer of scintillating material. The MOS capacitor
-					has an efficiency, K, of converting optical photons incident upon its active surface into electrons
-					under its gate. Effects due to variable photon entry angle are neglected.</p>
-				<h5>The Phosphor Layer</h5>
-				<p>Since the device being considered has not yet been made, it is not certain what type of phosphor
-					performance will be achievable. However, for use in preliminary design and to evaluate feasibility,
-					it is necessary to estimate the constraints which the sensor element will place on the readout
-					circuits. For this reason, two possible phosphor configurations are considered. An actually
-					achievable performance is expected to lie somewhere in between that predicted by the two considered
-					scenarios and they will be treated as bounds for the actual sensor element phosphor capability. </p>
-				<p>The low-end phosphor capability is based upon the specifications providedi for the Kodak Lanex -
-					Regular Screen. Since phosphors deposited on a silicon wafer do no need to be as resistant to wear
-					as a cassette screen, better performance is to be expected with an equivalent phosphor technology
-					used in an electronic imaging system. Therefore, this description is taken as the low-end of
-					possible capabilities for use with a MOS capacitor. The Kodak Lanex - Regular screen uses Gd2O2S(Tb)
-					and La2O2S(Tb). The La2O2S(Tb) occupies only 7% of the mass of the screen and thus a simplifying
-					assumption is made that the total phosphor mass is made up of Gd2O2S(Tb). The most important
-					emission of Gd2O2S(Tb) is at 544 nm (2.27 eV)ii and the approximation is made that this is the only
-					emission. The material is 18% efficient at converting absorbed energy to optical photons and the
-					optical photons created have a 50% probability of escape from the phosphor. Given this description,
-					each x-ray photon absorbed produces an average of 3168 optical photons. Of these, an average of 1584
-					escape the phosphor. If the MOS capacitor has a fill factor of 75%, then an average of 1188 visible
-					photons will reach the active sensor area. </p>
-				<p>To maximize absorption without compromising spatial resolution, these screens are typically used in
-					pairs with one on each side of the film. Only front illumination of the MOS capacitor is being
-					addressed here. Back-illumination involves additional considerations. However, the issue at hand is
-					estimating the number of optical photons and electrons which are created by a single x-ray photon.
-					It has been noted that since its PSF can be deconvolved from an image, the phosphor's thickness is
-					less of a constraint for the sensor being considered. However, optimization of x-ray photon
-					absorption is an issue for later consideration.</p>
-				<p>The high-end phosphor specification is based upon a technique developed by Phillips Medical Systems
-					for growing high resolution arrays of scintillating waveguides from CsI(Tl). CsI(Tl) is essentially
-					transparent to its own emissions. By using the ability of such an array to guide the light to the
-					sensor a thick phosphor layer can be used without compromising PSF. If a reflecting surface is
-					applied to the far end of the waveguide array, a very large transmission of generated light to the
-					MOS capacitor is possible. The ideal case is assumed, with a 100% transmission of light. In
-					addition, long waveguides can be grown which have a high absorption. Absorptions of 87% have been
-					projected. The peak emission of CsI(Tl) is at 540 nmi (2.29 eV). This is assumed to be its only
-					emission and within the constraints of this assumption, this is essentially the same as for
-					Gd2O2S(Tb). For the purposes of making measurements, 540 nm will be assumed for each. CsI(Tl) has a
-					conversion efficiency of 11.9%6. Given this, each incident x-ray photon which is absorbed will
-					produce an average of 2079 optical photons. All are assumed to be guided to the MOS capacitor.
-					Though waveguides shaped like a funnel with a non-uniform diameter may lead to fill factor
-					enhancement, a fill factor of 75% is still assumed. Therefore, an average of 1559 optical photons
-					per x-ray photon are incident on active sensor area.</p>
-				<p>The high end phosphor performance represents a 31% improvement over the low end phosphor performance.
-					This is relatively small. Assuming that the assumptions made are valid, this leads to a relatively
-					small window for the required electronic performance. Therefore, the electronics can be developed
-					somewhat independently of the phosphor. </p>
-				<h5>MOS Capacitor Detector</h5>
-				<p>As stated in Chapter 1, the MOS capacitor is the fundamental sensor element in the CCD. Expected
-					quantum efficiencies for MOS capacitors are availablei in the context of their use in CCDs. When
-					used to collect optical photons, the principle of charge collection is the same and only the method
-					of readout separates the CCD from the proposed configuration. At the wavelength of interest (540
-					nm), front-illuminated, polysilicon gate MOS capacitors are reported to have a quantum efficiency of
-					approximately 44% when used in CCDs. MOS capacitors can be fabricated with gate materials which are
-					less reflective and less absorptive than polysilicon. Front illuminated MOS capacitors with tin
-					oxide gates are reported to have a quantum efficiency of approximately 74%. Back illuminated MOS
-					capacitors are reported to have a quantum efficiency of approximately 72%.</p>
-				<p>Since the MOSIS process is readily available for research activities and it uses a polysilicon gate,
-					the 44% quantum efficiency associated with front-illuminated, polysilicon-gate MOS capacitors is of
-					immediate interest. For a quantum efficiency of 44%, each incident x-ray photon gives rise to an
-					average of between 523 and 686 stored electrons based on the bounds of expected phosphor
-					performance. If this quantum efficiency is achieved, in order for the sensor element to be able to
-					count x-ray photons, the readout electronics must be able to resolve charge packets of this
-					approximate size. Actual performance of MOSIS MOS capacitors must be evaluated to verify this
-					performance criterion.</p>
+			<h3>Expected System Performance</h3>
+			<p>Since a sensor element configuration has been proposed, the next step is to evaluate its suitability.
+				For clarity, the sensor element configuration description is repeated here. The sensor element is a
+				square region which is 100 μm long on each side. It has an estimated fill factor of 75%, i.e. 75% of
+				the available sensor element area is occupied by the sensitive area of a MOS capacitor. The average
+				available exposure across all sensor elements is 500 μR (i.e. approximately 1100 x-ray photons are
+				incident per pixel). The sensor is covered by a layer of scintillating material. The MOS capacitor
+				has an efficiency, K, of converting optical photons incident upon its active surface into electrons
+				under its gate. Effects due to variable photon entry angle are neglected.</p>
+			<h4>The Phosphor Layer</h4>
+			<p>Since the device being considered has not yet been made, it is not certain what type of phosphor
+				performance will be achievable. However, for use in preliminary design and to evaluate feasibility,
+				it is necessary to estimate the constraints which the sensor element will place on the readout
+				circuits. For this reason, two possible phosphor configurations are considered. An actually
+				achievable performance is expected to lie somewhere in between that predicted by the two considered
+				scenarios and they will be treated as bounds for the actual sensor element phosphor capability. </p>
+			<p>The low-end phosphor capability is based upon the specifications providedi for the Kodak Lanex -
+				Regular Screen. Since phosphors deposited on a silicon wafer do no need to be as resistant to wear
+				as a cassette screen, better performance is to be expected with an equivalent phosphor technology
+				used in an electronic imaging system. Therefore, this description is taken as the low-end of
+				possible capabilities for use with a MOS capacitor. The Kodak Lanex - Regular screen uses Gd2O2S(Tb)
+				and La2O2S(Tb). The La2O2S(Tb) occupies only 7% of the mass of the screen and thus a simplifying
+				assumption is made that the total phosphor mass is made up of Gd2O2S(Tb). The most important
+				emission of Gd2O2S(Tb) is at 544 nm (2.27 eV)ii and the approximation is made that this is the only
+				emission. The material is 18% efficient at converting absorbed energy to optical photons and the
+				optical photons created have a 50% probability of escape from the phosphor. Given this description,
+				each x-ray photon absorbed produces an average of 3168 optical photons. Of these, an average of 1584
+				escape the phosphor. If the MOS capacitor has a fill factor of 75%, then an average of 1188 visible
+				photons will reach the active sensor area. </p>
+			<p>To maximize absorption without compromising spatial resolution, these screens are typically used in
+				pairs with one on each side of the film. Only front illumination of the MOS capacitor is being
+				addressed here. Back-illumination involves additional considerations. However, the issue at hand is
+				estimating the number of optical photons and electrons which are created by a single x-ray photon.
+				It has been noted that since its PSF can be deconvolved from an image, the phosphor's thickness is
+				less of a constraint for the sensor being considered. However, optimization of x-ray photon
+				absorption is an issue for later consideration.</p>
+			<p>The high-end phosphor specification is based upon a technique developed by Phillips Medical Systems
+				for growing high resolution arrays of scintillating waveguides from CsI(Tl). CsI(Tl) is essentially
+				transparent to its own emissions. By using the ability of such an array to guide the light to the
+				sensor a thick phosphor layer can be used without compromising PSF. If a reflecting surface is
+				applied to the far end of the waveguide array, a very large transmission of generated light to the
+				MOS capacitor is possible. The ideal case is assumed, with a 100% transmission of light. In
+				addition, long waveguides can be grown which have a high absorption. Absorptions of 87% have been
+				projected. The peak emission of CsI(Tl) is at 540 nmi (2.29 eV). This is assumed to be its only
+				emission and within the constraints of this assumption, this is essentially the same as for
+				Gd2O2S(Tb). For the purposes of making measurements, 540 nm will be assumed for each. CsI(Tl) has a
+				conversion efficiency of 11.9%6. Given this, each incident x-ray photon which is absorbed will
+				produce an average of 2079 optical photons. All are assumed to be guided to the MOS capacitor.
+				Though waveguides shaped like a funnel with a non-uniform diameter may lead to fill factor
+				enhancement, a fill factor of 75% is still assumed. Therefore, an average of 1559 optical photons
+				per x-ray photon are incident on active sensor area.</p>
+			<p>The high end phosphor performance represents a 31% improvement over the low end phosphor performance.
+				This is relatively small. Assuming that the assumptions made are valid, this leads to a relatively
+				small window for the required electronic performance. Therefore, the electronics can be developed
+				somewhat independently of the phosphor. </p>
+			<h4>MOS Capacitor Detector</h4>
+			<p>As stated in Chapter 1, the MOS capacitor is the fundamental sensor element in the CCD. Expected
+				quantum efficiencies for MOS capacitors are availablei in the context of their use in CCDs. When
+				used to collect optical photons, the principle of charge collection is the same and only the method
+				of readout separates the CCD from the proposed configuration. At the wavelength of interest (540
+				nm), front-illuminated, polysilicon gate MOS capacitors are reported to have a quantum efficiency of
+				approximately 44% when used in CCDs. MOS capacitors can be fabricated with gate materials which are
+				less reflective and less absorptive than polysilicon. Front illuminated MOS capacitors with tin
+				oxide gates are reported to have a quantum efficiency of approximately 74%. Back illuminated MOS
+				capacitors are reported to have a quantum efficiency of approximately 72%.</p>
+			<p>Since the MOSIS process is readily available for research activities and it uses a polysilicon gate,
+				the 44% quantum efficiency associated with front-illuminated, polysilicon-gate MOS capacitors is of
+				immediate interest. For a quantum efficiency of 44%, each incident x-ray photon gives rise to an
+				average of between 523 and 686 stored electrons based on the bounds of expected phosphor
+				performance. If this quantum efficiency is achieved, in order for the sensor element to be able to
+				count x-ray photons, the readout electronics must be able to resolve charge packets of this
+				approximate size. Actual performance of MOSIS MOS capacitors must be evaluated to verify this
+				performance criterion.</p>
 		</section>
 
 		<section id="chapter-5">
-			<header>
-				<h3>
-					<span>Chapter</span>
-					<span>5</span>
-				</h3>
-				<h3 class="subhead">AVAILABLE MATERIALS FOR DATA COLLECTION</h3>
-			</header>
+			<h2>Chapter 5</h2>
+			<h2>AVAILABLE MATERIALS FOR DATA COLLECTION</h2>
 			<p>To support research activities of this type, The Information Sciences Institute of the University of
 				Southern California runs MOSIS. Fabrication of an integrated circuit requires a large overhead in
 				equipment, personnel, and expertise. Moreover, the design of any integrated circuit is very dependent
@@ -986,7 +926,8 @@
 				contains three transistor circuits which are not of interest to this work and four MOS capacitors which
 				are. The IC was fabricated by Hewlett Packard using the MOSIS 3 μm process. The 3μm specification is a
 				scaling parameter for the process which dictates the minimum manufacturable device size. Each MOS
-				capacitor has a nominal side length of 330 μm leading to a nominal area of 10.89x10<sup>-8</sup> m<sup>2</sup>. Two of the MOS
+				capacitor has a nominal side length of 330 μm leading to a nominal area of 10.89x10<sup>-8</sup>
+				m<sup>2</sup>. Two of the MOS
 				capacitors are n-type and two are p-type. Because of the large size of the MOS capacitors, the
 				unavoidable length errors introduced in processing have a negligible effect on the MOS capacitor area.
 				The connections to the gate and semiconductor layers of these MOS capacitors are made directly to the
@@ -1016,14 +957,9 @@
 		</section>
 
 		<section id="chapter-6">
-			<header>
-				<h3>
-					<span>Chapter</span>
-					<span>6</span>
-				</h3>
-				<h3 class="subhead">ANALYTICAL CHARACTERIZATION OF THE MOS CAPACITOR</h3>
-			</header>
-			<h4>Doping Profile Calculation</h4>
+			<h2>Chapter 6</h2>
+			<h2 class="subhead">ANALYTICAL CHARACTERIZATION OF THE MOS CAPACITOR</h2>
+			<h3>Doping Profile Calculation</h3>
 			<p>One of the fundamental properties of a semiconducting electronic material is its doping level (i.e. the
 				density of donor or acceptor impurities present in the crystal lattice). By measuring how the
 				capacitance of a MOS capacitor changes as its bias voltage changes in deep depletion and performing
@@ -1134,10 +1070,10 @@
 				there is a scarcity of available charge to be moved. This condition is created by sparse doping i.e.
 				small values of N. The converse is true for large values of N.</p>
 
-			<h4>Modeling Charge Generation</h4>
-			<h5>Thermal Charge Generation</h5>
-			<p>A two component linear model7 for the rate of thermal charge generation is shown in Equation 6-3.</p>
+			<h3>Modeling Charge Generation</h3>
 
+			<h4>Thermal Charge Generation</h4>
+			<p>A two component linear model7 for the rate of thermal charge generation is shown in Equation 6-3.</p>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm">
@@ -1209,7 +1145,9 @@
 				the semiconductor material and device. A high quality device is practically free of defects and will
 				generate thermal charge slowly. A high quality MOS capacitor will thus be characterized by a large
 				generation time (τ) and a small surface generation velocity (s).</p>
-			<h5>Total Charge Generation</h5>
+
+			<h4>Total Charge Generation</h4>
+
 			<p>If the MOS capacitor can be modeled as an ideal fluence detector for optical photons, then Equation 6-4
 				describes the total charge generation rate. The first term describes thermal generation which is
 				dependent on depletion layer depth, the second term describes thermal generation which is independent of
@@ -1288,8 +1226,11 @@
 				capacitor is an ideal fluence detector with negligible thermal generation, then a given photon flux will
 				lead to a given rate of charge photogeneration per unit area with the ratio between the two being the
 				conversion efficiency, K.</p>
-			<h4>Measurement and Calculation of Charge Generation Properties</h4>
-			<h5>Calculation of Charge from Capacitance</h5>
+
+			<h3>Measurement and Calculation of Charge Generation Properties</h3>
+
+			<h4>Calculation of Charge from Capacitance</h4>
+
 			<p>The relationship given in Equation 6-5 exists between charge generation rate and rate of change of
 				capacitance.<sup>7</sup> As charges are generated and collected by the MOS capacitor, they terminate the
 				field lines of the charge stored on the gate and the depletion layer shrinks. As this happens, the
@@ -1466,7 +1407,9 @@
 				capacitance versus time data. If the charge generation rate transient is desires, Equation 6-5 can be
 				discretized. This will of course amplify any noise present. If this presents a problem, a digital
 				adjacent points filter can be used to suppress this noise. </p>
-			<h5>The Zerbst Plot Method of Parameter Calculation</h5>
+
+			<h4>The Zerbst Plot Method of Parameter Calculation</h4>
+
 			<p>The Zerbst plot can be used to extract the two thermal generation parameters described above for a
 				specific device. The Zerbst plot is a way of presenting the capacitance versus time transient of a MOS
 				capacitor as it decays without illumination from deep depletion to inversion. The Zerbst plot is a graph
@@ -1548,7 +1491,9 @@
 				reason, the Zerbst plot should not be used for this purpose but should only be used to extract the two
 				parameters which are commonly used to describe the thermal generation properties (and hence quality) of
 				a MOS capacitor and the semiconductor it is built on.</p>
-			<h5>Test of Validity for Charge Generation Model</h5>
+
+			<h4>Test of Validity for Charge Generation Model</h4>
+
 			<p>It is desirable to test the validity of the charge generation model (Equation 6-4) for a MOS capacitor
 				under optical illumination. Since it is possible to measure the capacitance versus time transient of a
 				MOS capacitor under optical illumination and it is possible to calculate the charge versus time
@@ -1643,363 +1588,440 @@
 		</section>
 
 		<section id="chapter-7">
-			<header>
-				<h3>
-					<span>Chapter</span>
-					<span>7</span>
-				</h3>
-				<h3 class="subhead">CHARACTERIZATION OF A TEST STRUCTURE INTEGRATED CIRCUIT</h3>
-			</header>
-			<h4>Doping Profile Calculations</h4>
-			<p>To calculate the doping profiles for the MOS capacitors in the test structure IC, deep depletion
-				capacitance versus voltage curves were required. A single n-type and a single p-type MOS capacitor were
-				chosen for investigation. The properties measured for these two MOS capacitors are taken as
-				representative of properties to be expected from MOSIS MOS capacitors in general.</p>
-			<p>Deep depletion capacitance versus voltage measurements were made for these two MOS capacitors and doping
-				profiles were calculated from this data using Equations 6-1 and 6-2. The deep depletion capacitance
-				versus voltage response for the n-type MOS capacitor is presented in Figure 7-1. The response for the
-				p-type MOS capacitor is presented in Figure 7-2. The doping profiles are presented in Figures 7-3 and
-				7-4.</p>
+			<h2>Chapter 7</h3>
+				<h2>CHARACTERIZATION OF A TEST STRUCTURE INTEGRATED CIRCUIT</h2>
 
-			<figure style="text-align: center;"">
+				<h3>Doping Profile Calculations</h3>
+
+				<p>To calculate the doping profiles for the MOS capacitors in the test structure IC, deep depletion
+					capacitance versus voltage curves were required. A single n-type and a single p-type MOS capacitor
+					were
+					chosen for investigation. The properties measured for these two MOS capacitors are taken as
+					representative of properties to be expected from MOSIS MOS capacitors in general.</p>
+				<p>Deep depletion capacitance versus voltage measurements were made for these two MOS capacitors and
+					doping
+					profiles were calculated from this data using Equations 6-1 and 6-2. The deep depletion capacitance
+					versus voltage response for the n-type MOS capacitor is presented in Figure 7-1. The response for
+					the
+					p-type MOS capacitor is presented in Figure 7-2. The doping profiles are presented in Figures 7-3
+					and
+					7-4.</p>
+
+				<figure style="text-align: center;"">
 					<img style=" width:60%;" src="img/thesis/fig_7_1.png" alt="">
-				<figcaption>Figure 7-1: Capacitance versus Bias Voltage for an N-Type MOS-C in Deep Depletion
-				</figcaption>
-			</figure>
+					<figcaption>Figure 7-1: Capacitance versus Bias Voltage for an N-Type MOS-C in Deep Depletion
+					</figcaption>
+				</figure>
 
-			<figure style="text-align: center;"">
+				<figure style="text-align: center;"">
 					<img style=" width:60%;" src="img/thesis/fig_7_2.png" alt="">
-				<figcaption>Figure 7-2: Capacitance versus Bias Voltage for a P-Type MOS-C in Deep Depletion
-				</figcaption>
-			</figure>
+					<figcaption>Figure 7-2: Capacitance versus Bias Voltage for a P-Type MOS-C in Deep Depletion
+					</figcaption>
+				</figure>
 
-			<p>Figures 7-3 and 7-4 present calculated doping profiles for bias voltages between 0 and 8 volts. This
-				technique for calculating doping profiles becomes unreliable at very small bias voltages. Small bias
-				voltages correspond to small depletion layers. Therefore, these profiles are not valid at small silicon
-				depths. </p>
+				<p>Figures 7-3 and 7-4 present calculated doping profiles for bias voltages between 0 and 8 volts. This
+					technique for calculating doping profiles becomes unreliable at very small bias voltages. Small bias
+					voltages correspond to small depletion layers. Therefore, these profiles are not valid at small
+					silicon
+					depths. </p>
 
 
-			<figure style="text-align: center;"">
+				<figure style="text-align: center;"">
 					<img style=" width:60%;" src="img/thesis/fig_7_3.png" alt="">
-				<figcaption>Figure 7-3: Dopant Concentration versus Depth into N-Type Silicon Substrate</figcaption>
-			</figure>
+					<figcaption>Figure 7-3: Dopant Concentration versus Depth into N-Type Silicon Substrate</figcaption>
+				</figure>
 
-			<figure style="text-align: center;"">
+				<figure style="text-align: center;"">
 					<img style=" width:60%;" src="img/thesis/fig_7_4.png" alt="">
-				<figcaption>Figure 7-4: Dopant Concentration versus Depth into P-Doped Silicon Well</figcaption>
-			</figure>
+					<figcaption>Figure 7-4: Dopant Concentration versus Depth into P-Doped Silicon Well</figcaption>
+				</figure>
 
-			<p>The following are expected results. First, the p-well is more heavily doped than the substrate. This is
-				typical for a p-well CMOS process. Second, for the same bias potential, the p-well does not develop as
-				deep a depletion layer as does the substrate. Since the p-well is more heavily doped, at a given bias
-				the depletion layer does not need to be as deep to move the same quantity of charge away from the gate.
-			</p>
-			<p>The following are unexpected results. First, the measured dopant concentrations deviate significantly
-				from the nominal values provided by MOSIS. MOSIS specifies the p-well doping to be 7.4x10<sup>15</sup> cm<sup>-3</sup> and the
-				substrate doping to be 7.6x10<sup>15</sup> cm<sup>-3</sup>. These values are only intended for use as fitting parameters to be
-				used in MOS transistor simulation. They are not intended to be actual values and failure to measure
-				these values is not a source of concern. Second, the substrate is expected to be uniformly doped and the
-				measurements indicate that it is not. The p-well is doped by ion implantation and thermal diffusion.
-				Thus, p-well doping levels are not expected to be constant. The calculated doping indicates that its
-				doping is relatively uniform. Even disregarding the very shallow data points, both profiles appear to
-				show some buildup (retrograde doping) with depth and the p-well doping is more uniform than the
-				substrate.</p>
-			<p>Since the calculated values of doping appear to approach an asymptotic value for relatively large values
-				of W, these asymptotic values are taken as being the meaningful values. This approximation is
-				conservative since it will overestimate the thermal generation parameters. When these parameters are
-				used to compensate quantum efficiency measurements, it will cause the quantum efficiency to be
-				underestimated. These values were graphically measured from figures 7-3 and 7-4. The doping level (N) of
-				the substrate is -1.50x1016 cm-3 and the doping level of the p-well is +2.45x10<sup>16</sup> cm<sup>-3</sup>. The sign of the
-				doping level implies the sign of the charge carriers contributed by the dopant atom.</p>
-			<p>The difference in doping concentrations and thus achievable depletion layer depth establishes a tentative
-				precedence between the n-type and p-type MOS capacitors for use as a sensor element. The mean
-				penetration depth of 540 nm photons in silicon is somewhere between 1 and 2 μm<sup>9</sup> and photon flux
-				decreases exponentially with depth. Since the deep depletion layers formed had depths of up to 1 μm,
-				maximizing depletion layer depth is expected to be a significant issue for good quantum efficiency.
-				Since the n-type MOS capacitor is able to form deeper depletion layers, it is tentatively the preferred
-				sensor element. Additionally, charge carriers have greater mobility in more lightly doped materials<sup>8</sup>
-				making them easier to collect. This is also a factor in favor of the n-type MOS capacitor. As a
-				preparation for the possibility that thermal generation becomes the limiting factor in device
-				performance, the thermal generation properties of both MOS capacitor types will be evaluated. However,
-				since quantum efficiency is expected to be the limiting factor and is certainly the most crucial factor,
-				it will only be measured for the n-type MOS capacitor.</p>
-			<h4>Zerbst Plot Calculation</h4>
-			<p>To create Zerbst plots for these MOS capacitors, capacitance versus time transients were measured at room
-				temperature (80˚ F) while the IC was shielded from illumination. No correction was made for the
-				parasitic capacitance of the IC package and on-chip wiring but these effects should be negligible. These
-				data are plotted in Figures 7-5 and 7-6. From these data, Zerbst plots are calculated for the MOS
-				capacitors as described in chapter 6 and these plots are presented in Figures 7-7 and 7-8. The slope and
-				intercept were graphically measured from these plots for use in calculating material parameters.</p>
+				<p>The following are expected results. First, the p-well is more heavily doped than the substrate. This
+					is
+					typical for a p-well CMOS process. Second, for the same bias potential, the p-well does not develop
+					as
+					deep a depletion layer as does the substrate. Since the p-well is more heavily doped, at a given
+					bias
+					the depletion layer does not need to be as deep to move the same quantity of charge away from the
+					gate.
+				</p>
+				<p>The following are unexpected results. First, the measured dopant concentrations deviate significantly
+					from the nominal values provided by MOSIS. MOSIS specifies the p-well doping to be
+					7.4x10<sup>15</sup>
+					cm<sup>-3</sup> and the
+					substrate doping to be 7.6x10<sup>15</sup> cm<sup>-3</sup>. These values are only intended for use
+					as
+					fitting parameters to be
+					used in MOS transistor simulation. They are not intended to be actual values and failure to measure
+					these values is not a source of concern. Second, the substrate is expected to be uniformly doped and
+					the
+					measurements indicate that it is not. The p-well is doped by ion implantation and thermal diffusion.
+					Thus, p-well doping levels are not expected to be constant. The calculated doping indicates that its
+					doping is relatively uniform. Even disregarding the very shallow data points, both profiles appear
+					to
+					show some buildup (retrograde doping) with depth and the p-well doping is more uniform than the
+					substrate.</p>
+				<p>Since the calculated values of doping appear to approach an asymptotic value for relatively large
+					values
+					of W, these asymptotic values are taken as being the meaningful values. This approximation is
+					conservative since it will overestimate the thermal generation parameters. When these parameters are
+					used to compensate quantum efficiency measurements, it will cause the quantum efficiency to be
+					underestimated. These values were graphically measured from figures 7-3 and 7-4. The doping level
+					(N) of
+					the substrate is -1.50x1016 cm-3 and the doping level of the p-well is +2.45x10<sup>16</sup>
+					cm<sup>-3</sup>. The sign of the
+					doping level implies the sign of the charge carriers contributed by the dopant atom.</p>
+				<p>The difference in doping concentrations and thus achievable depletion layer depth establishes a
+					tentative
+					precedence between the n-type and p-type MOS capacitors for use as a sensor element. The mean
+					penetration depth of 540 nm photons in silicon is somewhere between 1 and 2 μm<sup>9</sup> and
+					photon
+					flux
+					decreases exponentially with depth. Since the deep depletion layers formed had depths of up to 1 μm,
+					maximizing depletion layer depth is expected to be a significant issue for good quantum efficiency.
+					Since the n-type MOS capacitor is able to form deeper depletion layers, it is tentatively the
+					preferred
+					sensor element. Additionally, charge carriers have greater mobility in more lightly doped
+					materials<sup>8</sup>
+					making them easier to collect. This is also a factor in favor of the n-type MOS capacitor. As a
+					preparation for the possibility that thermal generation becomes the limiting factor in device
+					performance, the thermal generation properties of both MOS capacitor types will be evaluated.
+					However,
+					since quantum efficiency is expected to be the limiting factor and is certainly the most crucial
+					factor,
+					it will only be measured for the n-type MOS capacitor.</p>
 
-			<figure style="text-align: center;"">
+				<h3>Zerbst Plot Calculation</h3>
+
+				<p>To create Zerbst plots for these MOS capacitors, capacitance versus time transients were measured at
+					room
+					temperature (80˚ F) while the IC was shielded from illumination. No correction was made for the
+					parasitic capacitance of the IC package and on-chip wiring but these effects should be negligible.
+					These
+					data are plotted in Figures 7-5 and 7-6. From these data, Zerbst plots are calculated for the MOS
+					capacitors as described in chapter 6 and these plots are presented in Figures 7-7 and 7-8. The slope
+					and
+					intercept were graphically measured from these plots for use in calculating material parameters.</p>
+
+				<figure style="text-align: center;"">
 					<img style=" width:60%;" src="img/thesis/fig_7_5.png" alt="">
-				<figcaption>Figure 7-5: Capacitance versus Time Under No Illumination for an N-type MOS-C</figcaption>
-			</figure>
+					<figcaption>Figure 7-5: Capacitance versus Time Under No Illumination for an N-type MOS-C
+					</figcaption>
+				</figure>
 
-			<figure style="text-align: center;"">
+				<figure style="text-align: center;"">
 					<img style=" width:60%;" src="img/thesis/fig_7_6.png" alt="">
-				<figcaption>Figure 7-6: Capacitance versus Time Under No Illumination for a P-type MOS-C</figcaption>
-			</figure>
+					<figcaption>Figure 7-6: Capacitance versus Time Under No Illumination for a P-type MOS-C
+					</figcaption>
+				</figure>
 
 
-			<figure style="text-align: center;"">
+				<figure style="text-align: center;"">
 					<img style=" width:60%;" src="img/thesis/fig_7_7.png" alt="">
-				<figcaption>Figure 7-7: Zerbst Plot for an N-Type MOS-C</figcaption>
-			</figure>
+					<figcaption>Figure 7-7: Zerbst Plot for an N-Type MOS-C</figcaption>
+				</figure>
 
-			<figure style="text-align: center;"">
+				<figure style="text-align: center;"">
 					<img style=" width:60%;" src="img/thesis/fig_7_8.png" alt="">
-				<figcaption>Figure 7-8: Zerbst Plot for a P-Type MOS-C</figcaption>
-			</figure>
+					<figcaption>Figure 7-8: Zerbst Plot for a P-Type MOS-C</figcaption>
+				</figure>
 
-			<p>The following data are needed in calculating material parameters from Zerbst plots:</p>
+				<p>The following data are needed in calculating material parameters from Zerbst plots:</p>
 
-			<math>
-				<mi>N(substrate)</mi>
-				<mo>=</mo>
-				<mn>+1.50x10<sup>22</sup></mn>
-				<mspace width="0.5em" />
-				<msup>
+				<math>
+					<mi>N(substrate)</mi>
+					<mo>=</mo>
+					<mn>+1.50x10<sup>22</sup></mn>
+					<mspace width="0.5em" />
+					<msup>
+						<mi mathvariant='normal' class='MathML-Unit'>m</mi>
+						<mn>-3</mn>
+					</msup>
+				</math>
+
+				<math>
+					<mi>N(p-well)</mi>
+					<mo>=</mo>
+					<mn>-2.45x10<sup>22</sup></mn>
+					<mspace width="0.5em" />
+					<msup>
+						<mi mathvariant='normal' class='MathML-Unit'>m</mi>
+						<mn>-3</mn>
+					</msup>
+				</math>
+
+				<math>
+					ε
+					<mo>=</mo>
+					<mn>1.04x10<sup>-10</sup></mn>
+					<mspace width="0.5em" />
+					<mi mathvariant='normal' class='MathML-Unit'>F</mi>
+					<mo>/</mo>
 					<mi mathvariant='normal' class='MathML-Unit'>m</mi>
-					<mn>-3</mn>
-				</msup>
-			</math>
+				</math>
 
-			<math>
-				<mi>N(p-well)</mi>
-				<mo>=</mo>
-				<mn>-2.45x10<sup>22</sup></mn>
+
+				<math>
+					A
+					<mo>=</mo>
+					<mn>10.89x10<sup>-8</sup></mn>
+					<mspace width="0.5em" />
+					<msup>
+						<mi mathvariant='normal' class='MathML-Unit'>m</mi>
+						<mn>2</mn>
+					</msup>
+				</math>
+				<p>The dopant concentrations were calculated in the last section. The permittivity of
+					silicon<sup>7</sup>
+					(ε) is the
+					product of the permittivity of free space and the dielectric constant of silicon. Another quantity
+					which
+					is needed is the intrinsic carrier concentration (n<sub>i</sub>) of silicon. This term is only
+					temperature
+					dependent. At the measurement temperature, the value of ni is 2x10<sup>16</sup> m<sup>-3</sup>. </p>
+				<p>The complete capacitance versus time transient was measured as the n-type MOS capacitor decayed from
+					deep
+					depletion to inversion. It took approximately fifty minutes. This is quite long indicating high
+					quality
+					manufacturing. The calculated Zerbst plot represents this complete data set and is of approximately
+					the
+					expected shape. The noise seen in the Zerbst plot is not unexpected due to the small capacitance
+					values
+					measured. Graphically fitting a line to the linear (central) part of the curve yields the following
+					values:</p>
+
+				<math>
+					<mi>slope</mi>
+					<mo>=</mo>
+					<mn>0.0080</mn>
+					<mspace width="0.5em" />
+					<msup>
+						<mi mathvariant='normal' class='MathML-Unit'>s</mi>
+						<mn>-1</mn>
+					</msup>
+				</math>
+
+				<math>
+					<mi>intercept</mi>
+					<mo>=</mo>
+					<mn>0.0082</mn>
+					<mspace width="0.5em" />
+					<msup>
+						<mi mathvariant='normal' class='MathML-Unit'>s</mi>
+						<mn>-1</mn>
+					</msup>
+				</math>
+
+				<p>From the deep depletion capacitance versus voltage response (Figure 7-1), the oxide capacitance (Co)
+					was
+					measured to be 8.5x10<sup>-11</sup> F. From the thermal capacitance versus time transient, the final
+					equilibrium
+					capacitance (CF) was measured to be 2.0x10<sup>-11</sup> F. From these values, the thermal charge
+					generation
+					parameters were calculated using Equations 6-9 and 6-10 and are as follows:</p>
+				<math>
+					<mi>τ</mi>
+					<mo>=</mo>
+					<mn>.00142</mn>
+					<mspace width="0.5em" />
+					<mi mathvariant='normal' class='MathML-Unit'>s</mi>
+				</math>
 				<mspace width="0.5em" />
-				<msup>
+				<math>
+					<mi>s</mi>
+					<mo>=</mo>
+					<mn>0.00041</mn>
+					<mspace width="0.5em" />
 					<mi mathvariant='normal' class='MathML-Unit'>m</mi>
-					<mn>-3</mn>
-				</msup>
-			</math>
+					<mo>/</mo>
+					<mi mathvariant='normal' class='MathML-Unit'>s</mi>
+				</math>
+				<p>The capacitance versus time transient measurement for the p-type MOS capacitor is not complete.
+					Instrument problems prevented acquisition and storage of data for much longer than two hours and
+					therefore only partial data was collected. Once again, a transient of this length indicates a device
+					of
+					very high quality. As can be seen in Figure 7-8, the Zerbst plot calculated from this incomplete
+					data
+					set is also incomplete. It appears in this graph that a very smooth curve is being traced out with
+					intermittent spikes in the positive and negative directions. These fluctuations are probably caused
+					by
+					the uncertainty of the last significant figure of the measurement of the capacitance by the CV-590
+					meter. The best fit line to this graph has a negative intercept. This is inconsistent with the
+					thermal
+					generation model. Closer scrutiny of this graph shows that it is nonlinear and has a positive second
+					derivative. To evaluate the material parameters, an intercept of zero is assumed and the slope was
+					measured graphically by connecting a straight line between the origin and the approximate centroid
+					of
+					the available graph. This introduces significant error but it is clear that the linear model of
+					thermal
+					generation is only a crude approximation for this device. The results obtained using this method
+					are:
+				</p>
 
-			<math>
-				ε
-				<mo>=</mo>
-				<mn>1.04x10<sup>-10</sup></mn>
-				<mspace width="0.5em" />
-				<mi mathvariant='normal' class='MathML-Unit'>F</mi>
-				<mo>/</mo>
-				<mi mathvariant='normal' class='MathML-Unit'>m</mi>
-			</math>
+				<math>
+					<mi>slope</mi>
+					<mo>=</mo>
+					<mspace width="0.5em" />
+					<msup>
+						<mi mathvariant='normal' class='MathML-Unit'>s</mi>
+						<mn>-1</mn>
+					</msup>
+				</math>
 
+				<math>
+					<mi>intercept</mi>
+					<mo>=</mo>
+					<mn>0.0</mn>
+					<mspace width="0.5em" />
+					<msup>
+						<mi mathvariant='normal' class='MathML-Unit'>s</mi>
+						<mn>-1</mn>
+					</msup>
+					<mo>(assumed)</mo>
+				</math>
 
-			<math>
-				A
-				<mo>=</mo>
-				<mn>10.89x10<sup>-8</sup></mn>
-				<mspace width="0.5em" />
-				<msup>
+				<p>From the deep depletion capacitance versus voltage response, Co was measured to be
+					8.2x10<sup>-11</sup>
+					F. Using the
+					oxide thickness provided by MOSIS, the expected oxide capacitance is 8.6x10<sup>-11</sup> F. The
+					value
+					of CF was
+					not measured from the dark capacitance versus time transient because the complete transient was not
+					measured. However, the equilibrium capacitance values of this MOS capacitor were measured at
+					voltages
+					near the bias used for this measurement (8 V). This was done by pulsing the MOS capacitor with
+					light,
+					waiting 30 seconds for it to recover, and then measuring capacitance. For biases near 8 V, the
+					equilibrium capacitance was measured to be approximately 3.3x10<sup>-11</sup> F. For biases in this
+					range, the
+					final capacitance is not sensitively dependent on bias and can be measured reliably. Therefore this
+					value is taken to be the value of CF. From these values, the thermal charge generation parameters
+					were
+					calculated and are:</p>
+
+				<math>
+					<mi>τ</mi>
+					<mo>=</mo>
+					<mn>.00223</mn>
+					<mspace width="0.5em" />
+					<mi mathvariant='normal' class='MathML-Unit'>s</mi>
+				</math>
+
+				<math>
+					s
+					<mo>=</mo>
+					<mn>0.0</mn>
+					<mspace width="0.5em" />
 					<mi mathvariant='normal' class='MathML-Unit'>m</mi>
-					<mn>2</mn>
-				</msup>
-			</math>
-			<p>The dopant concentrations were calculated in the last section. The permittivity of silicon<sup>7</sup>
-				(ε) is the
-				product of the permittivity of free space and the dielectric constant of silicon. Another quantity which
-				is needed is the intrinsic carrier concentration (n<sub>i</sub>) of silicon. This term is only temperature
-				dependent. At the measurement temperature, the value of ni is 2x10<sup>16</sup> m<sup>-3</sup>. </p>
-			<p>The complete capacitance versus time transient was measured as the n-type MOS capacitor decayed from deep
-				depletion to inversion. It took approximately fifty minutes. This is quite long indicating high quality
-				manufacturing. The calculated Zerbst plot represents this complete data set and is of approximately the
-				expected shape. The noise seen in the Zerbst plot is not unexpected due to the small capacitance values
-				measured. Graphically fitting a line to the linear (central) part of the curve yields the following
-				values:</p>
-
-			<math>
-				<mi>slope</mi>
-				<mo>=</mo>
-				<mn>0.0080</mn>
-				<mspace width="0.5em" />
-				<msup>
+					<mo>/</mo>
 					<mi mathvariant='normal' class='MathML-Unit'>s</mi>
-					<mn>-1</mn>
-				</msup>
-			</math>
+				</math>
 
-			<math>
-				<mi>intercept</mi>
-				<mo>=</mo>
-				<mn>0.0082</mn>
-				<mspace width="0.5em" />
-				<msup>
-					<mi mathvariant='normal' class='MathML-Unit'>s</mi>
-					<mn>-1</mn>
-				</msup>
-			</math>
+				<p>Because the transient time of the p-type MOS capacitor is so long, considerations otherwise ignored
+					might
+					be important (e.g. extremely low level light leakage, temperature fluctuations, and background
+					radiation
+					levels). In addition, complete Zerbst plot data is not available and non-linearities are apparent.
+					It
+					can be said with certainty that thermal generation in the p-well is very slow and is significantly
+					slower than in the substrate. Since thermal generation is a source of error signal in the system
+					under
+					consideration, this is a factor in favor of the p-type MOS capacitor. As described in Equation 6-11,
+					these parameters can be used to correct quantum efficiency calculations for either of these MOS
+					capacitors. Since the values of these parameters are very small, under normal circumstances, thermal
+					generation is likely to represent only very small contributions.</p>
 
-			<p>From the deep depletion capacitance versus voltage response (Figure 7-1), the oxide capacitance (Co) was
-				measured to be 8.5x10<sup>-11</sup> F. From the thermal capacitance versus time transient, the final
-				equilibrium
-				capacitance (CF) was measured to be 2.0x10<sup>-11</sup> F. From these values, the thermal charge
-				generation
-				parameters were calculated using Equations 6-9 and 6-10 and are as follows:</p>
-			<math>
-				<mi>τ</mi>
-				<mo>=</mo>
-				<mn>.00142</mn>
-				<mspace width="0.5em" />
-				<mi mathvariant='normal' class='MathML-Unit'>s</mi>
-			</math>
-			<mspace width="0.5em" />
-			<math>
-				<mi>s</mi>
-				<mo>=</mo>
-				<mn>0.00041</mn>
-				<mspace width="0.5em" />
-				<mi mathvariant='normal' class='MathML-Unit'>m</mi>
-				<mo>/</mo>
-				<mi mathvariant='normal' class='MathML-Unit'>s</mi>
-			</math>
-			<p>The capacitance versus time transient measurement for the p-type MOS capacitor is not complete.
-				Instrument problems prevented acquisition and storage of data for much longer than two hours and
-				therefore only partial data was collected. Once again, a transient of this length indicates a device of
-				very high quality. As can be seen in Figure 7-8, the Zerbst plot calculated from this incomplete data
-				set is also incomplete. It appears in this graph that a very smooth curve is being traced out with
-				intermittent spikes in the positive and negative directions. These fluctuations are probably caused by
-				the uncertainty of the last significant figure of the measurement of the capacitance by the CV-590
-				meter. The best fit line to this graph has a negative intercept. This is inconsistent with the thermal
-				generation model. Closer scrutiny of this graph shows that it is nonlinear and has a positive second
-				derivative. To evaluate the material parameters, an intercept of zero is assumed and the slope was
-				measured graphically by connecting a straight line between the origin and the approximate centroid of
-				the available graph. This introduces significant error but it is clear that the linear model of thermal
-				generation is only a crude approximation for this device. The results obtained using this method are:
-			</p>
+				<h3>Measured Latitude</h3>
 
-			<math>
-				<mi>slope</mi>
-				<mo>=</mo>
-				<mn>0.0018</mn>
-				<mspace width="0.5em" />
-				<msup>
-					<mi mathvariant='normal' class='MathML-Unit'>s</mi>
-					<mn>-1</mn>
-				</msup>
-			</math>
+				<p>Equation 6-8 was used to convert the thermal capacitance versus time transient of Figure 7-1 into a
+					charge versus time transient which is shown in Figure 7-9. It can be seen in Figure 7-9 that at
+					equilibrium at 8 V, this MOS capacitor can hold a charge of approximately 6.8x10<sup>-10</sup> C.
+					The
+					shape of the
+					MOS capacitor is square with a side length of 330 μm. If a fill factor of 75% were achieved at 5
+					mm<sup>-1</sup>
+					resolution then this charge would be scaled (assuming it can be linearly scaled) to
+					4.7x10<sup>-11</sup>
+					C. Using
+					the assumptions for high end performance discussed in Chapter 4, a captured x-ray photon gives rise
+					to
+					1559 optical photons which are incident on active sensor area. From Chapter 2, an average of
+					10.9x106
+					x-ray photons are incident per square cm. This implies 818 x-ray photons incident in a 100 μm sensor
+					element. If all of these are captured and converted to useful light and if the MOS capacitor has a
+					100%
+					quantum efficiency for optical photons, then 1.3x106 charges will be created. This corresponds to
+					2.0x10<sup>-13</sup> C or less than 0.03% of the available latitude of the device. In other words
+					the
+					device is
+					able to sense a much stronger illumination than is required. Available latitude does not limit the
+					feasibility of the device being considered.</p>
 
-			<math>
-				<mi>intercept</mi>
-				<mo>=</mo>
-				<mn>0.0</mn>
-				<mspace width="0.5em" />
-				<msup>
-					<mi mathvariant='normal' class='MathML-Unit'>s</mi>
-					<mn>-1</mn>
-				</msup>
-				<mo>(assumed)</mo>
-			</math>
-
-			<p>From the deep depletion capacitance versus voltage response, Co was measured to be 8.2x10<sup>-11</sup>
-				F. Using the
-				oxide thickness provided by MOSIS, the expected oxide capacitance is 8.6x10<sup>-11</sup> F. The value
-				of CF was
-				not measured from the dark capacitance versus time transient because the complete transient was not
-				measured. However, the equilibrium capacitance values of this MOS capacitor were measured at voltages
-				near the bias used for this measurement (8 V). This was done by pulsing the MOS capacitor with light,
-				waiting 30 seconds for it to recover, and then measuring capacitance. For biases near 8 V, the
-				equilibrium capacitance was measured to be approximately 3.3x10<sup>-11</sup> F. For biases in this
-				range, the
-				final capacitance is not sensitively dependent on bias and can be measured reliably. Therefore this
-				value is taken to be the value of CF. From these values, the thermal charge generation parameters were
-				calculated and are:</p>
-
-			<math>
-				<mi>τ</mi>
-				<mo>=</mo>
-				<mn>.00223</mn>
-				<mspace width="0.5em" />
-				<mi mathvariant='normal' class='MathML-Unit'>s</mi>
-			</math>
-
-			<math>
-				s
-				<mo>=</mo>
-				<mn>0.0</mn>
-				<mspace width="0.5em" />
-				<mi mathvariant='normal' class='MathML-Unit'>m</mi>
-				<mo>/</mo>
-				<mi mathvariant='normal' class='MathML-Unit'>s</mi>
-			</math>
-
-			<p>Because the transient time of the p-type MOS capacitor is so long, considerations otherwise ignored might
-				be important (e.g. extremely low level light leakage, temperature fluctuations, and background radiation
-				levels). In addition, complete Zerbst plot data is not available and non-linearities are apparent. It
-				can be said with certainty that thermal generation in the p-well is very slow and is significantly
-				slower than in the substrate. Since thermal generation is a source of error signal in the system under
-				consideration, this is a factor in favor of the p-type MOS capacitor. As described in Equation 6-11,
-				these parameters can be used to correct quantum efficiency calculations for either of these MOS
-				capacitors. Since the values of these parameters are very small, under normal circumstances, thermal
-				generation is likely to represent only very small contributions.</p>
-			<h4>Measured Latitude</h4>
-			<p>Equation 6-8 was used to convert the thermal capacitance versus time transient of Figure 7-1 into a
-				charge versus time transient which is shown in Figure 7-9. It can be seen in Figure 7-9 that at
-				equilibrium at 8 V, this MOS capacitor can hold a charge of approximately 6.8x10<sup>-10</sup> C. The
-				shape of the
-				MOS capacitor is square with a side length of 330 μm. If a fill factor of 75% were achieved at 5
-				mm<sup>-1</sup>
-				resolution then this charge would be scaled (assuming it can be linearly scaled) to 4.7x10<sup>-11</sup>
-				C. Using
-				the assumptions for high end performance discussed in Chapter 4, a captured x-ray photon gives rise to
-				1559 optical photons which are incident on active sensor area. From Chapter 2, an average of 10.9x106
-				x-ray photons are incident per square cm. This implies 818 x-ray photons incident in a 100 μm sensor
-				element. If all of these are captured and converted to useful light and if the MOS capacitor has a 100%
-				quantum efficiency for optical photons, then 1.3x106 charges will be created. This corresponds to
-				2.0x10<sup>-13</sup> C or less than 0.03% of the available latitude of the device. In other words the
-				device is
-				able to sense a much stronger illumination than is required. Available latitude does not limit the
-				feasibility of the device being considered.</p>
-
-			<figure style="text-align: center;"">
+				<figure style="text-align: center;"">
 					<img style=" width:60%;" src="img/thesis/fig_7_9.png" alt="">
-				<figcaption>Figure 7-9: Charge versus Time for an N-Type MOS-C While Under No Illumination</figcaption>
-			</figure>
+					<figcaption>Figure 7-9: Charge versus Time for an N-Type MOS-C While Under No Illumination
+					</figcaption>
+				</figure>
 
-			<h4>Quantum Efficiency at 540 nm</h4>
-			<p>As already described, the principal optical photon being considered has a wavelength of 540 nm. Using the
-				tungsten filament source and spectrometer, the MOS capacitor was illuminated with light of wavelength
-				540 nm at an intensity of 0.033 W/m2. This corresponds to a photon flux of 9.07x1016 m-2s-1. To protect
-				the MOS capacitors on the IC, a thin glass cover slip was placed over the IC package opening. The air to
-				glass interface seen by the incident field represents a reflectance in the system. A typical reflectance
-				value for this type of interface in this range of wavelengths is approximately 8%i and thus the photon
-				flux at the MOS capacitor surface is determined to be 8.35x10<sup>16</sup> m<sup>-2</sup>s<sup>-1</sup>.
-				The capacitance versus time
-				transient was measured under this illumination and is shown in Figure 7-10. The time dependence of the
-				quantum conversion efficiency was calculated using Equation 6-11 and is shown in Figure 7-11. This curve
-				is relatively flat across most of its range and the value of quantum conversion efficiency for the early
-				part of the range is measured to be 7%. </p>
-			<p>Note that the ripples seen in this graph are not due to the random uncertainty of individual data points.
-				The fluctuations are periodic and have a frequency of approximately 1 Hz. The light source used for this
-				measurement was a slide projector. Since the bulb was operated at a high power, a cooling fan was used.
-				Since the MOS capacitor was not shielded against electromagnetic interference, this periodic noise was
-				likely caused by the cooling fan. However, the oscillations are centered around 7% quantum efficiency.
-				Note also, that toward the end of the measurement, the model is invalid, and the calculated quantum
-				efficiency becomes very large.</p>
+				<h3>Quantum Efficiency at 540 nm</h3>
 
-			<figure style="text-align: center;"">
+				<p>As already described, the principal optical photon being considered has a wavelength of 540 nm. Using
+					the
+					tungsten filament source and spectrometer, the MOS capacitor was illuminated with light of
+					wavelength
+					540 nm at an intensity of 0.033 W/m2. This corresponds to a photon flux of 9.07x1016 m-2s-1. To
+					protect
+					the MOS capacitors on the IC, a thin glass cover slip was placed over the IC package opening. The
+					air to
+					glass interface seen by the incident field represents a reflectance in the system. A typical
+					reflectance
+					value for this type of interface in this range of wavelengths is approximately 8%i and thus the
+					photon
+					flux at the MOS capacitor surface is determined to be 8.35x10<sup>16</sup>
+					m<sup>-2</sup>s<sup>-1</sup>.
+					The capacitance versus time
+					transient was measured under this illumination and is shown in Figure 7-10. The time dependence of
+					the
+					quantum conversion efficiency was calculated using Equation 6-11 and is shown in Figure 7-11. This
+					curve
+					is relatively flat across most of its range and the value of quantum conversion efficiency for the
+					early
+					part of the range is measured to be 7%. </p>
+				<p>Note that the ripples seen in this graph are not due to the random uncertainty of individual data
+					points.
+					The fluctuations are periodic and have a frequency of approximately 1 Hz. The light source used for
+					this
+					measurement was a slide projector. Since the bulb was operated at a high power, a cooling fan was
+					used.
+					Since the MOS capacitor was not shielded against electromagnetic interference, this periodic noise
+					was
+					likely caused by the cooling fan. However, the oscillations are centered around 7% quantum
+					efficiency.
+					Note also, that toward the end of the measurement, the model is invalid, and the calculated quantum
+					efficiency becomes very large.</p>
+
+				<figure style="text-align: center;"">
 					<img style=" width:60%;" src="img/thesis/fig_7_10.png" alt="">
-				<figcaption>Figure 7-10: Capacitance versus Time for an N-type MOS-C While Under Illumination at 540 nm
-				</figcaption>
-			</figure>
+					<figcaption>Figure 7-10: Capacitance versus Time for an N-type MOS-C While Under Illumination at 540
+						nm
+					</figcaption>
+				</figure>
 
-			<figure style="text-align: center;"">
+				<figure style="text-align: center;"">
 					<img style=" width:60%;" src="img/thesis/fig_7_11.png" alt="">
-				<figcaption>Figure 7-11: Quantum Efficiency versus Time for an N-type MOS-C While Under Illumination at
-					540 nm</figcaption>
-			</figure>
+					<figcaption>Figure 7-11: Quantum Efficiency versus Time for an N-type MOS-C While Under Illumination
+						at
+						540 nm</figcaption>
+				</figure>
 		</section>
 
 		<section id="chapter-8">
-			<header>
-				<h3>
-					<span>Chapter</span>
-					<span>8</span>
-				</h3>
-				<h3 class="subhead">CONCLUSION AND RECOMMENDATIONS</h3>
-			</header>
-			<h4>Conclusion</h4>
+
+			<h2>Chapter 8</h2>
+			<h2>CONCLUSION AND RECOMMENDATIONS</h2>
+
+			<h3>Conclusion</h3>
+
 			<p>The sensor which has been discussed is that of an array of MOSIS MOS capacitors, set on 100 μm centers,
 				with a 75% fill factor. A plane of readout circuits faces the sensor array and a phosphor is sandwiched
 				between them. The phosphor's properties lie somewhere between those of the Kodak Lanex - Regular screen
@@ -2010,8 +2032,11 @@
 				from each x-ray photon. This represents an extremely small charge and resolution of a charge of this
 				size will require amplifiers of extremely high quality. It is unlikely that such amplifiers can be
 				implemented in the space constraints of this sensor.</p>
-			<h4>Disparity Between Measured and Tabulated Quantum Efficiencies</h4>
-			<h5>Optical Quantum Efficiency</h5>
+
+			<h3>Disparity Between Measured and Tabulated Quantum Efficiencies</h3>
+
+			<h4>Optical Quantum Efficiency</h4>
+
 			<p>As discussed in Chapter 4, at the wavelength of interest a quantum efficiency of approximately 44% is
 				expected for polysilicon gate MOS capacitors yet only a 7% quantum efficiency was measured for the test
 				structure MOS capacitor. To keep capacitance measurements relatively noise-free, the test structure MOS
@@ -2025,7 +2050,9 @@
 				rectangles have more perimeter per unit area than do large ones and thus are expected to be more
 				sensitive. The test structure MOS capacitors used have approximately 1000 times the area of typical CCD
 				MOS capacitors and approximately 15 times the area of the projected sensor element MOS capacitor.</p>
-			<h5>Response Function</h5>
+
+			<h4>Response Function</h4>
+
 			<p>As described in Chapters 3 and 4, good MOS capacitor quantum efficiency is expected to depend upon
 				optical energy being deposited in or near the depletion layer and the only expected deviation from an
 				ideal fluence detector model is some loss of sensitivity during an exposure cycle. The mean penetration
@@ -2045,8 +2072,11 @@
 				for neglecting p-type MOS capacitor is that n-type capacitors are able to form deeper depletion layers.
 				Since quantum efficiency has been shown to not be sensitively dependent on depletion layer depth, this
 				issue should be re-evaluated. </p>
-			<h4>Methods of Improving Optical Quantum Efficiency</h4>
-			<h5>Inherent Differences</h5>
+
+			<h3>Methods of Improving Optical Quantum Efficiency</h3>
+
+			<h4>Inherent Differences</h4>
+
 			<p>Based on the arguments of the last section, the quantum efficiency of a MOS capacitor of the proposed
 				size may be better than the calculations of Chapter 7 indicate. This is due to an enhanced perimeter
 				effect for smaller MOS capacitors. In addition, the proposed geometry includes a close-coupling of a
@@ -2059,7 +2089,9 @@
 				more likely to be reflected thus creating an apparent reduction in quantum efficiency. However if a
 				CsI(Tl) needle structure (effectively a waveguide array) can be used, a generally forward direction of
 				optical photon travel can be retained and this consideration will be minimized.</p>
-			<h5>Design Variations</h5>
+
+			<h4>Design Variations</h4>
+
 			<p>As described in Chapter 4, use of a transparent gate material such a tin oxide can significantly increase
 				the quantum efficiency of a MOS capacitor. In general, prudent choice of MOS capacitor layer materials
 				and thicknesses can function as an anti-reflective coating and lead to decreased reflectance causing an
@@ -2079,8 +2111,11 @@
 				white light, the fishnet capacitor equilibrates much more rapidly than does its unperforated
 				counterpart. This implies that such a design might be used to optimize the quantum efficiency of a MOS
 				capacitor sensor element. </p>
-			<h4>Further Suggested Work</h4>
-			<h5>Investigating Thermal Generation</h5>
+
+			<h3>Further Suggested Work</h3>
+
+			<h4>Investigating Thermal Generation</h4>
+
 			<p>Thermal generation is a source of signal error for the proposed system. Though thermal generation was
 				very slow for the test structure IC, it was still present. In addition, its contribution is expected to
 				increase1 with accumulated dose. Thermal generation's contribution can be removed by subtracting an
@@ -2088,7 +2123,9 @@
 				generation in the context of image noise to determine how significant its contribution is, how much is
 				acceptable, how it can best be minimized. In addition, the effect of sensor element geometry on thermal
 				generation should be evaluated.</p>
-			<h5>Modeling and Simulating</h5>
+
+			<h4>Modeling and Simulating</h4>
+
 			<p>How a MOS capacitor is designed and operated impacts the depletion layer (sensor) it forms. Different
 				types of phosphor layers will interact differently with different MOS capacitor designs. A CsI(Tl)
 				needle array will create a different type of optical field than a layer of Gd2O2S(Tb) which is suspended
@@ -2109,11 +2146,9 @@
 		</section>
 
 		<section id="reference-list">
-			<header>
-				<h3>
-					<span>Reference List</span>
-				</h3>
-			</header>
+
+			<h2>Reference List</h2>
+
 			<ol class="reference-list">
 				<li>Jacobs, A.M., Cox, J.C., and Juang, Y.S., "DRAM as an X-Ray Sensor", Proceedings of SPIE, 797,
 					124-126, 1987.</li>
@@ -2138,16 +2173,15 @@
 		</section>
 
 		<section id="biographical-sketch">
-			<header>
-				<h3>
-					<span>Biographical Sketch</span>
-				</h3>
-			</header>
-			<p>Robert Paul King, Jr. was born in Jacksonville, Florida, in 1964. He graduated from S.W. Wolfson High
-				School and entered service in the U.S. Army in 1982. He enrolled at the University of Florida in January
-				of 1986 and was awarded the degree of Bachelor of Science in electrical engineering in December of 1988.
-				He enrolled in the medical physics program in the Department of Nuclear Engineering Sciences in January
-				of 1989 and has worked for the Master of Science degree until the present.</p>
+			<h2>Biographical Sketch</h3>
+				<p>Robert Paul King, Jr. was born in Jacksonville, Florida, in 1964. He graduated from S.W. Wolfson High
+					School and entered service in the U.S. Army in 1982. He enrolled at the University of Florida in
+					January
+					of 1986 and was awarded the degree of Bachelor of Science in electrical engineering in December of
+					1988.
+					He enrolled in the medical physics program in the Department of Nuclear Engineering Sciences in
+					January
+					of 1989 and has worked for the Master of Science degree until the present.</p>
 		</section>
 
 		<br>
@@ -2160,58 +2194,70 @@
 			</header>
 
 
-			<p class="certification">I certify that I have read this study and that in my opinion it conforms to
+			<p class="mt-5">I certify that I have read this study and that in my opinion it conforms to
 				acceptable standards of scholarly presentation and is fully adequate, in scope and quality, as a thesis
 				for the degree of Master of Science.</p>
-			<hr>
-			<p class="signature-block">Alan M. Jacobs, Chair</p>
-			<p class="signature-block">Professor of Nuclear<br>Engineering Sciences</p>
+			<div class="signature-block">
+				<hr>
+				<h5>Alan M. Jacobs, Chair</h5>
+				<h5>Professor of Nuclear</h5>
+				<h5>Engineering Sciences</h5>
+			</div>
 
-
-			<p class="certification">I certify that I have read this study and that in my opinion it conforms to
+			<p class="mt-5">I certify that I have read this study and that in my opinion it conforms to
 				acceptable standards of scholarly presentation and is fully adequate, in scope and quality, as a thesis
 				for the degree of Master of Science.</p>
-			<hr class="signature">
-			<p class="signature-block">David E. Hintenlang</p>
-			<p class="signature-block">Assistant Professor of Nuclear<br>Engineering Sciences
+			<div class="signature-block">
+				<hr>
+				<h5>David E. Hintenlang</h5>
+				<h5>Assistant Professor of Nuclear</h5>
+				<h5>Engineering Sciences</h5>
+			</div>
 
-				<p class="certification">I certify that I have read this study and that in my opinion it conforms to
-					acceptable standards of scholarly presentation and is fully adequate, in scope and quality, as a
-					thesis for the degree of Master of Science.</p>
+			<p class="mt-5">I certify that I have read this study and that in my opinion it conforms to
+				acceptable standards of scholarly presentation and is fully adequate, in scope and quality, as a
+				thesis for the degree of Master of Science.</p>
+			<div class="signature-block">
+				<hr>
+				<h5>Robert M. Fox</h5>
+				<h5>Assistant Professor of<br>Electrical Engineering</h5>
+			</div>
+
+			<p class="mt-5">I certify that I have read this study and that in my opinion it conforms to
+				acceptable standards of scholarly presentation and is fully adequate, in scope and quality, as a
+				thesis for the degree of Master of Science.</p>
+			<div class="signature-block">
+				<hr>
+				<h5>Walter E. Drane</h5>
+				<h5>Associate Professor of<br>Radiology</h5>
+			</div>
+
+			<p class="mt-5">I certify that I have read this study and that in my opinion it conforms to
+				acceptable standards of scholarly presentation and is fully adequate, in scope and quality, as a
+				thesis for the degree of Master of Science.</p>
+			<div class="signature-block">
+				<hr>
+				<h5>John D. Cox</h5>
+				<h5>Vice President of Research,<br>Development, and Engineering</h5>
+				<h5>General Imaging Corporation</h5>
+			</div>
+
+			<h5 class="mt-5">This thesis was submitted to the Graduate Faculty of the College of Engineering
+				and to the Graduate School and was accepted as partial fulfillment of the requirements for the
+				degree of Master of Science.</h5>
+			<h5>August 1990</h5>
+
+			<div class="signature-block">
+				<hr>
+				<h5>Winfred M. Phillips</h5>
+				<h5>Dean, College of<br>Engineering</h5>
+			</div>
+
+			<div class="signature-block">
 				<hr class="signature">
-				<p class="signature-block">Robert M. Fox</p>
-				<p class="signature-block">Assistant Professor of<br>Electrical Engineering</p>
-
-				<p class="certification">I certify that I have read this study and that in my opinion it conforms to
-					acceptable standards of scholarly presentation and is fully adequate, in scope and quality, as a
-					thesis for the degree of Master of Science.</p>
-				<hr class="signature">
-				<p class="signature-block">Walter E. Drane</p>
-				<p class="signature-block">Associate Professor of<br>Radiology</p>
-
-				<p class="certification">I certify that I have read this study and that in my opinion it conforms to
-					acceptable standards of scholarly presentation and is fully adequate, in scope and quality, as a
-					thesis for the degree of Master of Science.</p>
-				<hr class="signature">
-				<p class="signature-block">John D. Cox</p>
-				<p class="signature-block">Vice President of Research,<br>Development, and Engineering</p>
-				<p class="signature-block">General Imaging Corporation</p>
-
-				<p class="certification">This thesis was submitted to the Graduate Faculty of the College of Engineering
-					and to the Graduate School and was accepted as partial fulfillment of the requirements for the
-					degree of Master of Science.</p>
-
-				<p>August 1990</p>
-
-
-				<hr class="signature">
-				<p class="signature-block">Winfred M. Phillips</p>
-				<p class="signature-block">Dean, College of<br>Engineering</p>
-
-				<hr class="signature">
-				<p class="signature-block">Madelyn Lockhart</p>
-				<p class="signature-block">Dean, Graduate School</p>
-
+				<h5>Madelyn Lockhart</h5>
+				<h5>Dean, Graduate School</h5>
+			</div>
 
 		</section>
 
