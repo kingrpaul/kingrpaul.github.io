@@ -63,6 +63,7 @@ a {
 
 .web-address {
     font-size:smaller;
+    overflow:hidden;
 }
 
 .img-hover:hover {
@@ -140,6 +141,7 @@ h3~p {
     background-color: white;
     font-weight: normal;
 }
+
 
 .apa_cite>li {
     padding: 0 0 0 4rem;
