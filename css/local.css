@@ -1,0 +1,75 @@
+img {
+    /* padding-top: 1em; */
+    min-width: 0.9em;
+    max-width:1.5rem; 
+    min-height: 0.9em;
+    max-height:1.5em
+
+    }
+
+
+img.navbar-photo {
+    min-width: 2em;
+    max-width: 5rem; 
+    min-height: 2em;
+    max-height: 5em;
+
+    border-radius: 100%;
+}
+
+
+
+* {
+    /* color:black; */
+}
+
+#work p {
+}
+
+
+#write p {
+    color:black;
+    padding: 0.2em 1em 0.2em 1em;
+    text-indent: -1em;
+    font-size: 0.95em;
+    line-height: 1.05;
+}
+
+#write p a {
+    color:black;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+
+.jobs a {
+    margin: 0.2em auto 0.2em auto;
+}
+
+
+#write div.col-12 {
+    font-size: 0.9em;
+    
+    text-align: start;
+     
+}
+
+#write div.row a {
+    display: inline;
+}
+
+#write a {
+    color: black;
+}
+
+,
+
+
+
+
+
+/* <p class="m-4">
+   link 🔗 <br/>
+   document 🗎 <br/>
+   picture 🖻 <br/>
+   </p>  */
