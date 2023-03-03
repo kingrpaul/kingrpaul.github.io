@@ -26,7 +26,7 @@ img.navbar-photo {
 #work p {
 }
 
-
+#write~tbody td,
 #write p {
     color:black;
     padding: 0.2em 1em 0.2em 1em;
@@ -35,6 +35,13 @@ img.navbar-photo {
     line-height: 1.05;
 }
 
+#write~tbody td {
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+}
+
+
+#write~tbody  td a,
 #write p a {
     color:black;
     font-style: italic;
