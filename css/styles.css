@@ -15,6 +15,15 @@
     --blue: #5584AC;
     --teal: #95D1CC;
     --beige: #F6F2D4;
+
+    --fg: #181D31;
+    --bg: #FEFCF3;
+    --ax: #FC8210;
+}
+
+#cv * {
+    color: var(--fg) !important;
+    background-color: var(--bg) !important;
 }
 
 /* ELEMENTS */
