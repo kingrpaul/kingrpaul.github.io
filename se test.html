@@ -20,61 +20,58 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
-    <!-- <script>
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-    </script> -->
+</head>
 
-    <!-- JQUERY -->
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-
-    <!-- FONTS & GLYPHS -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+34&display=swap" rel="stylesheet"> -->
-
-    <!-- CSS -->
-    <!-- <link rel="stylesheet" href="css/styles.css"> -->
-    <!-- <link rel="stylesheet" href="css/local.css"> -->
-
-    <!-- <style>
+<style>
         body {}
             :root {
-            --fg: #1c1b20;
-            --bg: #fffdd4;
-        }
-        body {
-            background-color: var(--bg);
+            --secondary: #6c757d;;
+            --dark: #343a40;
         }
 
-        h1, h2, h3, h4, h5, h6, p, nav {
-            color: var(--fg);
-        }
-        a {
-            width: fit-content;
-        }
- 
-        .disabled {
-            pointer-events: none;
-            cursor: default;
-            opacity: 0.8;
+        .list-group-item.e-book div * {
+            color: var(--secondary);
         }
 
-        .list-group,
-        .list-group-item,
-        .list-group-item * {
-            background-color: var(--bg);
+        .list-group-item.e-book > div {
+            display:inline-block;
+            float: left;
         }
-    </style> -->
-</head>
+
+        .list-group-item.e-book div:first-of-type>img {
+            width:6rem; 
+            height:9rem;
+        }
+
+        /* description */
+        .list-group-item.e-book>div:nth-of-type(2) {
+            min-width: 10rem;
+            max-width:calc(100% - 6rem);
+            min-height:9rem;
+            max-height:12rem;
+            padding-left:0.5rem;
+        }
+
+        /* lines of description */
+        .list-group-item.e-book div p{
+            line-height: 1;
+            margin:0.5rem 0 0.5rem 0;
+        }
+
+        /* book title */
+        .list-group-item.e-book div p:first-child {
+            color: var(--dark);
+            font-size: 1.25em;
+            font-weight: 500;
+            font-style: italic;
+            text-wrap:wrap;
+            text-overflow:ellipsis;
+        }
+</style>
 
 <body>
 
-<div class="container">
-    
-</div>
+
 <div class="container">
     <ul class="list-group">
 
@@ -85,30 +82,28 @@
               </h1>
         </header>
 
+<!-- sandbox    -->
         <h2 class="">2020</h2>
 
-        <li id="pollyanna" class="row">
-            <div class="col-3 col-md-2 col-lg-1">
-                <img class="img-fluid img-thumbnail mx-auto" src="img/cover/150x225_pollyanna.png" alt="cover">
-            </div>
-            <div class="col-9">
-                <p>
-                    <span class="fw-bold">Pollyanna</span><br>
-                    <span class="">Eleanor H. Porter (1913)</span><br>
-                    <span><a class="text-secondary" target="_blank" href="https://standardebooks.org/ebooks/eleanor-h-porter/pollyanna">Host: Std Ebooks</a></span><br>
-                    <span><a class="text-secondary" target="_blank" href="https://github.com/kingrpaul/eleanor-h-porter_pollyanna">Repo: Github</a></span>
-                </p>
+        <li id="pollyanna" class="list-group-item e-book">
+            <div><img src="img/cover/150x225_pollyanna.png"  alt="cover"></div>
+            <div>
+                <p>Pollyanna</p>
+                <p>Eleanor H. Porter (1913)</p>
+                <p><a target="_blank" href="https://standardebooks.org/ebooks/eleanor-h-porter/pollyanna">Host: Std Ebooks</a></p>
+                <p><a target="_blank" href="https://github.com/kingrpaul/eleanor-h-porter_pollyanna">Repo: Github</a></p>
             </div>
         </li>
-        <hr><hr><hr><hr class="mb-4">
 
+        <hr><hr><hr><hr class="mb-4">
+<!-- sandbox    -->
 
         <h2 class="">2020</h2>
 
         <li id="pollyanna" class="list-group-item ps-1">
             <img class="float-start ms-0 me-1" src="img/cover/150x225_pollyanna.png" style="height:7em;" class="" alt="cover">
             <div style="display:inline-block;" class="">
-                <h4 class="fs-5 my-0"><i>Pollyanna</i></h4>
+                <h4 class="fs-5 my-0"><i>Pollyanna </i></h4>
                 <p class="text-secondary my-0">Eleanor H. Porter (1913)</p>
                 <a class="text-secondary my-0" style="display:block;" target="_blank" href="https://standardebooks.org/ebooks/eleanor-h-porter/pollyanna">Host: Std Ebooks</a>
                 <a class="text-secondary my-0" style="display:block;" target="_blank" href="https://github.com/kingrpaul/eleanor-h-porter_pollyanna">Repo: Github</a>
