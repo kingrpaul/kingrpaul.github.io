@@ -1,4 +1,11 @@
+(0) lost the navbar on the notes
+(0) where a document is a note: mark it as NOTE
 (1) include the RCTC document into the site
 (2) Add social buttons to to the site
 (3) add aamd reviewer certificate
 (4) add video links via youtube
+(5) add scan-only archive books to books
+(6) add cont-ed sect
+(7) add lang-eo sect
+(8) move bw-project under books
+(9) put reviews under books

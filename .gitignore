@@ -1,4 +1,3 @@
-Issues.txt
 img/pans-garden/uncropped/pansgardenvolume00blacuoft_0121.jpg
 img/pans-garden/uncropped/pansgardenvolume00blacuoft_0131.jpg
 img/pans-garden/uncropped/pansgardenvolume00blacuoft_0153.jpg
@@ -17,4 +16,5 @@ img/pans-garden/uncropped/pansgardenvolume00blacuoft_0551.jpg
 img/profile/profile_lg.jpg
 img/pans-garden/descrip.txt
 img/pans-garden/ls.txt
+*.txt
 .gitignore
