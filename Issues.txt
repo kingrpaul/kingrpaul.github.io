@@ -1,4 +1,3 @@
-(0) lost the navbar on the notes
 (0) where a document is a note: mark it as NOTE
 (1) include the RCTC document into the site
 (2) Add social buttons to to the site

@@ -38,17 +38,61 @@
     <!-- CSS -->
     <!-- <link rel="stylesheet" href=""> -->
 
+<!-- SANDBOX -->
+<style>
+        .list-group-item div:first-of-type img {
+            max-width:10rem; 
+            max-height:10rem;
+        }
+
+        .list-group-item > div {
+            display:inline-block;
+            float: left;
+        }
+
+
+        /* description */
+        .list-group-item>div:nth-of-type(2) {
+            min-width: 10rem;
+            max-width:calc(100% - 6rem);
+            min-height:9rem;
+            max-height:12rem;
+            padding-left:0.5rem;
+        }
+
+        /* lines of description */
+        .list-group-item div p{
+            line-height: 1;
+            margin:0.5rem 0 0.5rem 0;
+        }
+
+        /* book title */
+        .list-group-item div p:first-child {
+            color: var(--dark);
+            font-size: 1.25em;
+            font-weight: 500;
+            font-style: italic;
+            text-wrap:wrap;
+            text-overflow:ellipsis;
+        }
+
+
+
+</style>
+<!-- SANDBOX -->
+
+    
 </head>
 
 <body>
 
-<h1 class="text-center">
+<!-- <h1 class="text-center">
   GALLERY
-  <!-- <a class="float-end text-primary fs-4 mt-2 me-3" href="index.html" style="filter:grayscale(50%);">🌊</a>  -->
+  <a class="float-end text-primary fs-4 mt-2 me-3" href="index.html" style="filter:grayscale(50%);">🌊</a> 
   <a class="float-end fs-6 mt-1 me-3" href="index.html" style="">HOME</a> 
-</h1>
+</h1> -->
 
-<div id="bumc-rtt-school" class="container-fluid mt-5">
+<!-- <div id="bumc-rtt-school" class="container-fluid mt-5">
   <hr/>
   <h2>Baylor School of Radiation Therapy</h2>
   <div class="row">
@@ -69,7 +113,64 @@
       <p class="text-center mt-0 ms-2 text-dark no-underline">Class of 1996</p>      
     </div>
   </div>
+</div> -->
+
+
+<!-- SANDBOX -->
+<div class="container">
+  <ul class="list-group">
+
+      <header class="pt-2">
+          <h1>
+              PICTURES
+              <a class="float-end fs-6 mt-1 me-3" href="../index.html">HOME</a> 
+            </h1>
+      </header>
+
+      <h2>1983</h2>
+
+      <li id="" class="list-group-item">
+          <div><a target="_blank" href="img/83-ft-jackson.jpg"><img src="img/83-ft-jackson.jpg" alt="image"></a></div>
+          <div>
+              <p>Ft. Jackson, SC</p>
+              <p>2nd Plt, Bravo Co, 3rd Btn, 1st BCT Bde</p>
+          </div>
+      </li>
+
+      <h2>1995</h2>
+
+      <li id="" class="list-group-item">
+        <div><img src="img/bumc_rtt_95.jpg" alt="image"></div>
+        <div>
+            <p>Baylor School of Radiation Therapy</p>
+            <p>Class of 1995</p>
+        </div>
+    </li>
+
+    <h2>1996</h2>
+
+    <li id="" class="list-group-item">
+      <div><img src="img/bumc_rtt_96.jpg" alt="image"></div>
+      <div>
+        <p>Baylor School of Radiation Therapy</p>
+        <p>Class of 1996</p>
+  </div>
+  </li>
+  <h2>2010</h2>
+
+  <li id="" class="list-group-item">
+    <div><a target="_blank" href="img/2010_HattiesburgMSUSMEMPH.jpg"><img src="img/2010_HattiesburgMSUSMEMPH.jpg" alt="image"></a></div>
+    <div>
+        <p>USM, Hattiesburg, MS </p>
+        <p>EMPH, Class of 2010</p>
+    </div>
+</li>
+
+
+
+    </ul>
 </div>
+<!-- SANDBOX -->
 
 
 <!-- <div id="ebook-covers" class="container-fluid mt-5">

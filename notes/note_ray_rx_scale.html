@@ -35,18 +35,19 @@
 </head>
 
 <body>
-    <!-- LOAD NAVBAR ####################################### -->
-    <div id="_navbar"></div>
-    <script>
-        $('#_navbar').load('navbar.html');
-    </script>
-
 
     <div class="container-fluid" id="raystation-x-ray-rx-scaling">
       <div class="container" id="raystation-x-ray-rx-scaling">
-        <h1>RayStation X-Ray Rx Scaling </h1>
-        <h2 class="small text-secondary">2020_02_06</h2>
-        <hr />
+
+        <header class="pt-2">
+          <h1>
+              RayStation X-Ray Rx Scaling
+              <a class="float-end fs-6 mt-1 me-3" href="../index.html">HOME</a> 
+            </h1>
+            <h2 class="small text-secondary">2020_02_06</h2>
+            <hr />
+        </header>
+
         <p>Regulations require that a prescription include a dose, its fractionation, and a site which is the destination for that dose. <a class="footnote-reference" href="#f1" id="id1">[1]</a></p>
         <p>When scaling a RayStation plan’s dose (sometimes called “normalizing”), the total treatment time is multiplied by a constant, so that the absolute dose is either increased or decreased, while the relative dose distribution remains unchanged. Dose scaling is a normal step in RayStation planning, necessary to make a plan conform to the prescription.</p>
         <p>The details of a plan’s scaling are more specific than is required for a prescription, so that a single dose prescription might rightly be described by a number of different dose scalings. RayStation is flexible in its ability to scale a plan to deliver any prescribed dose. And, the dose part of the dose prescription can itself be scaled by a percentage. <a class="footnote-reference" href="#f2" id="id2">[2]</a></p>
