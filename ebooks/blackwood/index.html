@@ -1,0 +1,2797 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Blackwood</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
+  <link rel="shortcut icon" href=".//favicon//favicon.ico">
+
+<style>
+
+  h2 {    
+    font-size: 1.3em;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid dotted darkgray;
+    background-color: #EFEFEF;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+  }
+
+  p:empty {
+    display:none;
+  }
+
+  a {
+    width: fit-content;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    border-bottom: 1px dotted lightgray;
+    margin: 0.2rem 0 0.2rem 0.2rem;
+  }
+
+  li >a,
+  li >p {
+    margin-left: 0.5em;
+    display: block;
+    color: #181D31;;
+    text-decoration: none;
+  }
+
+  li >a:first-of-type {
+    font-size: 1.1rem;
+    font-variant: small-caps;
+    text-decoration: none;
+    width: fit-content;
+    margin-left: 0;
+    text-decoration: underline;
+  }
+
+  li p {
+    font-style: italic;
+  }
+
+  img{
+  max-width: 10em;
+  max-height: 5em; 
+  margin:1px;
+  border:1px solid grey;
+  }
+
+  li a >img {
+    color:red;
+    height:1.2rem;
+    border:0;
+  }
+
+  /* SANDBOX */
+
+  a.gb, a.ht, a.ia, a.pg, a.tv, a.ws, a.etc, a.bw, a.na {
+    height:1.2rem;
+    width:auto;
+    vertical-align: bottom;
+    display: inline-block;
+  }
+
+  a.gb {
+  /* Google Books */
+    content: url('icon/gb.svg');
+  }
+  a.ht {
+  /* Hathi Trust */
+    content: url('icon/ht.svg');
+  }
+  a.ia {
+  /* Internet Archive */
+    content: url('icon/ia.svg');
+  }
+  a.pg {
+  /* Project Gutenburg */
+    content: url('icon/pg.svg');
+  }
+  a.tv {
+  /* Trove, Nat'l Lib. of Australia */
+    content: url('icon/tv.svg');
+  }
+  a.ws {
+  /* WikiSource */
+    content: url('icon/ws.svg');
+  }
+  a.etc {
+  /* Other */
+    content: url('icon/etc.svg');
+  }
+
+  a.bw {
+  /* AlgernonBlackwood.org */
+    content: url('icon/bw.svg');
+  }
+  a.na {
+  /* No Source */
+    content: url('icon/na.svg');
+  }
+  
+  #resources > ul > h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  #resources ol > li {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    line-height: 1.05;
+  }
+
+</style>
+
+<base target="_blank">
+
+</head>
+
+<body>
+
+  <base />
+
+<!-- <header class="mb-4">-->
+
+
+  <div class="container">
+
+    <header class="pt-2">
+      <h1>
+        Algernon Blackwood
+          <a target="_self" class="float-end fs-6 mt-1 me-3" href="../../index.html">HOME</a>
+        </h1>
+    </header>
+
+    <!-- <div class="row">
+      <h1 class="ms-4">
+        <a class="card-link fs-2 center me-2" href="https://kingrpaul.github.io/index.html">🌊</a>
+        Algernon Blackwood</h1>
+    </div>-->
+
+    <!-- <p class="fs-5 text-secondary center ps-5 mx-4 mb-0 pb-0">“Laureate of the Occult”</p>
+    <p class="fs-5 text-secondary center ps-5 mx-4 mt-0 pt-0">"<em>The</em>‘Holy Man’ of Supernatural Fiction <cite class="fs-6">(Scott, 2022)</cite>"</p>
+    <p class="mt-2 ps-3"><span class="card-link fs-4 text-secondary center mx-2 ps-5">Short Works, 1889 - 1927</span></p>
+    <hr/>
+    <h2 class="ms-1">
+      <a class="ps-4 pe-3 text-light font-monospace text-decoration-none" href="#">Works</a>
+      <a class="ps-4 pe-3 text-secondary font-monospace text-decoration-underline fs-3" href=".//resources.html">Reources</a>
+      <a class="ps-4 pe-3 text-secondary font-monospace text-decoration-underline fs-3" href=".//gallery.html">Gallery</a>
+    </h2>
+    <hr/>
+    <p class="mt-2 ps-3">
+      <span class="card-link fs-4 text-light center mx-2">Titles: 252</span>
+      <span class="card-link fs-4 text-light center mx-2">Complete: 221</span>
+      <span class="card-link fs-4 text-light center mx-2">Incomplete: 0</span>
+      <span class="card-link fs-4 text-light center mx-2">Not Producible: 31</span>
+    </p>
+    <p class="mt-2 ps-3">
+      <span><a class="card-link fs-6 text-light center mx-2" href="https://standardebooks.org/manual/1.7.2/single-page">SEMOS</a></span>
+      <span><a class="card-link fs-6 text-light center mx-2" href="https://standardebooks.org/contribute/producing-an-ebook-step-by-step">Steps</a></span>
+      <span><a class="card-link fs-6 text-light center mx-2" href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes">LangCodes</a></span>
+      <span><a class="card-link fs-6 text-light center mx-2" href="https://www.loc.gov/marc/relators/relacode.html">MarcCodes</a></span>
+      <span><a class="card-link fs-6 text-light center mx-2" href="https://en.wikipedia.org/wiki/Algernon_Blackwood">Wikipedia</a></span>
+      <span><a class="card-link fs-6 text-light center mx-2" href="https://en.wikisource.org/wiki/Author:Algernon_Blackwood">Wikisource</a></span>
+      <span><a class="card-link fs-6 text-light center mx-2" href="https://commons.wikimedia.org/wiki/Category:Algernon_Blackwood">Wikimedia</a></span>
+      <span><a class="card-link fs-6 text-light center mx-2" href="https://en.wikiquote.org/wiki/Algernon_Blackwood">Wikiquotes</a></span>
+      <span><a class="card-link fs-6 text-light center mx-2" href="https://www.wikidata.org/wiki/Q507991">Wikidata</a></span>
+      <span><a class="card-link fs-6 text-light center mx-2" href="https://www.gutenberg.org/ebooks/author/1370">Gutenburg</a></span>
+      <span><a class="card-link fs-6 text-light center mx-2" href="https://archive.org/search?query=creator%3A%22Blackwood%2C+Algernon%2C+1869-1951%22">Archive</a></span>
+    </p>
+  </header>-->
+
+
+<div id="portrait-gallery" class="container">
+  <a href="https://archive.org/details/sim_illustrated-london-news_1925-07-25_167_4501/page/n31?q=%22Algernon+Blackwood%22">
+    <img src="img/personal-portraits/blackwood-by-tittle.jpg" alt="Walter Tittle's Portrait of a Distinguished Novelist, the Author of "Pan's Garden": Mr. Algernon Blackwood">
+  </a>
+  <a href="https://www.mutualart.com/Artwork/Mr--Algernon-Blackwood/C2A3D512F7DD3DF1">
+    <img src="img/blackwood-by-gurschner/blackwood-by-gurschner.jpg" alt="Mr. Algernon Blackwood, 1938, Oil on Canvas">
+  </a>
+  <a href="https://www.mutualart.com/Artwork/Mr--Algernon-Blackwood/C2A3D512F7DD3DF1">
+    <img src="img/churchman-cigarettes/churchman.jpg" alt="Algernon Blackwood, by Churchman's Cigarettes">
+  </a>
+</div>
+  <!-- 
+  OTHER LINKS TO IMAGES
+  https://archive.org/details/sim_pall-mall-magazine_1914-05_51_253/page/576?q=%22Algernon+Blackwood%22
+  https://archive.org/details/sim_bookman-a-review-of-books-and-life_1914-04_39_2/page/122?q=%22Algernon+Blackwood%22
+  https://babel.hathitrust.org/cgi/pt?id=uc1.b3037926&view=1up&seq=77
+ -->
+
+
+<ul>
+
+  <li>
+    <h2>Description</h2>
+    <p>Algernon Blackwood was a prolific, popular, and influential writer, often associated with “weird fiction,” but whose work spans an array of genre, subject, form, and audience.</p>
+    <p>“The Willows,” his best known work and Lovecraft’s favorite supernatural tale, narrates a pilgrimage by two men across central Europe⁠—a journey Tolkien’s readers will recognize as Frodoesque. Both Lovecraft and Tolkien acknowledged Blackwood’s influence and this influence is unmistakable any time Tolkien as author finds himself among ancient trees, climbing a mountain, or afloat on a river. For Lovecraft, it is Blackwood who transforms the “higher space” of Einstein’s annus mirabilis into a perilous firmament to be filled with cosmic horrors and it is Blackwood who first writes the eldritch text that is to become Lovecraft’s Necronomicon. But, while Blackwood was an explorer of the macabre corners of “ghostland;” he was captivated by the beauty of nature, believed in “traveling light,” and never confined himself anywhere.</p>
+    <p>It had been one of Blackwood’s life goals to become a “holy man.” He lived itinerant, unwed, and wrote only because he “could not keep it back.” His words were published in books, magazines, journals, newspapers; presented on stage; and broadcast on radio and television. Writing for any reader, he was published by <i>The Country Gentleman</i>, <i>Lady’s Realm</i>, and⁠—⁠for children⁠—⁠in <i>The Merry Go Round</i>. He wrote for both <i>The Methodist Magazine</i>and <i>The Occult Review</i>. One of his lesser-read stories was printed exclusively by <i>The Burrowa News</i>of New South Wales, in Austalia.</p>
+    <p>Even Blackwood lost count of what he had published, so that no definitive bibliography exists. Though the present collection is not exhaustive⁠—doubtless some works are lost to time⁠—it is the most extensive of its kind. The fiction includes 16 novellas, a 3-act play, 145 short stories, 5 poems, and 3 songs. Supplementing this are 53 non-fiction works. Most provide background to the fiction stories and some are stories themselves.</p>
+    <p>While there is no “Blackwood Universe” in the modern sense; themes, characters, and settings are often shared. When Blackwood writes, the categories of fiction, non-fiction, and autobiography become indistinct, some works difficult to place. Of the works in this collection, twenty-one were published for children, but again the distinction is often arbitrary.</p>
+    <p>In the end, it is all Blackwood.</p>
+  </li>
+  
+  <li class="complete non-fiction">
+    <h2>Epigraph</h2>
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//epigraph.xhtml"><small>from</small>"My Own Past"</a>
+    <a class="ia" href="https://archive.org/details/myownpast00ffouuoft/page/190/mode/1up"></a>
+      My Own Past by Maude M. C. Ffoulkes, 1915
+    <p>“Blackwood was also one of the fortunate beings who, on the other side of custom's thick-set hedge, are able to see the gleaming eyes of wild spirits.”⁠<br/>—Maude M. C. Ffoulkes, 1915 #autobiography</p>
+  </li>
+  
+  <li class="complete non-fiction">
+    <h2>Foreword</h2>
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//foreword.xhtml">Algernon Blackwood: The Sherlock Holmes of Ghostland</a>
+    <a class="ia" href="https://archive.org/details/sim_current-opinion_1914-05_56_5/page/380"></a>
+    Current Opinion, May 1914
+    <p>Introduction of Algernon Blackwood as a writer who combines elements of the occult with modern science, particularly in his book "John Silence." #review</p>
+  </li>
+
+  <hr/>
+    
+  <h2>1889</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-mysterious-house.xhtml">A Mysterious House</a>
+    <a class="gb" href="https://www.google.com/books/edition/_/2uQYAQAAIAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    Belgravia, Vol. 69
+    <p>A reputation for being haunting dissuades prospective tenants from a rental property. #england</p>
+  </li>
+    
+  <h2>1890</h2>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//christmas-in-england.xhtml">Christmas in England</a>
+    <a class="gb" href="https://www.google.com/books/edition/Methodist_Magazine/t78QAAAAIAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    Methodist Magazine Volume 32 1890 pg481
+    <p>"In the classic city of Oxford, the stronghold of ancient customs and ancient opinions, …" #england #christmas</p>
+  </li>
+    
+  <h2>1891</h2>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//about-the-moravians.xhtml">About the Moravians</a>
+    <a class="gb" href="https://www.google.com/books/edition/Methodist_Magazine/GMMQAAAAIAAJ?hl=en&gbpv=1&bsq=%22About%20the%20Moravians%22"></a>
+    Methodist Magazine Vol. 33 1891, pg166
+    <p>The history and traditions of a central European Protestant group remain relevant to the present-day. #christian</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//in-the-jura-neuchatel.xhtml">In the Jura-Neuchatel</a>
+    <a class="gb" href="https://www.google.com/books/edition/Methodist_Magazine/GMMQAAAAIAAJ?hl=en&gbpv=1&bsq=%22In%20the%20Jura%22"></a>
+    Methodist Magazine Vol. 33 1891, pg551
+    <p>Tolkein's Misty Mountains are the Jura and Neuchatel is Rivendell. #jura #jrrt</p>
+    <div class="container-fluid">
+      <img src="img/in-the-jura-neuchatel/itjn_fig01_in-the-market-place-neuchatel.jpg" alt="In the Market-Place, Neuchatel">
+      <img src="img/in-the-jura-neuchatel/itjn_fig02_roman-columns-besancon.jpg"  alt="Roman Columns, Besancon">
+      <img src="img/in-the-jura-neuchatel/itjn_fig03_the-jura-in-winter.jpg" alt="The Jura in Winter">
+      <img src="img/in-the-jura-neuchatel/itjn_fig04_fort-joux-and-st-pierre-de-la-cluse.jpg"  alt="Fort Joux and St. Pierre de la Cluse">
+      <img src="img/in-the-jura-neuchatel/itjn_fig05_cascades-of-syratu-mouthier.jpg"  alt="Cascades of Syratu, Mouthier">
+      <img src="img/in-the-jura-neuchatel/itjn_fig06_stactite-caverns-in-the-jura.jpg"  alt="Stactite Caverns in the Jura">
+      <img src="img/in-the-jura-neuchatel/itjn_fig07_the-baths-of-salins.jpg"  alt="The Baths of Ssalins">
+      <img src="img/in-the-jura-neuchatel/itjn_fig08_source-of-the-areuse.jpg"  alt="Source of the Areuse">
+      <img src="img/in-the-jura-neuchatel/itjn_fig09_the-rhone-and-rhine-canal-in-the-jura-region.jpg"  alt="The Rhone and Rhine Canal in the Jura Region">
+      <img src="img/in-the-jura-neuchatel/itjn_fig10_chateau-of-neuchatel.jpg"  alt="Chateau of Neuchatel">
+    </div>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//memories-of-the-black-forest.xhtml">Memories of the Black Forest</a>
+    <a class="gb" href="https://www.google.com/books/edition/Methodist_Magazine/GMMQAAAAIAAJ?hl=en&gbpv=1&bsq=%22Memories%20of%20the%20Black%20Forest%22"></a>
+    Methodist Magazine Vol. 33 1891, pg14
+    <p>The Black Forest, and its people, merit your consideration. #germany #witch #supernatural #gnome #fairy #wizard #nixie</p>
+  </li>
+  
+  <h2>1892</h2>
+
+  <h2>1893</h2>
+
+  <h2>1894</h2>
+
+  <h2>1895</h2>
+
+  <h2>1896</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-story-of-karl-ott.xhtml">The Story of Karl Ott</a>
+    <a class="ws" href="https://en.wikisource.org/wiki/The_Story_of_Karl_Ott"></a>
+    The Empty House And Other Ghost Stories<br/>
+    <a class="ia" href="https://archive.org/details/sim_pall-mall-magazine_1896-10_10_42/page/188"></a>
+    Pall Mall, Oct. 1896, pp. 189–200.
+    <p>English lady trifles with the affections of an Alpine German villager. #germany</p>
+  </li>
+  
+  <h2>1897</h2>
+
+  <h2>1898</h2>
+
+  <h2>1899</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-haunted-island.xhtml">A Haunted Island</a>
+      <a class="pg" href="https://www.gutenberg.org/files/14471/14471-h/14471-h.htm#chapter2"></a>
+      <a class="ia"  href="https://archive.org/details/emptyhouseotherg00blacrich/page/n9"></a>
+    The Empty House And Other Ghost Stories
+    <p>Spectral native encounter during a stay by a lake in Canada. Connects to summering-in-canadian-backwoods. #indian #canada</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//spread-of-the-national-anthem.xhtml">Spread of the National Anthem</a>
+    <a class="ia" href="https://archive.org/details/1899-08-02-blackwood-algernon-spread-of-the-national-anthem-the-morning-post"></a>
+    The Morning Post, 02/08/1899
+    <p>Blackwood engages in public service (by jingo). #england</p>
+  </li>
+  
+  <h2>1900</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-case-of-eavesdropping.xhtml">A Case of Eavesdropping</a>
+    <a class="pg"href="https://www.gutenberg.org/files/14471/14471-h/14471-h.htm#chapter3"></a>
+    The Empty House And Other Ghost Stories<br/>
+    <a class="ia" href="https://archive.org/details/emptyhouseotherg00blacrich/page/62"></a>
+    The Empty House And Other Ghost Stories<br/>
+    <a class="gb"href="https://books.google.com/books?id=E-nNAAAAMAAJ&pg=PA558&dq#v=onepage"></a>
+    Pall Mall, Vol22, pp558-568
+    <p></p>
+    <p>Jim Shorthouse overhears a spectral German conversation in a meager, urban, US boarding-house. #JimShorthouse</p>
+    <div class="container-fluid">
+      <img src="img/a-case-of-eavesdropping/acoe-fig-1.jpg" alt="'Guess we'll have to give you a week's trial.'">
+      <img src="img/a-case-of-eavesdropping/acoe-fig-2.jpg"  alt="'Waal?'she drawled, 'guess you couldn't sleep.">
+    </div>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-spiritualist-camp-in-new-england.xhtml">A Spiritualist Camp in New England</a>
+    <a class="ia" href="https://archive.org/details/sim_mcmillans-magazine_1900-05_82_487/page/28?"></a>
+    MacMillan's Magazine, Vol 82 Iss 487 xx/05/1900
+    <p>Humbug! #spiritualism #america</p>
+  </li>
+
+  <h2>1901</h2>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//in-hungary-with-tent-and-canoe.xhtml">In Hungary with Tent and Canoe</a>
+    <a class="gb" class="gb" href="https://www.google.com/books/edition/_/m8A5AQAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    The Boy's Own Annual 1901 Vol24 pg118
+    <p>"Buffalo milk, when we could get it, was excellent." #danube #hungary #europe #river</p>
+  </li>
+    
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//down-the-danube-in-a-canadian-canoe.xhtml">Down the Danube in a Canadian Canoe</a>
+    <a class="ia" href="https://archive.org/details/macmillansmagazi84macmuoft/page/350"></a>
+    MacMillan's Magazine, VOL. LXXXIV, May-Oct. 1901 (pg 350)
+    <p>Travelogue of an English camper in Central Europe. txt-pg-350, txt-pg-418</p>
+  </li>
+    
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//summering-in-canadian-backwoods.xhtml">Summering in Canadian Backwoods</a>
+    <a class="ia" href="https://archive.org/details/sim_longmans-magazine_1901-01_37_219/page/214"></a>
+    Longman’s Magazine Jan 1901
+    <p>Pleasantness of the rural Great Lakes region of Canada. txt-pg-215 #canada</p>
+  </li>
+    
+  <h2>1902</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-last-egg-in-the-nest.xhtml">The Last Egg in the Nest</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=uc1.c2723993&amp;view=1up&amp;seq=791"></a>
+    <a class="gb" href="https://www.google.com/books/edition/_/m8A5AQAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    The Boy’s Own Paper, Vol. 24 No1232, 23/08/1902
+    <p>Climbing English cliffs. #childrens #nature #romance #england #birds</p>
+  </li>
+    
+  <h2>1903</h2>
+  
+  <h2>1904</h2>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//at-school-in-the-black-forest.xhtml">At School in the Black Forest</a>
+    <a class="gb" href="https://www.google.com/books/edition/The_Boy_s_Own_Annual/d8I5AQAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    The Boy's Own Annual, Vol. 27
+    <p>The chief difficulty seemed to be that no real forest could contain a school and be enchanted at the same time; and it was only after two years’ actual sojourn in just such a place that I learned in how true a sense this could really be the case. #germany #german #BlackForest #school #fairy #kobold I-pdf280 II-pdf293</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//how-garnier-broke-the-log-jam.xhtml">How Garnier Broke the Log-Jam</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=uc1.c2723996&view=1up&seq=262"></a>
+    <a class="gb" href="https://www.google.com/books/edition/The_Boy_s_Own_Annual/d8I5AQAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    The Boy's Own Annual, Vol. 27
+    <p>Logging is a dangerous business. #indian #canada #canuck</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//testing-his-courage.xhtml">Testing His Courage</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.31951002791840h&amp;view=1up&amp;seq=422"></a>
+    Pearson’s Magazine Sep. 1904
+    <p>Knight-errant makes and appointment with a dragon. #england #india #romance</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-house-of-the-past.xhtml">The House of the Past</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=216"></a>
+    Ten Minute Stories<br/>
+    <a class="etc" href="http://iapsop.com/archive/materials/theosophical_review/theosophical_review_v34_n200_apr_15_1904.pdf"></a>
+    The Theosophical Review, Vol. 34 No.200, 15/04/1904<br/>
+    <a class="ws" href="https://en.wikisource.org/wiki/The_House_of_the_Past"></a>
+    The House of the Past (my transcript)
+    <p>A dream of ghosts. The Wikisource transcript was produced by me. #spirit #ghost #reincarnation</p>
+  </li>
+ 
+  <h2>1905</h2>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//about-moose-and-moose-hunting.xhtml">About Moose and Moose-Hunting</a>
+    <a class="gb" href="https://www.google.com/books/edition/The_Boy_s_Own_Annual/nsQ5AQAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    The Boy's Own Annual Vol. 28 1905
+    <p>Blackwood discusses hunting. Connects to the-valley-of-the-beasts. #moose #canada</p>
+  </li>
+    
+  <h2>1906</h2>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-holiday-down-the-danube-with-punt-and-tent.xhtml">A Holiday Down the Danube with Punt and Tent</a>
+    <a class="gb" href="https://www.google.com/books/edition/The_Boy_s_Own_Annual/nsQ5AQAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=uc1.c2723997&amp;view=1up&amp;seq=806"></a>
+    The Boy’s Own Paper Sep. 1 1906
+    <p>Blackwood recounts a boating vacation. #danube</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-suspicious-gift.xhtml">A Suspicious Gift</a>
+    <a class="pg" href="https://www.gutenberg.org/files/14471/14471-h/14471-h.htm#chapter8"></a>
+    <a class="ia" href="https://archive.org/details/emptyhouseotherg00blacrich/page/218"></a>
+    The Empty House And Other Ghost Stories
+    <p>Struggling writer living in a cramped room, receives an unexpected visit from a mysterious man with questionable intentions. #NewYork #poverty</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//keeping-his-promise.xhtml">Keeping His Promise</a>
+    <a class="gb" href="https://www.gutenberg.org/files/14471/14471-h/14471-h.htm#chapter4"></a>
+    <a class="ia" href="https://archive.org/details/emptyhouseotherg00blacrich/page/90"></a>
+    The Empty House And Other Ghost Stories
+    <p>A student is interrupted while studying late at night by a visitor who turns out to be a former friend. #Scotland #ghost</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//my-adventure-with-a-lion.xhtml">My Adventure with a Lion</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=uc1.c2723997&amp;view=1up&amp;seq=586"></a>
+    The Boy’s Own Paper June 2 1906<br/>
+    <a class="ws" href="https://en.wikisource.org/wiki/My_Adventure_with_a_Lion"></a>
+    My Adventure with a Lion (my transcript)
+    <p>Journalism intern covers a story in New York. #NewYork</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//skeleton-lake-an-episode-in-camp.xhtml">Skeleton Lake: An Episode in Camp</a>
+    <a class="pg" href="https://www.gutenberg.org/files/14471/14471-h/14471-h.htm#chapter10"></a>
+    <a class="ia" href="https://archive.org/details/emptyhouseotherg00blacrich/page/300"></a>
+    The Empty House And Other Ghost Stories
+    <p>Mis-deeds in the woods of Quebec. #canada</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//smith-an-episode-in-a-lodging-house.xhtml">Smith: An Episode in a Lodging House</a>
+    <a class="pg" href="https://www.gutenberg.org/files/14471/14471-h/14471-h.htm#chapter7"></a>
+    <a class="ia" href="https://archive.org/details/emptyhouseotherg00blacrich/page/186"></a>
+    The Empty House And Other Ghost Stories
+    <p>A medical student's book plays a role in his neighbor's supernatural pursuits. #Scotland</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-empty-house.xhtml">The Empty House</a>
+    <a class="gb" href="https://www.gutenberg.org/files/14471/14471-h/14471-h.htm#chapter1"></a>
+    The Empty House And Other Ghost Stories<br/>
+    <a class="ia" href="https://archive.org/details/emptyhouseotherg00blacrich/page/n9"></a>
+    The Empty House And Other Ghost Stories
+    <p>Jim Shorthouse has a midnight encounter in a seaside house. #JimShorthouse</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-strange-adventures-of-a-private-secretary-in-new-york.xhtml">The Strange Adventures of a Private Secretary in New York</a>
+    <a class="pg" href="https://www.gutenberg.org/files/14471/14471-h/14471-h.htm#chapter9"></a>
+    <a class="ia" href="https://archive.org/details/emptyhouseotherg00blacrich/page/238"></a>
+      The Empty House And Other Ghost Stories
+    <p>Jim Shorthouse is being sent on a mission by his employer to deliver valuable papers. #JimShorthouse</p>
+  </li>
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-vanishing-redskins.xhtml">The Vanishing Redskins</a>
+    The Boy's Own Jounal Vol29 1906<br/>
+    <a class="gb" href="https://www.google.com/books/edition/_/KsU5AQAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    Part1, pg715
+    <a class="gb" href="https://www.google.com/books/edition/_/KsU5AQAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    Part2, pg750
+    <a class="gb" href="https://www.google.com/books/edition/_/KsU5AQAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    Part3, pg762
+    <p>Myths of the Algonquin. #review #indian #canada</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-wood-of-the-dead.xhtml">The Wood of the Dead</a>
+    <a class="pg" href="https://www.gutenberg.org/files/14471/14471-h/14471-h.htm#chapter6"></a>
+    <a class="ia" href="https://archive.org/details/emptyhouseotherg00blacrich/page/160"></a>
+    The Empty House And Other Ghost Stories
+    <p>Encounters with a mysterious old man in a wayside inn who speaks in a captivating manner and hints at a deeper purpose or knowledge. #england</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//with-intent-to-steal.xhtml">With Intent to Steal</a>
+    <a class="pg" href="https://www.gutenberg.org/files/14471/14471-h/14471-h.htm#chapter5"></a>
+    <a class="ia" class="ia" href="https://archive.org/details/emptyhouseotherg00blacrich/page/118"></a>
+    The Empty House And Other Ghost Stories
+    <p>Jim Shorthouse tries not to sleep in a barn. #JimShorthouse #england</p>
+  </li>
+
+  <h2>1907</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//max-hensig.xhtml">Max Hensig</a>
+    <a class="ia" href="https://archive.org/details/listenerandothe00blacgoog/page/n51"></a>
+    The Listener and Other Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/MaxHensig.pdf"></a>
+    Max Hensig
+    <p>Newspaper reporter interviews a German man accused of murder in seedy, boozy old New York. #NewYork</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//may-day-eve.xhtml">May Day Eve</a>
+    <a class="ia" href="https://archive.org/details/listenerandothe00blacgoog/page/n275"></a>
+    The Listener and Other Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/May_Day_Eve.pdf"></a>
+    May Day Eve
+    <p>Last night of April resembles Halloween, with moors, mist, birds, enchanted hills, and a folk-lorist to make sense of it.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//miss-slumbubble-and-claustrophobia.xhtml">Miss Slumbubble—and Claustrophobia</a>
+    <a class="ia" href="https://archive.org/details/listenerandothe00blacgoog/page/n311"></a>
+    The Listener and Other Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Miss_Slumbubble.pdf"></a>
+    Miss Slumbubble—and Claustrophobia
+    <p>English spinster traveling on holiday has experiences difficulty in her train-car.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-dance-of-death.xhtml">The Dance of Death</a>
+    <a class="ia" href="https://archive.org/details/listenerandothe00blacgoog/page/n243"></a>
+    The Listener and Other Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/danceofdeath.pdf"></a>
+    The Dance of Death
+    <p>A man cuts a rug with an anthropomorphic personification.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-eccentricity-of-simon-parnacute.xhtml">The Eccentricity of Simon Parnacute</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044086875077&view=1up&seq=290"></a>
+    The Lost Valley and Other Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Simon_Parnacute.pdf"></a>
+    The Eccentricity of Simon Parnacute
+    <p>Peter Pan: You can fly, you can fly; but almost a sermon. #fly #birds #spiritual</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-farmhouse-on-the-hill.xhtml">The Farmhouse on the Hill</a>
+    <a class="tv" href="https://trove.nla.gov.au/newspaper/article/229498534?searchTerm=%22by%20Algernon%20Blackwood%22"></a>
+      The Australian Star, Sat 28 Dec 1907 page10
+    <p>Southwest England could really use a Motel 6. #england #ghost #psychic #murder</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-insanity-of-jones.xhtml">The Insanity of Jones</a>
+    <a class="pg" href="https://www.gutenberg.org/files/16726/16726-h/16726-h.htm#The_Insanity_of_Jones"></a>
+    Four Weird Tales<br/>
+    <a class="ia" href="https://archive.org/details/listenerandothe00blacgoog/page/n203"></a>
+    The Listener and Other Stories
+    <p>A clerk clings to an old injustice.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-listener.xhtml">The Listener</a>
+    <a class="ia" href="https://archive.org/details/listenerandothe00blacgoog/page/n9"></a>
+    The Listener and Other Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Listener.pdf"></a>
+    The Listener
+    <p>A man keeps a diary unaware of the badness of Hansens's disease. #ghost #haunted #sleepwalking</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-man-who-played-upon-the-leaf.xhtml">The Man Who Played Upon the Leaf</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044086875077&view=1up&seq=230"></a>
+    The Lost Valley and Other Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/ManWhoPlayed.pdf"></a>
+    The Man Who Played Upon the Leaf
+    <p>A pious man lives in the woods with a dog. #jura #fir #pagan</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-old-man-of-visions.xhtml">The Old Man of Visions</a>
+    <a class="ws" href="https://en.wikisource.org/wiki/The_Old_Man_of_Visions"></a>
+    The Old Man of Visions (transcribed by me)<br/>
+    <a class="ia" href="https://archive.org/details/listenerandothe00blacgoog/page/n259"></a>
+    The Listener and Other Stories
+    <p>Encounter with a mystic prompts an epihany & spiritual awakening. hand-transcribed</p>
+  </li>
+    
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-willows.xhtml">The Willows</a>
+    <a  class="pg" href="https://www.gutenberg.org/files/11438/11438-h/11438-h.htm"></a>
+    <a class="ia" href="https://archive.org/details/TheWillows/page/n1"></a>
+    The Willows (1907)
+    <p>Exploration of a desolate and isolated region along the Danube River, characterized by a vast expanse of willow bushes and marshes.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-womans-ghost-story.xhtml">The Woman's Ghost Story</a>
+    <a class="ia" href="https://archive.org/details/listenerandothe00blacgoog/page/n335"></a>
+    The Listener and Other Stories<br/>
+    <a class="etc" href="https://americanliterature.com/author/algernon-blackwood/short-story/the-womans-ghost-story"></a>
+    <a class="etc" href="https://web.archive.org/web/20230602010725/https://www.hauntedcrossroads.com/stories/algernon-blackwood/the-womans-ghost-story-algernon-blackwood/#site-content"></a>
+    The Woman's Ghost Story
+    <p>A woman encounters a mysterious man in a haunted house, where she initially mistakes him for the caretaker but later realizes he is a ghost. Alternate Title: "The Specter that Asked for a Kiss" #ghost</p>
+  </li>
+
+  <h2>1908</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//ancient-sorceries.xhtml">Ancient Sorceries</a>
+    <a class="pg" href="https://www.gutenberg.org/files/49222/49222-h/49222-h.htm#ii"></a>
+    <a class="ia" href="https://archive.org/details/johnsilencephysi00blac/page/72"></a>
+    John Silence, Physician Extraordinary
+    <p>John Silence receounts an episode from a village in France which was "a cause du sommeil et à cause des chats". #JohnSilence</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-psychical-invasion.xhtml">A Psychical Invasion</a>
+    <a class="pg" href="https://www.gutenberg.org/files/49222/49222-h/49222-h.htm#i"></a>
+    <a class="ia" href="https://archive.org/details/johnsilencephysi00blac/page/n9"></a>
+    John Silence, Physician Extraordinary
+    <p>Felix Pender is experiencing a psychological affliction characterized by a deep-seated fear or horror, resulting in the loss and transformation of his talent, and a desperate need for John Silence's help. #JohnSilence</p>
+  </li>
+  
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//our-adventure-with-the-danube-river-police.xhtml">Our Adventure with the Danube River-Police</a>
+    <a class="gb" href="https://www.google.com/books/edition/_/FcY5AQAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    The Boy's Own Annual, Vol 31, 1908, pg 234
+    <p>Blackwood's group of 4 avoids getting shaken down by Bavarians and repels an act of river piracy. #danube #bavaria</p>
+    <div class="container-fluid">
+      <img src="img/our-adventure-with-the-danube-river-police/oawtdrp-fig1_algernon-blackwood-boating-on-the-danube_no-caption.jpg" alt="no caption">
+      <img src="img/our-adventure-with-the-danube-river-police/oawtdrp-fig2_our-tent-on-the-danube.jpg"  alt="Our Tent on the Danube">
+    </div>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//secret-worship.xhtml">Secret Worship</a>
+    <a class="pg" href="https://www.gutenberg.org/files/49222/49222-h/49222-h.htm#iv"></a>
+    <a class="ia" href="https://archive.org/details/johnsilencephysi00blac/page/242"></a>
+    John Silence, Physician Extraordinary
+    <p>An English merchant attends a school reunion. #JohnSilence #germany #witch #demon #haunted #rosicrucian</p>
+  </li>
+    
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//stodgmans-opportunity.xhtml">Stodgman's Opportunity</a>
+    <a class="na" href=""></a>
+    The Westminster Gazette, 5 December 1908
+    <p></p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-camp-of-the-dog.xhtml">The Camp of the Dog</a>
+    <a class="pg" href="https://www.gutenberg.org/files/49222/49222-h/49222-h.htm#v"></a>
+    <a class="ia" href="https://archive.org/details/johnsilencephysi00blac/page/290"></a>
+    John Silence, Physician Extraordinary
+    <p>Connecting to "The Wendigo" and "Skeleton Lake" Canadian Indian ancestry frees the spirit and the wilderness inspires the call of the wild. #JohnSilence #sweden #lycanthropy #AstralProjection #indian #CallOfTheWild</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-kit-bag.xhtml">The Kit-Bag</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=njp.32101064477225&amp;view=1up&amp;seq=723"></a>
+    Pall Mall, Dec. 1908<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/kit_bag.pdf"></a>
+    The Kit-Bag
+    <p>If a murderer can't take it with him, but perhaps it can take him. #england #london #murder #ghost</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-nemesis-of-fire.xhtml">The Nemesis of Fire</a>
+    <a class="pg" href="https://www.gutenberg.org/files/49222/49222-h/49222-h.htm#iii"></a>
+    <a class="ia" href="https://archive.org/details/johnsilencephysi00blac/page/140"></a>
+    John Silence, Physician Extraordinary
+    <p>Best beware of souvenirs from the middle-east. Connection: #StephenKing #BlackTower #JohnSilence #ka #haunted #egypt #elemental #horus #pagan #mummy #england #sand</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-story-mr-popkiss-told.xhtml">The Story Mr. Popkiss Told</a>
+    <a class="ws" href="https://en.wikisource.org/wiki/The_Story_of_Mr._Popkiss_Told"></a>
+    The Story Mr. Popkiss Told<br/>
+    <a class="tv" href="https://trove.nla.gov.au/newspaper/article/242061221?"></a>
+    The Herald (Melbourne, Vic.), 8 Feb. 1909
+    <p>Transportation during holidays is often not uneventful. #psychic #paranormal</p>
+  </li>
+    
+  <h2>1909</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//carltons-drive.xhtml">Carlton's Drive</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044086875077&view=1up&seq=280"></a>
+    The Lost Valley and Other Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/CarltonsDrive.pdf"></a>
+    Carlton's Drive
+    <p>An Englishman sowing oats maybe finds himself a passenger in the Cóiste Bodhar.</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//clouds-and-mountains.xhtml">Clouds and Mountains</a>
+    <a class="gb" href="https://www.google.com/books/edition/Country_Life/GjZOAAAAYAAJ?hl=en&gbpv=1"></a>
+    Country Life, Volume 25 1909 pg821
+    <p>"…that awful hissing that more than anything else strikes terror to the heart of the climber…" #jura #cloud #MountainClimbing #snow</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//entrance-and-exit.xhtml">Entrance and Exit</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&view=1up&seq=176"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Entrance_Exit.pdf"></a>
+    Entrance and Exit
+    <p>A man disappears in the woods. #HigherSpace #pine #snow #ghost</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-boy-messenger.xhtml">The Boy Messenger: A Christmas Phantasy</a>
+    <a class="tv" href="https://trove.nla.gov.au/newspaper/article/101581402?searchTerm=By%20Algernon%20Blackwood"></a>
+    The Burrowa News (NSW), 30 Apr 1909
+    <p>A group of friends celebrate the holidays on bicycle. #christmas #banshee</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-face-of-the-earth.xhtml">The Face of the Earth</a>
+    <a class="tv" href="https://trove.nla.gov.au/newspaper/article/196903321?searchTerm=The%20Face%20of%20the%20Earth"></a>
+    Leader (Melbourne) 26-Jun-1909
+    <p>"Thus there gradually grew up about the Innocent Spinrobin a queer sense that the world was no longer quite the same as he had hitherto seen it." #german #english #LivingEarth</p>
+  </li>
+    
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-laying-of-a-red-haired-ghost.xhtml">The Laying of a Red-haired Ghost</a>
+    <a class="gb" href="https://www.google.com/books/edition/_/5Ro7AQAAMAAJ?gbpv=1&bsq=Red%20Haired%20Ghost"></a>
+    Lady's Realm, Vol. 26
+    <p>A gentleman with piggy eyes makes demands of his widow postmortem. #ScoobyDoo #england #ghost</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-lock-of-grey-hair.xhtml">The Lock of Grey Hair</a>
+    <a class="ia" href="https://archive.org/details/the-lock-of-grey-hair_1909-12-09"></a>
+    The Lock of Grey Hair, Belfast Weekly News 09/12/1909
+    <p>Would be good to include. The page scan is not great and possibly not able to transcribe.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//you-may-telephone-from-here.xhtml">You May Telephone From Here</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=184"></a>
+    Ten Minute Stories<br/>
+    <a class="tv" href="https://trove.nla.gov.au/newspaper/article/215743043?searchTerm=Algernon%20Blackwood"></a>
+    The Bundaberg Mail and Burnett Advertiser (Qld.) 26 June 1909 (Titled: "A Trunk Call")
+    <p>Eerie and mysterious events surrounding the telephone ringing in the flat. Included in "Ten Minute Stories" under the title "You May Telephone from Here" and in The Bundaberg Mail as "A Trunk Call."</p>
+  </li>
+
+  <h2>1910</h2>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//from-the-swiss-lakes.xhtml">From the Swiss Lakes</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1910-03-19_27_689/page/400?q=%22by+Algernon+Blackwood%22"></a>
+    Country Life  1910-03-19: Vol 27 Iss 689
+    <p>An impression upon arriving at Lake Geneva. #switzerland</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//if-the-cap-fits.xhtml">If the Cap Fits</a>
+    <a class="ht" href=" 	https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=233"></a>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/If_the_Cap_Fits.pdf"></a>
+    If the Cap Fits
+    <p>Paranormal sensitivity may exist in London. #london</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//imagination.xhtml">Imagination</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=102"></a>
+    <a class="gb" href="https://books.google.com/books?output=text&id=pl06AQAAMAAJ&jtp=88"></a>
+    Ten Minute Stories
+    <p>An author gets stuck while writing a story about centaurs. Connects to the novel "The Centaur". #centaur #pagan</p>
+  </li>
+ 
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//in-a-strange-land.xhtml">In a Strange Land</a>
+    <a class="tv" href="https://trove.nla.gov.au/newspaper/article/112333118?searchTerm=%22Algernon%20Blackwood%22%20%22Westminster%20Gazette%22"></a>
+    The Wollondilly Press (NSW) 19 October 1910 - Page 3<br/>
+    <a class="tv" href="https://trove.nla.gov.au/newspaper/article/229971927?searchTerm=%22Algernon%20Blackwood%22%20%22Westminster%20Gazette%22"></a>
+    Bendigo Advertiser (Victoria) 10 September 1910 (Title: "Railway Traveling in the Caucasus")
+    <p>Blackwood takes a train to Eastern Europe. In "Railway Traveling in the Caucasus," Blackwood sends a postcard and this is included as a part of "In a Strange Land." #russia #europe</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//old-clothes.xhtml">Old Clothes</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044086875077&view=1up&seq=134"></a>
+    The Lost Valley and Other Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Old_clothes.pdf"></a>
+    Old Clothes
+    <p>#reincarnation #somnambulism #hypnotism #england #belgium</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//special-delivery.xhtml">Special Delivery</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/384"></a>
+    Pan's Garden
+    <p>"Can't you hear me knocking?" #jura #psychic #ghost</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg401-special-delivery.jpg" alt="Noirvaux">
+    </div>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-lost-valley.xhtml">The Lost Valley</a>
+    <a class="ia" href="https://archive.org/stream/in.ernet.dli.2015.125930/2015.125930.Tales-Of-The-Uncanny-And-Supernatural-Ed-1st_djvu.txt"></a>
+    Tales Of The Uncanny and Supernatural<br/>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044086875077&view=1up&seq=8"></a>
+    The Lost Valley and Other Stories
+    <p>Russian lady comes between English twins. Archive scan is missing chapter-5 title. Hathi is missing multiple pages. #jura #ghost #psychic #twins #kent</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-man-from-the-gods.xhtml">The Man From the 'Gods'</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044086875077&amp;view=1up&amp;seq=212"></a>
+    <a class="gb" href="https://books.google.com/books?id=Ni88AQAAMAAJ&pg=PA211&lpg=PA211&dq=%22That+there+was+something+wrong+with+all+his+work+Le+Maistre+well+knew.%22&source=bl&ots=mmXgbDoHdx&sig=ACfU3U3Tb7vtFTuS_qJ_kYSL_Hrn5mS-zA&hl=en&sa=X&ved=2ahUKEwidr4SzmLv8AhXslmoFHTKXC2YQ6AF6BAgJEAM#v=onepage&q&f=false"></a>
+    The Lost Valley and Other Stories
+    <p>An allegory of inspiration and artistic vision in the English theater. #england #psychology #spirit #drugs #theater</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-message-of-the-clock.xhtml">The Message of the Clock</a>
+    <a class="na" href=""></a>
+    Nash's Magazine, vol. 2 No. 15, xx/06/1910
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-price-of-wiggins-orgy.xhtml">The Price of Wiggins's Orgy</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044086875077&amp;view=1up&amp;seq=254"></a>
+    The Lost Valley and Other Stories<br/>
+    <a class="etc" href="https://web.archive.org/web/20061109052529/http://www.horrormasters.com/Text/a1353.pdf">[</a>
+    The Price of Wiggins’s Orgy
+    <p>Wiggins has a big night. #england  Story on the Wayback Machine contains vandalism.</p>
+  </li>
+    
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-singular-death-of-morton.xhtml">The Singular Death of Morton</a>
+    <a href="https://en.wikisource.org/wiki/The_Singular_Death_of_Morton">The Singular Death of Morton</a>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Singular_Death_of_Morton.pdf"></a>
+    The Singular Death of Morton<br/>
+    <a class="na" href=""></a>
+    The Tramp, Vol. 2 No. 10 xx/12/1910
+    <p>A vampire story.</p>
+  </li>
+
+  <li class="complete fiction ">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-south-wind.xhtml">The South Wind</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/104?"></a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=njp.32101066164813&view=1up&seq=123"></a>
+    Pan's Garden<br/>
+    <a class="ia" href="https://archive.org/details/in.ernet.dli.2015.125930/page/n179"></a>
+    Tales Of The Uncanny and Supernatural<br/>
+    <a class="tv" href="https://trove.nla.gov.au/newspaper/article/132261974?searchTerm=Algernon%20Blackwood"></a>
+    Illawarra Mercury (Wollongong, NSW) 13 May 1910 (Title: "The Messenger Came at Midnight")
+    <p>"He comforteth the earth with the south wind." Included in "Tales of the Uncanny and Supernatural" under the title "The South Wind" and the Illawarra Mercury as "The Messenger Came at Midnight." #switzerland</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg111-the-south-wind.jpg" alt="Champéry">
+    </div>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-sea-fit.xhtml">The Sea Fit</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/112"></a>
+    Pan's Garden<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Sea_Fit.pdf"></a>
+    The Sea Fit
+    <p>A sailor onshore in Dorset, England communes with the sea. #england #sea #sand #pagan</p>
+    <div class="container-fluid">
+      <img src="img//pans-garden//pg133-the-sea-fit.jpg" alt="Haven Hotel">
+    </div>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-strange-experience-of-the-rev-phillip-ambleside.xhtml">The Strange Experience of the Rev. Phillip Ambleside</a>
+    <a class="ia" href="https://archive.org/details/sim_pall-mall-magazine_1910-03_45_203/page/406"></a>
+    Pall Mall Mar. 1910: Vol. 45 Iss. 203<br/>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044086875077&view=1up&seq=176"></a>
+    The Lost Valley and Other Stories (Titled: "Perspective")<br/>
+    <a class="etc" ps-2" href="https://web.archive.org/web/20061109053128/http://www.horrormasters.com/Text/a1350.pdf"></a>
+    "Perspective"
+    <p>Divine providence on the mountainside. A version of this story was originally published under the title "The Strange Experience of the Rev. Phillip Ambleside" and later published in "The Lost Valley and Other Stories" as "Perpective." #alpine #faith</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-wendigo.xhtml">The Wendigo</a>
+    <a class="pg" href="https://www.gutenberg.org/files/10897/10897-h/10897-h.htm"></a>
+    The Wendigo(1910)<br/>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044086875077&amp;view=1up&amp;seq=72"></a>
+    The Lost Valley and Other Stories
+    <p>The call of the wild. #canada</p>
+  </li>
+
+  <h2>1911</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//_.xhtml">Accessory Before the Fact</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=15"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/AccessoryBeforetheFact.pdf"></a>
+    Accessory Before the Fact
+    <p>German travelers raise international tensions in England.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//clairvoyance.xhtml">Clairvoyance</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/360"></a>
+    Pan's Garden<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Clairvoyance.pdf"></a>
+    Clairvoyance
+    <p>A haunted room and the unfulfilled yearnings and pain associated with it.</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg371-clairvoyance.jpg" alt="The Lavender Room">
+    </div>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//discovering-russia-on-foot.xhtml">Discovering Russia on Foot</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1911-12-16_30_780/page/920?q=%22algernon+Blackwood%22"></a>
+    Country Life  1911-12-16: Vol 30 Iss 780
+    <p>"He will calmly beat a man to death for stealing a horse, yet will also show a compassionate and generous hospitality that is tender in the last degree."#review #russia #terrorism #politics</p>
+  </li>
+    
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//dream-trespass.xhtml">Dream Trespass</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=153"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Dream_Trespass.pdf""></a>
+    Dream Trespass
+    <p>Disappointment and exhaustion experienced by a friend during their walking tour."</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//in-a-jura-village.xhtml">In A Jura Village</a>
+    <a class="na" href=""></a>
+    The Morning Post, 26 December 1911
+    <p></p>
+  </li>
+  
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//monsieur-joseph-of-the-ski.xhtml">Monsieur Joseph of the Ski</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1911-11-11_30_775/page/710"></a>
+    Country Life 1911-11-11: Vol 30 Iss 775
+    <p>Commentary on snow-skiing and review of a Swiss ski-maker. #jura</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//on-wings.xhtml">On Wings</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1911-05-13_29_749/page/658"></a>
+    Country Life 1911-05-13: Vol 29 Iss 749
+    <p>Birds are transcendant, awe-inspiring and connected to works set on the Danube and the Canadian backwoods.</p>
+  </li>
+    
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//spring-and-the-mountaineer.xhtml">Spring and the Mountaineer</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1911-04-22_29_746/page/548"></a>
+    Country Life 1911-04-22: Vol 29 Iss 746
+    <p>Blackwood anticipates travel to the Alps. #pagan #pan #europe #alps #MountainClimbing</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-deferred-appointment.xhtml">The Deferred Appointment</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=26"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Deferred_Appointment.pdf"></a>
+    The Deferred Appointment
+    <p>A gentleman's portrait is made. #ghost #SpiritPhotography</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-empty-sleeve.xhtml">The Empty Sleeve</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_211"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/216"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>Two brothers in London own a violin while the elevator operator wears a Bowler hat.</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-golden-fly.xhtml">The Golden Fly</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/372"></a>
+    Pan's Garden<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/golden_fly.pdf"></a>
+    The Golden Fly
+    <p>An insect provides spiritual awakening.</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg383-the-golden-fly.jpg" alt="Breamore">
+    </div>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-messenger.xhtml">The Messenger</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/164"></a>
+    Pan's Garden<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Messenger.pdf"></a>
+    The Messenger
+    <p>An encounter with an approaching messenger from another world, causes feelings of apprehension and awe.</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg173-the-messenger.jpg" alt="">
+    </div>
+  </li>
+    
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-prayer.xhtml">The Prayer</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=35"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/The_Prayer.pdf"></a>
+    The Prayer
+    <p>Experiment with a mysterious substance that enhances perception of thoughts, leading to following a thought-stream and trying to trace it to its source.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-transfer.xhtml">The Transfer</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/340"></a>
+    Pan's Garden<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Transfer.pdf"></a>
+    The Transfer
+    <p>Energy vampire Colin Robinson fertilizes his garden. #psychic</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg359-the-transfer.jpg" alt="Sandhills">
+    </div>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//two-in-one.xhtml">Two in One</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=130"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Two_in_One.pdf"></a>
+    Two in One
+    <p>A man spends the day with himself.</p>
+  </li>
+
+  <h2>1912</h2>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//algonquin-songs-and-legends.xhtml">Algonquin Songs and Legends</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1912-11-02_32_826/page/608"></a>
+    Part I - Country Life 1912-11-02: Vol 32 Iss 826<br/>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1912-11-23_32_829/page/704?"></a>
+    Part II - Country Life 1912-11-23: Vol 32 Iss 829
+    <p>“My brother told me, many years ago, Some wizards had a quarrel, and they slew One of their number, took his corpse away, And ate it on the isle of Grand Manan, Sitting upon a ledge above the sea.” #america #indian #review</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//an-arab-pilgrimage.xhtml">An Arab Pilgrimage</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1912-10-26_32_825/page/564?q=%22algernon+Blackwood%22"></a>
+    Country Life  1912-10-26: Vol 32 Iss 825
+    <p>Blackwood observes a caravan stopover. #egypt #desert #sand #helouan #bedouin</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//ancient-lights.xhtml">Ancient Lights</a>
+    <a class="ia" href="https://archive.org/details/in.ernet.dli.2015.273140/page/n189?"></a>
+    A Round of Tales<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/ancient%20lights.pdf"></a>
+    Ancient Lights
+    <p>Tresspassers will be persecuted.</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//animal-life-in-the-egyptian-desert.xhtml">Animal Life in the Egyptian Desert</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1912-07-13_32_810/page/60"></a>
+    Country Life 1912-07-13: Vol 32 Iss 810
+    <p>The inhospitable egyptian desert teems with life. #desert #egypt #nature</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-voice-in-the-wilderness.xhtml">A Voice in the Wilderness</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1912-11-02_32_826/page/598?"></a>
+    Country Life 1912-11-23: Vol 32 Iss 826, pg 598
+    <p>"One reads every day such phrases as ‘our commercial, national and imperial welfare’⁠—commercial first, national second, imperial third, and spiritual nowhere." #review #Beauty #Russia #Beauty #MiddleEast</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//egyptian-antiquities.xhtml">Egyptian Antiquities</a>
+    <a class="na" href=""></a>
+    The Morning Post, 9 April 1912
+    <p></p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//failure-of-the-swiss-winter-season.xhtml">Failure of the Swiss Winter Season</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1912-01-27_31_786/page/116"></a>
+    Country Life 1912-01-27: Vol 31 Iss 786
+    <p>“For when it comes,” they say, “it will be terrible, and worth waiting for!” #journalism #jura #switzerland #snow #FakeNews</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//la-mauvaise-riche.xhtml">La Mauvaise Riche</a>
+    <p></p>
+    <a class="na" href=""></a>
+    The Westminster Gazette, 30 November 1912
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//sand.xhtml">Sand</a>
+    <a class="pg" href="https://www.gutenberg.org/files/16726/16726-h/16726-h.htm#Sand"></a>
+    Four Weird Tales<br/>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/222"></a>
+    Pan's Garden
+    <p>An encounter with Ka in the desert of Egypt. Connection:  #StephenKing #DarkTower #ka #egypt</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg339-sand.jpg" alt="Helouan">
+    </div>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-attic.xhtml">The Attic</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/136"></a>
+    Pan's Garden<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Attic.pdf"></a>
+    The Attic
+    <p>A story of feline redemption in the Swiss winter. #jura</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg147-the-attic.jpg" alt="Bôle">
+    </div>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-bitter-bit.xhtml">The Bitter Bit</a>
+    <a class="na" href=""></a>
+    The Saturday Westminster Gazette 17 February 1912
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-destruction-of-smith.xhtml">The Destruction of Smith</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/402"></a>
+    Pan's Garden
+    <p>Does a city have a soul? #WesternUS #america #arizona #supernatural #spirit</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg415-the-destruction-of-smith.jpg" alt="Hank's Camp">
+    </div>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-egyptian-desert-from-helouan.xhtml">The Egyptian Desert from Helouan</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1912-03-16_31_793/page/380"></a>
+    I: Country Life 1912-03-16: Vol 31 Iss 793<br/>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1912-04-13_31_797/page/548"></a>
+    II: Country Life 1912-04-13: Vol 31 Iss 797
+    <p>The desert of Egypt is fascinating, rather than cruel.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-garden-of-survival.xhtml">The Garden of Survival</a>
+    <a class="ia" href="https://archive.org/details/gardensurvival01blacgoog/page/n10"></a>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Garden_of_Survival.pdf"></a>
+    The Garden of Survival
+    <p>Colonial Governor on returning to England: "I found her a cross between a museum and an American mushroom town that advertises all the modern comforts with a violent insistence that is meant to cloak their very absense. Also, "a bird's song always makes me think of God." #psychic #beauty #ghost #england #phantasmagoria #christian #spiritual Connects to a-memory-of-beauty</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-glamour-of-the-snow.xhtml">The Glamour of the Snow</a>
+    <a  href="https://www.gutenberg.org/files/16726/16726-h/16726-h.htm#The_Glamour_of_the_Snow"></a>
+    Four Weird Tales<br/>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/174"></a>
+    Pan's Garden
+    <p>"Do you want to BE a snowman?" #pagan #snow #witch #elemental</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg209-the-glamour-of-the-snow.jpg" alt="Champéry">
+    </div>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-goblins-collection.xhtml">The Goblin's Collection</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=90"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Goblins_Collection.pdf"></a>
+    The Goblin's Collection
+    <p>Irish mischief in England.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-heath-fire.xhtml">The Heath Fire</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/148"></a>
+    Pan's Garden
+    <p>The fire of the sun, the deep earth, human life, and the "burning bush": they are all connected. #england #elemental #fire #christian</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg163-the-heath-fire.jpg" alt="Sandhills">
+    </div>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-man-who-found-out.xhtml">The Man Who Found Out</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_192"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/196"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>Introduces (12 years earlier) the idea that Lovecraft introduces as his “necronomicon” in 1924 and this story generally seems to foreshadow the Lovecraft mythos. It can be read as responding to special relativity from 1905. The connection becomes more explicit in ‘A Victim of Higher Space’ (1914), so I conclude that this reading is correct. Blackwood bridges Einstein to Lovecraft. #england #lovecraft #necronomicon</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-man-whom-the-trees-loved.xhtml">The Man Whom the Trees Loved</a>
+    <a class="pg" href="https://www.gutenberg.org/cache/epub/11377/pg11377.html"></a>
+    The Man Whom the Trees Loved<br/>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/xii"></a>
+    Pan's Garden
+    <p></p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg101-the-man-whom-the-trees-loved.jpg" alt="">
+    </div>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-return.xhtml">The Return</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/210"></a>
+    Pan's Garden<br/>
+    <a class="etc" href="https://americanliterature.com/author/algernon-blackwood/short-story/the-return"></a>
+    The Return
+    <p>A gentleman receives an impression from beyond. #paranormal #supernatural #ghost</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg221-the-return.jpg" alt="Charing Cross Road">
+    </div>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-second-generation.xhtml">The Second Generation</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=274"></a>
+    Ten Minute Stories<br/>
+    <a class="etc" href="https://americanliterature.com/author/algernon-blackwood/short-story/the-second-generation"></a>
+    The Second Generation
+    <p>A gentleman seeks a second chance romance. #england #arizona #hallucination #non-weird #romance </p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-temptation-of-the-clay.xhtml">The Temptation of the Clay</a>
+    <a class="ia" href="https://archive.org/details/pansgardenvolume00blacuoft/page/416"></a>
+    Pan's Garden<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Temptation_of_the_Clay.pdf"></a>
+    The Temptation of the Clay
+    <p>A man is embraced by nature through his wife, then rejected through his neice. #indian #russian #england #america #pine #possession; Connects to "The Man Who Played Upon the Leaf"</p>
+    <div class="container-fluid">
+      <img src=".//img//pans-garden//pg431-the-temptation-of-the-clay.jpg" alt="Sussex">
+    </div>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-terror-of-the-twins.xhtml">The Terror of the Twins</a>
+    <a class="ia" href="https://archive.org/details/in.ernet.dli.2015.125930/page/n225"></a>
+    Tales Of The Uncanny and Supernatural<br/>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=hvd.32044086875077&amp;view=1up&amp;seq=202"></a>
+    The Lost Valley and Other Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Terror_Twins.pdf"></a>
+    The Terror of the Twins
+    <p>This story demonstrates a dramatic example of Blackwood's method viewpoint shift. #ghost #curse #soullessness #twins</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-unconquerable-charm-of-sussex.xhtml">The Unconquerable Charm of Sussex</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1912-07-06_32_809/page/14?"></a>
+    Country Life 1912-07-06: Vol 32 Iss 809
+    <p>A review of "The Four Men" by Hilaire Belloc. #review #england</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-whisperers.xhtml">The Whisperers</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=193"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/The_Whisperers3.pdf"></a>
+    The Whisperers
+    <p>A man is distracted by books while writing. #jura #paranormal</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//wayfarers.xhtml">Wayfarers</a>
+    <a class="pg" href="https://www.gutenberg.org/files/43816/43816-h/43816-h.htm#V"></a>
+    <a class="ia" href="https://archive.org/details/incredibleadvent00blac/page/336"></a>
+    Incredible Adventures
+    <p>Injured and is in a state of confusion, unable to recall the events leading to their current situation or identity.</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//wind.xhtml">Wind</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=252"></a>
+    <a class="gb" href="https://books.google.com/books?output=text&id=pl06AQAAMAAJ&jtp=238"></a>
+    Ten Minute Stories
+    <p>An essay on the titled subject, some scientific insights, and comments on its role in poetry. #christian #nature #jura</p>
+  </li>
+  
+  <h2>1913</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-barmecide-feast.xhtml">A Barmecide Feast</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1913-07-19_34_863/page/82?q=%22Algernon+Blackwood%22"></a>
+    Country Life, Vol. 34 No. 863, 19 July 1913
+    <p>Jones gets the munchies. #non-weird</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//arolla-and-its-climbs.xhtml">Arolla and Its Climbs</a>
+    <a class="gb" href="https://www.google.com/books/edition/Country_Life/3DROAAAAYAAJ?hl=en&gbpv=1&bsq=%22Arolla%20and%20its%20climbs%22"></a>
+    Country Life, Vol. 34 No. 885, 20 Dec 1913
+    <p>Blackwood talks about mountain-climbing. #switzerland #MountainClimbing</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//before-the-season.xhtml">Before the Season</a>
+    <a class="gb" href="https://www.google.com/books/edition/Country_Life/3DROAAAAYAAJ?hl=en&gbpv=1&bsq=%22Before%20the%20Season%22"></a>
+    Country Life, Vol. 34 No. 886, 27 Dec 1913
+    <p>The unseen preparations for the winter tourist season. #switzerland #alps #snow</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//egypt.xhtml">Egypt: An Impression</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1913-11-08_34_879/page/624?q=%22Algernon+Blackwood%22"></a>
+    Country Life  1913-11-08: Vol 34 Iss 879
+    <p>Egypt casts a spell upon the visitor. There is overlap between "Egypt: An Impression" and "The Spell of Egypt" but they are sufficiently different to be distinct works. #egypt</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//h-s-h.xhtml">H.S.H.</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#XI"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/170"></a>
+    Day and Night Stories
+    <p></p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//learning-to-ski.xhtml">Learning to Ski</a>
+    <a class="gb" href="https://www.google.com/books/edition/Country_Life/3DROAAAAYAAJ?hl=en&gbpv=1&dq=%22by+algernon+blackwood%22&pg=PA694&printsec=frontcover"></a>
+    Country Life Vol. 34, pg708
+    <p>Skiing is rewarding but there are pitfalls. #switzerland #skiing</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//mrs-gurneys-poems.xhtml">Mrs. Gurney’s Poems</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1913-05-31_33_856/page/790?q=%22by+Algernon+Blackwood%22"></a>
+    Country Life 1913-05-31: Vol 33 Iss 856
+    <p>Blackwood's review of a book of poems. #england #poetry #nature #review</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-israelites-track-from-the-red-sea-to-mount-sinai.xhtml">The Israelites Track from the Red Sea to Mount Sinai</a>
+    <a class="gb" href="https://www.google.com/books/edition/Country_Life/3DROAAAAYAAJ?hl=en&gbpv=1&bsq=%22%20The%20Israelites%20Track%20from%20the%20Red%20Sea%20to%20Mount%20Sinai%22"></a>
+    Country Life Vol. 34
+    <p>Blackwood reviews a travelogue through the Middle East. #desert #christian #review</p>
+  </li>
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-kiss-of-a-psychologist.xhtml">The Kiss of a Psychologist</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1913-09-13_34_871/page/348"></a>
+    Country Life 1913-09-13: Vol 34 Iss 871
+    <p>"For a moment he knew something of what Dreyfus felt upon his Devil's Island." Blackwood appears to be reading Freud. #romance</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-story-hour.xhtml">The Story Hour</a>
+    <a class="na" href=""></a>
+    The Morning Post 18 November 1913
+    <p></p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-tradition.xhtml">The Tradition</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#XV"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/223"></a>
+    Day and  Night Stories
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//transition.xhtml">Transition</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#XIV"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/216"></a>
+    Day and Night Stories
+    <p></p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//value.xhtml">Value. In Life and Death. Changed Views.</a>
+    <a class="tv" href="https://trove.nla.gov.au/newspaper/article/68663057?searchTerm=%22Algernon%20Blackwood%22%20%22Westminster%20Gazette%22"></a>
+    West Gippsland Gazette (Warragul, Vic.) Tue 25 Mar 1913 Page 5 VALUE.
+    <p>Blackwood writes and obituary for an unnamed English lady, who has dementia, in the Jura. #english #jura #switzerland #obituary</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//who-was-she.xhtml">Who Was She?</a>
+    <a class="na" href=""></a>
+    The New Witness, Vol. 2 No. 34, Vol. 2 No. 37, & Vol. 2 No. 43; 26 June 1913, 17 July 1913, and 28 August 1913
+    <p></p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//winter-sports-in-switzerland.xhtml">Winter Sports in Switzerland</a>
+    <a class="na" href=""></a>
+    Source unknown
+    <p></p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//with-the-russian-pilgrims-to-jerusalem">With the Russian Pilgrims to Jerusalem</a>
+    <a class="gb" href="https://books.googleusercontent.com/books/content?req=AKW5QacQd_sLbqO39OJ6obf2TotZx2dDFsv6yd-wWqTi8VXV_9XANqEq2LgcPxEKL0qbafI-tAOUk61lPSdBwVvRgGRy154N2aXBd485RjDFbtMw1incZX5B264SweUf1gtMUSeAfbwD_xMcVgpdeorQ86vQWnB0EAcAnqQ7qupcj8el9eFputF-Me6tEG9yQbKJlnDvP-S0Am1dbO49SQNZBc3QBrEo6zYOIPmJBPrzaa5h12v4a8E_PTPyihTPeQCF0SXnhaTi"></a>
+    Country Life Vol. 34
+    <p>Blackwood reviews of a book of gonzo journalism. #Russia #MiddleEast #christian #review</p>
+  </li>
+
+  <h2>1914</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-bit-of-wood.xhtml">A Bit of Wood</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#XII"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/186"></a>
+    Day and  Night Stories
+    <p>An unimportant thing along the Italian/Austrian border.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-descent-into-egypt.xhtml">A Descent into Egypt</a>
+    <a class="pg" href="https://www.gutenberg.org/files/43816/43816-h/43816-h.htm#IV"></a>
+    <a class="ia" href="https://archive.org/details/incredibleadvent00blac/page/238"></a>
+    Incredible Adventures
+    <p>A man in Egypt is drawn to the past. #helouan #egypt #pagan</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-desert-episode.xhtml">A Desert Episode</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#V"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/94"></a>
+    Day and  Night Stories
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-victim-of-higher-space.xhtml">A Victim of Higher Space</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#XIII"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/192"></a>
+    Day and Night Stories
+    <p>#JohnSilence</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//breakfast-honey.xhtml">Breakfast Honey</a>
+    <p></p>
+    <p>The Morning Post 9 June 1914</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//by-water.xhtml">By Water</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#X"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/162"></a>
+    Day and Night Stories
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//faith-cure-on-the-channel.xhtml">Faith Cure on the Channel</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=83"></a>
+    <a class="gb" href="https://books.google.com/books?id=pl06AQAAMAAJ&pg=PA69&lpg=PA69&ots=RPzfOv52JS&focus=viewport&output=text"></a>
+    Ten Minute Stories
+    <p>The narrator gets queasy on the water. #england #france</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//her-birthday.xhtml">Her Birthday</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=125"></a>
+    <a class="gb" href="https://books.google.com/books?output=text&id=pl06AQAAMAAJ&jtp=111"></a>
+    Ten Minute Stories
+    <p>A man shops for a gift. #romance</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//jimbos-longest-day.xhtml">Jimbo's Longest Day</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=225"></a>
+    <a class="gb" href="https://books.google.com/books?output=text&id=pl06AQAAMAAJ&jtp=211"></a>
+    Ten Minute Stories
+    <p>Algernon shares the magic of the solstice with his nephew. #fairy #england #sussex #solstice #childrens</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//let-not-the-sun.xhtml">Let Not the Sun</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=166"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Let_Not_the_Sun.pdf"></a>
+    Let Not the Sun
+    <p></p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//maria.xhtml">Maria</a>
+    <a class="na" href=""></a>
+    The Morning Post 28/03/1914
+    <p>Children’s fantasy concerning the plotting of a train crash. Reprinted as Chapter III of The Extra Day</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//news-v-nourishment.xhtml">News v. Nourishment</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=243"></a>
+    Ten Minute Stories<br/>
+    <a class="etc" href="https://hi.1lib.limited/book/1440571/05886a"></a>
+    News v. Nourishment
+    <p>A gentleman dines.</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//non-human.xhtml">Non-Human</a>
+    <a class="na" href=""></a>
+    The New Witness, Vol. 5 No. 110 10 December 1914
+    <p></p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//pines.xhtml">Pines</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=259"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Pines.pdf"></a>
+    Pines<br/>
+    <a class="gb" href="https://www.google.com/books/edition/Country_Life/GjZOAAAAYAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    Country Life, Volume 25 1909 pg769
+    <p>Remarks on the merits of the named sort of tree.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//strange-disappearance-of-a-baronet.xhtml">Strange Disappearance of a Baronet</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=46"></a>
+    <a class="gb" href="https://books.google.com/books?id=pl06AQAAMAAJ&pg=PA34&ots=RPzfOv52JS&focus=viewport&output=text"></a>
+    Ten Minute Stories
+    <p>You are what you have. #england #ScoobyDoo #kafkaesque</p>
+  </li>
+  
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-daisy-world.xhtml">The Daisy World</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=uc1.a0012200465&view=1up&seq=346&q1=Blackwood"></a>
+    The Quest, Vol. 5 No. 4 xx/07/1914
+    <p>"Jinny, Jimbo and Maria⁠—three survivals in an age when education considers childhood a disease to be cured as hurriedly as possible⁠—took their adventure…" #uncle #nature #children #elf</p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-damned.xhtml">The Damned</a>
+    <a class="pg" href="https://www.gutenberg.org/files/43816/43816-h/43816-h.htm#III"></a>
+    <a class="ia" href="https://archive.org/details/incredibleadvent00blac/page/128"></a>
+    Incredible Adventures
+    <p>In the dogmatic hell of Blackwood's theology, nothing ever happens.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-doll.xhtml">The Doll</a>
+    <a class="ia" href="https://archive.org/details/in.ernet.dli.2015.125930/page/n13"></a>
+    Tales Of The Uncanny and Supernatural
+    <p>Beware strangers bearing gifts; also karma. #india #england #curse #idée-fixe #harsh-language -- Connects to the "Chuckie" franchise.</p>
+  </li>
+
+  <li class="complete fiction ">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-falling-glass.xhtml">The Falling Glass</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1914-05-23_35_907/page/724"></a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.31951d00217544w&view=1up&seq=745"></a>
+    Country Life 1914-05-23: Vol 35 Iss 907<br/>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/243/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>"I admit there was this childish pride and pleasure in the disappointment, and to be right even in prophesying disaster holds a faint satisfaction." #alps #MountainClimbing #storm #snow #nature Connecst to the-south-wind.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-impulse.xhtml">The Impulse</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=117"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/The_Impulse.pdf"></a>
+    The Impulse
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-invitation.xhtml">The Invitation</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=109"></a>
+    Ten Minute Stories<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/TheInvitation.pdf"></a>
+    The Invitation
+    <p>Two gentlemen have lunch in London. #england</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-lease.xhtml">The Lease</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=65"></a>
+    <a class="gb" href="https://books.google.com/books?output=text&id=pl06AQAAMAAJ&jtp=51"></a>
+    Ten Minute Strories
+    <p>Algernon's friend is helping his friend with a lease. #england #chelsea #humor #eyebrows</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-little-beggar.xhtml">The Little Beggar</a>
+    <a class="ia" href="https://archive.org/details/in.ernet.dli.2015.125930/page/n69"></a>
+    Tales Of The Uncanny and Supernatural<br/>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/24/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>An English man accompanies a child to the train. #ghost</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-man-who-was-milligan.xhtml">The Man Who Was Milligan</a>
+    <a class="ia" href="https://archive.org/details/in.ernet.dli.2015.125930/page/n183"></a>
+    Tales Of The Uncanny and Supernatural<br/>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/229/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>Art has the power to transport the viewer to far-away lands. #china #england #psychic #paranormal</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-miracle.xhtml">The Miracle</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=uc1.a0012200473&view=1up&seq=256&q1=Blackwood"></a>
+    The Quest, Vol VI 1-4, Oct. 1914 - Jul. 1915, pg 256
+    <p>Blackwood finds beauty in an emergent group-soul during mobilization for WWI. #beauty #god #war #group-soul #christian</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-night-wind.xhtml">The Night Wind</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1914-05-09_35_905/page/658?"></a>
+    Country Life 1914-05-09: Vol 35 Iss 905
+    <p>Uncle Henry personifies that wind and illustrates his writing process, with kids. #uncle #wind #writing</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-philosopher.xhtml">The Philosopher</a>
+    <a class="na" href=""></a>
+    The Westminster Gazette 13 June 1914
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-pikestaffe-case.xhtml">The Pikestaffe Case</a>
+    <a class="ia" href="https://archive.org/details/in.ernet.dli.2015.125930/page/n325"></a>
+    Tales Of The Uncanny and Supernatural<br/>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/88/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>"And it affronted her that some of these were German. A writer named Einstein was popular with her lodger and that, she felt, was a pity, as well as a mistake in taste." #england #einstein #HigherSpace Connects to "The Man Who Was Mulligan", "Questions and Answers"; also "Alice in Wonderland".</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-regeneration-of-lord-ernie.xhtml">The Regeneration of Lord Ernie</a>
+    <a class="pg" href="https://www.gutenberg.org/files/43816/43816-h/43816-h.htm#I"></a>
+    <a class="ia" href="https://archive.org/details/incredibleadvent00blac/page/n13"></a>
+    Incredible Adventures
+    <p>A theologian contemplates the relationship between energy and entropy. Connections:"Ghostbusters" #jura #elemental #canadian #english #giant #pagan #fire #witch #psychic #supernatural #sexual #PG</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-sacrifice.xhtml">The Sacrifice</a>
+    <a class="pg" href="https://www.gutenberg.org/files/43816/43816-h/43816-h.htm#II"></a>
+    <a class="ia" href="https://archive.org/details/incredibleadvent00blac/page/92"></a>
+    Incredible Adventures
+    <p>A mountain-climber has a crisis of faith enroute to the "Tour du Néant". #switzerland #MountainClimbing #christian #pagan</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-secret.xhtml">The Secret</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=57"></a>
+    <a class="gb" href="https://books.google.com/books?output=text&id=pl06AQAAMAAJ&ots=RPzfOv52JS&jtp=43"></a>
+    Ten Minute Stories
+    <p>An author's eyebrows dance through lunch. #england #writing #eating</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-soldiers-visitor.xhtml">The Soldier's Visitor</a>
+    <a class="ia" href="https://archive.org/details/1915landawater200belluoft/page/388?q=%22by+Algernon+Blackwood%22"></a>
+    The Country Gentleman and Land & Water
+    <p>A convalescing casualty of war is visited by the quasi-pagan personification of his country. #war #pagan #brittania #jingoism #beauty</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-trod.xhtml">The Trod</a>
+    <a class="ia" href="https://archive.org/details/in.ernet.dli.2015.125930/page/n194"></a>
+    Tales Of The Uncanny and Supernatural
+    <p>A fairy tale. #fairy #england #soullessness</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-wings-of-horus.xhtml">The Wings of Horus</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#III"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/41"></a>
+    Day and Night Stories<br/>
+    <a class="gb" href="https://www.google.com/books/edition/The_Century_Illustrated_Monthly_Magazine/6otIAQAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    The Century Illustrated Monthly Magazine Volume 89 pg129 1915
+    <p>"The Romance of Hawk Man and the Dove Girl." #russia, #egypt #horus</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-winter-alps.xhtml">The Winter Alps</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1910-12-24_28_729/page/930?q=%22by+Algernon+Blackwood%22"></a>
+    Country Life  1910-12-24: Vol 28 Iss 729 pg930<br/>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=266"></a>
+    <a class="gb" href="https://books.google.com/books?output=text&id=pl06AQAAMAAJ&jtp=252"></a>
+    Ten Minute Stories
+    <p>An appreciation of the cold season in the mountains. #switzerland #alps</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//up-and-down.xhtml">Up and Down</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=73"></a>
+    <a class="gb" href="https://books.google.com/books?output=text&id=pl06AQAAMAAJ&jtp=59"></a>
+    Ten Minute Stories
+    <p>Algernon has a disjointed conversation in the Club, with his good-hearted friend. #VagueFriend #england #alcoholism</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//violence.xhtml">Violence</a>
+    <a class="pg" href="https://www.gutenberg.org/files/62347/62347-h/62347-h.htm#s16"></a>
+    Twenty-Three Stories by Twenty and Three Authors<br/>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.319510023073554&amp;view=1up&amp;seq=203"></a>
+    Ten Minute Stories
+    <p></p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//what-nobody-understands.xhtml">What Nobody Understands</a>
+    <a class="na" href=""></a>
+    The Morning Post 17 February 1914
+    <p></p>
+  </li>
+
+  <h2>1915</h2>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//after-the-war.xhtml">After the War</a>
+    <a class="ia" href="https://archive.org/details/after-the-war_1909-12-09"></a>
+    London Evening Standard 07/10/1915
+    <p>"Don't. Mention. The war!" #war #england #germany #switzerland</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//cains-atonement.xhtml">Cain's Atonement</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#VIII"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/145"></a>
+    Day and  Night Stories<br/>
+    <a class="gb" href="https://www.google.com/books/edition/_/NpnRAAAAMAAJ?hl=en&gbpv=1&bsq=Blackwood"></a>
+    Land and Water Country Gentleman Vol6 1915
+    <p></p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-celestial-motorbus.xhtml">The Celestial Motorbus</a>
+    <a class="na" href=""></a>
+    The Saturday Westminster Gazette 18 December 1915
+    <p></p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-country-life-anthology-of-verse.xhtml">The "Country Life" Anthology of Verse</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1915-12-25_38_990/page/876?q=%22algernon+Blackwood%22"></a>
+    Country Life  1915-12-25: Vol 38 Iss 990
+    <p>"This modest little book enshrines a moment of our history in its songs of the war…" #review #england #war #poetry</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-god.xhtml">The God</a>
+    <a class="na" href=""></a>
+    The Saturday Westminster Gazette 7 August 1915
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-other-wing.xhtml">The Other Wing</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#VI"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/112"></a>
+    Day and  Night Stories
+    <p></p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-paper-man.xhtml">The Paper Man</a>
+    <a class="na" href=""></a>
+    The Saturday Westminster Gazette 9 October 1915
+    <p></p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-permanent-reality.xhtml">The Permanent Reality</a>
+    <a class="ia" href="https://archive.org/details/the-permanent-reality-nov-23-1915"></a>
+    The Birmingham Daily Post 23 November 1915
+    <p>War is hell, fairy-tales are necessary. #war #FairyTale</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-paper-man.xhtml">The Soul of Galahad</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=umn.31951001888372w&view=1up&seq=335&q1=Blackwood"></a>
+    The Bookman V47 No. 290 Jan. 1915 pg 127
+    <p>A sermon on mysticism is framed as a book review. #Review #rosicrucian</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//think-victory.xhtml">Think Victory!</a>
+    <a class="ia" href="https://archive.org/details/think-victory_1915_11_25"></a>
+    London Evening Standard 25/11/1915
+    <p>"In the beginning was the Word..." but then it veers into a national meditation program and seems motivated by a threatened strike. #war #buddha #hippy #meditation #labor #religion</p>
+  </li>
+
+  <h2>1916</h2>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//camping-out.xhtml">Camping Out</a>
+    <a class="na" href=""></a>
+    Blackie's Children's Annual 1916
+    <p></p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//imagination-wakes.xhtml">Imagination Wakes</a>
+    <a class="ia" href="https://archive.org/details/sim_new-outlook_1916-04-26/page/984?q=%22Algernon+Blackwood%22"></a>
+    The Outlook 1916-04-26
+    <p>This is a magazine article containing Chapter 7 of the novel "The Extra Day" accompanied by a short biography of Blackwood and is being skipped for inclusion with the novel itself.</p>
+  </li>
+
+  <li class="complete verse">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//my-old-tunes.xhtml">My Old Tunes</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=osu.32435056039688&view=1up&seq=3"></a>
+    The organ grinder's songs from "The starlight express"
+    <p>#childrens #poem #song</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//proportion.xhtml">Proportion</a>
+    <a class="na" href=""></a>
+    The Saturday Westminster Gazette 5 August 1916
+    <p></p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//sleep-and-how-to-do-without-it.xhtml">Sleep and How to Do Without It</a>
+    <a class="ia" href="https://archive.org/details/sim_vanity-fair_1916-04_6_2/page/76"></a>
+    Vanity Fair 1916-04: Vol 6 Iss 2
+    <p>txt-pg-77, txt-pg-114</p>
+    <p></p>
+  </li>
+
+  <li class="complete verse">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-blue-eyes-fairy.xhtml">The Blue-Eyes Fairy</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=osu.32435056039696&view=1up&seq=2"></a>
+    The organ grinder's songs from "The starlight express"
+    <p>A child's song about a fairy. #childrens #song</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-exiled-gods.xhtml">The Exiled Gods</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=uc1.a0012200507&view=1up&seq=338&q1=730"></a>
+    The Quest, Vol. 6 No. 4 xx/07/1916<br/>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#IV"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/67"></a>
+    Day and  Night Stories (Title: "Initiation")
+    <p>An American recounts a "come to Hermes" meeting and it appears his ancestor was deified through scholarship. Originally published in "The Quest" as "The Exiled Gods" another version of the story was later published in "Day and Night Stories" as "Initiation." #pagan #american #switzerland</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-occupant-of-the-room.xhtml">The Occupant of the Room</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#VII"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/134"></a>
+    Day and Night Stories
+    <p></p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-snake.xhtml">The Snake</a>
+    <a class="na" href=""></a>
+    The Saturday Westminster Gazette 18 March 1916
+    <p></p>
+  </li>
+
+  <li class="complete verse">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//to-the-children.xhtml">To the Children</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=osu.32435056039621&view=1up&seq=2"></a>
+    The organ grinder's songs from "The starlight express"
+    <p>Disillusionment with the grown-up world contrasted with the innocence and wonder of children's imagination. #childrens #poem</p>
+  </li>
+
+  <h2>1917</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//an-egyptian-hornet.xhtml">An Egyptian Hornet</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#IX"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/154"></a>
+    Day and Night Stories
+    <p></p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//switzerland-in-war-time.xhtml">Switzerland in War-Time</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1917-09-29_42_1082/page/296?"></a>
+    Country Life 1917-09-29: Vol 42 Iss 1082
+    <p>Switzerland, a hub of activity and recovery, is much changed. #switzerland</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-touch-of-pan.xhtml">The Touch of Pan</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#II"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/16"></a>
+    Day and  Night Stories
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-tryst.xhtml">The Tryst</a>
+    <a class="pg" href="https://www.gutenberg.org/files/45964/45964-h/45964-h.htm#I"></a>
+    <a class="ia" href="https://archive.org/details/dayandnightstori00blacrich/page/1"></a>
+    Day and Night Stories
+    <p></p>
+  </li>
+
+  <h2>1918</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//karma.xhtml">Karma</a>
+    <a class="pg" href="https://www.gutenberg.org/ebooks/55611"></a>
+    <a class="ia" href="https://archive.org/details/karmareincarnati00blacrich"></a>
+    Karma
+    <p>History repeats, ladies, and don't get in the way of men doing as their country asks or you will be cursed for millenia. (w/Violet Pearn) #romance #egypt #greece #italy #england #war Connects to #JohnSilence and Nephele.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//s-o-s.xhtml">S.O.S.</a>
+    <a class="ia" href="https://archive.org/details/centurymagazine95newyrich/page/652?q=Blackwood"></a>
+    The Century Magazine, Mar. 1918<br/>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/SOS.pdf"></a>
+    S.O.S.<br/>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/277/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>#jura</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-memory-of-beauty.xhtml">The Memory of Beauty</a>
+    <a class="ia" href="https://archive.org/details/landwater191800hilauoft/page/n17"></a>
+    Land &amp; Water, Vol. 70 #2904 Jan 3 1918
+    <p>A man convalesces at the tail end of WWI. #war #england</p>
+  </li>
+  
+  <h2>1919</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//alexander-alexander.xhtml">Alexander Alexander</a>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Alexander_Alexander.pdf"></a>
+    Alexander Alexander<br/>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/129/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924<br/>
+    <a class="na" href=""></a>
+    The Saturday Westminster Gazette. 6 Sep. 1919
+    <p>Blackwood makes use of emphatic italics. #psychology #uncle</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//switzerland-present-conditions-and-future-prospects-i.xhtml">Switzerland: Present Conditions and Future Prospects.-I</a>
+    <a class="ia" href="https://archive.org/details/sim_country-life_1919-03-22_45_1159/page/326?q=%22by+Algernon+Blackwood%22"></a>
+    Country Life 1919-03-22: Vol 45 Iss 1159
+    <p>Switzerland is eager, but not yet a ready, to resume the tourist trade. This story is labeled as "I", but no "II" was subsequently published. #switzerland #english #war #armistice</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-call.xhtml">The Call</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_137"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/138"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>A bittersweet ghost story set in England after the Armistice.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-decoy.xhtml">The Decoy</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_169"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/172"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>A trio spend the night in an unpretentious house with a bad reputation. #ghost #haunted #england #kent</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-other-woman.xhtml">The Other Woman</a>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/182/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>The abstract notion of Beauty impedes relationships and work. #beauty</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-perfect-poseur.xhtml">The Perfect Poseur</a>
+    <a class="na" href=""></a>
+    The Saturday Westminster Gazette 9 October 1915
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-world-dream-of-mccallister.xhtml">The World-Dream of McCallister</a>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/164/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>Blackwood's practice making a story arc actually be a perspective arc, in the context of the ending of WWI. #england #war</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//wireless-confusion.xhtml">Wireless Confusion</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_230"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/234"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>Depth perception and spooky action at a distance (quantum entanglement?) in WW-I England. #england #london #war #psychic</p>
+  </li>
+  
+  <h2>1920</h2>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//chinese-magic.xhtml">Chinese Magic</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_27"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/26"></a>
+    The Wolves of God, and Other Fey Stories
+    <p></p>
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//first-hate.xhtml">First Hate</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_74"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/74"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>Love at first sight is as strong as hate at first sight. #canada #china #murder</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//running-wolf.xhtml">Running Wolf</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_52"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/52"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>A man is visited while camping by a lake. #indian #canada #canoe #willow</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-olive.xhtml">The Olive</a>
+    <a class="pg" href="https://www.gutenberg.org/files/9363/9363-h/9363-h.htm#link2H_4_0006"></a>
+    <a class="ia" href="https://archive.org/details/bestbritishshor00unkngoog/page/n64"></a>
+    The Best of British Short Stories (1922)<br/>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/143/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>The protagonist becomes infatuated with a girl after a humorous encounter involving an olive, leading to a late-night rendezvous that seems reckless and irrational.</p>
+  </li>
+
+  <li class="skip fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//through-the-crack.xhtml">Through the Crack</a>
+    <a class="na" href=""></a>
+    Through the Crack
+    <p>Play based on "The Education of Uncle Paul" novel "The Extra Day." (w/Violet Pearn)</p>
+  </li>
+  
+  <h2>1921</h2>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//changing-ats.xhtml">Changing 'Ats</a>
+    <a class="na" href=""></a>
+    Time and Tide, Vol. 2 No. 50
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//confession.xhtml">Confession</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_237"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/242"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>Canadian veteran struggles with shell-shock (and more) in the London fog. #london #england #war</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//egyptian-sorcery.xhtml">Egyptian Sorcery</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_151"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/152"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>A financial investment in Egypt is threatened. #egypt #possession #AstralProjection #psychic</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//nephele.xhtml">Nephelé</a>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/287/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>After a gentleman digs up a box, a lady dances in sandals, and this could be a problem. #roman #romance #dance #reincarnation</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//onanonanon.xhtml">Onanonanon</a>
+    <a class="ia" href="https://archive.org/details/sim_english-review-uk_1921-03_32/page/248?q=%22by+Algernon+Blackwood%22"></a>
+    The English Review 1921-03: Vol 32, pg248
+    <p>A spy for the empire is sick again. #war #england #switzerland #hallucination #doppleganger #ScoobyDoo</p>
+  </li>
+
+  <li class="skip fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-halfway-house.xhtml">The Halfway House</a>
+    <a class="na" href=""></a>
+    The Halfway House
+    <p>Play. (w/Elaine Ainley)</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-lane-that-ran-east-and west.xhtml">The Lane That Ran East and West</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_259"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/264"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>A fern seed carries a dream on English lane. #england #kent #mexico #psychic</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-tarn-of-sacrifice.xhtml">The Tarn of Sacrifice</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_86"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/86"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>A veteran hikes near England's Roman wall. #ghost #possession #pagan #war #england</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-valley-of-the-beasts.xhtml">The Valley of the Beasts</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_113"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/114"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>Grimwood has a come-to-Ishtot meeting while hunting. #indian #canada #moose #canoe #pagan</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-wolves-of-god.xhtml">The Wolves of God</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_1"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/n11"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>Man returns from Canada to his brother in the Orkneys.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//vengeance-is-mine.xhtml">Vengeance Is Mine</a>
+    <a class="pg" href="https://www.gutenberg.org/files/38310/38310-h/38310-h.htm#Page_279"></a>
+    <a class="ia" href="https://archive.org/details/wolvesofgodandot00blacrich/page/284"></a>
+    The Wolves of God, and Other Fey Stories
+    <p>Unforgiving Belgian women schedule a come-to-Odin meeting. #war #pagan</p>
+  </li>
+
+  <li class="skip fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//white-magic.xhtml">White Magic</a>
+    <a class="na" href=""></a>
+    White Magic
+    <p>Play. (w/Bertram Forsyth)</p>
+  </li>
+  
+  <h2>1922</h2>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//genius.xhtml">Genius</a>
+    <a class="na" href=""></a>
+    The Weekly Westminster Gazette 15 July 1922
+    <p></p>
+  </li>
+
+  <li class="complete fiction ">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//lost-in-the-alps.xhtml">Lost in the Alps</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=hvd.hn46n6&amp;view=1up&amp;seq=121"></a>
+    The Living Age Vol. CCCXV Sep. 8 1922<br/>
+    <a class="gb" href="https://books.google.com/books?id=XQQuAAAAYAAJ&pg=PA111&lpg=111#v=onepage&q&f=false"></a>
+    Morning Post / Tory Daily<br/>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/137/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924<br/>
+    <p>In a story that may be non-fiction, a botanist has not returned from his hike. #alpine</p>
+  </li>
+  
+  <h2>1923</h2>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//adventurous-memories.xhtml">Adventurous Memories</a>
+    <a class="na" href=""></a>
+    Cassell’s Magazine of Fiction, July-Nov. 1923
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//tongues-of-fire.xhtml">Tongues of Fire</a>
+    <a class="ia" href="https://archive.org/details/sim_english-review-uk_1923-04_36/page/316/mode/1up?q=Tongues"></a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=uc1.b3037926&amp;view=1up&amp;seq=76"></a>
+    The English Review, Vol. 36 No. 4, Apr. 1923<br/>
+    <a class="gb" href="https://www.google.com/books/edition/Georgian_Stories/lrcYAQAAIAAJ?hl=en&gbpv=0"></a>
+    Georgian Stories 1924<br/>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/9/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>Be nice, or be cursed to die by tuberculosis. Seems to connect to the Stephen King novel, "Thinner." #england #chelsea #curse #disease #drugs</p>
+  </li>
+  
+  <h2>1924</h2>
+
+  <li class="complete fiction ">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-continuous-performance.xhtml">A Continuous Performance</a>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/158/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>The natural word is unlike poetry in that it is profound and unpretentious. #england #poetry #nature</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//a-man-of-earth.xhtml">A Man of Earth</a>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/263/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>A mining engineer has a certain connection to dwarves. Story connects to the Caucasus travel stories. #dwarf #caucasus #german #english #surrey</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//malahide-and-forden.xhtml">Malahide and Forden</a>
+    <a class="bw" href="https://algernonblackwood.org/Z-files/Malahide_and_Forden.pdf"></a>
+    Malahide and Forden<br/>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/31/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>Three actors make a trippy day trip to "Barton in the beans." #einstein #christian #angel #psychedelic</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//petershin-and-mr-snide.xhtml">Petershin and Mr. Snide</a>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/211/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>Never worry about putting your tongue on a frozen flagpole. Reminiscent of Confederacy of Dunces in its use of dialect. #england #snow #psychology #humor</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//picking-fir-cones.xhtml">Picking Fir-Cones</a>
+    <a class="ia" href="https://archive.org/details/englishreview071919londuoft/page/10?q=%22Fir+Cones%22"></a>
+    The English Review Vol29 1919<br/>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/187/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>A childhood near-death experiece leaves the narrator philosophical, spiritual, and mystical.</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//playing-catch.xhtml">Playing Catch</a>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/73/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>That God does not play dice with the universe, does not imply that angels don't play ball with the universe. #einstein #astronomy</p>
+  </li>
+
+  <li class="complete fiction ">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-laughter-of-courage.xhtml">The Laughter of Courage</a>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/273/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>A man enjoys himself at the cinema. May be non-fiction. #england #war</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-open-window.xhtml">The Open Window</a>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/206/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>An English couple trim the hedge, and decide to travel abroad. #england #travel</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-open-window.xhtml">The Spell of Egypt</a>
+    <a class="ia" href="https://archive.org/details/1924-tongues-of-fire-and-other-sketches/page/254/mode/1up"></a>
+    Tongues of Fire and Other Sketches 23/11/1924
+    <p>Ruminations on the exhumation of King Tut.  There is overlap between "Egypt: An Impression" and "The Spell of Egypt" but they are sufficiently different to be distinct works. #egypt</p>
+  </li>
+
+  <h2>1925</h2>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//explorers-ghost-stories.xhtml">Explorers’ Ghost Stories</a>
+    <a class="ia" href="https://archive.org/details/IAPSOP-occult_review_v42_n2_aug_1925/page/84?q=%22by+Algernon+Blackwood%22"></a>
+    <a class="etc" href="http://iapsop.com/archive/materials/occult_review/occult_review_v42_n2_aug_1925.pdf"></a>
+    Occult Review 1925 v42 Aug. p16
+    <p>A spiritualist researches the literature. #ghost #indian #war #sea</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//full-circle.xhtml">Full Circle</a>
+    <a class="ia" href="https://archive.org/details/sim_english-review-uk_1925-05_40_0/page/612"></a>
+    The English Review 1925-05: Vol 40
+    <p>A realization of the passing of time, which is triggered by his encounters with a young boy over the years.</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//hands-of-death.xhtml">Hands of Death</a>
+    <a class="na" href=""></a>
+    The Bolton Evening News xx/12/1925
+    <p></p>
+  </li>
+
+  <h2>1926</h2>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//chemical.xhtml">Chemical</a>
+    <a class="na" href=""></a>
+    The Ghost Book (ed. Cynthia Asquith) xx/xx/1926
+    <p></p>
+  </li>
+
+  <li class="complete verse">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//engine.xhtml">Engine</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=mdp.39015068421208&amp;view=1up&amp;seq=18"></a>
+    The Merry-Go-Round, Vol IV No 1 Nov1926
+    <p>Children's poem about an astral mail-truck. #childrens #poem</p>
+  </li>
+
+  <li class="complete verse">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//if-i-were-you.xhtml">If I Were You</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=mdp.39015068421208&view=1up&seq=458&q1=Blackwood"></a>
+    The Merry-Go-Round, Vol IV No 10 Aug1927
+    <p>Children's poem about childhood hijinks and an absence of parental self-awareness. #childrens #poem</p>
+  </li>
+
+  <li class="complete verse">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//questions-and-answers.xhtml">Questions and Answers</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=mdp.39015068421208&view=1up&seq=215&q1=Blackwood"></a>
+    The Merry-Go-Round, Vol IV No 5 Mar1927
+    <p>Children's poem about how adults are just faking it. #childrens #poem</p>
+  </li>
+
+  <li class="complete verse">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-star.xhtml">The Star</a>
+    <a class="ht" href="https://babel.hathitrust.org/cgi/pt?id=mdp.39015068421208&view=1up&seq=81&q1=Blackwood"></a>
+    The Merry-Go-Round, Vol IV No 2 Dec1926
+    <p>Children's poem about a star. #childrens #poem</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//tobys-birthday-presents.xhtml">Tobys Birthday Presents</a>
+    <a class="ia" href="https://archive.org/details/1926-asquith-the-treasure-ship/page/n159"></a>
+    The Treasure Ship (ed. Cynthia Asquith) pg158 xx/xx/1926
+    <p>A cat, a tortoise and, a nowl. #england #children #christian</p>
+  </li>
+  
+  <h2>1927</h2>
+
+  <li class="complete verse">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//jack-of-the-inkpot.xhtml">Jack of the Inkpot</a>
+    <a class="tv" href="https://nla.gov.au/nla.obj-773877907/view?sectionId=nla.obj-825018080&searchTerm=%22Algernon+Blackwood%22&partId=nla.obj-773897494"></a>
+    NSW Dept of Education (1927-01-31), Magazine of Literature.
+    <p>Ink is messy. #child #poem</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//mr-cupboard-or-the-furnitures-holiday.xhtml">Mr. Cupboard, or The Furniture’s Holiday</a>
+    <a class="na" href=""></a>
+    Number Five Joy Street xx/09/1927
+    <p></p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//Sambo-and-Snitch.xhtml">Sambo and Snitch</a>
+    The Merry Go Round, 1925-1927;  Chapters: 
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/_eTcokku7WkC?hl=en&gbpv=1&dq=%22It+was+boiling+hot+in+the+garden%22&pg=PA220&printsec=frontcover">1</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/_eTcokku7WkC?hl=en&gbpv=1&bsq=%22I%20say,%E2%80%9D%20cried%20Sambo%20in%20amazement.%20%E2%80%9CIt%E2%80%99s%20your%20tail,%20%22">2</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/_eTcokku7WkC?hl=en&gbpv=1&bsq=%22Sambo%20pretended%20to%20sleep.%20The%20only%20sound%22">3</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/_eTcokku7WkC?hl=en&gbpv=1&bsq=%22Sambo%20stood%20in%20the%20hot%20paved%20sunken%20%22">4</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/_eTcokku7WkC?hl=en&gbpv=1&bsq=%22Sambo%20was%20too%20pleased%20and%20surprised%20to%20argue;%22">5</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/_eTcokku7WkC?hl=en&gbpv=1&bsq=%22%20Sambo%20shut%20the%20door%20tight%20and%20then%20went%20back%20%22">6</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/_eTcokku7WkC?hl=en&gbpv=1&bsq=%22To%20tell%20the%20truth,%20Sambo%20never%20understood%22">7</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/QNGS2FI5-sEC?hl=en&gbpv=1&dq=+For+several+minutes+nothing+happened.+Oh,+how+still+it+was!+The+blackness+of+night+covered+all&pg=PA25&printsec=frontcover">8</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/QNGS2FI5-sEC?hl=en&gbpv=1&bsq=%22%20With%20his%20heart%20in%20his%20mouth,%20Sambo%20moved%20towards%20the%20dizzy%20edge.%20%22">9</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/QNGS2FI5-sEC?hl=en&gbpv=1&bsq=%22Climb%20up%20a%20sleeping%20cow!%20What%20an%20adventure!%22">10</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/QNGS2FI5-sEC?hl=en&gbpv=1&bsq=%22Sambo,%20balanced%20precariously%20on%20his%20narrow%20tip,%20had%20a%20sort%22">11</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/QNGS2FI5-sEC?hl=en&gbpv=1&bsq=%22One%20result%20of%20Sambo%E2%80%99s%20strange%20friendship%20with%20his%20little%20saurian%22">12</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/QNGS2FI5-sEC?hl=en&gbpv=1&bsq=%22Sambo%20had%20now%20learned%20a%20lesson%20the%20lizard%20perhaps%20had%22">13</a>
+      <a style="display:inline" href="https://www.google.com/books/edition/The_New_Merry_go_round/QNGS2FI5-sEC?hl=en&gbpv=1&bsq=%22Garden-Writing%20of%20sound,%20smell%20and%20sign,%20when%20something%22">14</a>
+    <p>Connects to a-continuous-performance in the idea of nature being presented as a book to be read. #childrens #nature</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//spring-in-switzerland.xhtml">Spring in Switzerland</a>
+    <a class="ia" href="https://archive.org/details/sim_spectator-uk_1927-04-02_138_5153/page/616?q=%22Algernon+Blackwood%22"></a>
+    The Spectator 1927-04-02: Vol 138 Iss 5153
+    <p>Switzerland is forever young. #switzerland</p>
+  </li>
+
+  <li class="skip fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-crossing.xhtml">The Crossing</a>
+    <a class="na" href=""></a>
+    The Crossing
+    <p>Play. (w/Bertram Forsyth)</p>
+  </li>
+
+  <li class="skip">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-cross-word-alien.xhtml">The Cross-word Alien</a>
+    <a class="na" href=""></a>
+    Time and Tide, Vol. 8 #1 07/01/1927
+    <p></p>
+  </li>
+  
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-kingdom-of-the-heavens.xhtml">The Kingdom of the Heavens</a>
+    <a class="gb" href="https://www.google.com/books/edition/Modern_Essays_of_Various_Types/B-eLQFSJoV0C?hl=en&gbpv=1&bsq=Algernon%20Blackwood"></a>
+    UW-Mad Modern Essays of Various Types
+    <p>Blackwood reviews a book about astronomy. #science #review</p>
+  </li>
+
+  <li class="complete fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-water-performance.xhtml">The Water Performance</a>
+    <a class="ia" href="https://archive.org/details/1927-asquith-sails-of-gold/page/119"></a>
+    Sails of Gold (ed. Cynthia Asquith) pg120 xx/xx/1927
+    <p>Rose and Peter worship an Old God. #childrens #druid #saturn #pagan #sylph</p>
+  </li>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//traveling-light.xhtml">Traveling Light</a>
+    <a class="ia" href="https://archive.org/details/sim_new-mcclures-magazine_1927-12_59_6/page/68"></a>
+    McClure's Vol59 Iss6 pp68-69,126
+    <p>Essay on a philosophy of living. #philopsophy #biography #canada #NewYork</p>
+    <div class="container-fluid">
+      <img src="img/traveling-light/tl_fig1_blackwood-walking-through-the-woods.jpg" alt="Why own a garden, when half the world is yours to roam over?">
+      <img src="img/traveling-light/tl_fig2_blackwood-portrait.jpg" alt="Real living is an interior affair.">
+      <img src="img/traveling-light/tl_fig3_blackwood-packing-clothes.jpg" alt="To be owned by possessions is not to live at all.">
+      <img src="img/traveling-light/tl_fig4_blackwood-at-the-pawnbroker.jpg" alt="Pawnbrokers were my intimate friends.">
+    </div>
+  </li>
+
+  <h2>Afterword</h2>
+
+  <li class="complete non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//Afterword.xhtml">Algernon Blackwood on Fiction Writing</a>
+    <a class="ia" href="https://archive.org/details/fictionwriterson00indi"></a>
+    Fiction Writers on Fiction Writing (Excerpt), 1923
+    <p></p>
+  </li>
+
+  <hr style="border:0.5em solid grey">
+
+  <h2>1928</h2>
+
+  <li class="skip fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//by-underground.xhtml">By Underground</a>
+    <p>Children's Book, Published by Oxford: Basil Blackwell</p>
+    <p>Fulls scans available <a class="text-muted" style="display:inline;" href="https://www.fulltable.com/vts/aoi/c/cobb/p.htm"><strong>HERE</strong></a>but no date is included.</p>
+  </li>
+
+  <li class="skip fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//dr-feldman.xhtml">Dr. Feldman</a>
+    <a class="na" href=""></a>
+    The Strand Magazine, Volume 75, pg 426 (1928)
+    <p></p>
+  </li>
+
+  <li class="skip fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//when-nick-dressed-up.xhtml">When Nick Dressed Up</a>
+    <p>"The Treasure Cave", by Asquith pg74 (1928)</p>
+    <p></p>
+  </li>
+  
+  <h2>1929</h2>
+
+  <li class="skip non-fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//dreams-and-fairies.xhtml">Dreams and Fairies</a>
+    <p></p>
+    <p>No source available: <a class="text-muted" style="display:inline;" href="https://richarddalbyslibrary.com/products/the-bookman-special-christmas-number-1929-hodder-stoughton?_pos=47&_sid=685581334&_ss=r">The Bookman Special Christmas Number 1929, Hodder & Stoughton</a></p>
+  </li>
+
+  <li class="skip fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//max-hensig.xhtml">Max Hensig</a>
+    <a class="na" href=""></a>
+    Max Hensig
+    <p>Play based on the short story by the same name. (w/Frederick Kinsey Peile)</p>
+  </li>
+
+  <h2>1930</h2>
+
+  <h2>1931</h2>
+
+  <h2>1932</h2>
+
+  <h2>1933</h2>
+
+  <h2>1934</h2>
+
+  <h2>1935</h2>
+
+  <h2>1936</h2>
+
+  <h2>1937</h2>
+
+  <h2>1938</h2>
+
+  <h2>1939</h2>
+
+  <li class="skip fiction">
+    <a href="https://kingrpaul.github.io/algernon-blackwood_short-fiction//src//epub//text//the-italian-conjurer.xhtml">The Italian Conjurer</a>
+    <p></p>
+    <p>No source available: <a class="text-muted" style="display:inline;" href="https://richarddalbyslibrary.com/products/algernon-blackwood-the-golden-gift-book-odhams-press?">"The Golden Gift Book, pg3", Odhams Press (1939)</a></p>
+  </li>
+  
+</ul>
+</div>
+
+
+<div class="container" style="margin-top:2rem;">
+  <hr/>
+</div>
+
+
+
+
+
+<!-- 
+UNSORTED
+Bouwman, A. H. (2020). Shocks! : trauma, detection, and supernaturalism in Algernon Blackwood (T). University of British Columbia. Retrieved from https://open.library.ubc.ca/collections/ubctheses/24/items/1.0392573
+
+https://www.enotes.com/topics/algernon-blackwood-mike-ashley
+
+https://www.npg.org.uk/collections/search/portrait/mw301274/Algernon-Henry-Blackwood
+
+https://www.npg.org.uk/collections/search/person/mp50241/algernon-henry-blackwood
+ -->
+
+<div id="resources" class="container">
+<ul>
+
+  <h2>Resources </h2></th>
+
+  <h3>Web Pages</h3>
+
+  <li>
+    <a href="https://absolutehorror.fandom.com/wiki/Algernon_Blackwood/Literary_History">
+    Absolute Horror Wiki</a>
+    <p>Algernon Blackwood/Literary History</p>
+    <p>Chronological list of titles.</p>
+  </li>
+  <li>
+    <a href="https://id.loc.gov/authorities/names/n50008491.html">
+    The Library of Congress</a>
+    <p>Blackwood, Algernon, 1869-1951</p>
+    <p>Author record, includes list of titles.</p>
+    </li>
+    <li>
+    <a href="http://www.locusmag.com/index/yr2002/s8.htm">
+    The Locus Index to Science Fiction</a>
+    <p>Stories, Listed by Author - Blackwood</p>
+    <p>Cross reference.</p>
+  </li>
+  <li>
+    <a href="https://antimatter-camerlengo.blogspot.com/2015/01/algernon-blackwood-short-story-summaries.html">
+    Truncheon the Camerlengo</a>
+    <p>Algernon Blackwood—The Short Story Summaries</p>
+    <p>List of story titles with short descriptions.</p>
+  </li>
+  <li>
+    <a href="http://www.philsp.com/homeville/sfi/n00131.htm#A6">
+    The Science Fiction, Fantasy, & Weird Fiction Magazine</a>
+    <p>Index—Algernon Blackwood</p>
+    <p>List of stories and other references, with (limited) links.</p>
+  </li>
+  <li>
+    <a href="https://isfdb.org/cgi-bin/ea.cgi?1126">
+    Internet Speculative Fiction Database</a>
+    <p>Summary Bibliography: Algernon Blackwood</p>
+    <p>Long list of works, grouped and dated, with links to collections and editions.</p>
+  </li>
+  <li>
+    <a href="https://forum.librivox.org/viewtopic.php?t=57337">
+    LibriVox Forum</a>
+    <p>Unrecorded Algernon Blackwood Stories</p>
+    <p>Limited list of works, with links to sources.</p>
+  </li>
+  <li>
+    <a href="https://www.fantasticfiction.com/b/algernon-blackwood/">
+    Fantastic Fiction</a>
+    <p>Algernon Blackwood</p>
+    <p>List of works and collections, links to hard-copy (purchasable) books.</p>
+  </li>
+  <li>
+    <a href="https://www.liquisearch.com/algernon_blackwood/works/weird_fiction">
+    LiquidSearch</a>
+    <p>Algernon Blackwood—Works—Weird Fiction</p>
+    <p>Partial list of works, publication dates, location, summaries.</p>
+  </li>
+  <li>
+    <a href="https://fampeople.com/cat-algernon-blackwood">
+    FamPeople</a>
+    <p>Algernon Blackwood</p>
+    <p>Biography, list of works and collections.</p>
+  </li>
+  <li>
+    <a href="https://onlinebooks.library.upenn.edu/webbin/book/lookupname?key=Blackwood%2C%20Algernon%2C%201869%2D1951">
+    UPENN - The Online Books Page</a>
+    <p>Online Books by Algernon Blackwood</p>
+    <p>Listing of links to scans of works.</p>
+  </li>
+  <li>
+    <a href="https://talesofmytery.blogspot.com/search/label/Algernon%20Blackwood">
+    Tales of Mystery and Imagination</a>
+    <p>Algernon Blackwood</p>
+    <p>Text for a small number of stories and several author portraits.</p>
+  </li>
+  <li>
+    <a href="https://www.primidi.com/algernon_blackwood/works/weird_fiction">
+    Primidi</a>
+    <p>Algernon Blackwood—Works—Weird Fiction</p>
+    <p>Tabular list of stories with original publication date and collections.</p>
+  </li>
+  <li>
+    <a href="https://peoplepill.com/people/algernon-blackwood">
+    People Pill</a>
+    <p>Algernon Blackwood</p>
+    <p>Biography and list of works.</p>
+  </li>
+  <li>
+    <a href="http://www.tartaruspress.com/b23.htm">
+    A Guide to Supernatural Fiction</a>
+    <p>Algernon Blackwood</p>
+    <p>List of collections, includes cover images.</p>
+  </li>
+  <li>
+    <a href="http://www.artandpopularculture.com/Algernon_Blackwood">
+    Art &amp; Popular Culture</a>
+    <p>Algernon Blackwood</p>
+    <p>List of works.</p>
+  </li>
+  <li>
+    <a href="https://archive.org/details/dli.ministry.22695/page/n7/mode/2up">
+    Shocks (1935)</a>
+    <p>by Algernon Blackwood</p>
+    <p>Short story collection.</p>
+  </li>
+  <li>
+    <a href="https://web.archive.org/web/20210928134707/https://www.ebooks-library.com/author.cfm/AuthorID/614">
+    eBooks-Library</a>
+    <p>Algernon Blackwood, Author Code: AEBL</p>
+    <p>Short bio and list of works with links, which may be broken.</p>
+  </li>
+  <li>
+    <a href="https://swanriverpress.ie/wp-content/uploads/2023/04/Swan-River-Press-Catalogue.pdf">
+    The Lure of the Unknown, Essays on the Strange (2022)</a>
+    <p>Swan River Press Catalog, pg 6</p>
+    <p>Collection of Blackwood's essays, offered for sale.</p>
+  </li>
+  <li>
+    <a href="https://recap.study/books/horror/49.html">
+    Unutterable Horror - A History of Supernatural Fiction</a>
+    <p>Volume 2: The Twentieth and Twenty-first Centuries, S. T. Joshi 2014</p>
+    <p>Academic essay on the author.</p>
+  </li>
+
+  <h3>Article</h3>
+
+  <li>
+    <a href="https://brombonesbooks.com/for-fun/early-1900s/putting-your-shorthouse-in-order/">
+    Putting Your Shorthouse in Order, by Tim Prasil</a>
+    <p>Blackwood’s Puzzle</p>
+    <p>Blog essay about the author.</p>
+  </li>
+  <li>
+    <a href="https://archive.org/details/kashmir-under-the-sultans-mohibbul-hassan_202012/Book%20And%20Magazine%20Collector%20%23213%20%5B2001-12%5D%20%28Missing%20ads%29/page/58/mode/2up?q=%22By+Underground%22+%22Algernon+Blackwood%22">
+    Algernon Blackwood: Master of the Supernatural, by Mike Ashley</a>
+    <p>Book and Magazine Collector</p>
+    <p>Article about the author.</p>
+  </li>
+
+  <h3>Wikipediesque</h3>
+
+  <li>
+    <a href="https://infogalactic.com/info/Algernon_Blackwood">
+    Infogalactic, Planetary Knowledge Core</a>
+    <p>Algernon Blackwood</p>
+    <p>Wiki-like author page.</p>
+  </li>
+  <li>
+    <a href="https://fampeople.com/cat-algernon-blackwood">
+    Kiwix</a>
+    <p>Algernon Blackwood / Campus Africa</p>
+    <p>Wikipedia-like page, biography, resources, list of works.</p>
+  </li>
+  <li>
+    <a href="https://en.everybodywiki.com/Algernon_Blackwood_bibliography">
+    Everybody Wiki</a>
+    <p>Algernon Blackwood bibliography</p>
+    <p>List of titles.</p>
+  </li>
+  <li>
+    <a href="http://dictionary.sensagent.com/Algernon_Blackwood/en-en/">
+    Sensagent</a>
+    <p>Algernon Blackwood</p>
+    <p>Wiki-style author page and list of works, including later works.</p>
+  </li>
+
+  <h3>Collections</h3>
+
+  <li>
+    <a href="https://richarddalbyslibrary.com/products/algernon-blackwood-the-willows-and-other-queer-tales-collins-illustrated-school-classics-186-no-date?variant=8664129896547">
+    The Willows & Other Queer Tales (1925)</a>
+    <p>Published by Collins</p>
+    <ol>
+    <li>The Willows</li> 
+    <li>Ancient Sorceries</li> 
+    <li>The Return</li> 
+    <li>Running Wolf</li> 
+    <li>The Man Whom the Trees Loved</li> 
+    <li>The Man Who Played Upon the Leaf</li> 
+    <li>The Tryst</li> 
+    <li>By Water</li> 
+    <li>The Occupant of the Room</li> 
+    <li>The Decoy</li> 
+    <li>Dream Trespass</li> 
+    </ol>
+  </li>
+  <li>
+    The Dance of Death, and Other Tales (1927)
+    <p>Published by Herbert Jenkins</p>
+    <ol>
+    <li>The Dance of Death</li> 
+    <li>A Psychical Invasion</li> 
+    <li>The Old Man of Visions</li> 
+    <li>The South Wind</li> 
+    <li>The Touch of Pan</li> 
+    <li>The Valley of the Beasts</li> 
+    </ol>
+  </li>
+  <li>
+    <a href="https://richarddalbyslibrary.com/products/algernon-blackwood-ancient-sorceries-collins-edition-1927?_pos=2&_sid=685581334&_ss=r">
+    Ancient Sorceries and Other Tales (1927)</a>
+    <p>Published by Collins</p>
+    <ol>
+    <li>Ancient Sorceries</li> 
+    <li>The Willows</li> 
+    <li>The Return</li> 
+    <li>Running Wolf</li> 
+    <li>The Man Whom the Trees Loved</li> 
+    <li>The Man Who Played Upon the Leaf</li> 
+    </ol>
+  </li>
+  <li>
+    Algernon Blackwood - Short Stories of Today &amp; Yesterday (1930)
+    <p>Published by Harrap</p>
+    <ol>
+    <li>The Regeneration of Lord Ernie</li> 
+    <li>The Sacrifice</li> 
+    <li>Chinese Magic</li> 
+    <li>The Land of Green Ginger</li> 
+    <li>The Stranger</li> 
+    <li>First Hate</li> 
+    <li>The Olive</li> 
+    <li>Two in One</li> 
+    <li>Dream Trespass</li> 
+    <li>Cain's Atonement</li>           
+    </ol>
+  </li>
+  <li>
+    Strange Stories (1930)
+    <p>Published by William Heinemann</p>
+    <ol>
+    <li>The Man Whom the Trees Loved</li> 
+    <li>The Sea Fit</li> 
+    <li>The Glamour of the Snow</li> 
+    <li>The Tryst</li> 
+    <li>Transition</li> 
+    <li>The Occupant of the Room</li> 
+    <li>The Wings of Horus</li> 
+    <li>By Water</li> 
+    <li>Malahide and Forden</li> 
+    <li>Alexander Alexander</li> 
+    <li>The Man Who Was Milligan</li> 
+    <li>The Little Beggar</li> 
+    <li>The Pikestaffe Case</li> 
+    <li>Accessory Before the Fact</li> 
+    <li>The Deferred Appointment</li> 
+    <li>Ancient Lights</li> 
+    <li>You May Telephone from Here</li> 
+    <li>The Goblin's Collection</li> 
+    <li>Running Wolf</li> 
+    <li>The Valley of the Beasts</li> 
+    <li>The Decoy</li> 
+    <li>Confession</li> 
+    <li>A Descent Into Egypt</li> 
+    <li>The Damned</li> 
+    <li>The Willows</li> 
+    <li>Ancient Sorceries</li> 
+    </ol>
+  </li>
+
+    </tbody>
+    </table>
+</ul>
+
+
+
+
+
+
+</body>
+
+</html>

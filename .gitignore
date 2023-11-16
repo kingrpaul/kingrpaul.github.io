@@ -18,3 +18,10 @@ img/pans-garden/descrip.txt
 img/pans-garden/ls.txt
 *.txt
 .gitignore
+
+ebooks/blackwood/img/a-case-of-eavesdropping/original
+ebooks/blackwood/img/in-the-jura-neuchatel/original
+ebooks/blackwood/img/traveling-light/original
+ebooks/blackwood/img/pans-garden/uncropped
+ebooks/blackwood/img/cover.jpg
+ebooks/blackwood/img/cover.source.jpg
