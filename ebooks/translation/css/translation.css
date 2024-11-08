@@ -1,0 +1,53 @@
+body {}
+
+:root {
+    --primary: #007bff;
+    --secondary: #6c757d;
+    ;
+    --success: #28a745;
+    --danger: #dc3545;
+    --warning: #ffc107;
+    --info: #17a2b8;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --white: #ffffff;
+}
+
+.list-group-item.e-book div * {
+    color: var(--secondary);
+}
+
+.list-group-item.e-book>div {
+    display: inline-block;
+    float: left;
+}
+
+.list-group-item.e-book div:first-of-type>img {
+    width: 6rem;
+    height: 9rem;
+}
+
+/* description */
+.list-group-item.e-book>div:nth-of-type(2) {
+    min-width: 10rem;
+    max-width: calc(100% - 6rem);
+    min-height: 9rem;
+    max-height: 12rem;
+    padding-left: 0.5rem;
+}
+
+/* lines of description */
+.list-group-item.e-book div p {
+    line-height: 1;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+/* book title */
+.list-group-item.e-book div p:first-child {
+    color: var(--dark);
+    font-size: 1.25em;
+    font-weight: 500;
+    font-style: italic;
+    text-wrap: wrap;
+    text-overflow: ellipsis;
+}

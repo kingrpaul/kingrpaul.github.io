@@ -1,0 +1,128 @@
+h2 {    
+    font-size: 1.3em;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid dotted darkgray;
+    background-color: #EFEFEF;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+  }
+
+  p:empty {
+    display:none;
+  }
+
+  a {
+    width: fit-content;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    border-bottom: 1px dotted lightgray;
+    margin: 0.2rem 0 0.2rem 0.2rem;
+  }
+
+  li >a,
+  li >p {
+    margin-left: 0.5em;
+    display: block;
+    color: #181D31;;
+    text-decoration: none;
+  }
+
+  li >a:first-of-type {
+    font-size: 1.1rem;
+    font-variant: small-caps;
+    text-decoration: none;
+    width: fit-content;
+    margin-left: 0;
+    text-decoration: underline;
+  }
+
+  li p {
+    font-style: italic;
+  }
+
+  img{
+  max-width: 10em;
+  max-height: 5em; 
+  margin:1px;
+  border:1px solid grey;
+  }
+
+  li a >img {
+    color:red;
+    height:1.2rem;
+    border:0;
+  }
+
+  /* SANDBOX */
+
+  a.gb, a.ht, a.ia, a.pg, a.tv, a.ws, a.etc, a.bw, a.na {
+    height:1.2rem;
+    width:auto;
+    vertical-align: bottom;
+    display: inline-block;
+  }
+
+  a.gb {
+  /* Google Books */
+    content: url('../icon/gb.svg');
+  }
+  a.ht {
+  /* Hathi Trust */
+    content: url('../icon/ht.svg');
+  }
+  a.ia {
+  /* Internet Archive */
+    content: url('../icon/ia.svg');
+  }
+  a.pg {
+  /* Project Gutenburg */
+    content: url('../icon/pg.svg');
+  }
+  a.tv {
+  /* Trove, Nat'l Lib. of Australia */
+    content: url('../icon/tv.svg');
+  }
+  a.ws {
+  /* WikiSource */
+    content: url('../icon/ws.svg');
+  }
+  a.etc {
+  /* Other */
+    content: url('../icon/etc.svg');
+  }
+
+  a.bw {
+  /* AlgernonBlackwood.org */
+    content: url('../icon/bw.svg');
+  }
+  a.na {
+  /* No Source */
+    content: url('../icon/na.svg');
+  }
+  
+  #resources > ul > h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+
+  #resources ol > li {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    line-height: 1.05;
+  }

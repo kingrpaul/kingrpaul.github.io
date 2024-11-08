@@ -1,0 +1,40 @@
+.ce-year
+{
+    display:block;
+    font-size: 1.2rem;      
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem 0 0 1rem;
+}
+
+.ce-title
+{
+    font-size: 1.2rem;      
+    font-weight: normal;
+    margin: 0;
+}
+
+.ce-instructor
+{
+    display:block;
+    font-size: 1rem;     
+    color: #889dba;
+    margin: 0.3rem 0 0.3rem 0;
+}
+
+.ce-description
+{
+    display:block;
+    font-size: 0.9rem;    
+    margin: 0;
+    color: #505759;
+
+}   
+a {
+text-decoration: none;
+font-weight: normal;
+}
+
+a:visited {
+color: #0a0202;
+} 
