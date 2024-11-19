@@ -2,24 +2,25 @@
 <rss version="2.0">
 
 <channel>
-  <title>W3Schools Home Page</title>
-  <link>https://www.w3schools.com</link>
-  <description>Free web building tutorials</description>
-  <category>Web development</category> 
-  <copyright>2006 Refsnes Data as. All rights reserved.</copyright> 
+  <title>My Home Page</title>
+  <link>https://kingrpaul.github.io/</link>
+  <description>Various things.</description>
+  <category>Misc</category> 
+  <copyright>2024 Refsnes Data as. All rights reserved.</copyright> 
   <language>en-us</language> 
+  <language>eo</language> 
   <image>
-    <url>https://www.w3schools.com/images/logo.gif</url>
-    <title>W3Schools.com</title>
-    <link>https://www.w3schools.com</link>
+    <url>https://kingrpaul.github.io//img/profile//avatar.jpg</url>
+    <title>My RSS Feed</title>
+    <link>https://kingrpaul.github.io/</link>
   </image> 
 
   <item>
-    <title>RSS Tutorial</title>
-    <link>https://www.w3schools.com/xml/xml_rss.asp</link>
-    <description>New RSS tutorial on W3Schools</description>
-    <author>hege@refsnesdata.no</author> 
-    <comments>https://www.w3schools.com/comments</comments> 
+    <title>Hello world!</title>
+    <link>https://kingrpaul.github.io/</link>
+    <description>This is a first item in this feed.</description>
+    <author>king.r.paul@proton.me</author> 
+    <comments>These are the comments.</comments> 
   </item>
 
 
