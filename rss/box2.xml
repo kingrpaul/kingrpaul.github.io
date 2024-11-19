@@ -2,7 +2,7 @@
 <rss version="2.0">
 
 <channel>
-  <title>My Home Page</title>
+  <title>My RSS Feed</title>
   <link>https://kingrpaul.github.io/rss/box1.xml</link>
   <description>Various things.</description>
   <category>Misc</category> 
@@ -20,6 +20,12 @@
     <description>This is a first item in this feed.</description>
     <author>king.r.paul@proton.me</author> 
     <comments>These are the comments.</comments> 
+  <image>
+    <url>https://kingrpaul.github.io//img/profile//avatar.jpg</url>
+    <title>RSS Feed</title>
+    <link>https://kingrpaul.github.io/</link>
+  </image> 
+
   </item>
 
 
