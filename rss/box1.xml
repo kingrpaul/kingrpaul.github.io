@@ -3,12 +3,11 @@
 
 <channel>
   <title>My Home Page</title>
-  <link>https://kingrpaul.github.io/rss/box.xml</link>
+  <link>https://kingrpaul.github.io/rss/box1.xml</link>
   <description>Various things.</description>
   <category>Misc</category> 
   <copyright>2024 All rights reserved.</copyright> 
   <language>en-us</language> 
-  <language>eo</language> 
   <image>
     <url>https://kingrpaul.github.io//img/profile//avatar.jpg</url>
     <title>RSS Feed</title>
