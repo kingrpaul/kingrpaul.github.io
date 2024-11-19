@@ -3,21 +3,21 @@
 
 <channel>
   <title>My Home Page</title>
-  <link>https://kingrpaul.github.io/</link>
+  <link>https://kingrpaul.github.io/rss/box.xml</link>
   <description>Various things.</description>
   <category>Misc</category> 
-  <copyright>2024 Refsnes Data as. All rights reserved.</copyright> 
+  <copyright>2024 All rights reserved.</copyright> 
   <language>en-us</language> 
   <language>eo</language> 
   <image>
     <url>https://kingrpaul.github.io//img/profile//avatar.jpg</url>
-    <title>My RSS Feed</title>
+    <title>RSS Feed</title>
     <link>https://kingrpaul.github.io/</link>
   </image> 
 
   <item>
     <title>Hello world!</title>
-    <link>https://kingrpaul.github.io/</link>
+    <link>ebooks/blackwood/index.html</link>
     <description>This is a first item in this feed.</description>
     <author>king.r.paul@proton.me</author> 
     <comments>These are the comments.</comments> 
