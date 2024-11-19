@@ -17,7 +17,7 @@
 
   <item>
     <title>Hello world!</title>
-    <link>ebooks/blackwood/index.html</link>
+    <link>../ebooks/blackwood/index.html</link>
     <description>This is a first item in this feed.</description>
     <author>king.r.paul@proton.me</author> 
     <comments>These are the comments.</comments> 
