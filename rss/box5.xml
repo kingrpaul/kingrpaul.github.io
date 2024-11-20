@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 
 <channel>
-  <title>RSS Feed</title>
+  <title>Pairko</title>
   <link>https://kingrpaul.github.io/rss/box5.xml</link>
-  <description>Various things.</description>
+  <atom:link href="https://kingrpaul.github.io/rss/box5.xml" rel="self" type="application/rss+xml" />
+  <description>No good is guaranteed to come of this.</description>
   <category>Misc</category> 
   <copyright>2024 All rights reserved.</copyright> 
+  <ttl>1800</ttl>
   <language>en-us</language> 
+
+  <lastBuildDate>Wed, 20 Nov 2024 12:00:00 CST</lastBuildDate>
+
   <image>
     <url>https://kingrpaul.github.io//img/profile//avatar.jpg</url>
-    <title>RSS Feed</title>
-    <link>https://kingrpaul.github.io/</link>
+    <title>Pairko</title>
+    <link>https://kingrpaul.github.io/rss/box5.xml</link>
   </image> 
 
   <item>
+    <pubDate>Wed, 20 Nov 2024 12:00:00 CST</pubDate>
     <title>Hello world!</title>
-    <link>https://kingrpaul.github.io/</link>
-    <description>The initial post in this feed. Beginning, not with a bang, but with a whisper.</description>
-    <enclosure length="0" type="image/x-icon" url="https://kingrpaul.github.io//favicon.ico" />
-    <pubDate>Tue, 19 Nov 2024 19:00:00 CST</pubDate>
-    <author>author-name</author> 
+    <description><![CDATA[he feed begins, not with a <strong>bang</strong>, but with a whisper.]]></description>
+    <guid isPermaLink="false">hello-world</guid>
   </item>
-
 
 </channel>
 
