@@ -2,7 +2,7 @@
 <rss version="2.0">
 
 <channel>
-  <title>My RSS Feed</title>
+  <title>RSS Feed</title>
   <link>https://kingrpaul.github.io/rss/box3.xml</link>
   <description>Various things.</description>
   <category>Misc</category> 
@@ -16,11 +16,11 @@
 
   <item>
     <title>Hello world!</title>
-    <link>../ebooks/blackwood/index.html</link>
-    <description>This is a first item in this feed.</description>
-    <enclosure length="0" type="image/jpeg" url="../ebooks/blackwood/img/churchman-cigarettes/churchman.jpg" />
-    <pubDate>Wed, 02 Oct 2002 08:00:00 CST</pubDate>
-    <author>king.r.paul@proton.me</author> 
+    <link>https://kingrpaul.github.io/</link>
+    <description>The initial post in this feed. Beginning, not with a bang, but with a whisper.</description>
+    <enclosure length="0" type="image/x-icon" url="https://kingrpaul.github.io//favicon.ico" />
+    <pubDate>Tue, 19 Nov 2024 19:00:00 CST</pubDate>
+    <author>author-name</author> 
   </item>
 
 
