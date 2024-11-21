@@ -3,7 +3,7 @@
 
 <channel>
   <title>Pairko</title>
-  <link>https://kingrpaul.github.io/rss/box5.xml</link>
+  <link>https://kingrpaul.github.io/rss.xml</link>
   <atom:link href="https://kingrpaul.github.io/rss/box5.xml" rel="self" type="application/rss+xml" />
   <description>No good is guaranteed to come of this.</description>
   <category>Misc</category> 
@@ -16,7 +16,7 @@
   <image>
     <url>https://kingrpaul.github.io//img/profile//avatar.jpg</url>
     <title>Pairko</title>
-    <link>https://kingrpaul.github.io/rss/box5.xml</link>
+    <link>https://kingrpaul.github.io/rss.xml</link>
   </image> 
 
   <item>
