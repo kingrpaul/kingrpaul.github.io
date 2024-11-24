@@ -22,6 +22,14 @@ body {}
     float: left;
 }
 
+/* header image */
+ul header div:first-of-type>img {
+    width: 18rem;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+/* book cover */
 .list-group-item.e-book div:first-of-type>img {
     width: 6rem;
     height: 9rem;
