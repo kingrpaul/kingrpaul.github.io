@@ -108,9 +108,9 @@ td {
     text-align: left;
 }
 
-.icon {
+img.icon {
     display: inline-block;
-    width: 20px; 
+    width: 1.5em; 
     height: auto;
     margin-right: 5px; 
 }
