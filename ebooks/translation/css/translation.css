@@ -3,7 +3,6 @@ body {}
 :root {
     --primary: #007bff;
     --secondary: #6c757d;
-    ;
     --success: #28a745;
     --danger: #dc3545;
     --warning: #ffc107;
@@ -19,6 +18,11 @@ body {
     padding: 0;
     color: var(--dark);
     background-color: var(--light);
+}
+
+a.home {
+    float: inline-end;
+    margin: 5px 5px 0 0;
 }
 
 .container {
@@ -51,11 +55,6 @@ tr:first-of-type figure img {
 
 a {
     text-decoration: none;
-}
-
-a.home {
-    float: inline-end;
-    margin: 5px 5px 0 0;
 }
 
 table {
@@ -95,9 +94,4 @@ table tr:first-of-type td {
     border-bottom: 0px dotted var(--secondary);
     padding-top: 0em;
     padding-bottom: 0em;
-}
-
-td a img {
-    width: auto;
-    height: 12em;
 }

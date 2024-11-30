@@ -11,8 +11,6 @@ body {}
     --dark: #343a40;
     --white: #ffffff;
 }
-/* color: var(--secondary); */
-
 
 body {
     font-family: Arial, sans-serif;
