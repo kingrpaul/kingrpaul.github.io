@@ -95,3 +95,13 @@ table tr:first-of-type td {
     padding-top: 0em;
     padding-bottom: 0em;
 }
+
+img.icon {
+    width:2em;
+    display: inline;
+    opacity: 70%;
+}
+
+table tr td:nth-child(2) ul li:nth-child(4) {
+    text-align: end;
+}
