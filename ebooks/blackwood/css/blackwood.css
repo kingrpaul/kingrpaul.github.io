@@ -1,128 +1,233 @@
-h2 {    
-    font-size: 1.3em;
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-    border: 1px solid dotted darkgray;
-    background-color: #EFEFEF;
-  }
+body {}
+:root {
+--primary: #007bff;
+--secondary: #6c757d;;
+--success: #28a745;
+--danger: #dc3545;
+--warning: #ffc107; 
+--info: #17a2b8;           
+--light: #f8f9fa;
+--dark: #343a40;
+--white: #ffffff;
+--british-racing-green: #004225;
+}
 
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 0.85rem;
-  }
+body {
+  font-family: Arial, sans-serif;
+  color: var(--dark);
+  background-color: var(--light);
+  margin: 5px auto;
+  padding: 20px;
+}
 
-  p:empty {
-    display:none;
-  }
+a {
+  color: inherit;
+}
 
-  a {
-    width: fit-content;
-  }
+h1 {
+  text-align: center;
+}
 
-  ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
+h2 {
+  text-align: start;
+}
 
-  li {
-    border-bottom: 1px dotted lightgray;
-    margin: 0.2rem 0 0.2rem 0.2rem;
-  }
+/* HOME LINK */
+body > header > a {
+  float: inline-end;
+  margin:0;
+  color: var(--primary)
+}
 
-  li >a,
-  li >p {
-    margin-left: 0.5em;
-    display: block;
-    color: #181D31;;
-    text-decoration: none;
-  }
+/* HEADER TEXT */
+body > header > p {
+  color: var(--secondary);
+  font-size: 0.9em;
+  line-height: 1.05;  
+  margin:0.5em 0;
+}
 
-  li >a:first-of-type {
-    font-size: 1.1rem;
-    font-variant: small-caps;
-    text-decoration: none;
-    width: fit-content;
-    margin-left: 0;
-    text-decoration: underline;
-  }
+/* MAIN SECTIONING */
+body > section {
+  margin: 0;
+  padding: 0.3em 0.5em;
+  box-shadow: 0 0 10px 0 var(--british-racing-green);
+}
 
-  li p {
-    font-style: italic;
-  }
+/* BY YEAR SUBSECTIONING */
+#resources > section,
+#works > section {
+  margin: 0;
+  border-top: 1px dotted var(--british-racing-green);
+}
 
-  img{
+#resources > section > header, 
+#works > section > header {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.5em 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* INDIVIDUAL WORKS */
+
+#works > section article {
+  padding-top: 0.4em;
+}
+
+/* LINKED TITLE */
+#other-galleries > article a,
+#resources > section article a, 
+#works > section article a {
+  font-size: 1.1em;
+  font-variant: small-caps;
+}
+
+/* DESCRIPTION */
+#other-galleries > article p,
+#resources > section article p,
+#works > section article p {
+  margin: 0.2em 0 1em 1em;
+  font-size: 0.85rem;
+  color:var(--secondary);
+  font-style:italic;
+}
+
+/* link icons */
+#works > section article a:empty {
+  height:1.2rem;
+  width:auto;
+  vertical-align: bottom;
+  display: inline-block;
+  margin-top: 0.2em;
+}
+
+#works > section article > * {
+  margin-left: 1em;
+}
+
+/* work title */
+
+#works > section article a:first-of-type {
+  display: block;
+  height:inherit;
+  width: fit-content;
+  vertical-align: inherit;
+  margin: 0.5em 0 0.5em 0;
+}
+
+/* source links */
+a.gb {
+/* Google Books */
+  content: url('../icon/gb.svg');
+}
+a.ht {
+/* Hathi Trust */
+  content: url('../icon/ht.svg');
+}
+a.ia {
+/* Internet Archive */
+  content: url('../icon/ia.svg');
+}
+a.pg {
+/* Project Gutenburg */
+  content: url('../icon/pg.svg');
+}
+a.tv {
+/* Trove, Nat'l Lib. of Australia */
+  content: url('../icon/tv.svg');
+}
+a.ws {
+/* WikiSource */
+  content: url('../icon/ws.svg');
+}
+a.etc {
+/* Other */
+  content: url('../icon/etc.svg');
+}
+
+a.bw {
+/* AlgernonBlackwood.org */
+  content: url('../icon/bw.svg');
+}
+a.na {
+/* No Source */
+  content: url('../icon/unk.svg');
+}
+
+
+#collections  p {
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0 0.5em 0.5em;
+  padding-bottom: 0;
+}
+
+#collections  ol {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+a.disabled {
+  pointer-events: none; 
+  color: var(--secondary);
+}
+
+body > header,
+#works > section > article
+  {
+  background-color: var(--white);
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 1px;
+}
+
+#galleries article header {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 1em 0 0.5em 0;
+}
+
+figure {
+  vertical-align: top;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  margin: 0;
+  padding:0;
+}
+
+figcaption {
+  line-height: 1;
+  text-align: center;
+  font-size: 0.8em;
+  max-width: 10em;
+  margin: 0;
+  padding:0;
+}
+
+img{
   max-width: 10em;
   max-height: 5em; 
-  margin:1px;
-  border:1px solid grey;
-  }
+  border:1px dotted var(--british-racing-green);
+  margin: 0;
+  padding:0;
+  filter: grayscale(100%);
+}
 
-  li a >img {
-    color:red;
-    height:1.2rem;
-    border:0;
-  }
+h1 {
+margin-bottom: 0.2em;
+}
 
-  /* SANDBOX */
-
-  a.gb, a.ht, a.ia, a.pg, a.tv, a.ws, a.etc, a.bw, a.na {
-    height:1.2rem;
-    width:auto;
-    vertical-align: bottom;
-    display: inline-block;
-  }
-
-  a.gb {
-  /* Google Books */
-    content: url('../icon/gb.svg');
-  }
-  a.ht {
-  /* Hathi Trust */
-    content: url('../icon/ht.svg');
-  }
-  a.ia {
-  /* Internet Archive */
-    content: url('../icon/ia.svg');
-  }
-  a.pg {
-  /* Project Gutenburg */
-    content: url('../icon/pg.svg');
-  }
-  a.tv {
-  /* Trove, Nat'l Lib. of Australia */
-    content: url('../icon/tv.svg');
-  }
-  a.ws {
-  /* WikiSource */
-    content: url('../icon/ws.svg');
-  }
-  a.etc {
-  /* Other */
-    content: url('../icon/etc.svg');
-  }
-
-  a.bw {
-  /* AlgernonBlackwood.org */
-    content: url('../icon/bw.svg');
-  }
-  a.na {
-  /* No Source */
-    content: url('../icon/na.svg');
-  }
-  
-  #resources > ul > h3 {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-size: 1.3rem;
-  }
-
-  #resources ol > li {
-    margin-top: 0rem;
-    margin-bottom: 0rem;
-    font-size: 1rem;
-    line-height: 1.05;
-  }
+h2.subhead{
+text-align: center;
+font-weight: normal;
+margin-top: 0 0 1em 0;
+font-variant: small-caps;
+font-size: 1.2em;
+line-height: 1;
+}
