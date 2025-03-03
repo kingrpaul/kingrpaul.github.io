@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="rss.xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Pairko</title>
+<link>https://kingrpaul.github.io/blog/rss.xml</link>
+<atom:link href="https://kingrpaul.github.io/blog/rss.xml" rel="self" type="application/rss+xml"/>
+<description>No good is guaranteed to come of this.</description>
+<category>Misc</category>
+<copyright>2024 All rights reserved.</copyright>
+<ttl>1800</ttl>
+<language>en-us</language>
+<lastBuildDate>Wed, 20 Nov 2024 12:00:00 CST</lastBuildDate>
+<item>
+<title>Hello world!</title>
+<description>The feed begins, not with a bang, but with a whisper.</description>
+<link>https://www.w3schools.com/xml</link>
+<pubDate>Wed, 20 Nov 2024 12:00:00 CST</pubDate>
+<guid>hello-world</guid>
+</item>
+<item><pubDate>Thu, 28 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/28/verda_gardo.html</link><guid>verda_gardo</guid><title>Verda Gardo</title><description>Green Guard</description></item><item><pubDate>Fri, 29 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/29/la_luno.html</link><guid>la_luno</guid><title>La Luno</title><description>The Moon</description></item><item><pubDate>Sat, 30 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/30/bongusta_kafo.html</link><guid>bongusta_kafo</guid><title>Bongusta Kafo</title><description>Delicious Coffee</description></item><item><pubDate>Mon, 29 Apr 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/04/29/flora-plena_protesto_.html</link><guid>flora-plena_protesto_</guid><title>Flora-Plena Protesto </title><description>Flower-Full Protest</description></item><item><pubDate>Mon, 20 May 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/05/20/koro_el_oro.html</link><guid>koro_el_oro</guid><title>Koro el Oro</title><description>Heart of Gold</description></item><item><pubDate>Sat, 25 May 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/05/25/la_tentoj.html</link><guid>la_tentoj</guid><title>La Tentoj</title><description>The Temptations</description></item><item><pubDate>Sat, 14 Sep 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/09/14/subciela_arto_enhavanta_diversajn_temojn.html</link><guid>subciela_arto_enhavanta_diversajn_temojn</guid><title>Subĉiela Arto Enhavanta Diversajn Temojn</title><description>Outdoor Art Containing Diverse Subjects</description></item><item><pubDate>Tue, 17 Sep 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/09/17/subciela_arto_de_sandeler.html</link><guid>subciela_arto_de_sandeler</guid><title>Subĉiela Arto de Ŝandeler</title><description>Chandeleur's Outdoor Art</description></item></channel>
+</rss>
