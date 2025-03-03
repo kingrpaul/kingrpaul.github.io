@@ -22,6 +22,10 @@ figcaption {
     margin: 0.8em 0.2em 0 0.2em;
 }
 
+a {
+    color: black;
+}
+
 footer {
     font-size: 0.8em;
     color: #222;
