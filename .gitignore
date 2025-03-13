@@ -26,6 +26,8 @@ ebooks/blackwood/img/pans-garden/uncropped
 ebooks/blackwood/img/cover.jpg
 ebooks/blackwood/img/cover.source.jpg
 blog/make_blog.py
+blog/blog_posts.py
 blog/working.md
 blog/old
 blog/img
+__pycache__
