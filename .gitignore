@@ -29,5 +29,4 @@ blog/make_blog.py
 blog/blog_posts.py
 blog/working.md
 blog/old
-blog/img
 __pycache__
