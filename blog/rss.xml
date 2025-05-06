@@ -1,21 +1,1380 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="rss.xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-<channel>
-<title>Pairko</title>
-<link>https://kingrpaul.github.io/blog/rss.xml</link>
-<atom:link href="https://kingrpaul.github.io/blog/rss.xml" rel="self" type="application/rss+xml"/>
-<description>No good is guaranteed to come of this.</description>
-<category>Misc</category>
-<copyright>2024 All rights reserved.</copyright>
-<ttl>1800</ttl>
-<language>en-us</language>
-<lastBuildDate>Tue, 01 Apr 2025 15:07:41 </lastBuildDate>
-<item>
-<title>Hello world!</title>
-<description>The beginning of the epoch.</description>
-<link>https://kingrpaul.github.io/</link>
-<pubDate>Thursday, 1 Jan 1970 12:00:00 CST</pubDate>
-<guid>hello-world</guid>
-</item>
-<item><pubDate>Sat, 11 Aug 1990 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/1990/08/11/the_metal-oxide-semiconductor_capacitor_as_the_fundamental_sensor_element_of_a_digital_radiography_system.html</link><guid>the_metal-oxide-semiconductor_capacitor_as_the_fundamental_sensor_element_of_a_digital_radiography_system</guid><title>The Metal-Oxide-Semiconductor Capacitor As The Fundamental Sensor Element Of A Digital Radiography System</title><description>Thesis</description></item><item><pubDate>Tue, 20 Oct 2009 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2009/10/20/tanning_beds.html</link><guid>tanning_beds</guid><title>Tanning Beds</title><description>Policy Brief</description></item><item><pubDate>Wed, 25 Jul 2018 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2018/07/25/electron_blocks_with_tomotherapy_hda_and_raystation_6.html</link><guid>electron_blocks_with_tomotherapy_hda_and_raystation_6</guid><title>Electron Blocks with Tomotherapy HDA and Raystation 6</title><description>Medical physics workflow.</description></item><item><pubDate>Wed, 25 Jul 2018 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2018/07/25/varian_rails_with_raystation_6.html</link><guid>varian_rails_with_raystation_6</guid><title>Varian Rails with Raystation 6</title><description>Medical physics technical note.</description></item><item><pubDate>Thu, 23 Jan 2020 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2020/01/23/flash_microlinac_ct.html</link><guid>flash_microlinac_ct</guid><title>Flash, microLinac, CT</title><description>Medical physics Remarks.</description></item><item><pubDate>Thu, 06 Feb 2020 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2020/02/06/raystation_x-ray_rx_scaling.html</link><guid>raystation_x-ray_rx_scaling</guid><title>RayStation X-Ray Rx Scaling</title><description>Medical physics workflow.</description></item><item><pubDate>Sun, 06 Sep 2020 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2020/09/06/pollyanna_by_eleanor_h._porter_📘.html</link><guid>pollyanna_by_eleanor_h._porter_📘</guid><title>Pollyanna by Eleanor H. Porter 📘</title><description>Standard Ebook Production</description></item><item><pubDate>Thu, 11 Feb 2021 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2021/02/11/pollyanna_grows_up_by_eleanor_h._porter_📘.html</link><guid>pollyanna_grows_up_by_eleanor_h._porter_📘</guid><title>Pollyanna Grows Up by Eleanor H. Porter 📘</title><description>Standard Ebook Production</description></item><item><pubDate>Thu, 18 Mar 2021 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2021/03/18/the_plastic_age_by_percy_marks_📘.html</link><guid>the_plastic_age_by_percy_marks_📘</guid><title>The Plastic Age by Percy Marks 📘</title><description>Standard Ebook Production</description></item><item><pubDate>Mon, 31 May 2021 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2021/05/31/the_humbugs_of_the_world_by_p._t._barnum_📘.html</link><guid>the_humbugs_of_the_world_by_p._t._barnum_📘</guid><title>The Humbugs of the World by P. T. Barnum 📘</title><description>Standard Ebook Production</description></item><item><pubDate>Mon, 26 Jul 2021 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2021/07/26/wergild:_a_medieval_approach_to_cadaveric_organ_donation.html</link><guid>wergild:_a_medieval_approach_to_cadaveric_organ_donation</guid><title>Wergild: A Medieval Approach to Cadaveric Organ Donation</title><description>Essay</description></item><item><pubDate>Mon, 04 Oct 2021 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2021/10/04/the_shared_philosophy_of_the_scientific_revolution.html</link><guid>the_shared_philosophy_of_the_scientific_revolution</guid><title>The Shared Philosophy of the Scientific Revolution</title><description>Essay</description></item><item><pubDate>Mon, 06 Dec 2021 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2021/12/06/things_do_indeed_bite_back.html</link><guid>things_do_indeed_bite_back</guid><title>Things Do Indeed Bite Back</title><description>Essay</description></item><item><pubDate>Fri, 18 Feb 2022 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2022/02/18/clinac_23ex_sn371_decommissioning.html</link><guid>clinac_23ex_sn371_decommissioning</guid><title>Clinac 23EX SN371 Decommissioning</title><description>Medical Physics Occasion</description></item><item><pubDate>Wed, 23 Mar 2022 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2022/03/23/darby_ogill_and_the_good_people_by_herminie_templeton_kavanaugh_📘.html</link><guid>darby_ogill_and_the_good_people_by_herminie_templeton_kavanaugh_📘</guid><title>Darby O'Gill and the Good People by Herminie Templeton Kavanaugh 📘</title><description>Standard Ebook Production</description></item><item><pubDate>Wed, 08 Jun 2022 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2022/06/08/maria_chapdelaine_by_louis_hémon_📘.html</link><guid>maria_chapdelaine_by_louis_hémon_📘</guid><title>Maria Chapdelaine by Louis Hémon 📘</title><description>Standard Ebook Production</description></item><item><pubDate>Sun, 12 Jun 2022 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2022/06/12/the_mark_of_zorro_by_johnston_mcculley_📘.html</link><guid>the_mark_of_zorro_by_johnston_mcculley_📘</guid><title>The Mark of Zorro by Johnston McCulley 📘</title><description>Standard Ebook Production</description></item><item><pubDate>Sun, 14 Aug 2022 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2022/08/14/the_golden_ass_by_apuleius_📘.html</link><guid>the_golden_ass_by_apuleius_📘</guid><title>The Golden Ass by Apuleius 📘</title><description>Standard Ebook Production</description></item><item><pubDate>Fri, 17 Mar 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/03/17/tongues_of_fire_by_algernon_blackwood_📘.html</link><guid>tongues_of_fire_by_algernon_blackwood_📘</guid><title>Tongues of Fire by Algernon Blackwood 📘</title><description>Internet Archive Scan</description></item><item><pubDate>Mon, 27 Mar 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/03/27/a_general_history_of_the_pirates_by_captain_charles_johnson_📘.html</link><guid>a_general_history_of_the_pirates_by_captain_charles_johnson_📘</guid><title>A General History of the Pirates by Captain Charles Johnson 📘</title><description>Standard Ebook Production</description></item><item><pubDate>Mon, 03 Apr 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/04/03/the_treasure_ship_by_cynthia_asquith_et_al_📘.html</link><guid>the_treasure_ship_by_cynthia_asquith_et_al_📘</guid><title>The Treasure Ship by Cynthia Asquith et al 📘</title><description>Internet Archive Scan</description></item><item><pubDate>Wed, 26 Apr 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/04/26/sails_of_gold_by_cynthia_asquith_et_al_📘.html</link><guid>sails_of_gold_by_cynthia_asquith_et_al_📘</guid><title>Sails of Gold by Cynthia Asquith et al 📘</title><description>Internet Archive Scan</description></item><item><pubDate>Tue, 25 Jul 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/07/25/collected_works_by_algernon_blackwood_📘.html</link><guid>collected_works_by_algernon_blackwood_📘</guid><title>Collected Works by Algernon Blackwood 📘</title><description>Ebook Production</description></item><item><pubDate>Fri, 22 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/22/saluton_la_mondo.html</link><guid>saluton_la_mondo</guid><title>Saluton la Mondo</title><description>Hello World</description></item><item><pubDate>Sat, 23 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/23/dua_afiso.html</link><guid>dua_afiso</guid><title>Dua Afiŝo</title><description>Second Post</description></item><item><pubDate>Sun, 24 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/24/rivereto.html</link><guid>rivereto</guid><title>Rivereto</title><description>Creek</description></item><item><pubDate>Mon, 25 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/25/komencis_kun_duolingo.html</link><guid>komencis_kun_duolingo</guid><title>Komencis kun DuoLingo</title><description>Started with Duolingo</description></item><item><pubDate>Tue, 26 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/26/septembro.html</link><guid>septembro</guid><title>Septembro</title><description>September</description></item><item><pubDate>Wed, 27 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/27/abelo_kaj_bazilio.html</link><guid>abelo_kaj_bazilio</guid><title>Abelo kaj Bazilio</title><description>Bee and Basil</description></item><item><pubDate>Thu, 28 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/28/verda_gardo.html</link><guid>verda_gardo</guid><title>Verda Gardo</title><description>Green Guard</description></item><item><pubDate>Fri, 29 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/29/la_luno.html</link><guid>la_luno</guid><title>La Luno</title><description>The Moon</description></item><item><pubDate>Sat, 30 Sep 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/09/30/bongusta_kafo.html</link><guid>bongusta_kafo</guid><title>Bongusta Kafo</title><description>Delicious Coffee</description></item><item><pubDate>Sun, 01 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/01/libro_kun_teo.html</link><guid>libro_kun_teo</guid><title>Libro kun Teo</title><description>A Book and Tea</description></item><item><pubDate>Mon, 02 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/02/ciuj_vi_ciuj.html</link><guid>ciuj_vi_ciuj</guid><title>Ĉiuj Vi Ĉiuj</title><description>All Y'All</description></item><item><pubDate>Tue, 03 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/03/progreso_en_duolingvo.html</link><guid>progreso_en_duolingvo</guid><title>Progreso en DuoLingvo</title><description>Progress in Duolingo</description></item><item><pubDate>Thu, 05 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/05/teo_de_kurkumo_kaj_zingibro.html</link><guid>teo_de_kurkumo_kaj_zingibro</guid><title>Teo de Kurkumo kaj Zingibro</title><description>Turmeric and Ginger Tea</description></item><item><pubDate>Fri, 06 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/06/la_ripozo_de_la_kato.html</link><guid>la_ripozo_de_la_kato</guid><title>La Ripozo de la Kato</title><description>The Cat's Rest</description></item><item><pubDate>Sun, 08 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/08/autumno.html</link><guid>autumno</guid><title>Aŭtumno</title><description>Autumn!</description></item><item><pubDate>Mon, 09 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/09/dizelaj_dolcajoj_#1.html</link><guid>dizelaj_dolcajoj_#1</guid><title>Dizelaj Dolĉaĵoj #1</title><description>Diesel Sweeties #1</description></item><item><pubDate>Tue, 10 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/10/la_firmao_de_la_kato_kiu_pilkludas.html</link><guid>la_firmao_de_la_kato_kiu_pilkludas</guid><title>La Firmao de la Kato Kiu Pilkludas 📗</title><description>The House of the Cat and Racket</description></item><item><pubDate>Tue, 10 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/10/dizelaj_dolcajoj_#8.html</link><guid>dizelaj_dolcajoj_#8</guid><title>Dizelaj Dolĉaĵoj #8</title><description>Diesel Sweeties #8</description></item><item><pubDate>Wed, 11 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/11/lernu!.html</link><guid>lernu!</guid><title>Lernu!</title><description>Lernu!</description></item><item><pubDate>Thu, 12 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/12/la_birdo.html</link><guid>la_birdo</guid><title>La Birdo</title><description>The Bird</description></item><item><pubDate>Fri, 13 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/13/fia_mango.html</link><guid>fia_mango</guid><title>Fia Manĝo</title><description>Terrible Meal</description></item><item><pubDate>Sat, 14 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/14/brunaj_folioj.html</link><guid>brunaj_folioj</guid><title>Brunaj Folioj</title><description>Brown Leaves</description></item><item><pubDate>Sun, 15 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/15/statuo.html</link><guid>statuo</guid><title>Statuo</title><description>Statue</description></item><item><pubDate>Mon, 16 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/16/sciuro_sur_la_tero.html</link><guid>sciuro_sur_la_tero</guid><title>Sciuro sur la Tero</title><description>A Squirrel on the Ground</description></item><item><pubDate>Tue, 17 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/17/rivera_vojeto.html</link><guid>rivera_vojeto</guid><title>Rivera Vojeto</title><description>River Path</description></item><item><pubDate>Wed, 18 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/18/kosma_lakto.html</link><guid>kosma_lakto</guid><title>Kosma Lakto</title><description>Space Milk</description></item><item><pubDate>Thu, 19 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/19/malgranda_ponto.html</link><guid>malgranda_ponto</guid><title>Malgranda Ponto</title><description>Little Bridge</description></item><item><pubDate>Fri, 20 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/20/pino.html</link><guid>pino</guid><title>Pino</title><description>pine</description></item><item><pubDate>Sat, 21 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/21/luno_en_posttagmezo.html</link><guid>luno_en_posttagmezo</guid><title>Luno en Posttagmezo</title><description>Moon in the Afternoon</description></item><item><pubDate>Sun, 22 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/22/du_skeletoj.html</link><guid>du_skeletoj</guid><title>Du Skeletoj</title><description>Two Skeletons</description></item><item><pubDate>Mon, 23 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/23/akva_turo.html</link><guid>akva_turo</guid><title>Akva Turo</title><description>Water Tower</description></item><item><pubDate>Tue, 24 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/24/kafo-rostigejo_en_nov-orleano.html</link><guid>kafo-rostigejo_en_nov-orleano</guid><title>Kafo-rostigejo en Nov-Orleano</title><description>Coffee Roaster in New Orleans</description></item><item><pubDate>Wed, 25 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/25/sciuro_sur_la_brikoj.html</link><guid>sciuro_sur_la_brikoj</guid><title>Sciuro sur la Brikoj</title><description>Squirrel on the Bricks</description></item><item><pubDate>Tue, 24 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/24/sentima_ridado_de_algernon_blackwood.html</link><guid>sentima_ridado_de_algernon_blackwood</guid><title>Sentima Ridado de Algernon Blackwood 📗</title><description>The Laughter of Courage</description></item><item><pubDate>Fri, 27 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/27/krokodiloj.html</link><guid>krokodiloj</guid><title>Krokodiloj?</title><description>Crocodiles?</description></item><item><pubDate>Sat, 28 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/28/mangu_loke.html</link><guid>mangu_loke</guid><title>Manĝu Loke</title><description>Eat Local</description></item><item><pubDate>Sun, 29 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/29/halovina_gardisto.html</link><guid>halovina_gardisto</guid><title>Halovina Gardisto</title><description>Halloween Guardian</description></item><item><pubDate>Mon, 30 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/30/flugante_boatante_skeleto.html</link><guid>flugante_boatante_skeleto</guid><title>Flugante Boatante Skeleto</title><description>Flying Boating Skeleton</description></item><item><pubDate>Tue, 31 Oct 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/10/31/hakila_katido.html</link><guid>hakila_katido</guid><title>Hakila Katido</title><description>Axe Kitten</description></item><item><pubDate>Wed, 01 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/01/naba-urbo.html</link><guid>naba-urbo</guid><title>Naba-Urbo</title><description>Hub City</description></item><item><pubDate>Thu, 02 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/02/biblioteketo.html</link><guid>biblioteketo</guid><title>Biblioteketo</title><description>Library</description></item><item><pubDate>Fri, 03 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/03/senkosta_brakumoj!.html</link><guid>senkosta_brakumoj!</guid><title>Senkosta Brakumoj!</title><description>Free Hugs!</description></item><item><pubDate>Sat, 04 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/04/elektraj_hundoj.html</link><guid>elektraj_hundoj</guid><title>Elektraj Hundoj</title><description>Electric Dogs</description></item><item><pubDate>Sun, 05 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/05/capelo_de_la_birdo.html</link><guid>capelo_de_la_birdo</guid><title>Ĉapelo de la Birdo</title><description>Bird's Hat</description></item><item><pubDate>Mon, 06 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/06/piedponto.html</link><guid>piedponto</guid><title>Piedponto</title><description>Footbridge</description></item><item><pubDate>Tue, 07 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/07/estas_tago_de_elekto.html</link><guid>estas_tago_de_elekto</guid><title>Estas Tago de Elekto</title><description>It's Election Day</description></item><item><pubDate>Wed, 08 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/08/signo_de_parko.html</link><guid>signo_de_parko</guid><title>Signo de Parko</title><description>Park Sign</description></item><item><pubDate>Thu, 09 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/09/sarkoj.html</link><guid>sarkoj</guid><title>Ŝarkoj</title><description>Sharks</description></item><item><pubDate>Fri, 10 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/10/artoj_kaj_distrajoj.html</link><guid>artoj_kaj_distrajoj</guid><title>Artoj kaj Distrajoj</title><description>Arts and Entertainment</description></item><item><pubDate>Sun, 12 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/12/sorcistino.html</link><guid>sorcistino</guid><title>Sorĉistino</title><description>Witch</description></item><item><pubDate>Sun, 12 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/12/posa_muzeo.html</link><guid>posa_muzeo</guid><title>Poŝa Muzeo</title><description>Pocket Museum</description></item><item><pubDate>Mon, 13 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/13/feino_en_la_krescentaj_luno.html</link><guid>feino_en_la_krescentaj_luno</guid><title>Feino en la Krescentaj Luno</title><description>Fairy in the Crescent Moon</description></item><item><pubDate>Tue, 14 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/14/du_porkoj.html</link><guid>du_porkoj</guid><title>Du Porkoj</title><description>Two Pigs</description></item><item><pubDate>Wed, 15 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/15/serpent-portanta_viro.html</link><guid>serpent-portanta_viro</guid><title>Serpent-Portanta Viro</title><description>Snake-bearing Man</description></item><item><pubDate>Thu, 16 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/16/en_la_somero.html</link><guid>en_la_somero</guid><title>En la Somero</title><description>In the Summer</description></item><item><pubDate>Fri, 17 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/17/kato_sur_auto.html</link><guid>kato_sur_auto</guid><title>Kato sur Aŭto</title><description>Cat on Car</description></item><item><pubDate>Sat, 18 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/18/kunvenu.html</link><guid>kunvenu</guid><title>Kunvenu</title><description>Come Together</description></item><item><pubDate>Mon, 20 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/20/bonkoreco.html</link><guid>bonkoreco</guid><title>Bonkoreco</title><description>Kindness</description></item><item><pubDate>Mon, 20 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/20/yodelinta_trajn-bremsisto.html</link><guid>yodelinta_trajn-bremsisto</guid><title>Yodelinta Trajn-bremsisto</title><description>Yodeling Brakeman</description></item><item><pubDate>Wed, 22 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/22/sireno.html</link><guid>sireno</guid><title>Sireno</title><description>Mermaid</description></item><item><pubDate>Wed, 22 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/22/kafeja_pentrajo.html</link><guid>kafeja_pentrajo</guid><title>Kafeja Pentraĵo</title><description>Cafe Painting</description></item><item><pubDate>Fri, 24 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/24/latuna_kastoro.html</link><guid>latuna_kastoro</guid><title>Latuna Kastoro</title><description>Brass Beaver</description></item><item><pubDate>Sat, 25 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/25/la_barba_sciuro.html</link><guid>la_barba_sciuro</guid><title>La Barba Sciuro</title><description>The Bearded Squirrel</description></item><item><pubDate>Sun, 26 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/26/vintro_venas.html</link><guid>vintro_venas</guid><title>Vintro Venas</title><description>Winter is Coming</description></item><item><pubDate>Mon, 27 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/27/fisa_afiso.html</link><guid>fisa_afiso</guid><title>Fiŝa Afiŝo</title><description>Fish Poster</description></item><item><pubDate>Tue, 28 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/28/sunlumo.html</link><guid>sunlumo</guid><title>Sunlumo</title><description>Sunlight</description></item><item><pubDate>Wed, 29 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/29/meksiko.html</link><guid>meksiko</guid><title>Meksiko</title><description>Mexico</description></item><item><pubDate>Thu, 30 Nov 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/11/30/tunelo.html</link><guid>tunelo</guid><title>Tunelo</title><description>Tunnel</description></item><item><pubDate>Fri, 01 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/01/susia-viro.html</link><guid>susia-viro</guid><title>Suŝia-viro</title><description>Sushi Man</description></item><item><pubDate>Sat, 02 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/02/salato.html</link><guid>salato</guid><title>Salato</title><description>Salad</description></item><item><pubDate>Sun, 03 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/03/mendu_ci_tie.html</link><guid>mendu_ci_tie</guid><title>Mendu Ĉi Tie</title><description>Order Here</description></item><item><pubDate>Mon, 04 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/04/ne_fluajo_ne_akvo.html</link><guid>ne_fluajo_ne_akvo</guid><title>Ne Fluaĵo, Ne Akvo</title><description>No Fluid, No Water</description></item><item><pubDate>Tue, 05 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/05/krescenta_urbo.html</link><guid>krescenta_urbo</guid><title>Krescenta Urbo</title><description>Cresecent City</description></item><item><pubDate>Thu, 07 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/07/niksa_tuboj.html</link><guid>niksa_tuboj</guid><title>Niksa Tuboj</title><description>Nixie Tubes</description></item><item><pubDate>Thu, 07 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/07/eto_el_ligno.html</link><guid>eto_el_ligno</guid><title>Eto el Ligno 📗</title><description>A Bit of Wood</description></item><item><pubDate>Fri, 08 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/08/malhela_kafo.html</link><guid>malhela_kafo</guid><title>Malhela Kafo</title><description>Dark Coffee</description></item><item><pubDate>Sat, 09 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/09/kristnaska_floroj.html</link><guid>kristnaska_floroj</guid><title>Kristnaska Floroj</title><description>Christmas Flowers</description></item><item><pubDate>Sun, 10 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/10/pentrajo_de_urbo.html</link><guid>pentrajo_de_urbo</guid><title>Pentraĵo de Urbo</title><description>City Painting</description></item><item><pubDate>Mon, 11 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/11/esti_scianta_pri_aferoj.html</link><guid>esti_scianta_pri_aferoj</guid><title>Esti Scianta pri Aferoj</title><description>Being Knowledgeable About Things</description></item><item><pubDate>Tue, 12 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/12/inferbatalistoj.html</link><guid>inferbatalistoj</guid><title>Inferbatalistoj</title><description>Hellfighters</description></item><item><pubDate>Wed, 13 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/13/urbeto.html</link><guid>urbeto</guid><title>Urbeto</title><description>Town</description></item><item><pubDate>Thu, 14 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/14/kio_estas_wuba-luba_dub-dub.html</link><guid>kio_estas_wuba-luba_dub-dub</guid><title>Kio estas 'Wuba-Luba Dub-Dub'?</title><description>What is 'Wuba-Luba Dub-Dub'?</description></item><item><pubDate>Fri, 15 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/15/kukurba_spico.html</link><guid>kukurba_spico</guid><title>Kukurba Spico</title><description>Pumpkin Spice</description></item><item><pubDate>Sat, 16 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/16/sajne_naganta_afero.html</link><guid>sajne_naganta_afero</guid><title>Ŝajne Naĝanta Afero</title><description>Seemingly Swimming Things</description></item><item><pubDate>Mon, 18 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/18/akva_turo.html</link><guid>akva_turo</guid><title>Akva Turo</title><description>Water Tower</description></item><item><pubDate>Tue, 19 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/19/sunsubiro.html</link><guid>sunsubiro</guid><title>Sunsubiro</title><description>Sunset</description></item><item><pubDate>Thu, 21 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/21/brusela_brasiko.html</link><guid>brusela_brasiko</guid><title>Brusela Brasiko</title><description>Brussels Sprouts</description></item><item><pubDate>Fri, 22 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/22/kristnasko_en_anglio.html</link><guid>kristnasko_en_anglio</guid><title>Kristnasko en Anglio 📗</title><description>Christmas in England</description></item><item><pubDate>Sat, 23 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/23/avangardo.html</link><guid>avangardo</guid><title>Avangardo</title><description>Avant-Garde</description></item><item><pubDate>Sun, 24 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/24/la_golo_de_milito.html</link><guid>la_golo_de_milito</guid><title>La Golo de Milito</title><description>The Goal of War</description></item><item><pubDate>Mon, 25 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/25/lernu!.html</link><guid>lernu!</guid><title>Lernu!</title><description>Lernu!</description></item><item><pubDate>Tue, 26 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/26/signo.html</link><guid>signo</guid><title>Signo</title><description>Sign</description></item><item><pubDate>Sun, 31 Dec 2023 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2023/12/31/pentristoj.html</link><guid>pentristoj</guid><title>Pentristoj</title><description>Painters</description></item><item><pubDate>Tue, 02 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/02/arbbarboj.html</link><guid>arbbarboj</guid><title>Arb'barboj</title><description>Treebeards</description></item><item><pubDate>Wed, 03 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/03/arta_kafejo.html</link><guid>arta_kafejo</guid><title>Arta Kafejo</title><description>Art Cafe</description></item><item><pubDate>Thu, 04 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/04/murpentrajo.html</link><guid>murpentrajo</guid><title>Mur'pentraĵo</title><description>Mural</description></item><item><pubDate>Fri, 05 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/05/aferoj_kiu_suficas.html</link><guid>aferoj_kiu_suficas</guid><title>Aferoj Kiu Sufiĉas</title><description>Things That Suffice</description></item><item><pubDate>Sat, 06 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/06/flughaven-kapucino.html</link><guid>flughaven-kapucino</guid><title>Flughaven-Kapuĉino</title><description>Airport Cappuccino</description></item><item><pubDate>Mon, 08 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/08/gardisto_de_najbareco.html</link><guid>gardisto_de_najbareco</guid><title>Gardisto de Najbareco</title><description>Neighborhood Watchman</description></item><item><pubDate>Wed, 10 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/10/hundo_kiu_pentras.html</link><guid>hundo_kiu_pentras</guid><title>Hundo Kiu Pentras</title><description>Dog Who Paints</description></item><item><pubDate>Thu, 11 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/11/alia_murpentrajo.html</link><guid>alia_murpentrajo</guid><title>Alia Mur'pentraĵo</title><description>Another Mural</description></item><item><pubDate>Mon, 15 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/15/kafo_kaj_benjetoj.html</link><guid>kafo_kaj_benjetoj</guid><title>Kafo kaj Benjetoj</title><description>Coffee and Beignets</description></item><item><pubDate>Tue, 16 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/16/malglata_akvo.html</link><guid>malglata_akvo</guid><title>Malglata Akvo</title><description>Rough Water</description></item><item><pubDate>Wed, 17 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/17/vintro_alvenis.html</link><guid>vintro_alvenis</guid><title>Vintro Alvenis</title><description>Winter Has Arrived</description></item><item><pubDate>Sat, 20 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/20/la_ombra-boksanta_trotanto.html</link><guid>la_ombra-boksanta_trotanto</guid><title>La Ombra-Boksanta Trotanto</title><description>The Shadow Boxing Jogger</description></item><item><pubDate>Mon, 22 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/22/parka-benko.html</link><guid>parka-benko</guid><title>Parka-benko</title><description>Park Bench</description></item><item><pubDate>Wed, 24 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/24/ardeo_en_misisipo.html</link><guid>ardeo_en_misisipo</guid><title>Ardeo en Misisipo</title><description>Heron in Mississippi</description></item><item><pubDate>Wed, 24 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/24/versvojo.html</link><guid>versvojo</guid><title>Verŝ'vojo</title><description>Spillway</description></item><item><pubDate>Fri, 26 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/26/viro_kontrau_muso.html</link><guid>viro_kontrau_muso</guid><title>Viro kontraŭ Muso</title><description>Man vs Mouse</description></item><item><pubDate>Sat, 27 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/27/laborantaj_musoj.html</link><guid>laborantaj_musoj</guid><title>Laborantaj Musoj</title><description>Working Mice</description></item><item><pubDate>Sun, 28 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/28/rugvino_triopo.html</link><guid>rugvino_triopo</guid><title>Ruĝvino Triopo</title><description>Red Wine Trio</description></item><item><pubDate>Mon, 29 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/29/grizaj_neboj.html</link><guid>grizaj_neboj</guid><title>Grizaj Neboj</title><description>Grey Clouds</description></item><item><pubDate>Wed, 31 Jan 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/01/31/sunsubiro.html</link><guid>sunsubiro</guid><title>Sunsubiro</title><description>Sunset</description></item><item><pubDate>Mon, 05 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/05/duobla_birdo.html</link><guid>duobla_birdo</guid><title>Duobla Birdo</title><description>Double Bird</description></item><item><pubDate>Mon, 05 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/05/la_malhela_turo_6:_la_kanto_de_susano.html</link><guid>la_malhela_turo_6:_la_kanto_de_susano</guid><title>La Malhela Turo 6: La Kanto de Susano</title><description>The Dark Tower 6: The Song of Susannah</description></item><item><pubDate>Tue, 06 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/06/vintra_cielo.html</link><guid>vintra_cielo</guid><title>Vintra Ĉielo</title><description>Winter Sky</description></item><item><pubDate>Fri, 09 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/09/mum.html</link><guid>mum</guid><title>MUM</title><description>MSM</description></item><item><pubDate>Sat, 10 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/10/saskvaco_de_la_pinzono.html</link><guid>saskvaco_de_la_pinzono</guid><title>Saskvaĉo de la Pinzono</title><description>Sasquatch of the Pine Belt</description></item><item><pubDate>Sun, 11 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/11/la_granda_dio_pajno_de_arturo_macen.html</link><guid>la_granda_dio_pajno_de_arturo_macen</guid><title>'La Granda Dio Pajno' de Arturo Maĉen</title><description>'The Great God Pan' by Arthur Machen</description></item><item><pubDate>Mon, 12 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/12/malsaneta_vizago.html</link><guid>malsaneta_vizago</guid><title>Malsaneta Vizaĝo</title><description>Unwell Face</description></item><item><pubDate>Thu, 15 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/15/karnavalaj_ostroj.html</link><guid>karnavalaj_ostroj</guid><title>Karnavalaj Ostroj</title><description>Carnival Oysters</description></item><item><pubDate>Fri, 16 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/16/du_murabildoj.html</link><guid>du_murabildoj</guid><title>Du Murabildoj</title><description>Two Murals</description></item><item><pubDate>Sat, 17 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/17/pentrajo_de_mangantoj.html</link><guid>pentrajo_de_mangantoj</guid><title>Pentrajo de Manĝantoj</title><description>Painting of Diners</description></item><item><pubDate>Sun, 18 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/18/pentrajo_pri_bieno.html</link><guid>pentrajo_pri_bieno</guid><title>Pentraĵo pri Bieno</title><description>Farm Painting</description></item><item><pubDate>Mon, 19 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/19/testudkolombo.html</link><guid>testudkolombo</guid><title>Testud'kolombo</title><description>Turtle Dove</description></item><item><pubDate>Tue, 20 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/20/impresionismo_en_galerio.html</link><guid>impresionismo_en_galerio</guid><title>Impresionismo en Galerio</title><description>Impressionism in a Gallery</description></item><item><pubDate>Wed, 21 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/21/ciferoj_apud_la_strato.html</link><guid>ciferoj_apud_la_strato</guid><title>Ciferoj apud la Strato</title><description>Numbers by the Street</description></item><item><pubDate>Thu, 22 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/22/flora_karnavalo.html</link><guid>flora_karnavalo</guid><title>Flora Karnavalo</title><description>Flower Carnival</description></item><item><pubDate>Fri, 23 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/23/citajo_de_sezono_de_stormoj.html</link><guid>citajo_de_sezono_de_stormoj</guid><title>Citaĵo de 'Sezono de Ŝtormoj'</title><description>Quote from 'Season of Storms'</description></item><item><pubDate>Mon, 26 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/26/citajo_de_generala_historio_de_la_piratoj.html</link><guid>citajo_de_generala_historio_de_la_piratoj</guid><title>Citaĵo de 'Ĝenerala Historio de la Piratoj'</title><description>Quote from 'A General History of the Pirates'</description></item><item><pubDate>Thu, 29 Feb 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/02/29/iaj_vizagoj.html</link><guid>iaj_vizagoj</guid><title>Iaj vizaĝoj</title><description>Some Faces</description></item><item><pubDate>Fri, 01 Mar 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/03/01/pianisto.html</link><guid>pianisto</guid><title>Pianisto</title><description>Piano Player</description></item><item><pubDate>Sat, 02 Mar 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/03/02/magnoliaj_floroj.html</link><guid>magnoliaj_floroj</guid><title>Magnoliaj Floroj</title><description>Magnolia Flowers</description></item><item><pubDate>Sun, 03 Mar 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/03/03/ovoj_kun_lardo.html</link><guid>ovoj_kun_lardo</guid><title>Ovoj kun Lardo</title><description>Eggs and Bacon</description></item><item><pubDate>Mon, 04 Mar 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/03/04/saluton_el_biloksi.html</link><guid>saluton_el_biloksi</guid><title>Saluton el Biloksi</title><description>Greetings from Biloxi</description></item><item><pubDate>Tue, 05 Mar 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/03/05/reto_de_fisisto_.html</link><guid>reto_de_fisisto_</guid><title>Reto de Fiŝisto </title><description>Fisherman's Net</description></item><item><pubDate>Wed, 06 Mar 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/03/06/festo_sur_la_muro.html</link><guid>festo_sur_la_muro</guid><title>Festo sur la Muro</title><description>Party on the Wall</description></item><item><pubDate>Mon, 11 Mar 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/03/11/esperanto_en_ubuntu.html</link><guid>esperanto_en_ubuntu</guid><title>Esperanto en Ubuntu</title><description>Esperanto in Ubuntu</description></item><item><pubDate>Sat, 30 Mar 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/03/30/stana_koko.html</link><guid>stana_koko</guid><title>Stana Koko</title><description>Tin Chicken</description></item><item><pubDate>Mon, 01 Apr 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/04/01/koko_d’la_trotuaro.html</link><guid>koko_d’la_trotuaro</guid><title>Koko d’la Trotuaro</title><description>Cock o’ the Walk</description></item><item><pubDate>Tue, 02 Apr 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/04/02/sovaga_fluganto.html</link><guid>sovaga_fluganto</guid><title>Sovaĝa Fluganto</title><description>Wild Flier</description></item><item><pubDate>Wed, 03 Apr 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/04/03/rubuja_koko.html</link><guid>rubuja_koko</guid><title>Rubuja Koko</title><description>Trash Can Chicken</description></item><item><pubDate>Thu, 11 Apr 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/04/11/artaj_kamiono_kaj_auto.html</link><guid>artaj_kamiono_kaj_auto</guid><title>Artaj Kamiono kaj Aŭto</title><description>Art Truck and Car</description></item><item><pubDate>Sat, 13 Apr 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/04/13/luna_promenejo.html</link><guid>luna_promenejo</guid><title>Luna Promenejo</title><description>Moonwalk</description></item><item><pubDate>Fri, 19 Apr 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/04/19/rigardeto_flanken.html</link><guid>rigardeto_flanken</guid><title>Rigardeto Flanken</title><description>A Glance to the Side</description></item><item><pubDate>Tue, 23 Apr 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/04/23/rultabulisto.html</link><guid>rultabulisto</guid><title>Rultabulisto</title><description>Skateboarder</description></item><item><pubDate>Sat, 27 Apr 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/04/27/salikoka_parado_.html</link><guid>salikoka_parado_</guid><title>Salikoka Parado </title><description>Shrimp Parade</description></item><item><pubDate>Sun, 28 Apr 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/04/28/mokumbo.html</link><guid>mokumbo</guid><title>Mokŭmbo</title><description>Mokoomba</description></item><item><pubDate>Mon, 29 Apr 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/04/29/flora-plena_protesto.html</link><guid>flora-plena_protesto</guid><title>Flora-Plena Protesto</title><description>Flower-Full Protest</description></item><item><pubDate>Fri, 03 May 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/05/03/leono_staras_gardo.html</link><guid>leono_staras_gardo</guid><title>Leono Staras Gardo</title><description>Lion Stands Guard</description></item><item><pubDate>Thu, 09 May 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/05/09/la_pendanta_fremdulo.html</link><guid>la_pendanta_fremdulo</guid><title>La Pendanta Fremdulo 📗</title><description>The Hanging Stranger</description></item><item><pubDate>Tue, 14 May 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/05/14/dolchejmo_alabamo.html</link><guid>dolchejmo_alabamo</guid><title>Dolĉ'hejmo Alabamo</title><description>Sweet Home Alabama</description></item><item><pubDate>Mon, 20 May 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/05/20/koro_el_oro.html</link><guid>koro_el_oro</guid><title>Koro el Oro</title><description>Heart of Gold</description></item><item><pubDate>Sat, 25 May 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/05/25/la_tentoj.html</link><guid>la_tentoj</guid><title>La Tentoj</title><description>The Temptations</description></item><item><pubDate>Tue, 27 Aug 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/08/27/njarlatotepo_de_h._p._lovecraft.html</link><guid>njarlatotepo_de_h._p._lovecraft</guid><title>Njarlatotepo de H. P. Lovecraft 📗</title><description>The Dance of Death</description></item><item><pubDate>Sun, 01 Sep 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/09/01/la_mortodanco_de_algernon_blackwood.html</link><guid>la_mortodanco_de_algernon_blackwood</guid><title>La Mortodanco de Algernon Blackwood 📗</title><description>The Dance of Death</description></item><item><pubDate>Sat, 14 Sep 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/09/14/subciela_arto_enhavanta_diversajn_temojn.html</link><guid>subciela_arto_enhavanta_diversajn_temojn</guid><title>Subĉiela Arto Enhavanta Diversajn Temojn</title><description>Outdoor Art Containing Diverse Subjects</description></item><item><pubDate>Tue, 17 Sep 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/09/17/subciela_arto_de_sandeler.html</link><guid>subciela_arto_de_sandeler</guid><title>Subĉiela Arto de Ŝandeler</title><description>Chandeleur's Outdoor Art</description></item><item><pubDate>Sat, 21 Sep 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/09/21/memoro_de_h._p._lovecraft.html</link><guid>memoro_de_h._p._lovecraft</guid><title>Memoro de H. P. Lovecraft 📗</title><description>Memory</description></item><item><pubDate>Sat, 26 Oct 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/10/26/lecionoj_por_infanoj_en_simplaj_vortoj.html</link><guid>lecionoj_por_infanoj_en_simplaj_vortoj</guid><title>Lecionoj por Infanoj, en Simplaj Vortoj 📗</title><description>Lessons for Children, in Simple Words</description></item><item><pubDate>Thu, 31 Oct 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/10/31/vera_fantoma_rakonto..html</link><guid>vera_fantoma_rakonto.</guid><title>Vera Fantoma Rakonto.</title><description>A True Ghost Story.</description></item><item><pubDate>Wed, 20 Nov 2024 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2024/11/20/hello_world!.html</link><guid>hello_world!</guid><title>Hello world!</title><description>The RSS feed begins, not with a bang, but with a whisper.</description></item><item><pubDate>Fri, 03 Jan 2025 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2025/01/03/la_atesto_de_randolfo_kartero_de_h._p._lovecraft.html</link><guid>la_atesto_de_randolfo_kartero_de_h._p._lovecraft</guid><title>La Atesto de Randolfo Kartero de H. P. Lovecraft 📗</title><description>The Statement of Randolph Carter</description></item><item><pubDate>Tue, 21 Jan 2025 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2025/01/21/transiro_de_algernon_blackwood.html</link><guid>transiro_de_algernon_blackwood</guid><title>Transiro de Algernon Blackwood 📗</title><description>Transition</description></item><item><pubDate>Sat, 22 Mar 2025 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2025/03/22/la_sennoma_urbo_de_h._p._lovecraft.html</link><guid>la_sennoma_urbo_de_h._p._lovecraft</guid><title>La Sennoma Urbo de H. P. Lovecraft 📗</title><description>The Namless City</description></item><item><pubDate>Thu, 27 Mar 2025 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2025/03/27/dual-language_glossary.html</link><guid>dual-language_glossary</guid><title>Dual-Language Glossary</title><description>Esperanto-English Using Standard Ebooks Tools</description></item><item><pubDate>Tue, 01 Apr 2025 00:00:00 </pubDate><link>https://kingrpaul.github.io/blog/2025/04/01/en_la_pinarbaro_la_usona_popolkanto.html</link><guid>en_la_pinarbaro_la_usona_popolkanto</guid><title>En la Pinarbaro, la Usona Popolkanto 📗</title><description>In the Pine, the American Folk Sone</description></item></channel>
+<?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pairko</title>
+        <link>https://kingrpaul.github.io/blog/rss.xml</link>
+        <atom:link href="https://kingrpaul.github.io/blog/rss.xml" rel="self"
+            type="application/rss+xml" />
+        <description>No good is guaranteed to come of this.</description>
+        <category>Misc</category>
+        <copyright>2024 All rights reserved.</copyright>
+        <ttl>1800</ttl>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 06 May 2025 15:42:02 </lastBuildDate>
+        <item>
+            <title>Hello world!</title>
+            <description>The beginning of the epoch.</description>
+            <link>https://kingrpaul.github.io/</link>
+            <pubDate>Thursday, 1 Jan 1970 12:00:00 CST</pubDate>
+            <guid>hello-world</guid>
+        </item>
+        <item>
+            <pubDate>Sat, 11 Aug 1990 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/1990/08/11/the_metal-oxide-semiconductor_capacitor_as_the_fundamental_sensor_element_of_a_digital_radiography_system.html</link>
+            <guid>
+                the_metal-oxide-semiconductor_capacitor_as_the_fundamental_sensor_element_of_a_digital_radiography_system</guid>
+            <title>The Metal-Oxide-Semiconductor Capacitor As The Fundamental Sensor Element Of A
+                Digital Radiography System</title>
+            <description>Thesis</description>
+        </item>
+        <item>
+            <pubDate>Tue, 20 Oct 2009 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2009/10/20/tanning_beds.html</link>
+            <guid>tanning_beds</guid>
+            <title>Tanning Beds</title>
+            <description>Policy Brief</description>
+        </item>
+        <item>
+            <pubDate>Wed, 25 Jul 2018 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2018/07/25/electron_blocks_with_tomotherapy_hda_and_raystation_6.html</link>
+            <guid>electron_blocks_with_tomotherapy_hda_and_raystation_6</guid>
+            <title>Electron Blocks with Tomotherapy HDA and Raystation 6</title>
+            <description>Medical physics workflow.</description>
+        </item>
+        <item>
+            <pubDate>Wed, 25 Jul 2018 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2018/07/25/varian_rails_with_raystation_6.html</link>
+            <guid>varian_rails_with_raystation_6</guid>
+            <title>Varian Rails with Raystation 6</title>
+            <description>Medical physics technical note.</description>
+        </item>
+        <item>
+            <pubDate>Thu, 23 Jan 2020 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2020/01/23/flash_microlinac_ct.html</link>
+            <guid>flash_microlinac_ct</guid>
+            <title>Flash, microLinac, CT</title>
+            <description>Medical physics Remarks.</description>
+        </item>
+        <item>
+            <pubDate>Thu, 06 Feb 2020 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2020/02/06/raystation_x-ray_rx_scaling.html</link>
+            <guid>raystation_x-ray_rx_scaling</guid>
+            <title>RayStation X-Ray Rx Scaling</title>
+            <description>Medical physics workflow.</description>
+        </item>
+        <item>
+            <pubDate>Sun, 06 Sep 2020 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2020/09/06/pollyanna_by_eleanor_h._porter_📘.html</link>
+            <guid>pollyanna_by_eleanor_h._porter_📘</guid>
+            <title>Pollyanna by Eleanor H. Porter 📘</title>
+            <description>Standard Ebook Production</description>
+        </item>
+        <item>
+            <pubDate>Thu, 11 Feb 2021 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2021/02/11/pollyanna_grows_up_by_eleanor_h._porter_📘.html</link>
+            <guid>pollyanna_grows_up_by_eleanor_h._porter_📘</guid>
+            <title>Pollyanna Grows Up by Eleanor H. Porter 📘</title>
+            <description>Standard Ebook Production</description>
+        </item>
+        <item>
+            <pubDate>Thu, 18 Mar 2021 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2021/03/18/the_plastic_age_by_percy_marks_📘.html</link>
+            <guid>the_plastic_age_by_percy_marks_📘</guid>
+            <title>The Plastic Age by Percy Marks 📘</title>
+            <description>Standard Ebook Production</description>
+        </item>
+        <item>
+            <pubDate>Mon, 31 May 2021 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2021/05/31/the_humbugs_of_the_world_by_p._t._barnum_📘.html</link>
+            <guid>the_humbugs_of_the_world_by_p._t._barnum_📘</guid>
+            <title>The Humbugs of the World by P. T. Barnum 📘</title>
+            <description>Standard Ebook Production</description>
+        </item>
+        <item>
+            <pubDate>Mon, 26 Jul 2021 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2021/07/26/wergild:_a_medieval_approach_to_cadaveric_organ_donation.html</link>
+            <guid>wergild:_a_medieval_approach_to_cadaveric_organ_donation</guid>
+            <title>Wergild: A Medieval Approach to Cadaveric Organ Donation</title>
+            <description>Essay</description>
+        </item>
+        <item>
+            <pubDate>Mon, 04 Oct 2021 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2021/10/04/the_shared_philosophy_of_the_scientific_revolution.html</link>
+            <guid>the_shared_philosophy_of_the_scientific_revolution</guid>
+            <title>The Shared Philosophy of the Scientific Revolution</title>
+            <description>Essay</description>
+        </item>
+        <item>
+            <pubDate>Mon, 06 Dec 2021 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2021/12/06/things_do_indeed_bite_back.html</link>
+            <guid>things_do_indeed_bite_back</guid>
+            <title>Things Do Indeed Bite Back</title>
+            <description>Essay</description>
+        </item>
+        <item>
+            <pubDate>Fri, 18 Feb 2022 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2022/02/18/clinac_23ex_sn371_decommissioning.html</link>
+            <guid>clinac_23ex_sn371_decommissioning</guid>
+            <title>Clinac 23EX SN371 Decommissioning</title>
+            <description>Medical Physics Occasion</description>
+        </item>
+        <item>
+            <pubDate>Wed, 23 Mar 2022 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2022/03/23/darby_ogill_and_the_good_people_by_herminie_templeton_kavanaugh_📘.html</link>
+            <guid>darby_ogill_and_the_good_people_by_herminie_templeton_kavanaugh_📘</guid>
+            <title>Darby O'Gill and the Good People by Herminie Templeton Kavanaugh 📘</title>
+            <description>Standard Ebook Production</description>
+        </item>
+        <item>
+            <pubDate>Wed, 08 Jun 2022 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2022/06/08/maria_chapdelaine_by_louis_hémon_📘.html</link>
+            <guid>maria_chapdelaine_by_louis_hémon_📘</guid>
+            <title>Maria Chapdelaine by Louis Hémon 📘</title>
+            <description>Standard Ebook Production</description>
+        </item>
+        <item>
+            <pubDate>Sun, 12 Jun 2022 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2022/06/12/the_mark_of_zorro_by_johnston_mcculley_📘.html</link>
+            <guid>the_mark_of_zorro_by_johnston_mcculley_📘</guid>
+            <title>The Mark of Zorro by Johnston McCulley 📘</title>
+            <description>Standard Ebook Production</description>
+        </item>
+        <item>
+            <pubDate>Sun, 14 Aug 2022 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2022/08/14/the_golden_ass_by_apuleius_📘.html</link>
+            <guid>the_golden_ass_by_apuleius_📘</guid>
+            <title>The Golden Ass by Apuleius 📘</title>
+            <description>Standard Ebook Production</description>
+        </item>
+        <item>
+            <pubDate>Fri, 17 Mar 2023 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2023/03/17/tongues_of_fire_by_algernon_blackwood_📘.html</link>
+            <guid>tongues_of_fire_by_algernon_blackwood_📘</guid>
+            <title>Tongues of Fire by Algernon Blackwood 📘</title>
+            <description>Internet Archive Scan</description>
+        </item>
+        <item>
+            <pubDate>Mon, 27 Mar 2023 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2023/03/27/a_general_history_of_the_pirates_by_captain_charles_johnson_📘.html</link>
+            <guid>a_general_history_of_the_pirates_by_captain_charles_johnson_📘</guid>
+            <title>A General History of the Pirates by Captain Charles Johnson 📘</title>
+            <description>Standard Ebook Production</description>
+        </item>
+        <item>
+            <pubDate>Mon, 03 Apr 2023 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2023/04/03/the_treasure_ship_by_cynthia_asquith_et_al_📘.html</link>
+            <guid>the_treasure_ship_by_cynthia_asquith_et_al_📘</guid>
+            <title>The Treasure Ship by Cynthia Asquith et al 📘</title>
+            <description>Internet Archive Scan</description>
+        </item>
+        <item>
+            <pubDate>Wed, 26 Apr 2023 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2023/04/26/sails_of_gold_by_cynthia_asquith_et_al_📘.html</link>
+            <guid>sails_of_gold_by_cynthia_asquith_et_al_📘</guid>
+            <title>Sails of Gold by Cynthia Asquith et al 📘</title>
+            <description>Internet Archive Scan</description>
+        </item>
+        <item>
+            <pubDate>Tue, 25 Jul 2023 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2023/07/25/collected_works_by_algernon_blackwood_📘.html</link>
+            <guid>collected_works_by_algernon_blackwood_📘</guid>
+            <title>Collected Works by Algernon Blackwood 📘</title>
+            <description>Ebook Production</description>
+        </item>
+        <item>
+            <pubDate>Fri, 22 Sep 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/09/22/saluton_la_mondo.html</link>
+            <guid>saluton_la_mondo</guid>
+            <title>Saluton la Mondo</title>
+            <description>Hello World</description>
+        </item>
+        <item>
+            <pubDate>Sat, 23 Sep 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/09/23/dua_afiso.html</link>
+            <guid>dua_afiso</guid>
+            <title>Dua Afiŝo</title>
+            <description>Second Post</description>
+        </item>
+        <item>
+            <pubDate>Sun, 24 Sep 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/09/24/rivereto.html</link>
+            <guid>rivereto</guid>
+            <title>Rivereto</title>
+            <description>Creek</description>
+        </item>
+        <item>
+            <pubDate>Mon, 25 Sep 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/09/25/komencis_kun_duolingo.html</link>
+            <guid>komencis_kun_duolingo</guid>
+            <title>Komencis kun DuoLingo</title>
+            <description>Started with Duolingo</description>
+        </item>
+        <item>
+            <pubDate>Tue, 26 Sep 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/09/26/septembro.html</link>
+            <guid>septembro</guid>
+            <title>Septembro</title>
+            <description>September</description>
+        </item>
+        <item>
+            <pubDate>Wed, 27 Sep 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/09/27/abelo_kaj_bazilio.html</link>
+            <guid>abelo_kaj_bazilio</guid>
+            <title>Abelo kaj Bazilio</title>
+            <description>Bee and Basil</description>
+        </item>
+        <item>
+            <pubDate>Thu, 28 Sep 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/09/28/verda_gardo.html</link>
+            <guid>verda_gardo</guid>
+            <title>Verda Gardo</title>
+            <description>Green Guard</description>
+        </item>
+        <item>
+            <pubDate>Fri, 29 Sep 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/09/29/la_luno.html</link>
+            <guid>la_luno</guid>
+            <title>La Luno</title>
+            <description>The Moon</description>
+        </item>
+        <item>
+            <pubDate>Sat, 30 Sep 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/09/30/bongusta_kafo.html</link>
+            <guid>bongusta_kafo</guid>
+            <title>Bongusta Kafo</title>
+            <description>Delicious Coffee</description>
+        </item>
+        <item>
+            <pubDate>Sun, 01 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/01/libro_kun_teo.html</link>
+            <guid>libro_kun_teo</guid>
+            <title>Libro kun Teo</title>
+            <description>A Book and Tea</description>
+        </item>
+        <item>
+            <pubDate>Mon, 02 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/02/ciuj_vi_ciuj.html</link>
+            <guid>ciuj_vi_ciuj</guid>
+            <title>Ĉiuj Vi Ĉiuj</title>
+            <description>All Y'All</description>
+        </item>
+        <item>
+            <pubDate>Tue, 03 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/03/progreso_en_duolingvo.html</link>
+            <guid>progreso_en_duolingvo</guid>
+            <title>Progreso en DuoLingvo</title>
+            <description>Progress in Duolingo</description>
+        </item>
+        <item>
+            <pubDate>Thu, 05 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/05/teo_de_kurkumo_kaj_zingibro.html</link>
+            <guid>teo_de_kurkumo_kaj_zingibro</guid>
+            <title>Teo de Kurkumo kaj Zingibro</title>
+            <description>Turmeric and Ginger Tea</description>
+        </item>
+        <item>
+            <pubDate>Fri, 06 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/06/la_ripozo_de_la_kato.html</link>
+            <guid>la_ripozo_de_la_kato</guid>
+            <title>La Ripozo de la Kato</title>
+            <description>The Cat's Rest</description>
+        </item>
+        <item>
+            <pubDate>Sun, 08 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/08/autumno.html</link>
+            <guid>autumno</guid>
+            <title>Aŭtumno</title>
+            <description>Autumn!</description>
+        </item>
+        <item>
+            <pubDate>Mon, 09 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/09/dizelaj_dolcajoj_#1.html</link>
+            <guid>dizelaj_dolcajoj_#1</guid>
+            <title>Dizelaj Dolĉaĵoj #1</title>
+            <description>Diesel Sweeties #1</description>
+        </item>
+        <item>
+            <pubDate>Tue, 10 Oct 2023 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2023/10/10/la_firmao_de_la_kato_kiu_pilkludas.html</link>
+            <guid>la_firmao_de_la_kato_kiu_pilkludas</guid>
+            <title>La Firmao de la Kato Kiu Pilkludas 📗</title>
+            <description>The House of the Cat and Racket</description>
+        </item>
+        <item>
+            <pubDate>Tue, 10 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/10/dizelaj_dolcajoj_#8.html</link>
+            <guid>dizelaj_dolcajoj_#8</guid>
+            <title>Dizelaj Dolĉaĵoj #8</title>
+            <description>Diesel Sweeties #8</description>
+        </item>
+        <item>
+            <pubDate>Wed, 11 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/11/lernu!.html</link>
+            <guid>lernu!</guid>
+            <title>Lernu!</title>
+            <description>Lernu!</description>
+        </item>
+        <item>
+            <pubDate>Thu, 12 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/12/la_birdo.html</link>
+            <guid>la_birdo</guid>
+            <title>La Birdo</title>
+            <description>The Bird</description>
+        </item>
+        <item>
+            <pubDate>Fri, 13 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/13/fia_mango.html</link>
+            <guid>fia_mango</guid>
+            <title>Fia Manĝo</title>
+            <description>Terrible Meal</description>
+        </item>
+        <item>
+            <pubDate>Sat, 14 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/14/brunaj_folioj.html</link>
+            <guid>brunaj_folioj</guid>
+            <title>Brunaj Folioj</title>
+            <description>Brown Leaves</description>
+        </item>
+        <item>
+            <pubDate>Sun, 15 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/15/statuo.html</link>
+            <guid>statuo</guid>
+            <title>Statuo</title>
+            <description>Statue</description>
+        </item>
+        <item>
+            <pubDate>Mon, 16 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/16/sciuro_sur_la_tero.html</link>
+            <guid>sciuro_sur_la_tero</guid>
+            <title>Sciuro sur la Tero</title>
+            <description>A Squirrel on the Ground</description>
+        </item>
+        <item>
+            <pubDate>Tue, 17 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/17/rivera_vojeto.html</link>
+            <guid>rivera_vojeto</guid>
+            <title>Rivera Vojeto</title>
+            <description>River Path</description>
+        </item>
+        <item>
+            <pubDate>Wed, 18 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/18/kosma_lakto.html</link>
+            <guid>kosma_lakto</guid>
+            <title>Kosma Lakto</title>
+            <description>Space Milk</description>
+        </item>
+        <item>
+            <pubDate>Thu, 19 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/19/malgranda_ponto.html</link>
+            <guid>malgranda_ponto</guid>
+            <title>Malgranda Ponto</title>
+            <description>Little Bridge</description>
+        </item>
+        <item>
+            <pubDate>Fri, 20 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/20/pino.html</link>
+            <guid>pino</guid>
+            <title>Pino</title>
+            <description>pine</description>
+        </item>
+        <item>
+            <pubDate>Sat, 21 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/21/luno_en_posttagmezo.html</link>
+            <guid>luno_en_posttagmezo</guid>
+            <title>Luno en Posttagmezo</title>
+            <description>Moon in the Afternoon</description>
+        </item>
+        <item>
+            <pubDate>Sun, 22 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/22/du_skeletoj.html</link>
+            <guid>du_skeletoj</guid>
+            <title>Du Skeletoj</title>
+            <description>Two Skeletons</description>
+        </item>
+        <item>
+            <pubDate>Mon, 23 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/23/akva_turo.html</link>
+            <guid>akva_turo</guid>
+            <title>Akva Turo</title>
+            <description>Water Tower</description>
+        </item>
+        <item>
+            <pubDate>Tue, 24 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/24/kafo-rostigejo_en_nov-orleano.html</link>
+            <guid>kafo-rostigejo_en_nov-orleano</guid>
+            <title>Kafo-rostigejo en Nov-Orleano</title>
+            <description>Coffee Roaster in New Orleans</description>
+        </item>
+        <item>
+            <pubDate>Wed, 25 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/25/sciuro_sur_la_brikoj.html</link>
+            <guid>sciuro_sur_la_brikoj</guid>
+            <title>Sciuro sur la Brikoj</title>
+            <description>Squirrel on the Bricks</description>
+        </item>
+        <item>
+            <pubDate>Tue, 24 Oct 2023 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2023/10/24/sentima_ridado_de_algernon_blackwood.html</link>
+            <guid>sentima_ridado_de_algernon_blackwood</guid>
+            <title>Sentima Ridado de Algernon Blackwood 📗</title>
+            <description>The Laughter of Courage</description>
+        </item>
+        <item>
+            <pubDate>Fri, 27 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/27/krokodiloj.html</link>
+            <guid>krokodiloj</guid>
+            <title>Krokodiloj?</title>
+            <description>Crocodiles?</description>
+        </item>
+        <item>
+            <pubDate>Sat, 28 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/28/mangu_loke.html</link>
+            <guid>mangu_loke</guid>
+            <title>Manĝu Loke</title>
+            <description>Eat Local</description>
+        </item>
+        <item>
+            <pubDate>Sun, 29 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/29/halovina_gardisto.html</link>
+            <guid>halovina_gardisto</guid>
+            <title>Halovina Gardisto</title>
+            <description>Halloween Guardian</description>
+        </item>
+        <item>
+            <pubDate>Mon, 30 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/30/flugante_boatante_skeleto.html</link>
+            <guid>flugante_boatante_skeleto</guid>
+            <title>Flugante Boatante Skeleto</title>
+            <description>Flying Boating Skeleton</description>
+        </item>
+        <item>
+            <pubDate>Tue, 31 Oct 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/10/31/hakila_katido.html</link>
+            <guid>hakila_katido</guid>
+            <title>Hakila Katido</title>
+            <description>Axe Kitten</description>
+        </item>
+        <item>
+            <pubDate>Wed, 01 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/01/naba-urbo.html</link>
+            <guid>naba-urbo</guid>
+            <title>Naba-Urbo</title>
+            <description>Hub City</description>
+        </item>
+        <item>
+            <pubDate>Thu, 02 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/02/biblioteketo.html</link>
+            <guid>biblioteketo</guid>
+            <title>Biblioteketo</title>
+            <description>Library</description>
+        </item>
+        <item>
+            <pubDate>Fri, 03 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/03/senkosta_brakumoj!.html</link>
+            <guid>senkosta_brakumoj!</guid>
+            <title>Senkosta Brakumoj!</title>
+            <description>Free Hugs!</description>
+        </item>
+        <item>
+            <pubDate>Sat, 04 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/04/elektraj_hundoj.html</link>
+            <guid>elektraj_hundoj</guid>
+            <title>Elektraj Hundoj</title>
+            <description>Electric Dogs</description>
+        </item>
+        <item>
+            <pubDate>Sun, 05 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/05/capelo_de_la_birdo.html</link>
+            <guid>capelo_de_la_birdo</guid>
+            <title>Ĉapelo de la Birdo</title>
+            <description>Bird's Hat</description>
+        </item>
+        <item>
+            <pubDate>Mon, 06 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/06/piedponto.html</link>
+            <guid>piedponto</guid>
+            <title>Piedponto</title>
+            <description>Footbridge</description>
+        </item>
+        <item>
+            <pubDate>Tue, 07 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/07/estas_tago_de_elekto.html</link>
+            <guid>estas_tago_de_elekto</guid>
+            <title>Estas Tago de Elekto</title>
+            <description>It's Election Day</description>
+        </item>
+        <item>
+            <pubDate>Wed, 08 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/08/signo_de_parko.html</link>
+            <guid>signo_de_parko</guid>
+            <title>Signo de Parko</title>
+            <description>Park Sign</description>
+        </item>
+        <item>
+            <pubDate>Thu, 09 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/09/sarkoj.html</link>
+            <guid>sarkoj</guid>
+            <title>Ŝarkoj</title>
+            <description>Sharks</description>
+        </item>
+        <item>
+            <pubDate>Fri, 10 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/10/artoj_kaj_distrajoj.html</link>
+            <guid>artoj_kaj_distrajoj</guid>
+            <title>Artoj kaj Distrajoj</title>
+            <description>Arts and Entertainment</description>
+        </item>
+        <item>
+            <pubDate>Sun, 12 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/12/sorcistino.html</link>
+            <guid>sorcistino</guid>
+            <title>Sorĉistino</title>
+            <description>Witch</description>
+        </item>
+        <item>
+            <pubDate>Sun, 12 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/12/posa_muzeo.html</link>
+            <guid>posa_muzeo</guid>
+            <title>Poŝa Muzeo</title>
+            <description>Pocket Museum</description>
+        </item>
+        <item>
+            <pubDate>Mon, 13 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/13/feino_en_la_krescentaj_luno.html</link>
+            <guid>feino_en_la_krescentaj_luno</guid>
+            <title>Feino en la Krescentaj Luno</title>
+            <description>Fairy in the Crescent Moon</description>
+        </item>
+        <item>
+            <pubDate>Tue, 14 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/14/du_porkoj.html</link>
+            <guid>du_porkoj</guid>
+            <title>Du Porkoj</title>
+            <description>Two Pigs</description>
+        </item>
+        <item>
+            <pubDate>Wed, 15 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/15/serpent-portanta_viro.html</link>
+            <guid>serpent-portanta_viro</guid>
+            <title>Serpent-Portanta Viro</title>
+            <description>Snake-bearing Man</description>
+        </item>
+        <item>
+            <pubDate>Thu, 16 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/16/en_la_somero.html</link>
+            <guid>en_la_somero</guid>
+            <title>En la Somero</title>
+            <description>In the Summer</description>
+        </item>
+        <item>
+            <pubDate>Fri, 17 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/17/kato_sur_auto.html</link>
+            <guid>kato_sur_auto</guid>
+            <title>Kato sur Aŭto</title>
+            <description>Cat on Car</description>
+        </item>
+        <item>
+            <pubDate>Sat, 18 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/18/kunvenu.html</link>
+            <guid>kunvenu</guid>
+            <title>Kunvenu</title>
+            <description>Come Together</description>
+        </item>
+        <item>
+            <pubDate>Mon, 20 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/20/bonkoreco.html</link>
+            <guid>bonkoreco</guid>
+            <title>Bonkoreco</title>
+            <description>Kindness</description>
+        </item>
+        <item>
+            <pubDate>Mon, 20 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/20/yodelinta_trajn-bremsisto.html</link>
+            <guid>yodelinta_trajn-bremsisto</guid>
+            <title>Yodelinta Trajn-bremsisto</title>
+            <description>Yodeling Brakeman</description>
+        </item>
+        <item>
+            <pubDate>Wed, 22 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/22/sireno.html</link>
+            <guid>sireno</guid>
+            <title>Sireno</title>
+            <description>Mermaid</description>
+        </item>
+        <item>
+            <pubDate>Wed, 22 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/22/kafeja_pentrajo.html</link>
+            <guid>kafeja_pentrajo</guid>
+            <title>Kafeja Pentraĵo</title>
+            <description>Cafe Painting</description>
+        </item>
+        <item>
+            <pubDate>Fri, 24 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/24/latuna_kastoro.html</link>
+            <guid>latuna_kastoro</guid>
+            <title>Latuna Kastoro</title>
+            <description>Brass Beaver</description>
+        </item>
+        <item>
+            <pubDate>Sat, 25 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/25/la_barba_sciuro.html</link>
+            <guid>la_barba_sciuro</guid>
+            <title>La Barba Sciuro</title>
+            <description>The Bearded Squirrel</description>
+        </item>
+        <item>
+            <pubDate>Sun, 26 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/26/vintro_venas.html</link>
+            <guid>vintro_venas</guid>
+            <title>Vintro Venas</title>
+            <description>Winter is Coming</description>
+        </item>
+        <item>
+            <pubDate>Mon, 27 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/27/fisa_afiso.html</link>
+            <guid>fisa_afiso</guid>
+            <title>Fiŝa Afiŝo</title>
+            <description>Fish Poster</description>
+        </item>
+        <item>
+            <pubDate>Tue, 28 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/28/sunlumo.html</link>
+            <guid>sunlumo</guid>
+            <title>Sunlumo</title>
+            <description>Sunlight</description>
+        </item>
+        <item>
+            <pubDate>Wed, 29 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/29/meksiko.html</link>
+            <guid>meksiko</guid>
+            <title>Meksiko</title>
+            <description>Mexico</description>
+        </item>
+        <item>
+            <pubDate>Thu, 30 Nov 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/11/30/tunelo.html</link>
+            <guid>tunelo</guid>
+            <title>Tunelo</title>
+            <description>Tunnel</description>
+        </item>
+        <item>
+            <pubDate>Fri, 01 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/01/susia-viro.html</link>
+            <guid>susia-viro</guid>
+            <title>Suŝia-viro</title>
+            <description>Sushi Man</description>
+        </item>
+        <item>
+            <pubDate>Sat, 02 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/02/salato.html</link>
+            <guid>salato</guid>
+            <title>Salato</title>
+            <description>Salad</description>
+        </item>
+        <item>
+            <pubDate>Sun, 03 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/03/mendu_ci_tie.html</link>
+            <guid>mendu_ci_tie</guid>
+            <title>Mendu Ĉi Tie</title>
+            <description>Order Here</description>
+        </item>
+        <item>
+            <pubDate>Mon, 04 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/04/ne_fluajo_ne_akvo.html</link>
+            <guid>ne_fluajo_ne_akvo</guid>
+            <title>Ne Fluaĵo, Ne Akvo</title>
+            <description>No Fluid, No Water</description>
+        </item>
+        <item>
+            <pubDate>Tue, 05 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/05/krescenta_urbo.html</link>
+            <guid>krescenta_urbo</guid>
+            <title>Krescenta Urbo</title>
+            <description>Cresecent City</description>
+        </item>
+        <item>
+            <pubDate>Thu, 07 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/07/niksa_tuboj.html</link>
+            <guid>niksa_tuboj</guid>
+            <title>Niksa Tuboj</title>
+            <description>Nixie Tubes</description>
+        </item>
+        <item>
+            <pubDate>Thu, 07 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/07/eto_el_ligno.html</link>
+            <guid>eto_el_ligno</guid>
+            <title>Eto el Ligno 📗</title>
+            <description>A Bit of Wood</description>
+        </item>
+        <item>
+            <pubDate>Fri, 08 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/08/malhela_kafo.html</link>
+            <guid>malhela_kafo</guid>
+            <title>Malhela Kafo</title>
+            <description>Dark Coffee</description>
+        </item>
+        <item>
+            <pubDate>Sat, 09 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/09/kristnaska_floroj.html</link>
+            <guid>kristnaska_floroj</guid>
+            <title>Kristnaska Floroj</title>
+            <description>Christmas Flowers</description>
+        </item>
+        <item>
+            <pubDate>Sun, 10 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/10/pentrajo_de_urbo.html</link>
+            <guid>pentrajo_de_urbo</guid>
+            <title>Pentraĵo de Urbo</title>
+            <description>City Painting</description>
+        </item>
+        <item>
+            <pubDate>Mon, 11 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/11/esti_scianta_pri_aferoj.html</link>
+            <guid>esti_scianta_pri_aferoj</guid>
+            <title>Esti Scianta pri Aferoj</title>
+            <description>Being Knowledgeable About Things</description>
+        </item>
+        <item>
+            <pubDate>Tue, 12 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/12/inferbatalistoj.html</link>
+            <guid>inferbatalistoj</guid>
+            <title>Inferbatalistoj</title>
+            <description>Hellfighters</description>
+        </item>
+        <item>
+            <pubDate>Wed, 13 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/13/urbeto.html</link>
+            <guid>urbeto</guid>
+            <title>Urbeto</title>
+            <description>Town</description>
+        </item>
+        <item>
+            <pubDate>Thu, 14 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/14/kio_estas_wuba-luba_dub-dub.html</link>
+            <guid>kio_estas_wuba-luba_dub-dub</guid>
+            <title>Kio estas 'Wuba-Luba Dub-Dub'?</title>
+            <description>What is 'Wuba-Luba Dub-Dub'?</description>
+        </item>
+        <item>
+            <pubDate>Fri, 15 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/15/kukurba_spico.html</link>
+            <guid>kukurba_spico</guid>
+            <title>Kukurba Spico</title>
+            <description>Pumpkin Spice</description>
+        </item>
+        <item>
+            <pubDate>Sat, 16 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/16/sajne_naganta_afero.html</link>
+            <guid>sajne_naganta_afero</guid>
+            <title>Ŝajne Naĝanta Afero</title>
+            <description>Seemingly Swimming Things</description>
+        </item>
+        <item>
+            <pubDate>Mon, 18 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/18/akva_turo.html</link>
+            <guid>akva_turo</guid>
+            <title>Akva Turo</title>
+            <description>Water Tower</description>
+        </item>
+        <item>
+            <pubDate>Tue, 19 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/19/sunsubiro.html</link>
+            <guid>sunsubiro</guid>
+            <title>Sunsubiro</title>
+            <description>Sunset</description>
+        </item>
+        <item>
+            <pubDate>Thu, 21 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/21/brusela_brasiko.html</link>
+            <guid>brusela_brasiko</guid>
+            <title>Brusela Brasiko</title>
+            <description>Brussels Sprouts</description>
+        </item>
+        <item>
+            <pubDate>Fri, 22 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/22/kristnasko_en_anglio.html</link>
+            <guid>kristnasko_en_anglio</guid>
+            <title>Kristnasko en Anglio 📗</title>
+            <description>Christmas in England</description>
+        </item>
+        <item>
+            <pubDate>Sat, 23 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/23/avangardo.html</link>
+            <guid>avangardo</guid>
+            <title>Avangardo</title>
+            <description>Avant-Garde</description>
+        </item>
+        <item>
+            <pubDate>Sun, 24 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/24/la_golo_de_milito.html</link>
+            <guid>la_golo_de_milito</guid>
+            <title>La Golo de Milito</title>
+            <description>The Goal of War</description>
+        </item>
+        <item>
+            <pubDate>Mon, 25 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/25/lernu!.html</link>
+            <guid>lernu!</guid>
+            <title>Lernu!</title>
+            <description>Lernu!</description>
+        </item>
+        <item>
+            <pubDate>Tue, 26 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/26/signo.html</link>
+            <guid>signo</guid>
+            <title>Signo</title>
+            <description>Sign</description>
+        </item>
+        <item>
+            <pubDate>Sun, 31 Dec 2023 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2023/12/31/pentristoj.html</link>
+            <guid>pentristoj</guid>
+            <title>Pentristoj</title>
+            <description>Painters</description>
+        </item>
+        <item>
+            <pubDate>Tue, 02 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/02/arbbarboj.html</link>
+            <guid>arbbarboj</guid>
+            <title>Arb'barboj</title>
+            <description>Treebeards</description>
+        </item>
+        <item>
+            <pubDate>Wed, 03 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/03/arta_kafejo.html</link>
+            <guid>arta_kafejo</guid>
+            <title>Arta Kafejo</title>
+            <description>Art Cafe</description>
+        </item>
+        <item>
+            <pubDate>Thu, 04 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/04/murpentrajo.html</link>
+            <guid>murpentrajo</guid>
+            <title>Mur'pentraĵo</title>
+            <description>Mural</description>
+        </item>
+        <item>
+            <pubDate>Fri, 05 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/05/aferoj_kiu_suficas.html</link>
+            <guid>aferoj_kiu_suficas</guid>
+            <title>Aferoj Kiu Sufiĉas</title>
+            <description>Things That Suffice</description>
+        </item>
+        <item>
+            <pubDate>Sat, 06 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/06/flughaven-kapucino.html</link>
+            <guid>flughaven-kapucino</guid>
+            <title>Flughaven-Kapuĉino</title>
+            <description>Airport Cappuccino</description>
+        </item>
+        <item>
+            <pubDate>Mon, 08 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/08/gardisto_de_najbareco.html</link>
+            <guid>gardisto_de_najbareco</guid>
+            <title>Gardisto de Najbareco</title>
+            <description>Neighborhood Watchman</description>
+        </item>
+        <item>
+            <pubDate>Wed, 10 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/10/hundo_kiu_pentras.html</link>
+            <guid>hundo_kiu_pentras</guid>
+            <title>Hundo Kiu Pentras</title>
+            <description>Dog Who Paints</description>
+        </item>
+        <item>
+            <pubDate>Thu, 11 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/11/alia_murpentrajo.html</link>
+            <guid>alia_murpentrajo</guid>
+            <title>Alia Mur'pentraĵo</title>
+            <description>Another Mural</description>
+        </item>
+        <item>
+            <pubDate>Mon, 15 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/15/kafo_kaj_benjetoj.html</link>
+            <guid>kafo_kaj_benjetoj</guid>
+            <title>Kafo kaj Benjetoj</title>
+            <description>Coffee and Beignets</description>
+        </item>
+        <item>
+            <pubDate>Tue, 16 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/16/malglata_akvo.html</link>
+            <guid>malglata_akvo</guid>
+            <title>Malglata Akvo</title>
+            <description>Rough Water</description>
+        </item>
+        <item>
+            <pubDate>Wed, 17 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/17/vintro_alvenis.html</link>
+            <guid>vintro_alvenis</guid>
+            <title>Vintro Alvenis</title>
+            <description>Winter Has Arrived</description>
+        </item>
+        <item>
+            <pubDate>Sat, 20 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/20/la_ombra-boksanta_trotanto.html</link>
+            <guid>la_ombra-boksanta_trotanto</guid>
+            <title>La Ombra-Boksanta Trotanto</title>
+            <description>The Shadow Boxing Jogger</description>
+        </item>
+        <item>
+            <pubDate>Mon, 22 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/22/parka-benko.html</link>
+            <guid>parka-benko</guid>
+            <title>Parka-benko</title>
+            <description>Park Bench</description>
+        </item>
+        <item>
+            <pubDate>Wed, 24 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/24/ardeo_en_misisipo.html</link>
+            <guid>ardeo_en_misisipo</guid>
+            <title>Ardeo en Misisipo</title>
+            <description>Heron in Mississippi</description>
+        </item>
+        <item>
+            <pubDate>Wed, 24 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/24/versvojo.html</link>
+            <guid>versvojo</guid>
+            <title>Verŝ'vojo</title>
+            <description>Spillway</description>
+        </item>
+        <item>
+            <pubDate>Fri, 26 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/26/viro_kontrau_muso.html</link>
+            <guid>viro_kontrau_muso</guid>
+            <title>Viro kontraŭ Muso</title>
+            <description>Man vs Mouse</description>
+        </item>
+        <item>
+            <pubDate>Sat, 27 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/27/laborantaj_musoj.html</link>
+            <guid>laborantaj_musoj</guid>
+            <title>Laborantaj Musoj</title>
+            <description>Working Mice</description>
+        </item>
+        <item>
+            <pubDate>Sun, 28 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/28/rugvino_triopo.html</link>
+            <guid>rugvino_triopo</guid>
+            <title>Ruĝvino Triopo</title>
+            <description>Red Wine Trio</description>
+        </item>
+        <item>
+            <pubDate>Mon, 29 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/29/grizaj_neboj.html</link>
+            <guid>grizaj_neboj</guid>
+            <title>Grizaj Neboj</title>
+            <description>Grey Clouds</description>
+        </item>
+        <item>
+            <pubDate>Wed, 31 Jan 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/01/31/sunsubiro.html</link>
+            <guid>sunsubiro</guid>
+            <title>Sunsubiro</title>
+            <description>Sunset</description>
+        </item>
+        <item>
+            <pubDate>Mon, 05 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/05/duobla_birdo.html</link>
+            <guid>duobla_birdo</guid>
+            <title>Duobla Birdo</title>
+            <description>Double Bird</description>
+        </item>
+        <item>
+            <pubDate>Mon, 05 Feb 2024 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2024/02/05/la_malhela_turo_6:_la_kanto_de_susano.html</link>
+            <guid>la_malhela_turo_6:_la_kanto_de_susano</guid>
+            <title>La Malhela Turo 6: La Kanto de Susano</title>
+            <description>The Dark Tower 6: The Song of Susannah</description>
+        </item>
+        <item>
+            <pubDate>Tue, 06 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/06/vintra_cielo.html</link>
+            <guid>vintra_cielo</guid>
+            <title>Vintra Ĉielo</title>
+            <description>Winter Sky</description>
+        </item>
+        <item>
+            <pubDate>Fri, 09 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/09/mum.html</link>
+            <guid>mum</guid>
+            <title>MUM</title>
+            <description>MSM</description>
+        </item>
+        <item>
+            <pubDate>Sat, 10 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/10/saskvaco_de_la_pinzono.html</link>
+            <guid>saskvaco_de_la_pinzono</guid>
+            <title>Saskvaĉo de la Pinzono</title>
+            <description>Sasquatch of the Pine Belt</description>
+        </item>
+        <item>
+            <pubDate>Sun, 11 Feb 2024 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2024/02/11/la_granda_dio_pajno_de_arturo_macen.html</link>
+            <guid>la_granda_dio_pajno_de_arturo_macen</guid>
+            <title>'La Granda Dio Pajno' de Arturo Maĉen</title>
+            <description>'The Great God Pan' by Arthur Machen</description>
+        </item>
+        <item>
+            <pubDate>Mon, 12 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/12/malsaneta_vizago.html</link>
+            <guid>malsaneta_vizago</guid>
+            <title>Malsaneta Vizaĝo</title>
+            <description>Unwell Face</description>
+        </item>
+        <item>
+            <pubDate>Thu, 15 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/15/karnavalaj_ostroj.html</link>
+            <guid>karnavalaj_ostroj</guid>
+            <title>Karnavalaj Ostroj</title>
+            <description>Carnival Oysters</description>
+        </item>
+        <item>
+            <pubDate>Fri, 16 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/16/du_murabildoj.html</link>
+            <guid>du_murabildoj</guid>
+            <title>Du Murabildoj</title>
+            <description>Two Murals</description>
+        </item>
+        <item>
+            <pubDate>Sat, 17 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/17/pentrajo_de_mangantoj.html</link>
+            <guid>pentrajo_de_mangantoj</guid>
+            <title>Pentrajo de Manĝantoj</title>
+            <description>Painting of Diners</description>
+        </item>
+        <item>
+            <pubDate>Sun, 18 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/18/pentrajo_pri_bieno.html</link>
+            <guid>pentrajo_pri_bieno</guid>
+            <title>Pentraĵo pri Bieno</title>
+            <description>Farm Painting</description>
+        </item>
+        <item>
+            <pubDate>Mon, 19 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/19/testudkolombo.html</link>
+            <guid>testudkolombo</guid>
+            <title>Testud'kolombo</title>
+            <description>Turtle Dove</description>
+        </item>
+        <item>
+            <pubDate>Tue, 20 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/20/impresionismo_en_galerio.html</link>
+            <guid>impresionismo_en_galerio</guid>
+            <title>Impresionismo en Galerio</title>
+            <description>Impressionism in a Gallery</description>
+        </item>
+        <item>
+            <pubDate>Wed, 21 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/21/ciferoj_apud_la_strato.html</link>
+            <guid>ciferoj_apud_la_strato</guid>
+            <title>Ciferoj apud la Strato</title>
+            <description>Numbers by the Street</description>
+        </item>
+        <item>
+            <pubDate>Thu, 22 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/22/flora_karnavalo.html</link>
+            <guid>flora_karnavalo</guid>
+            <title>Flora Karnavalo</title>
+            <description>Flower Carnival</description>
+        </item>
+        <item>
+            <pubDate>Fri, 23 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/23/citajo_de_sezono_de_stormoj.html</link>
+            <guid>citajo_de_sezono_de_stormoj</guid>
+            <title>Citaĵo de 'Sezono de Ŝtormoj'</title>
+            <description>Quote from 'Season of Storms'</description>
+        </item>
+        <item>
+            <pubDate>Mon, 26 Feb 2024 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2024/02/26/citajo_de_generala_historio_de_la_piratoj.html</link>
+            <guid>citajo_de_generala_historio_de_la_piratoj</guid>
+            <title>Citaĵo de 'Ĝenerala Historio de la Piratoj'</title>
+            <description>Quote from 'A General History of the Pirates'</description>
+        </item>
+        <item>
+            <pubDate>Thu, 29 Feb 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/02/29/iaj_vizagoj.html</link>
+            <guid>iaj_vizagoj</guid>
+            <title>Iaj vizaĝoj</title>
+            <description>Some Faces</description>
+        </item>
+        <item>
+            <pubDate>Fri, 01 Mar 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/03/01/pianisto.html</link>
+            <guid>pianisto</guid>
+            <title>Pianisto</title>
+            <description>Piano Player</description>
+        </item>
+        <item>
+            <pubDate>Sat, 02 Mar 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/03/02/magnoliaj_floroj.html</link>
+            <guid>magnoliaj_floroj</guid>
+            <title>Magnoliaj Floroj</title>
+            <description>Magnolia Flowers</description>
+        </item>
+        <item>
+            <pubDate>Sun, 03 Mar 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/03/03/ovoj_kun_lardo.html</link>
+            <guid>ovoj_kun_lardo</guid>
+            <title>Ovoj kun Lardo</title>
+            <description>Eggs and Bacon</description>
+        </item>
+        <item>
+            <pubDate>Mon, 04 Mar 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/03/04/saluton_el_biloksi.html</link>
+            <guid>saluton_el_biloksi</guid>
+            <title>Saluton el Biloksi</title>
+            <description>Greetings from Biloxi</description>
+        </item>
+        <item>
+            <pubDate>Tue, 05 Mar 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/03/05/reto_de_fisisto_.html</link>
+            <guid>reto_de_fisisto_</guid>
+            <title>Reto de Fiŝisto </title>
+            <description>Fisherman's Net</description>
+        </item>
+        <item>
+            <pubDate>Wed, 06 Mar 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/03/06/festo_sur_la_muro.html</link>
+            <guid>festo_sur_la_muro</guid>
+            <title>Festo sur la Muro</title>
+            <description>Party on the Wall</description>
+        </item>
+        <item>
+            <pubDate>Mon, 11 Mar 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/03/11/esperanto_en_ubuntu.html</link>
+            <guid>esperanto_en_ubuntu</guid>
+            <title>Esperanto en Ubuntu</title>
+            <description>Esperanto in Ubuntu</description>
+        </item>
+        <item>
+            <pubDate>Sat, 30 Mar 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/03/30/stana_koko.html</link>
+            <guid>stana_koko</guid>
+            <title>Stana Koko</title>
+            <description>Tin Chicken</description>
+        </item>
+        <item>
+            <pubDate>Mon, 01 Apr 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/04/01/koko_d’la_trotuaro.html</link>
+            <guid>koko_d’la_trotuaro</guid>
+            <title>Koko d’la Trotuaro</title>
+            <description>Cock o’ the Walk</description>
+        </item>
+        <item>
+            <pubDate>Tue, 02 Apr 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/04/02/sovaga_fluganto.html</link>
+            <guid>sovaga_fluganto</guid>
+            <title>Sovaĝa Fluganto</title>
+            <description>Wild Flier</description>
+        </item>
+        <item>
+            <pubDate>Wed, 03 Apr 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/04/03/rubuja_koko.html</link>
+            <guid>rubuja_koko</guid>
+            <title>Rubuja Koko</title>
+            <description>Trash Can Chicken</description>
+        </item>
+        <item>
+            <pubDate>Thu, 11 Apr 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/04/11/artaj_kamiono_kaj_auto.html</link>
+            <guid>artaj_kamiono_kaj_auto</guid>
+            <title>Artaj Kamiono kaj Aŭto</title>
+            <description>Art Truck and Car</description>
+        </item>
+        <item>
+            <pubDate>Sat, 13 Apr 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/04/13/luna_promenejo.html</link>
+            <guid>luna_promenejo</guid>
+            <title>Luna Promenejo</title>
+            <description>Moonwalk</description>
+        </item>
+        <item>
+            <pubDate>Fri, 19 Apr 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/04/19/rigardeto_flanken.html</link>
+            <guid>rigardeto_flanken</guid>
+            <title>Rigardeto Flanken</title>
+            <description>A Glance to the Side</description>
+        </item>
+        <item>
+            <pubDate>Tue, 23 Apr 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/04/23/rultabulisto.html</link>
+            <guid>rultabulisto</guid>
+            <title>Rultabulisto</title>
+            <description>Skateboarder</description>
+        </item>
+        <item>
+            <pubDate>Sat, 27 Apr 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/04/27/salikoka_parado_.html</link>
+            <guid>salikoka_parado_</guid>
+            <title>Salikoka Parado </title>
+            <description>Shrimp Parade</description>
+        </item>
+        <item>
+            <pubDate>Sun, 28 Apr 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/04/28/mokumbo.html</link>
+            <guid>mokumbo</guid>
+            <title>Mokŭmbo</title>
+            <description>Mokoomba</description>
+        </item>
+        <item>
+            <pubDate>Mon, 29 Apr 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/04/29/flora-plena_protesto.html</link>
+            <guid>flora-plena_protesto</guid>
+            <title>Flora-Plena Protesto</title>
+            <description>Flower-Full Protest</description>
+        </item>
+        <item>
+            <pubDate>Fri, 03 May 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/05/03/leono_staras_gardo.html</link>
+            <guid>leono_staras_gardo</guid>
+            <title>Leono Staras Gardo</title>
+            <description>Lion Stands Guard</description>
+        </item>
+        <item>
+            <pubDate>Thu, 09 May 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/05/09/la_pendanta_fremdulo.html</link>
+            <guid>la_pendanta_fremdulo</guid>
+            <title>La Pendanta Fremdulo 📗</title>
+            <description>The Hanging Stranger</description>
+        </item>
+        <item>
+            <pubDate>Tue, 14 May 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/05/14/dolchejmo_alabamo.html</link>
+            <guid>dolchejmo_alabamo</guid>
+            <title>Dolĉ'hejmo Alabamo</title>
+            <description>Sweet Home Alabama</description>
+        </item>
+        <item>
+            <pubDate>Mon, 20 May 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/05/20/koro_el_oro.html</link>
+            <guid>koro_el_oro</guid>
+            <title>Koro el Oro</title>
+            <description>Heart of Gold</description>
+        </item>
+        <item>
+            <pubDate>Sat, 25 May 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/05/25/la_tentoj.html</link>
+            <guid>la_tentoj</guid>
+            <title>La Tentoj</title>
+            <description>The Temptations</description>
+        </item>
+        <item>
+            <pubDate>Tue, 27 Aug 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/08/27/njarlatotepo_de_h._p._lovecraft.html</link>
+            <guid>njarlatotepo_de_h._p._lovecraft</guid>
+            <title>Njarlatotepo de H. P. Lovecraft 📗</title>
+            <description>The Dance of Death</description>
+        </item>
+        <item>
+            <pubDate>Sun, 01 Sep 2024 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2024/09/01/la_mortodanco_de_algernon_blackwood.html</link>
+            <guid>la_mortodanco_de_algernon_blackwood</guid>
+            <title>La Mortodanco de Algernon Blackwood 📗</title>
+            <description>The Dance of Death</description>
+        </item>
+        <item>
+            <pubDate>Sat, 14 Sep 2024 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2024/09/14/subciela_arto_enhavanta_diversajn_temojn.html</link>
+            <guid>subciela_arto_enhavanta_diversajn_temojn</guid>
+            <title>Subĉiela Arto Enhavanta Diversajn Temojn</title>
+            <description>Outdoor Art Containing Diverse Subjects</description>
+        </item>
+        <item>
+            <pubDate>Tue, 17 Sep 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/09/17/subciela_arto_de_sandeler.html</link>
+            <guid>subciela_arto_de_sandeler</guid>
+            <title>Subĉiela Arto de Ŝandeler</title>
+            <description>Chandeleur's Outdoor Art</description>
+        </item>
+        <item>
+            <pubDate>Sat, 21 Sep 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/09/21/memoro_de_h._p._lovecraft.html</link>
+            <guid>memoro_de_h._p._lovecraft</guid>
+            <title>Memoro de H. P. Lovecraft 📗</title>
+            <description>Memory</description>
+        </item>
+        <item>
+            <pubDate>Sat, 26 Oct 2024 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2024/10/26/lecionoj_por_infanoj_en_simplaj_vortoj.html</link>
+            <guid>lecionoj_por_infanoj_en_simplaj_vortoj</guid>
+            <title>Lecionoj por Infanoj, en Simplaj Vortoj 📗</title>
+            <description>Lessons for Children, in Simple Words</description>
+        </item>
+        <item>
+            <pubDate>Thu, 31 Oct 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/10/31/vera_fantoma_rakonto..html</link>
+            <guid>vera_fantoma_rakonto.</guid>
+            <title>Vera Fantoma Rakonto.</title>
+            <description>A True Ghost Story.</description>
+        </item>
+        <item>
+            <pubDate>Wed, 20 Nov 2024 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2024/11/20/hello_world!.html</link>
+            <guid>hello_world!</guid>
+            <title>Hello world!</title>
+            <description>The RSS feed begins, not with a bang, but with a whisper.</description>
+        </item>
+        <item>
+            <pubDate>Fri, 03 Jan 2025 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2025/01/03/la_atesto_de_randolfo_kartero_de_h._p._lovecraft.html</link>
+            <guid>la_atesto_de_randolfo_kartero_de_h._p._lovecraft</guid>
+            <title>La Atesto de Randolfo Kartero de H. P. Lovecraft 📗</title>
+            <description>The Statement of Randolph Carter</description>
+        </item>
+        <item>
+            <pubDate>Tue, 21 Jan 2025 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2025/01/21/transiro_de_algernon_blackwood.html</link>
+            <guid>transiro_de_algernon_blackwood</guid>
+            <title>Transiro de Algernon Blackwood 📗</title>
+            <description>Transition</description>
+        </item>
+        <item>
+            <pubDate>Sat, 22 Mar 2025 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2025/03/22/la_sennoma_urbo_de_h._p._lovecraft.html</link>
+            <guid>la_sennoma_urbo_de_h._p._lovecraft</guid>
+            <title>La Sennoma Urbo de H. P. Lovecraft 📗</title>
+            <description>The Namless City</description>
+        </item>
+        <item>
+            <pubDate>Thu, 27 Mar 2025 00:00:00 </pubDate>
+            <link>https://kingrpaul.github.io/blog/2025/03/27/dual-language_glossary.html</link>
+            <guid>dual-language_glossary</guid>
+            <title>Dual-Language Glossary</title>
+            <description>Esperanto-English Using Standard Ebooks Tools</description>
+        </item>
+        <item>
+            <pubDate>Tue, 01 Apr 2025 00:00:00 </pubDate>
+            <link>
+                https://kingrpaul.github.io/blog/2025/04/01/en_la_pinarbaro_la_usona_popolkanto.html</link>
+            <guid>en_la_pinarbaro_la_usona_popolkanto</guid>
+            <title>En la Pinarbaro, la Usona Popolkanto 📗</title>
+            <description>In the Pines, the American Folk Song</description>
+        </item>
+    </channel>
 </rss>
