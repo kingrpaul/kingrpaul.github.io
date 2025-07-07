@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg13"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title13">Esperanto Star</title>
+  <defs
+     id="defs3">
+    <!-- Base green metallic gradient for the star -->
+    <linearGradient
+       id="starMetallic"
+       x1="0%"
+       y1="0%"
+       x2="100%"
+       y2="100%">
+      <stop
+         offset="0%"
+         stop-color="#2a5c20"
+         id="stop1" />
+      <!-- Dark green shadow -->
+      <stop
+         offset="50%"
+         stop-color="#3d8b30"
+         id="stop2" />
+      <!-- Mid green -->
+      <stop
+         offset="100%"
+         stop-color="#5cb849"
+         id="stop3" />
+      <!-- Highlight -->
+    </linearGradient>
+  </defs>
+  <path
+     d="M 50 0         L 61.8 38.2         L 100 38.2         L 69.1 61.8         L 80.9 100         L 50 76.4         L 19.1 100         L 30.9 61.8         L 0 38.2         L 38.2 38.2         Z"
+     fill="url(#starMetallic)"
+     stroke="#1a3a14"
+     stroke-width="0.1"
+     id="path3" />
+  <!-- 10 Triangles (Center + Inner + Outer Vertex) -->
+  <g
+     fill-opacity="0.3"
+     stroke="1a3a14"
+     stroke-width="0.2"
+     stroke-opacity="0.5"
+     id="g13">
+    <!-- Triangle 1 -->
+    <path
+       d="M 50 50 L 50 0 L 61.8 38.2 Z"
+       fill="#5cb849"
+       id="path4" />
+    <!-- Triangle 2 -->
+    <path
+       d="M 50 50 L 61.8 38.2 L 100 38.2 Z"
+       fill="#4aa939"
+       id="path5" />
+    <!-- Triangle 3 -->
+    <path
+       d="M 50 50 L 100 38.2 L 69.1 61.8 Z"
+       fill="#3d8b30"
+       id="path6" />
+    <!-- Triangle 4 -->
+    <path
+       d="M 50 50 L 69.1 61.8 L 80.9 100 Z"
+       fill="#2a5c20"
+       id="path7" />
+    <!-- Triangle 5 -->
+    <path
+       d="M 50 50 L 80.9 100 L 50 76.4 Z"
+       fill="#5cb849"
+       id="path8" />
+    <!-- Triangle 6 -->
+    <path
+       d="M 50 50 L 50 76.4 L 19.1 100 Z"
+       fill="#4aa939"
+       id="path9" />
+    <!-- Triangle 7 -->
+    <path
+       d="M 50 50 L 19.1 100 L 30.9 61.8 Z"
+       fill="#3d8b30"
+       id="path10" />
+    <!-- Triangle 8 -->
+    <path
+       d="M 50 50 L 30.9 61.8 L 0 38.2 Z"
+       fill="#2a5c20"
+       id="path11" />
+    <!-- Triangle 9 -->
+    <path
+       d="M 50 50 L 0 38.2 L 38.2 38.2 Z"
+       fill="#5cb849"
+       id="path12" />
+    <!-- Triangle 10 -->
+    <path
+       d="M 50 50 L 38.2 38.2 L 50 0 Z"
+       fill="#4aa939"
+       id="path13" />
+  </g>
+  <metadata
+     id="metadata13">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+        <dc:title>Esperanto Star</dc:title>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>icon</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:description>A five-pointed green star with ten facets shaded to create an illusion of depth.</dc:description>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

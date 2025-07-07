@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>MVCT QA w/TomoHDA & Ray6</title>
+                        <link rel="stylesheet" href="./theme/css/main.css" />
+                                <link href="/feeds/feed.atom.xml" type="application/atom+xml" rel="alternate" title="PAIRKO Atom Feed" />
+                                <link href="/feeds/feed.rss.xml" type="application/rss+xml" rel="alternate" title="PAIRKO RSS Feed" />
+                
+                <!-- Social Meta - Article Context -->
+                  <!-- OpenGraph -->
+                  <meta property="og:title" content="MVCT QA w/TomoHDA & Ray6" />
+                  <meta property="og:type" content="article" />
+                  <meta property="og:description" content="medical-physics technical note." />
+                    <meta property="og:image" content="https://kingrpaul.github.io/notes/images/mvct_qa_ray/fig.png" />
+                    <meta property="og:image:type" content="image/jpeg" />
+                    <meta property="og:image:alt" content="quality assurance device" />
+                  <meta property="og:url" content="./mvct_qa_ray.html" />
+
+                  <!-- Twitter -->
+                  <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Oncobot">                  <meta name="twitter:title" content="MVCT QA w/TomoHDA & Ray6">
+                  <meta name="twitter:description" content="medical-physics technical note.">
+                    <meta name="twitter:image" content="https://kingrpaul.github.io/notes/images/mvct_qa_ray/fig.png">
+
+                <!-- Paste this right before your closing </head> tag -->
+                <script type="text/javascript">
+                        (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
+                </script>
+                <script type="text/javascript">
+                        mixpanel.init("81e4cf01632c3345fc9cd44185211e60", {debug: true});
+                        mixpanel.track("Page Viewed");
+                </script>
+                <!-- Paste this right before your closing </head> tag -->                   
+        </head>
+
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="./">PAIRKO</a></h1>
+                        <nav><ul>
+                                        <li><a href="/index.html">Home</a></li>
+                                        <li><a href="/category/ebooks.html">Ebooks</a></li>
+                                        <li><a href="/category/document.html">Documents</a></li>
+                                        <li><a href="/category/notes.html">Notes</a></li>
+                                        <li><a href="/category/picture.html">Pictures</a></li>
+                                        <li><a href="/category/review.html">Reviews</a></li>
+                                        <li><a href="/category/illustrations.html">Illustrations</a></li>
+                                        <li><a href="/tag/medical-physics.html">Med-Physics</a></li>
+                                        <li><a href="/tag/esperanto.html">Esperanto</a></li>
+                                        <li><a href="/category/blog-en.html">Blog-EN</a></li>
+                                        <li><a href="/category/blog-eo.html">Blog-EO</a></li>
+                                        <li><a href="../blog-index.html">Feed</a></li>
+                                        <li><a href="/archives.html">Archives</a></li>
+                                        <li><a href="/tags.html">Tags</a></li>
+                                        <li><a href="/about.html">About</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <article>
+      <header>
+        <h1 class="entry-title">
+          <a href="./mvct_qa_ray.html" rel="bookmark"
+             title="Permalink to MVCT QA w/TomoHDA & Ray6">MVCT QA w/TomoHDA &amp; Ray6</a></h1>
+      </header>
+
+      <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2018-06-28T00:00:00-05:00">
+                Published: Thu 28 June 2018
+        </abbr>
+                <br />
+                <abbr class="modified" title="2025-06-18T00:00:00-05:00">
+                        Updated: Wed 18 June 2025
+                </abbr>
+
+                <address class="vcard author">
+                        By                                 <a class="url fn" href="./author/paul-king.html">Paul King</a>
+                </address>
+        <p>In <a href="./category/notes.html">Notes</a>.</p>
+<p>tags: <a href="./tag/medical-physics.html">medical-physics</a> </p>        
+</footer><!-- /.post-info -->        <div class="section" id="at-tomo">
+<h2>At Tomo</h2>
+<p>Before Starting: powered up, software running, 5-minute warmup, AIRSCANS</p>
+<p>Select Patient: ‘_CT Number Calibration’ [ normal pitch, 2mm slices x 19 ]</p>
+<ul class="simple">
+<li>Select all slices  → Accept slices … Prepare scan  → OK  → Setup  → Yes</li>
+</ul>
+<p>Setup cheese phantom (+ PWx20), green lasers</p>
+<ul class="simple">
+<li>Main  → Ready  → Yes …   Key  → Image  → Key</li>
+<li>Record air-HU and water-HU from screen  → OK</li>
+</ul>
+<p>Tools  → Clear selected patient</p>
+<p>Tools  → Dicom Options  → Export Items</p>
+<ul class="simple">
+<li>Export to: RaySearch … select correct ‘CTrue Image’ (4 slices)</li>
+<li>Send Now  → Close</li>
+</ul>
+<p>Insert density plugs w/test pattern pointed in, orient plug side into gantry</p>
+<div class="figure align-center">
+<img alt="quality assurance device" src="/notes/images/mvct_qa_ray/fig.png" style="width: 10em;" />
+</div>
+<table border="1" class="compact docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Cheese Phantom Inserts</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Plastic Water</td>
+</tr>
+<tr><td>Cortical Bone</td>
+</tr>
+<tr><td>Liquid Water</td>
+</tr>
+<tr><td>Resolution Test Object</td>
+</tr>
+<tr><td>Air</td>
+</tr>
+</tbody>
+</table>
+<p>Select Patient: ‘ZZ-06_TomoPhant’, plan-3</p>
+<ul class="simple">
+<li>~20 slices covering inner part of plugs, fine pitch, 1mm slices</li>
+<li>Accept Slices … Prepare scan  → OK  → Setup  → Yes</li>
+<li>Setup on green lasers … Main  → Ready  → Yes …  Key  → Image  → Key</li>
+</ul>
+<p>Tools  → Clear selected patient</p>
+<p>Tools  → Dicom Options  → Export Items</p>
+<ul class="simple">
+<li>Export to: RaySearch … Select CTrue Image,</li>
+<li>Send Now  → Close</li>
+</ul>
+</div>
+<div class="section" id="at-raystation">
+<h2>At RayStation</h2>
+<p>Patient Data / Patient Information</p>
+<ul class="simple">
+<li>Import new patient  → [ ‘Storage SCP’, ‘_CT Number Calibration’, ‘CT Series’]</li>
+<li>‘Import’   → if prompted, ‘Create a new patient’ then ‘OK’</li>
+<li>Image Sets / Properties</li>
+<li>confirm correct density table, then ‘OK’</li>
+</ul>
+<p>Patient Modeling / Structure Definition / ROI Tools</p>
+<ul class="simple">
+<li>New ROI geometry / Structure templates / Create structures from template…<ul>
+<li>Template  → ‘MVCT QA’</li>
+<li>Initialization  → ‘Align image centers’</li>
+<li>Structures  → ‘Select All’</li>
+<li>OK, then confirm contour alignment</li>
+<li>Double-click ROIs, record ‘Intensity Avg’, click ‘Cancel’</li>
+<li>Center: 24.66 … calculate +/- 40 as HU range,  e.g. -15 → 60</li>
+</ul>
+</li>
+</ul>
+<div class="figure align-center">
+<img alt="quality assurance device ct image" src="/notes/images/mvct_qa_ray/fig2.png" style="width: 10em;" />
+</div>
+<table border="1" class="compact docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Cheese</th>
+<th class="head">Phantom</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>Q1</td>
+<td>1.85</td>
+</tr>
+<tr><td>Q2</td>
+<td>2.79</td>
+</tr>
+<tr><td>Q3</td>
+<td>17.66</td>
+</tr>
+<tr><td>Q4</td>
+<td>13.21</td>
+</tr>
+</tbody>
+</table>
+<p>New ROI geometry / Thresholding / Gray level threshold …</p>
+<p>Set threshold levels  → ‘-15’ [HU] ‘60’</p>
+<p>Output / Create geometry for: / Existing ROI  →  ‘+/- 40 HU’ and click ‘OK’</p>
+<p>Are you sure that you want to replace the existing geometry:  → ‘Yes’</p>
+<p>New ROI geometry / Algebra and margins / ROI algebra …</p>
+<ul class="simple">
+<li>Expression A  → ‘+/- 40 HU’</li>
+<li>Operator      → ‘intersection’</li>
+<li>Expression B  → ‘center_slice’</li>
+<li>Ouput  → no expansion, Create geometry for: / Existing ROI / ‘noise_volume’ → OK</li>
+</ul>
+<p>Are you sure that you want to replace the existing geometry:  → ‘Yes’, long delay</p>
+<p>Inspect ‘noise_volume’ for artifacts</p>
+<p>Double-click ROIs, record ‘Volume [cm3]’, click ‘Cancel’</p>
+<table border="1" class="compact docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>noise_volume</td>
+<td>33.89</td>
+</tr>
+<tr><td>center_slice</td>
+<td>45.30</td>
+</tr>
+</tbody>
+</table>
+<p>Calculate %-enclosed: 78% vs tolerance of 65%,</p>
+<p>Patient Modeling / Structure Definition / POI Tools</p>
+<p>Adjust pin_1, pin_2, and pin_3 to center of metal pins in the image slice</p>
+<p>Double-click POIs, record coordinates R-L, I-S, P-A, click ‘Cancel’</p>
+<table border="1" class="compact docutils">
+<colgroup>
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+<col width="25%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>pin_1</td>
+<td>9.37</td>
+<td>0.05</td>
+<td>11.23</td>
+</tr>
+<tr><td>pin_2</td>
+<td>14.52</td>
+<td>0.05</td>
+<td>-2.63</td>
+</tr>
+<tr><td>pin_3</td>
+<td>9.50</td>
+<td>0.05</td>
+<td>-11.37</td>
+</tr>
+</tbody>
+</table>
+<p>Patient Data / Patient Information  → ‘Close’</p>
+<ul class="simple">
+<li>Modifications must be saved before closing the current patient.</li>
+<li>Do you want to save the changes?  → ‘Yes’</li>
+</ul>
+<p>Patient Data / Patient Information</p>
+<ul class="simple">
+<li>Import new patient  → [‘Storage SCP’, ‘ZZ-06_TomoPhant’, ‘CT Series’]</li>
+<li>‘Import’   → if prompted, ‘Create a new patient’ then ‘OK’</li>
+<li>Image Sets / Properties<ul>
+<li>confirm correct density table, then ‘OK’</li>
+</ul>
+</li>
+</ul>
+<p>Patient Modeling / Structure Definition / ROI Tools</p>
+<ul class="simple">
+<li>Inspect for number of high-contrast objects visible:  4</li>
+<li>New ROI geometry / Create New ROI  →     ‘bone’, ‘liquid_water’, ‘air’</li>
+<li>Use the brush on single slice, structure covers about central half of the plug</li>
+<li>Double-click ROIs, record ‘Intensity Avg’, click ‘Cancel’</li>
+</ul>
+<table border="1" class="compact docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>bone</td>
+<td>651.48</td>
+<td>11.23</td>
+</tr>
+<tr><td>liquid_water</td>
+<td>6.44</td>
+<td>-2.63</td>
+</tr>
+<tr><td>air</td>
+<td>0.05</td>
+<td>-911.74</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="at-excel">
+<h2>At Excel</h2>
+<div class="section" id="vi-b-2-a-vi-b-2-b">
+<h3>VI.B.2.a, VI.B.2.b</h3>
+<p>Constancy</p>
+<ul class="simple">
+<li>Tomo HU +/- 10 from expected, phantom=25, air=-1000</li>
+</ul>
+<p>Uniformity</p>
+<ul class="simple">
+<li>Each quadrant periphery within 25 HU of center<ul>
+<li>center = phantom slice, radius 1  → 12 cm (excl outer 3 cm)</li>
+<li>Q1, Q2, Q3, Q4 = slice quadrant, radius 13  → 14 cm</li>
+</ul>
+</li>
+</ul>
+<p>SNR of NLT 28 dB</p>
+<ul class="simple">
+<li>i.e. NLT 65% (typical 75%) of center volume within 40 HU of mean value</li>
+</ul>
+<p>Pin-to-pin distances within 1 mm of true value</p>
+<table border="1" class="compact docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">&nbsp;</th>
+<th class="head">Expected</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>pin_2→3</td>
+<td>101.2 mm</td>
+</tr>
+<tr><td>pin_1→2</td>
+<td>148.0 mm</td>
+</tr>
+<tr><td>pin_1→3</td>
+<td>226.7 mm</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vi-b-2-c-vi-b-2-d-vi-b-2-e">
+<h3>VI.B.2.c, VI.B.2.d, VI.B.2.e</h3>
+<ul class="simple">
+<li>NLT 3 resolution objects visible (1.6 mm)</li>
+<li>Density objects within tolerance of expected HU</li>
+</ul>
+<table border="1" class="compact docutils">
+<colgroup>
+<col width="33%" />
+<col width="33%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>bone</td>
+<td>Expect</td>
+<td>Tolerance</td>
+</tr>
+<tr><td>Cortical Bone</td>
+<td>668.8</td>
+<td>50 HU (6%)</td>
+</tr>
+<tr><td>Water</td>
+<td>0.0</td>
+<td>30 HU (10%)</td>
+</tr>
+<tr><td>Air</td>
+<td>-916.3</td>
+<td>reasonableness</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+      </div><!-- /.entry-content -->
+
+    </article>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+                                                        <li><a href="/feeds/feed.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                                                        <li><a href="/feeds/feed.rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
+
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
+</html>

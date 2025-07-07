@@ -1,370 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
+        <head>
+                        <meta charset="utf-8" />
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                        <meta name="generator" content="Pelican" />
+                        <title>Paul King</title>
+                        <link rel="stylesheet" href="./theme/css/main.css" />
+                                <link href="/feeds/feed.atom.xml" type="application/atom+xml" rel="alternate" title="PAIRKO Atom Feed" />
+                                <link href="/feeds/feed.rss.xml" type="application/rss+xml" rel="alternate" title="PAIRKO RSS Feed" />
+                
+                <!-- Social Meta - Article Context -->
 
-<head>
-    <!-- BOILERPLATE -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon/favicon.ico">
+                <!-- Paste this right before your closing </head> tag -->
+                <script type="text/javascript">
+                        (function (f, b) { if (!b.__SV) { var e, g, i, h; window.mixpanel = b; b._i = []; b.init = function (e, f, c) { function g(a, d) { var b = d.split("."); 2 == b.length && ((a = a[b[0]]), (d = b[1])); a[d] = function () { a.push([d].concat(Array.prototype.slice.call(arguments, 0))); }; } var a = b; "undefined" !== typeof c ? (a = b[c] = []) : (c = "mixpanel"); a.people = a.people || []; a.toString = function (a) { var d = "mixpanel"; "mixpanel" !== c && (d += "." + c); a || (d += " (stub)"); return d; }; a.people.toString = function () { return a.toString(1) + ".people (stub)"; }; i = "disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split( " "); for (h = 0; h < i.length; h++) g(a, i[h]); var j = "set set_once union unset remove delete".split(" "); a.get_group = function () { function b(c) { d[c] = function () { call2_args = arguments; call2 = [c].concat(Array.prototype.slice.call(call2_args, 0)); a.push([e, call2]); }; } for ( var d = {}, e = ["get_group"].concat( Array.prototype.slice.call(arguments, 0)), c = 0; c < j.length; c++) b(j[c]); return d; }; b._i.push([e, f, c]); }; b.__SV = 1.2; e = f.createElement("script"); e.type = "text/javascript"; e.async = !0; e.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; g = f.getElementsByTagName("script")[0]; g.parentNode.insertBefore(e, g); } })(document, window.mixpanel || []);
+                </script>
+                <script type="text/javascript">
+                        mixpanel.init("81e4cf01632c3345fc9cd44185211e60", {debug: true});
+                        mixpanel.track("Page Viewed");
+                </script>
+                <!-- Paste this right before your closing </head> tag -->                   
+        </head>
 
-    <!-- METADATA -->
-    <title>cv</title>
-    <meta name="author" content="{Paul King}">
-    <meta name="description"
-        content="Curriculum vitæ.">
-    <meta name="keywords" content="" />
-
-    <!-- BOOSTRAP 5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/cv.css">
-</head>
-
-<body>
-
-    <div class="container"  style="max-width: 75em;">
-    <header class="mb-3">
-        <h1>
-            Paul King
-            <a class="float-end fs-6 mt-1 me-3" href="index.html" >HOME</a> 
-        </h1>
-    </header>
-
-    <table>
-
-        <thead><tr><th><h2>Work</h2></th></tr></thead>
-            
-        <tbody id="work">
-            <tr>
-                <td colspan="3">
-                    <p>
-                    <a class="font-monospace" target="_blank" href="https://www.theabr.org/myabr/find-a-radiologist?fn=&ln=King&st=MS#">DABR—</a>Experienced 
-                    &amp; results-oriented; progressive record of innovation &amp; success in
-                    quality enhancement, planning, program development, regulatory compliance, & health care technology
-                    management; mature judgment &amp; prescient vision in diverse environments; proactive stewardship,
-                    valuing excellence that is patient focused & mission driven.
-                    </p>
-                </td>
-            </tr>
+        <body id="index" class="home">
+                <header id="banner" class="body">
+                        <h1><a href="./">PAIRKO</a></h1>
+                        <nav><ul>
+                                        <li><a href="/index.html">Home</a></li>
+                                        <li><a href="/category/ebooks.html">Ebooks</a></li>
+                                        <li><a href="/category/document.html">Documents</a></li>
+                                        <li><a href="/category/notes.html">Notes</a></li>
+                                        <li><a href="/category/picture.html">Pictures</a></li>
+                                        <li><a href="/category/review.html">Reviews</a></li>
+                                        <li><a href="/category/illustrations.html">Illustrations</a></li>
+                                        <li><a href="/tag/medical-physics.html">Med-Physics</a></li>
+                                        <li><a href="/tag/esperanto.html">Esperanto</a></li>
+                                        <li><a href="/category/blog-en.html">Blog-EN</a></li>
+                                        <li><a href="/category/blog-eo.html">Blog-EO</a></li>
+                                        <li><a href="../blog-index.html">Feed</a></li>
+                                        <li><a href="/archives.html">Archives</a></li>
+                                        <li><a href="/tags.html">Tags</a></li>
+                                        <li><a href="/about.html">About</a></li>
+                        </ul></nav>
+                </header><!-- /#banner -->
+  <section id="content" class="body">
+    <h1 class="entry-title">Paul King</h1>
     
-            <tr>
-                <td><a target="_blank" href="https://www.painlessskincancertreatment.com/">Painless Skin Cancer Treatment</a></td>
-                <td>Meridian, MS</td>
-                <td>03/20 &ndash; 07/23</td>
-            </tr>
+    <link rel="stylesheet" href="/static/css/custom.css">
 
-            <tr>
-                <td><a target="_blank" href="https://www.andersonregional.org/">Jeff Anderson Regional Medical Center</a></td>
-                <td>Meridian, MS</td>
-                <td>02/97 &ndash; 02/20</td>
-            </tr>
-            <tr>
-                <td><a target="_blank" href="https://www.texasoncology.com/cancer-centers/dallas/baylor-charles-a-sammons">Sammons Cancer Center at Baylor University Medical Center</a></td>
-                <td>Dallas, TX</td>
-                <td>05/95 &ndash; 01/97</td>
-            </tr>
-            <tr>
-                <td><a target="_blank" href="http://prowess.com/">Prowess Medical Physics Group</a></td>
-                <td>Chico, CA</td>
-                <td>09/91 &ndash; 05/95</td>
-            </tr>
-            <tr>
-                <td><a target="_blank" href="https://www.santafehealthcarefl.org/">The CancerCare Center of Sante Fe Healthcare</a></td>
-                <td>Gainesville, FL</td>
-                <td>09/90 &ndash; 09/91</td>
-            </tr>
-        </tbody>
+<table id="cv">
 
-        
-        <thead><tr><th><h2>Learn</h2></th></tr></thead>
+     <thead><tr><th><h2>Work</h2></th></tr></thead>
 
-        <tbody id="learn">
-            <tr>
-                <td><a target="_blank" href="https://medphysics.med.ufl.edu/">MS, Medical Physics</a></td>
-                <td>University of Florida</td>
-                <td>1990</td>
-            </tr>
-            <tr>
-                <td><a target="_blank" href="https://www.usm.edu/graduate-programs/public-health.php">MPH, Health Services Administration</a></td>
-                <td>University of Southern Mississippi</td>
-                <td>2010</td>
-            </tr>
-            <tr>
-                <td><a target="_blank" href="https://www.ece.ufl.edu/academics/undergraduate/ee/">BS, Electrical Engineering</a></td>
-                <td>University of Florida</td>
-                <td>1988</td>
-            </tr>
-        </tbody>
+     <tbody id="work">
+         <tr>
+             <td colspan="3">
+                 <p>
+                 <a class="font-monospace" target="_blank" href="https://www.theabr.org/myabr/find-a-radiologist?fn=&ln=King&st=MS#">DABR—</a>Experienced
+                 &amp; results-oriented; progressive record of innovation &amp; success in
+                 quality enhancement, planning, program development, regulatory compliance, & health care technology
+                 management; mature judgment &amp; prescient vision in diverse environments; proactive stewardship,
+                 valuing excellence that is patient focused & mission driven.
+                 </p>
+             </td>
+         </tr>
 
-        
-        <thead><tr><th><h2>Teach</h2></th></tr></thead>
+         <tr>
+             <td><a target="_blank" href="https://www.painlessskincancertreatment.com/">Painless Skin Cancer Treatment</a></td>
+             <td>Meridian, MS</td>
+             <td>03/20 &ndash; 07/23</td>
+         </tr>
 
-        <tbody id="teach">
+         <tr>
+             <td><a target="_blank" href="https://www.andersonregional.org/">Jeff Anderson Regional Medical Center</a></td>
+             <td>Meridian, MS</td>
+             <td>02/97 &ndash; 02/20</td>
+         </tr>
+         <tr>
+             <td><a target="_blank" href="https://www.texasoncology.com/cancer-centers/dallas/baylor-charles-a-sammons">Sammons Cancer Center at Baylor University Medical Center</a></td>
+             <td>Dallas, TX</td>
+             <td>05/95 &ndash; 01/97</td>
+         </tr>
+         <tr>
+             <td><a target="_blank" href="http://prowess.com/">Prowess Medical Physics Group</a></td>
+             <td>Chico, CA</td>
+             <td>09/91 &ndash; 05/95</td>
+         </tr>
+         <tr>
+             <td><a target="_blank" href="https://www.santafehealthcarefl.org/">The CancerCare Center of Sante Fe Healthcare</a></td>
+             <td>Gainesville, FL</td>
+             <td>09/90 &ndash; 09/91</td>
+         </tr>
+     </tbody>
 
-            <tr><td colspan="3"><h3><a target="_blank" href="#">Baylor School of Radiation Therapy</a></h3></td></tr>
 
-            <tr class="group"><td colspan="2">Medical Radionuclides</td><td></td></tr>
-            <tr class="group"><td colspan="2">Radiation Dosimetry</td><td></td></tr>
+     <thead><tr><th><h2>Learn</h2></th></tr></thead>
 
-        </tbody>
-        
-        <thead>
-            <tr><th><h2>Write</h2></th></tr>
-            <tr><td colspan="3">ORCID: <a target="_blank" href="https://orcid.org/0000-0001-6748-4538">0000-0001-6748-4538</a></td></tr>
-        </thead>
+     <tbody id="learn">
+         <tr>
+             <td><a target="_blank" href="https://medphysics.med.ufl.edu/">MS, Medical Physics</a></td>
+             <td>University of Florida</td>
+             <td>1990</td>
+         </tr>
+         <tr>
+             <td><a target="_blank" href="https://www.usm.edu/graduate-programs/public-health.php">MPH, Health Services Administration</a></td>
+             <td>University of Southern Mississippi</td>
+             <td>2010</td>
+         </tr>
+         <tr>
+             <td><a target="_blank" href="https://www.ece.ufl.edu/academics/undergraduate/ee/">BS, Electrical Engineering</a></td>
+             <td>University of Florida</td>
+             <td>1988</td>
+         </tr>
+     </tbody>
 
-        <tbody id="write">
 
-            <tr>
-                <td colspan="3">
-                Biggs, S., Jennings, M., Swerdloff, S., Chlap, P., Lane, D., Rembish, J., McAloney, J., King, P., Ayala, R.,
-                Guan, F., Lambri, N., Crewson, C., Sobolewski, M, (2022).
-                <a href="pdf/2022_PyMedPhys.pdf" target="_blank">PyMedPhys: A community effort to develop an open,
-                    Python-based standard library for medical physics applications.</a>
-                Journal of Open Source Software, 7(78), 4555,
-                <a target="_blank" href="https://doi.org/10.21105/joss.04555">https://doi.org/10.21105/joss.04555</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                King, P., Sawyers, C., Anderson, S., Gaddam, K., Dulaney, C., Jordan, R., &amp; Thompson, G. (2019).
-                <a href="pdf/2019_SimplisticTomotherapyModel.pdf" target="_blank">Simplistic Tomotherapy Model Predicts
-                    RayStation Treatment Times Within 20% for First 16 Plans</a>
-                , AAPM 61<sup>st</sup> Annual Meeting &amp; Exhibition, PO-GePV-T-278,
-                <a target="_blank" 
-                    href="https://w3.aapm.org/meetings/2019AM/programInfo/programAbs.php?&shid[]=1481&sid=8165&aid=43946">https://w3.aapm.org/meetings/2019AM/programInfo/programAbs.php</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                King, R., Cheung, A., Anderson, R., C., Thompson, G., &amp; Fletcher, M. (2014).
-                <a href="pdf/2014_SimplifyingAssumptionFor.pdf" target="_blank">Simplifying Assumption for Determining Sc
-                    and Sp</a>
-                , AAPM 56<sup>th</sup> Annual Meeting &amp; Exhibition, SU-E-T-293,
-                <a target="_blank"
-                    href="https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4888625">https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4888625</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                Manikandan A, Sarkar B, Rajendran VT, King P, Sresty NM, Holla R, Kotur S, &amp; Nadendla S. (2013).
-                <a href="pdf/2013_RoleOfStepSizeAndMaxDwell.pdf" target="_blank">Role of step size and max dwell time in
-                    anatomy based inverse optimization for prostate implants</a>
-                , Journal of Medical Physics 38 (3)148-154.
-                <a target="_blank"
-                    href="https://www.jmp.org.in/text.asp?2013/38/3/148/116380">https://www.jmp.org.in/text.asp?2013/38/3/148/116380</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                King, R. &amp; Cheung, A. (2013).
-                <a href="pdf/2013_EstimationOfEffectiveField.pdf" target="_blank">Estimation of Effective Field Size With a
-                    Leaf-Based Algorithm</a>
-                , AAPM 55<sup>th</sup> Annual Meeting &amp; Exhibition, SU-E-T-7.
-                <a target="_blank"
-                    href="https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4814441">https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4814441</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                Dube, S., King, R.P. and Orton, C.G.(2010).
-                <a href="pdf/2010_RadiationTherapistsShould.pdf" target="_blank">Radiation therapists should not have to
-                    wear personnel dosimetry badges.</a>
-                , Medical Physics, 37: 2401-2403.
-                <a target="_blank" href="https://doi.org/10.1118/1.3371682">https://doi.org/10.1118/1.3371682</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                King, R.P., Anderson, R.S. and Kandagatla, K.K. (2008).
-                <a href="pdf/2008_CommentOnQuantifying.pdf" target="_blank">Comment on “Quantifying the interplay effect in
-                    prostate IMRT delivery using a convolution-based method” [Med. Phys., – (2008)].</a>
-                , Medical Physics, 35: 5955-5956.
-                <a target="_blank" href="https://doi.org/10.1118/1.3013551">https://doi.org/10.1118/1.3013551</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                King, R., Anderson, R., &amp; Kandagatla, K. (2007).
-                <a href="pdf/2007_CommentOnIMRTShould.pdf" target="_blank">Comment on "IMRT should not be administered at
-                    photon energies greater than 10 MV [Med. Phys. 34, 1877–1879 (2007)]",</a>
-                Medical Physics 34(9), 3696..
-                <a target="_blank" href="https://doi.org/10.1118/1.2767971">https://doi.org/10.1118/1.2767971</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                King, R. P., & Anderson, R. S. (2001).
-                <a href="pdf/2001_ASimpleMethodForElectron.pdf" target="_blank">A simple method for electron energy
-                    constancy measurement.</a>
-                , Journal of applied clinical medical physics, 2(1), 51–53.
-                <a target="_blank"
-                    href="https://doi.org/10.1120/jacmp.v2i1.2628">https://doi.org/10.1120/jacmp.v2i1.2628</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                King, P., & Anderson, R. S. (2001).
-                <a href="pdf/2001_InRegardToTheABSRecommendation.pdf" target="_blank">In regard to the American
-                    Brachytherapy Society recommendations for <sup>103</sup>palladium brachytherapy. Beyer et al. IJROBP
-                    2000;47:273-275.</a>
-                , International journal of radiation oncology, biology, physics, 49(3), 899.
-                <a target="_blank"
-                    href="https://doi.org/10.1016/s0360-3016(00)01393-6">https://doi.org/10.1016/s0360-3016(00)01393-6</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                King, R. P., Anderson, R. S., & Mills, M. D. (2001).
-                <a href="pdf/2001_GeometryFunctionOALinear.pdf" target="_blank">Geometry function of a linear brachytherapy
-                    source.</a>
-                , Journal of applied clinical medical physics, 2(2), 69–72.
-                <a target="_blank"
-                    href="https://doi.org/10.1120/jacmp.v2i2.2615">https://doi.org/10.1120/jacmp.v2i2.2615</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                Anderson, R.S., Eifert, B., Tartt, S., & King, P. (2000).
-                <a href="pdf/2000_RadioimmunoguidedSurgery.pdf" target="_blank">Radioimmunoguided surgery using indium-111
-                    capromab pendetide (PROSTASCINT) to diagnose supraclavicular metastasis from prostate cancer.</a>
-                , Urology, 56 4, 669.
-                <a target="_blank"
-                    href="https://doi.org/10.1016/s0090-4295(00)00715-9">https://doi.org/10.1016/s0090-4295(00)00715-9</a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                King, R. P. (1990).
-                <a href="thesis/thesis.html" target="_blank">The metal-oxide-semiconductor capacitor as the fundamental
-                    sensor element of a digital radiography system</a>
-                , [Masters Thesis] University of Florida.
-                <a target="_blank" href=""></a>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                King, P., Fox, R., Eisenstadt, W., Ferris, D., Jacobs, A., &amp; Cox, J. (1990).
-                <a href="pdf/1990_CMOSAnalogICX-RayImage.pdf" target="_blank">CMOS Analog IC X-Ray Image Sensor Array</a>
-                , Second Annual Florida Microelectronics Conference, Proceedings 139-142.
-                <a target="_blank" href=""></a>
-                </td>
-            </tr>
-        </tbody>
-        
-        <thead><tr><th><h2>Review</h2></th></tr></thead>        
+     <thead><tr><th><h2>Teach</h2></th></tr></thead>
 
-        <tbody id="review">
+     <tbody id="teach">
 
-            <tr><td colspan="3"><h3>Medical Dosimetry</h3></td></tr>
-            <tr class="group"><td colspan="2"><a target="_blank" href="https://www.meddos.org/">Journal of the American Association of Medical Dosimetrists</a></td><td></td></tr>
+         <tr><td colspan="3"><h3><a target="_blank" href="#">Baylor School of Radiation Therapy</a></h3></td></tr>
 
-            <tr><td colspan="3"><h3><a  target="_blank" href="https://catalog.loc.gov/vwebv/search?searchCode=LCCN&searchArg=2012419303&searchType=1&permalink=y">Radiologic Science for Technologists</a></h3></td></tr>
-            <tr class="group"><td colspan="2">Physics, Biology, and Protection, 8th Edition, by Steward C. Bushong</td><td>2003</td></tr>
+         <tr class="group"><td colspan="2">Medical Radionuclides</td><td></td></tr>
+         <tr class="group"><td colspan="2">Radiation Dosimetry</td><td></td></tr>
 
-        </tbody>
-        
-        <thead><tr><th><h2>Innovate</h2></th></tr></thead>
-        
-        <tbody id="innovate">
-            <tr><td colspan="3"><h3>Model 515 eCheck Device</h3></td></tr>
-            <tr><td colspan="3"><h3>Conformal Arc Hybrid IMRT Treatment Technique</h3></td></tr>
-        </tbody>
-        
-        <thead><tr><th><h2>Verify</h2></th></tr></thead>
-        
-        <tbody id="verify">
+     </tbody>
 
-            <tr><td colspan="3"><h3>Vendor β Test Administrator</h3></td></tr>
+     <thead>
+         <tr><th><h2>Write</h2></th></tr>
+         <tr><td colspan="3">ORCID: <a target="_blank" href="https://orcid.org/0000-0001-6748-4538">0000-0001-6748-4538</a></td></tr>
+     </thead>
 
-            <tr class="group"><td colspan="2">Prowess 3000</td><td></td></tr>
-            <tr class="group"><td colspan="2">Prowess FS<sup>2</sup></td><td></td></tr>
+     <tbody id="write">
 
-            <tr><td colspan="3"><h3>Clinical αβ Test Evaluator</h3></td></tr>
+         <tr>
+             <td colspan="3">
+             Biggs, S., Jennings, M., Swerdloff, S., Chlap, P., Lane, D., Rembish, J., McAloney, J., King, P., Ayala, R.,
+             Guan, F., Lambri, N., Crewson, C., Sobolewski, M, (2022).
+             <a href="pdf/2022_PyMedPhys.pdf" target="_blank">PyMedPhys: A community effort to develop an open,
+                 Python-based standard library for medical physics applications.</a>
+             Journal of Open Source Software, 7(78), 4555,
+             <a target="_blank" href="https://doi.org/10.21105/joss.04555">https://doi.org/10.21105/joss.04555</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             King, P., Sawyers, C., Anderson, S., Gaddam, K., Dulaney, C., Jordan, R., &amp; Thompson, G. (2019).
+             <a href="pdf/2019_SimplisticTomotherapyModel.pdf" target="_blank">Simplistic Tomotherapy Model Predicts
+                 RayStation Treatment Times Within 20% for First 16 Plans</a>
+             , AAPM 61<sup>st</sup> Annual Meeting &amp; Exhibition, PO-GePV-T-278,
+             <a target="_blank"
+                 href="https://w3.aapm.org/meetings/2019AM/programInfo/programAbs.php?&shid[]=1481&sid=8165&aid=43946">https://w3.aapm.org/meetings/2019AM/programInfo/programAbs.php</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             King, R., Cheung, A., Anderson, R., C., Thompson, G., &amp; Fletcher, M. (2014).
+             <a href="pdf/2014_SimplifyingAssumptionFor.pdf" target="_blank">Simplifying Assumption for Determining Sc
+                 and Sp</a>
+             , AAPM 56<sup>th</sup> Annual Meeting &amp; Exhibition, SU-E-T-293,
+             <a target="_blank"
+                 href="https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4888625">https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4888625</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             Manikandan A, Sarkar B, Rajendran VT, King P, Sresty NM, Holla R, Kotur S, &amp; Nadendla S. (2013).
+             <a href="pdf/2013_RoleOfStepSizeAndMaxDwell.pdf" target="_blank">Role of step size and max dwell time in
+                 anatomy based inverse optimization for prostate implants</a>
+             , Journal of Medical Physics 38 (3)148-154.
+             <a target="_blank"
+                 href="https://www.jmp.org.in/text.asp?2013/38/3/148/116380">https://www.jmp.org.in/text.asp?2013/38/3/148/116380</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             King, R. &amp; Cheung, A. (2013).
+             <a href="pdf/2013_EstimationOfEffectiveField.pdf" target="_blank">Estimation of Effective Field Size With a
+                 Leaf-Based Algorithm</a>
+             , AAPM 55<sup>th</sup> Annual Meeting &amp; Exhibition, SU-E-T-7.
+             <a target="_blank"
+                 href="https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4814441">https://aapm.onlinelibrary.wiley.com/doi/abs/10.1118/1.4814441</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             Dube, S., King, R.P. and Orton, C.G.(2010).
+             <a href="pdf/2010_RadiationTherapistsShould.pdf" target="_blank">Radiation therapists should not have to
+                 wear personnel dosimetry badges.</a>
+             , Medical Physics, 37: 2401-2403.
+             <a target="_blank" href="https://doi.org/10.1118/1.3371682">https://doi.org/10.1118/1.3371682</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             King, R.P., Anderson, R.S. and Kandagatla, K.K. (2008).
+             <a href="pdf/2008_CommentOnQuantifying.pdf" target="_blank">Comment on “Quantifying the interplay effect in
+                 prostate IMRT delivery using a convolution-based method” [Med. Phys., – (2008)].</a>
+             , Medical Physics, 35: 5955-5956.
+             <a target="_blank" href="https://doi.org/10.1118/1.3013551">https://doi.org/10.1118/1.3013551</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             King, R., Anderson, R., &amp; Kandagatla, K. (2007).
+             <a href="pdf/2007_CommentOnIMRTShould.pdf" target="_blank">Comment on "IMRT should not be administered at
+                 photon energies greater than 10 MV [Med. Phys. 34, 1877–1879 (2007)]",</a>
+             Medical Physics 34(9), 3696..
+             <a target="_blank" href="https://doi.org/10.1118/1.2767971">https://doi.org/10.1118/1.2767971</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             King, R. P., & Anderson, R. S. (2001).
+             <a href="pdf/2001_ASimpleMethodForElectron.pdf" target="_blank">A simple method for electron energy
+                 constancy measurement.</a>
+             , Journal of applied clinical medical physics, 2(1), 51–53.
+             <a target="_blank"
+                 href="https://doi.org/10.1120/jacmp.v2i1.2628">https://doi.org/10.1120/jacmp.v2i1.2628</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             King, P., & Anderson, R. S. (2001).
+             <a href="pdf/2001_InRegardToTheABSRecommendation.pdf" target="_blank">In regard to the American
+                 Brachytherapy Society recommendations for <sup>103</sup>palladium brachytherapy. Beyer et al. IJROBP
+                 2000;47:273-275.</a>
+             , International journal of radiation oncology, biology, physics, 49(3), 899.
+             <a target="_blank"
+                 href="https://doi.org/10.1016/s0360-3016(00)01393-6">https://doi.org/10.1016/s0360-3016(00)01393-6</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             King, R. P., Anderson, R. S., & Mills, M. D. (2001).
+             <a href="pdf/2001_GeometryFunctionOALinear.pdf" target="_blank">Geometry function of a linear brachytherapy
+                 source.</a>
+             , Journal of applied clinical medical physics, 2(2), 69–72.
+             <a target="_blank"
+                 href="https://doi.org/10.1120/jacmp.v2i2.2615">https://doi.org/10.1120/jacmp.v2i2.2615</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             Anderson, R.S., Eifert, B., Tartt, S., & King, P. (2000).
+             <a href="pdf/2000_RadioimmunoguidedSurgery.pdf" target="_blank">Radioimmunoguided surgery using indium-111
+                 capromab pendetide (PROSTASCINT) to diagnose supraclavicular metastasis from prostate cancer.</a>
+             , Urology, 56 4, 669.
+             <a target="_blank"
+                 href="https://doi.org/10.1016/s0090-4295(00)00715-9">https://doi.org/10.1016/s0090-4295(00)00715-9</a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             King, R. P. (1990).
+             <a href="thesis/thesis.html" target="_blank">The metal-oxide-semiconductor capacitor as the fundamental
+                 sensor element of a digital radiography system</a>
+             , [Masters Thesis] University of Florida.
+             <a target="_blank" href=""></a>
+             </td>
+         </tr>
+         <tr>
+             <td colspan="3">
+             King, P., Fox, R., Eisenstadt, W., Ferris, D., Jacobs, A., &amp; Cox, J. (1990).
+             <a href="pdf/1990_CMOSAnalogICX-RayImage.pdf" target="_blank">CMOS Analog IC X-Ray Image Sensor Array</a>
+             , Second Annual Florida Microelectronics Conference, Proceedings 139-142.
+             <a target="_blank" href=""></a>
+             </td>
+         </tr>
+     </tbody>
 
-            <tr class="group"><td colspan="2">Pinnacle<sup>3</sup> SmartArc</td><td></td></tr>
-            <tr class="group"><td colspan="2">RayStation RayTomo</td><td></td></tr>
+     <thead><tr><th><h2>Review</h2></th></tr></thead>
 
-        </tbody>
-        
-        <thead><tr><th><h2>Serve</h2></th></tr></thead>
+     <tbody id="review">
 
-        <tbody id="serve">
-            
-            <tr><td colspan="3"><h3>U. S. Army</h3></td></tr>
+         <tr><td colspan="3"><h3>Medical Dosimetry</h3></td></tr>
+         <tr class="group"><td colspan="2"><a target="_blank" href="https://www.meddos.org/">Journal of the American Association of Medical Dosimetrists</a></td><td></td></tr>
 
-            <tr class="group"><td colspan="2">Active Duty</td><td>82-85</td></tr>
-            <tr class="group"><td colspan="2">Active Reserve</td><td>85-88</td></tr>
-            <tr class="group"><td colspan="2">Signal Corp, C&amp;E</td></tr>
-            <tr class="group"><td colspan="2">JCRX Flintlock 84</td></tr>
-            <tr class="group"><td colspan="2">AAM-84, ARCOM-85</td></tr>
-            
-            <tr><td colspan="3"><h3>American Association of Physicists in Medicine</h3></td></tr>
+         <tr><td colspan="3"><h3><a  target="_blank" href="https://catalog.loc.gov/vwebv/search?searchCode=LCCN&searchArg=2012419303&searchType=1&permalink=y">Radiologic Science for Technologists</a></h3></td></tr>
+         <tr class="group"><td colspan="2">Physics, Biology, and Protection, 8th Edition, by Steward C. Bushong</td><td>2003</td></tr>
 
-            <tr class="group"><td colspan="2">Professional Economics Committee</td><td>01/11-12/16</td></tr>
-            <tr class="group"><td colspan="2">New Professionals Subcommittee</td><td>01/12-12/14</td></tr>
-            <tr class="group"><td colspan="2">Biological Effects Subcommittee</td><td>01/99-12/04</td></tr>
-            <tr class="group"><td colspan="2">Radiation Oncology Safety Stakeholders Initiative</td><td>01/12-02/20</td></tr>
-            <tr class="group"><td colspan="2">ACMP Membership Committee (Chair)</td><td>01/01-12/01</td></tr>
-            
-            <tr><td colspan="3"><h3>Jeff Anderson Regional Medical Center</td></h3></tr>
-            
-            <tr class="group"><td colspan="2">Radiation Safety Committee (Chair &amp; RSO)</td><td>&nbsp;</td></tr>
-            <tr class="group"><td colspan="2">Emergency Department Task Group (Lean-6σ)</td><td>&nbsp;</td></tr>
-            <tr class="group"><td colspan="2">Cardiology Operations Task Group (Lean-6σ)</td><td>&nbsp;</td></tr>
-            
-            <tr><td colspan="3"><h3>Mississippi School for Mathematics and Science</h3></td></tr>
-            <tr class="group"><td colspan="2">Advisory Board</td><td>10/16-09/20</td></tr>
-            <tr class="group"><td colspan="2">Student Selection Committee</td><td>02/17-02/18</td></tr>
-            
-            <tr><td colspan="3"><h3>Accuray</td></h3></tr>
-            <tr class="group"><td colspan="2">Customer Advisory Board</td><td>09/19-02/20</td></tr>
-            
-            <tr><td colspan="3"><h3>State of Mississippi</h3></td></tr>
-            <tr class="group"><td colspan="2">Mississippi Radiation Response Volunteer Corps</td><td>01/11-02/20</td></tr>
-            
-            <tr><td colspan="3"><h3>Guidepoint</h3></td></tr>
-            <tr class="group"><td colspan="2">Expert Network Advisor (Healthcare)</td><td>10/11-06/23</td></tr>
-            
-        </tbody>
-        
-        <thead><tr><th><h2>Contribute</h2></th></tr></thead>
+     </tbody>
 
-        <tbody id="contribute">
+     <thead><tr><th><h2>Innovate</h2></th></tr></thead>
 
-            <tr><td colspan="3"><h3><a target="_blank" href="https://en.wikipedia.org/wiki/Special:Contributions/Pairko">Wikipedia</a></h3></td></tr>
-            <tr class="group"><td colspan="2">The Free Encyclopedia</td><td></td></tr>
-    
-            <tr><td colspan="3"><h3><a target="_blank" href="https://en.wikisource.org/wiki/Special:Contributions/Pairko">Wikisource</a></h3></td></tr>
-            <tr class="group"><td colspan="2">The Free Library That Anyone Can Improve</td><td></td></tr>
-    
-            <tr><td colspan="3"><h3><a target="_blank" href="https://commons.wikimedia.org/wiki/Special:Contributions/Pairko">Wikimedia Commons</a></h3></td></tr>
-            <tr class="group"><td colspan="2">A Collection of Freely Usable Media Files to Which Anyone Can Contribute</td><td></td></tr>
-    
-            <tr><td colspan="3"><h3><a target="_blank" href="https://standardebooks.org">Standard Ebooks</a></h3></td></tr>
-            <tr class="group"><td colspan="2">Free and Liberated Ebooks, Carefully Produced for the True Book Lover</td><td></td></tr>
-    
-            <tr><td colspan="3"><h3><a target="_blank" href="https://archive.org/details/@pairko">Internet Archive</a></h3></td></tr>
-            <tr class="group"><td colspan="2">Non-profit library of books, movies, software, music, websites, and more.</td><td></td></tr>
-    
-            <tr><td colspan="3"><h3><a target="_blank" href="https://api.safecast.org/en-US/users/1108/measurements">Safecast</a></h3></td></tr>
-            <tr class="group"><td colspan="2">Maintains a Global, Open Dataset of Environmental Radiation Measurements.</td><td></td></tr>
-    
-            <tr><td colspan="3"><h3><a target="_blank" href="https://www.pgdp.net/c/stats/members/mdetail.php?id=181005">Project Gutenberg, Distributed Proofreaders</a></h3></td></tr>
-            <tr class="group"><td colspan="2">Preserving history, one page at a time.</td><td></td></tr>
+     <tbody id="innovate">
+         <tr><td colspan="3"><h3>Model 515 eCheck Device</h3></td></tr>
+         <tr><td colspan="3"><h3>Conformal Arc Hybrid IMRT Treatment Technique</h3></td></tr>
+     </tbody>
 
-        </tbody>
+     <thead><tr><th><h2>Verify</h2></th></tr></thead>
 
-    </table>
-    <hr/>    
-</div>
+     <tbody id="verify">
 
-</body>
+         <tr><td colspan="3"><h3>Vendor β Test Administrator</h3></td></tr>
 
+         <tr class="group"><td colspan="2">Prowess 3000</td><td></td></tr>
+         <tr class="group"><td colspan="2">Prowess FS<sup>2</sup></td><td></td></tr>
+
+         <tr><td colspan="3"><h3>Clinical αβ Test Evaluator</h3></td></tr>
+
+         <tr class="group"><td colspan="2">Pinnacle<sup>3</sup> SmartArc</td><td></td></tr>
+         <tr class="group"><td colspan="2">RayStation RayTomo</td><td></td></tr>
+
+     </tbody>
+
+     <thead><tr><th><h2>Serve</h2></th></tr></thead>
+
+     <tbody id="serve">
+
+         <tr><td colspan="3"><h3>U. S. Army</h3></td></tr>
+
+         <tr class="group"><td colspan="2">Active Duty</td><td>82-85</td></tr>
+         <tr class="group"><td colspan="2">Active Reserve</td><td>85-88</td></tr>
+         <tr class="group"><td colspan="2">Signal Corp, C&amp;E</td></tr>
+         <tr class="group"><td colspan="2">JCRX Flintlock 84</td></tr>
+         <tr class="group"><td colspan="2">AAM-84, ARCOM-85</td></tr>
+
+         <tr><td colspan="3"><h3>American Association of Physicists in Medicine</h3></td></tr>
+
+         <tr class="group"><td colspan="2">Professional Economics Committee</td><td>01/11-12/16</td></tr>
+         <tr class="group"><td colspan="2">New Professionals Subcommittee</td><td>01/12-12/14</td></tr>
+         <tr class="group"><td colspan="2">Biological Effects Subcommittee</td><td>01/99-12/04</td></tr>
+         <tr class="group"><td colspan="2">Radiation Oncology Safety Stakeholders Initiative</td><td>01/12-02/20</td></tr>
+         <tr class="group"><td colspan="2">ACMP Membership Committee (Chair)</td><td>01/01-12/01</td></tr>
+
+         <tr><td colspan="3"><h3>Jeff Anderson Regional Medical Center</td></h3></tr>
+
+         <tr class="group"><td colspan="2">Radiation Safety Committee (Chair &amp; RSO)</td><td>&nbsp;</td></tr>
+         <tr class="group"><td colspan="2">Emergency Department Task Group (Lean-6σ)</td><td>&nbsp;</td></tr>
+         <tr class="group"><td colspan="2">Cardiology Operations Task Group (Lean-6σ)</td><td>&nbsp;</td></tr>
+
+         <tr><td colspan="3"><h3>Mississippi School for Mathematics and Science</h3></td></tr>
+         <tr class="group"><td colspan="2">Advisory Board</td><td>10/16-09/20</td></tr>
+         <tr class="group"><td colspan="2">Student Selection Committee</td><td>02/17-02/18</td></tr>
+
+         <tr><td colspan="3"><h3>Accuray</td></h3></tr>
+         <tr class="group"><td colspan="2">Customer Advisory Board</td><td>09/19-02/20</td></tr>
+
+         <tr><td colspan="3"><h3>State of Mississippi</h3></td></tr>
+         <tr class="group"><td colspan="2">Mississippi Radiation Response Volunteer Corps</td><td>01/11-02/20</td></tr>
+
+         <tr><td colspan="3"><h3>Guidepoint</h3></td></tr>
+         <tr class="group"><td colspan="2">Expert Network Advisor (Healthcare)</td><td>10/11-06/23</td></tr>
+
+     </tbody>
+
+     <thead><tr><th><h2>Contribute</h2></th></tr></thead>
+
+     <tbody id="contribute">
+
+         <tr><td colspan="3"><h3><a target="_blank" href="https://en.wikipedia.org/wiki/Special:Contributions/Pairko">Wikipedia</a></h3></td></tr>
+         <tr class="group"><td colspan="2">The Free Encyclopedia</td><td></td></tr>
+
+         <tr><td colspan="3"><h3><a target="_blank" href="https://en.wikisource.org/wiki/Special:Contributions/Pairko">Wikisource</a></h3></td></tr>
+         <tr class="group"><td colspan="2">The Free Library That Anyone Can Improve</td><td></td></tr>
+
+         <tr><td colspan="3"><h3><a target="_blank" href="https://commons.wikimedia.org/wiki/Special:Contributions/Pairko">Wikimedia Commons</a></h3></td></tr>
+         <tr class="group"><td colspan="2">A Collection of Freely Usable Media Files to Which Anyone Can Contribute</td><td></td></tr>
+
+         <tr><td colspan="3"><h3><a target="_blank" href="https://standardebooks.org">Standard Ebooks</a></h3></td></tr>
+         <tr class="group"><td colspan="2">Free and Liberated Ebooks, Carefully Produced for the True Book Lover</td><td></td></tr>
+
+         <tr><td colspan="3"><h3><a target="_blank" href="https://archive.org/details/@pairko">Internet Archive</a></h3></td></tr>
+         <tr class="group"><td colspan="2">Non-profit library of books, movies, software, music, websites, and more.</td><td></td></tr>
+
+         <tr><td colspan="3"><h3><a target="_blank" href="https://api.safecast.org/en-US/users/1108/measurements">Safecast</a></h3></td></tr>
+         <tr class="group"><td colspan="2">Maintains a Global, Open Dataset of Environmental Radiation Measurements.</td><td></td></tr>
+
+         <tr><td colspan="3"><h3><a target="_blank" href="https://www.pgdp.net/c/stats/members/mdetail.php?id=181005">Project Gutenberg, Distributed Proofreaders</a></h3></td></tr>
+         <tr class="group"><td colspan="2">Preserving history, one page at a time.</td><td></td></tr>
+
+     </tbody>
+
+ </table>
+  </section>
+                <section id="extras" class="body">
+                                <div class="blogroll">
+                                        <h2>links</h2>
+                                        <ul>
+                                                        <li><a href="https://getpelican.com/">Pelican</a></li>
+                                                        <li><a href="https://www.python.org/">Python.org</a></li>
+                                                        <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                                        </ul>
+                                </div><!-- /.blogroll -->
+                                <div class="social">
+                                        <h2>social</h2>
+                                        <ul>
+                                                        <li><a href="/feeds/feed.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+                                                        <li><a href="/feeds/feed.rss.xml" type="application/rss+xml" rel="alternate">rss feed</a></li>
+
+                                        </ul>
+                                </div><!-- /.social -->
+                </section><!-- /#extras -->
+
+                <footer id="contentinfo" class="body">
+                        <address id="about" class="vcard body">
+                                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                        </address><!-- /#about -->
+
+                        <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+                </footer><!-- /#contentinfo -->
+
+        </body>
 </html>

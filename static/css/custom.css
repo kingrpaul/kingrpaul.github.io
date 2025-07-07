@@ -1,0 +1,448 @@
+.landing-svg {
+  width: 100%;
+  height: 100vh;
+  object-fit: contain;
+  padding: 20px;
+}
+
+.linked-logo {
+    max-width: 150px;
+    transition: transform 0.3s;
+}
+.linked-logo:hover {
+    transform: scale(1.05);
+}
+
+
+CV
+table#cv * {
+    line-height: 1;
+    margin:0;
+    padding:0;
+}
+
+#cv tbody {
+    border-top: 1px solid #343a40;
+}
+
+#cv table a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+#cv h2 {
+    font-size: 1.3rem;
+    padding-top: 0.5em;
+}
+
+#cv h3 {
+    font-size: 1.2em;
+}
+
+#cv tbody tr td {
+    padding: 0.3em .5em 0.3em 1em;
+}
+
+#cv tbody tr:first-of-type > td {
+    padding-top: 0.6em;
+}
+#cv tbody tr:last-of-type > td {
+    padding-bottom: 0.6em;
+}
+
+#cv tbody:last-of-type tr:last-of-type {
+    border-bottom: 1px solid #343a40;
+}
+
+#cv .group > td {
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    line-height: 1rem;
+    padding-top: 0.1rem;
+    padding-bottom: 0.1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#cv a {
+  color: inherit;
+  text-decoration: none;
+}
+
+#cv .font-monospace {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
+/* Thesis */
+
+#thesis h1, h2, h3, h4, h5, h6 {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+#thesis {
+    font-family: 'Courier New', monospace;
+}
+
+#thesis h1 {
+    font-size: 1.5rem;
+    margin: 0 18%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#thesis h2 {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+#thesis h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    text-decoration: underline;
+    margin: 1rem 0;
+}
+
+#thesis h4 {
+    font-size: 1.1rem;
+    text-decoration: underline;
+    margin: 1rem 0;
+}
+
+#thesis h5 {
+    font-size: 1rem;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#thesis p {
+    font-size: 0.9rem;
+    text-indent: 3rem;
+}
+
+#thesis li {
+    font-size: 0.9rem;
+}
+
+#thesis section {
+    margin-bottom: 1.5rem;
+    max-width: 85rem;
+}
+
+#thesis figure {
+    margin-top: 1.5rem;
+    max-width: 60rem;
+}
+
+#thesis figcaption {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+#thesis .signature-block {
+    max-width: 16rem;
+    padding-top: 0.3rem;
+    border-top: 2px solid grey;
+    margin-right: 10%;
+    margin-top: 3.5rem;
+    text-indent: 0;
+    margin-left: 55%;
+}
+
+#thesis msubsup>mo,
+mfrac {
+    font-size: 1.8rem;
+}
+
+#thesis .reference-list>li {
+    list-style-type: decimal;
+}
+
+#thesis math {
+    display: block;
+    margin: 1rem;
+}
+
+/* chapter name, second h2 */
+#thesis h2+h2 {
+    margin: 0 auto 2rem;
+}
+
+/* formula number */
+#thesis .col-sm+.col-sm {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#thesis .container-fluid {
+    padding: 2rem;
+}
+
+@media (max-width:30rem) {
+    #thesis .container-fluid {
+        padding: 10px;
+    }
+
+    #thesis h2 {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    #thesis h1 {
+        margin: 0 5%;
+    }
+
+    #thesis p {
+        line-height: 1.2rem;
+    }
+
+    #thesis section {
+        margin-bottom: 0.5rem;
+    }
+
+    /* formula number */
+    #thesis .col-sm+.col-sm {
+        font-size: 0.5rem;
+    }
+}
+
+/* BLACKWOOD */
+
+#blackwood {}
+:root {
+--primary: #007bff;
+--secondary: #6c757d;;
+--success: #28a745;
+--danger: #dc3545;
+--warning: #ffc107; 
+--info: #17a2b8;           
+--light: #f8f9fa;
+--dark: #343a40;
+--white: #ffffff;
+--british-racing-green: #004225;
+}
+
+#blackwood {
+  font-family: Arial, sans-serif;
+  color: var(--dark);
+  background-color: var(--light);
+  margin: 5px auto;
+  padding: 20px;
+}
+
+#blackwood a {
+  color: inherit;
+}
+
+#blackwood h1 {
+  text-align: center;
+}
+
+#blackwood h2 {
+  text-align: start;
+}
+
+/* HOME LINK */
+#blackwood  > header > a {
+  float: inline-end;
+  margin:0;
+  color: var(--primary)
+}
+
+/* HEADER TEXT */
+#blackwood  > header > p {
+  color: var(--secondary);
+  font-size: 0.9em;
+  line-height: 1.05;  
+  margin:0.5em 0;
+}
+
+/* MAIN SECTIONING */
+#blackwood  > section {
+  margin: 0;
+  padding: 0.3em 0.5em;
+  box-shadow: 0 0 10px 0 var(--british-racing-green);
+}
+
+/* BY YEAR SUBSECTIONING */
+#blackwood #resources > section,
+#works > section {
+  margin: 0;
+  border-top: 1px dotted var(--british-racing-green);
+}
+
+#blackwood #resources > section > header, 
+#works > section > header {
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 0.5em 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+/* INDIVIDUAL WORKS */
+
+#blackwood #works > section article {
+  padding-top: 0.4em;
+}
+
+/* LINKED TITLE */
+#blackwood #other-galleries > article a,
+#resources > section article a, 
+#works > section article a {
+  font-size: 1.1em;
+  font-variant: small-caps;
+}
+
+/* DESCRIPTION */
+#blackwood #other-galleries > article p,
+#resources > section article p,
+#works > section article p {
+  margin: 0.2em 0 1em 1em;
+  font-size: 0.85rem;
+  color:var(--secondary);
+  font-style:italic;
+}
+
+/* link icons */
+#blackwood #works > section article a:empty {
+  height:1.2rem;
+  width:auto;
+  vertical-align: bottom;
+  display: inline-block;
+  margin-top: 0.2em;
+}
+
+#blackwood #works > section article > * {
+  margin-left: 1em;
+}
+
+/* work title */
+
+#blackwood #works > section article a:first-of-type {
+  display: block;
+  height:inherit;
+  width: fit-content;
+  vertical-align: inherit;
+  margin: 0.5em 0 0.5em 0;
+}
+
+/* source links */
+#blackwood a.gb {
+/* Google Books */
+  content: url('../../icons/gb.svg');
+}
+#blackwood a.ht {
+/* Hathi Trust */
+  content: url('../../icons/ht.svg');
+  width: 3em;
+}
+#blackwood a.ia {
+/* Internet Archive */
+  content: url('../../icons/ia.svg');
+}
+#blackwood a.pg {
+/* Project Gutenburg */
+  content: url('../../icons/pg.svg');
+}
+#blackwood a.tv {
+/* Trove, Nat'l Lib. of Australia */
+  content: url('../../icons/tv.svg');
+}
+#blackwood a.ws {
+/* WikiSource */
+  content: url('../../icons/ws.svg');
+}
+#blackwood a.etc {
+/* Other */
+  content: url('../../icons/etc.svg');
+}
+
+#blackwood a.bw {
+/* AlgernonBlackwood.org */
+  content: url('../../etc.svg');
+}
+#blackwood a.na {
+/* No Source */
+  content: url('../../icons/unk.svg');
+}
+
+
+#blackwood #collections  p {
+  font-size: 0.9em;
+  font-style: italic;
+  margin: 0 0.5em 0.5em;
+  padding-bottom: 0;
+}
+
+#blackwood #collections  ol {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+
+#blackwood a.disabled {
+  pointer-events: none; 
+  color: var(--secondary);
+}
+
+#blackwood  > header,
+#works > section > article
+  {
+  background-color: var(--white);
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 1px;
+}
+
+#blackwood #galleries article header {
+  text-align: center;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 1em 0 0.5em 0;
+}
+
+#blackwood figure {
+  vertical-align: top;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  margin: 0;
+  padding:0;
+}
+
+#blackwood figcaption {
+  line-height: 1;
+  text-align: center;
+  font-size: 0.8em;
+  max-width: 10em;
+  margin: 0;
+  padding:0;
+}
+
+#blackwood img{
+  max-width: 10em;
+  max-height: 5em; 
+  border:1px dotted var(--british-racing-green);
+  margin: 0;
+  padding:0;
+  filter: grayscale(100%);
+}
+
+#blackwood h1 {
+margin-bottom: 0.2em;
+}
+
+#blackwood h2.subhead{
+text-align: center;
+font-weight: normal;
+margin-top: 0 0 1em 0;
+font-variant: small-caps;
+font-size: 1.2em;
+line-height: 1;
+}
+
+#galleries a {
+    color:inherit !important;
+}
