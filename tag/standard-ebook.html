@@ -27,18 +27,18 @@
                         <h1><a href="../">PAIRKO</a></h1>
                         <nav><ul>
                                         <li><a href="/index.html">Home</a></li>
-                                        <li><a href="/category/ebooks.html">Ebooks</a></li>
-                                        <li><a href="/category/document.html">Documents</a></li>
+                                        <li><a href="/category/ebooks.html">Books</a></li>
+                                        <li><a href="/category/document.html">Docs</a></li>
                                         <li><a href="/category/notes.html">Notes</a></li>
                                         <li><a href="/category/picture.html">Pictures</a></li>
                                         <li><a href="/category/review.html">Reviews</a></li>
                                         <li><a href="/category/illustrations.html">Illustrations</a></li>
+                                        <li><a href="/blackwood.html">Blackwood</a></li>
                                         <li><a href="/tag/medical-physics.html">Med-Physics</a></li>
+                                        <li><a href="/category/blog-en.html">Blog</a></li>
                                         <li><a href="/tag/esperanto.html">Esperanto</a></li>
-                                        <li><a href="/category/blog-en.html">Blog-EN</a></li>
-                                        <li><a href="/category/blog-eo.html">Blog-EO</a></li>
-                                        <li><a href="../blog-index.html">Feed</a></li>
-                                        <li><a href="/archives.html">Archives</a></li>
+                                        <li><a href="/category/blog-eo.html">Blogo</a></li>
+                                        <li><a href="/archives.html">Archive</a></li>
                                         <li><a href="/tags.html">Tags</a></li>
                                         <li><a href="/about.html">About</a></li>
                         </ul></nav>
@@ -46,171 +46,7 @@
 
                 <aside id="featured" class="body">
                     <article>
-                        <h1 class="entry-title"><a href="../dual-language-glossary.html">Dual-Language Glossary</a></h1>
-<footer class="post-info">
-        <abbr class="published" title="2025-03-27T00:00:00-05:00">
-                Published: Thu 27 March 2025
-        </abbr>
-                <br />
-                <abbr class="modified" title="2025-06-14T00:00:00-05:00">
-                        Updated: Sat 14 June 2025
-                </abbr>
-
-                <address class="vcard author">
-                        By                                 <a class="url fn" href="../author/paul-king.html">Paul King</a>
-                </address>
-        <p>In <a href="../category/notes.html">Notes</a>.</p>
-<p>tags: <a href="../tag/esperanto.html">esperanto</a> <a href="../tag/translation.html">translation</a> <a href="../tag/ebook.html">ebook</a> <a href="../tag/standard-ebook.html">standard-ebook</a> </p>        
-</footer><!-- /.post-info --><div class="section" id="esperanto-english-using-standard-ebooks-tools">
-<h2>Esperanto-English Using Standard Ebooks Tools</h2>
-<p>An e-book glossary entry ordinarily consists of three parts:</p>
-<ol class="arabic simple">
-<li>Term to be defined: stored as the dt-term in a dl-description-list, contained in glossary.txt.</li>
-<li>Definition: stored as the dd-description in a dl-description-list.</li>
-<li>Synonyms and variations of each term, connecting them to that term: stored as a search-key-map in glossary-search-key-map.xml.</li>
-</ol>
-<p>In practice, a glossary is used by a user looking up a word in the text, when this word is encountered. Also, it is significant that the glossary-search-key-map is not well-supported by existing readers and the glossary is intended to work around this limitation, providing good function, while also functioning properly when the support is widely available. These goals are accomplished by using the following formats.</p>
-<div class="section" id="text-glossary-xhtml">
-<h3>text/glossary.xhtml</h3>
-<p>The glossary file contains a description list with one dt-dd pair per term, in alphabetical order. Using the example, for each entry, make the following replacements.</p>
-<ol class="arabic simple">
-<li>Within the term:</li>
-</ol>
-<blockquote>
-<ul class="simple">
-<li>Replace <em>Abdul Alhazred</em> with the <em>English</em> term being described.</li>
-<li>Replace <em>abdul-alhazred</em> as the id with the lower-case, dash-separated, no-diacritics version of this term.</li>
-</ul>
-</blockquote>
-<ol class="arabic simple" start="2">
-<li>Within the description:</li>
-</ol>
-<blockquote>
-<ul class="simple">
-<li>Replace <em>Abdul-Alhazredo</em> inside the &lt;strong&gt; element with the Esperanto transation of the term.</li>
-<li>After the &lt;strong&gt;, colon, and space; provide a brief, simple, and consistently arranged Esperanto definition of the term. Do not include any links.</li>
-<li>In the second paragraph, after the &lt;strong&gt; list all words, separated by comma, in either language which correspond to this definition. Exclude the two words already given. Include variations in tense, number, possessive, etc. that appear in the work and consider include alternate spellings found in Wikipedia. Do not tag these words to indicate their language.</li>
-</ul>
-</blockquote>
-<div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&quot;http://www.w3.org/1999/xhtml&quot;</span> <span class="na">xmlns:epub</span><span class="o">=</span><span class="s">&quot;http://www.idpf.org/2007/ops&quot;</span> <span class="na">epub:prefix</span><span class="o">=</span><span class="s">&quot;z3998: http://www.daisy.org/z3998/2012/vocab/structure/, se: https://standardebooks.org/vocab/1.0&quot;</span> <span class="na">xml:lang</span><span class="o">=</span><span class="s">&quot;eo&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>Glosaro<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../css/core.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;../css/local.css&quot;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text/css&quot;</span><span class="p">/&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">body</span> <span class="na">epub:type</span><span class="o">=</span><span class="s">&quot;backmatter&quot;</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">section</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;glossary&quot;</span> <span class="na">epub:type</span><span class="o">=</span><span class="s">&quot;glossary&quot;</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">epub:type</span><span class="o">=</span><span class="s">&quot;title&quot;</span><span class="p">&gt;</span>Glosaro<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-            <span class="p">&lt;</span><span class="nt">dl</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">dt</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;abdul-alhazred&quot;</span> <span class="na">epub:type</span><span class="o">=</span><span class="s">&quot;glossterm&quot;</span> <span class="na">xml:lang</span><span class="o">=</span><span class="s">&quot;en-US&quot;</span><span class="p">&gt;</span>
-                    <span class="p">&lt;</span><span class="nt">dfn</span><span class="p">&gt;</span>Abdul Alhazred<span class="p">&lt;/</span><span class="nt">dfn</span><span class="p">&gt;</span>
-                <span class="p">&lt;/</span><span class="nt">dt</span><span class="p">&gt;</span>
-                <span class="p">&lt;</span><span class="nt">dd</span> <span class="na">epub:type</span><span class="o">=</span><span class="s">&quot;glossdef&quot;</span><span class="p">&gt;</span>
-                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>Abdul-Alhazredo<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span>: Verkisto de la Nekronomiko.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">span</span> <span class="na">xml:lang</span><span class="o">=</span><span class="s">&quot;en-US&quot;</span><span class="p">&gt;</span>Also:<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> Alhazred.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-                <span class="p">&lt;/</span><span class="nt">dd</span><span class="p">&gt;</span>
-            <span class="p">&lt;/</span><span class="nt">dl</span><span class="p">&gt;</span>
-        <span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</pre></div>
-</div>
-<div class="section" id="epub-glossary-search-key-map-xml">
-<h3>epub/glossary-search-key-map.xml</h3>
-<p>For each term, the key-map contains a single element that provides a describes the relationship between the main glossary term
-and all other words mapped to that term.</p>
-<ol class="arabic simple">
-<li>Within each search-key-group:</li>
-</ol>
-<blockquote>
-<ul class="simple">
-<li>Replace <em>abdul-alhazred</em> with the corresponding id from the glossary file.</li>
-<li><dl class="first docutils">
-<dt>Copy one &lt;match&gt; item for each synonym. There will be at least two. The original English and</dt>
-<dd>original Esperanto will be the first two and the list will include all of the &quot;Also&quot; elements from the
-corresponding glossary item.</dd>
-</dl>
-</li>
-</ul>
-</blockquote>
-<ol class="arabic simple" start="2">
-<li>Within match:</li>
-</ol>
-<blockquote>
-<ul class="simple">
-<li><dl class="first docutils">
-<dt>For the title, replace <em>Abdul Alhazred</em> with the English from the definition term. All these will</dt>
-<dd>be the same.</dd>
-</dl>
-</li>
-<li>For the values, enter all of the available synonyms from the glossary.</li>
-</ul>
-</blockquote>
-<div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
-<span class="p">&lt;</span><span class="nt">search-key-map</span> <span class="na">xmlns</span><span class="o">=</span><span class="s">&quot;http://www.idpf.org/2007/ops&quot;</span> <span class="na">xml:lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">search-key-group</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;text/glossary.xhtml#abdul-alhazred&quot;</span><span class="p">&gt;</span>
-        <span class="p">&lt;</span><span class="nt">match</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Abdul Alhazred&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Abdul Alhazred&quot;</span><span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">match</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Abdul Alhazred&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Abdul-Alhazredo&quot;</span><span class="p">/&gt;</span>
-        <span class="p">&lt;</span><span class="nt">match</span> <span class="na">title</span><span class="o">=</span><span class="s">&quot;Abdul Alhazred&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;Alhazred&quot;</span><span class="p">/&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">search-key-group</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">search-key-map</span><span class="p">&gt;</span>
-</pre></div>
-<p>Note that the key-map is not yet well supported by ebook readers. The &quot;Also&quot; line in the glossary is intended as
-a workaround. These items are intended to be hidden, though the reading device may present them anyway. But by listing here, the reader should bring up the glossary item during search.</p>
-</div>
-<div class="section" id="css-local-css">
-<h3>css/local.css</h3>
-<p>The first three items here are SE styles, meant to show the glossary items in a good way. The remaining items
-are meant to make the English and Esperanto words easy to distinguish during search and in the final document. It is meant to hide the extra
-synonyms but present them well in a a helpful way if the reader-device does display them.</p>
-<div class="highlight"><pre><span></span># SE Part
-dl{
-    margin: 1em 0;
-}
-
-dd{
-    margin-left: 40px;
-}
-
-dd + dt{
-    margin-top: 1em;
-}
-
-# Dual-Language Part
-dl dd p:nth-of-type(odd) strong{
-    font-weight: bold;
-}
-
-dl dd p:nth-of-type(2){
-    display: none;
-    font-size: smaller;
-    font-style: italic;
-    font-variant: small-caps;
-    text-indent: 0;
-}
-
-dl dd p:nth-of-type(even) span:first-of-type{
-    font-size: 1em;
-    margin-right: 1em;
-}
-</pre></div>
-</div>
-</div>
-                    </article>
-                </aside><!-- /#featured -->
-                    <section id="content" class="body">
-                        <h1>Other articles</h1>
-                        <hr />
-                        <ol id="posts-list" class="hfeed">
-
-                <li><article class="hentry">
-                    <header>
-                        <h1><a href="../a-general-history-of-the-pirates.html" rel="bookmark"
-                               title="Permalink to A General History of the Pirates">A General History of the Pirates</a></h1>
-                    </header>
-
-                    <div class="entry-content">
+                        <h1 class="entry-title"><a href="../a-general-history-of-the-pirates.html">A General History of the Pirates</a></h1>
 <footer class="post-info">
         <abbr class="published" title="2023-03-27T00:00:00-05:00">
                 Published: Mon 27 March 2023
@@ -224,11 +60,39 @@ dl dd p:nth-of-type(even) span:first-of-type{
                         By                                 <a class="url fn" href="../author/paul-king.html">Paul King</a>
                 </address>
         <p>In <a href="../category/ebooks.html">EBooks</a>.</p>
-<p>tags: <a href="../tag/standard-ebook.html">standard-ebook</a> <a href="../tag/pirate.html">pirate</a> </p>        
-</footer><!-- /.post-info -->                        
-                        <a class="readmore" href="../a-general-history-of-the-pirates.html">read more</a>
-                    </div><!-- /.entry-content -->
-                </article></li>
+<p>tags: <a href="../tag/standard-ebook.html">standard-ebook</a> <a href="../tag/pirate.html">pirate</a> <a href="../tag/maritime.html">maritime</a> </p>        
+</footer><!-- /.post-info --><div class="align-center figure">
+<img alt="A General History of the Pirates" src="../books/cover/a-general-history-of-the-pirates_150x225.jpg" />
+<p class="caption"><em>A General History of the Pirates</em> (1724) <object data="../icons/uk-flag.svg" style="width: 2em;" type="image/svg+xml">flag</object></p>
+</div>
+<p>In the 18th century, daring outlaws terrorized the Atlantic Ocean and Caribbean Sea.</p>
+<blockquote>
+<table border="1" class="compact docutils">
+<colgroup>
+<col width="25%" />
+<col width="75%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><object data="../icons/se.svg" style="width: 1.5em;" type="image/svg+xml">icon</object></td>
+<td><a class="reference external" href="https://standardebooks.org/ebooks/captain-charles-johnson/a-general-history-of-the-pirates">Standard Ebooks</a></td>
+</tr>
+<tr><td><object data="../icons/github.svg" style="width: 1.1em;" type="image/svg+xml">icon</object></td>
+<td><a class="reference external" href="https://github.com/kingrpaul/captain-charles-johnson_a-general-history-of-the-pyrates">Github</a></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<div class="section" id="author">
+<h2>Author</h2>
+<blockquote>
+Captain Charles Johnson</blockquote>
+</div>
+                    </article>
+                </aside><!-- /#featured -->
+                    <section id="content" class="body">
+                        <h1>Other articles</h1>
+                        <hr />
+                        <ol id="posts-list" class="hfeed">
 
                 <li><article class="hentry">
                     <header>
