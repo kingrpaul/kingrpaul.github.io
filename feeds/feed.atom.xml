@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>PAIRKO</title><link href="/" rel="alternate"></link><link href="feeds/feed.atom.xml" rel="self"></link><id>/</id><updated>2025-07-10T17:23:00-05:00</updated><entry><title>Esperanto Star</title><link href="eo-star_metallic_faceted.html" rel="alternate"></link><published>2025-05-27T00:00:00-05:00</published><updated>2025-07-10T17:23:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2025-05-27:eo-star_metallic_faceted.html</id><summary type="html"></summary><content type="html">&lt;div class="figure align-center"&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>PAIRKO</title><link href="/" rel="alternate"></link><link href="feeds/feed.atom.xml" rel="self"></link><id>/</id><updated>2025-07-11T00:00:00-05:00</updated><entry><title>The Wheel of Film</title><link href="the-wheel-of-film-en-US.html" rel="alternate"></link><published>2025-07-11T00:00:00-05:00</published><updated>2025-07-11T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2025-07-11:the-wheel-of-film-en-US.html</id><content type="html">&lt;div class="figure"&gt;
+&lt;img alt="divided flag" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Old_celluloid_film_rolls_%285201105455%29.jpg/1599px-Old_celluloid_film_rolls_%285201105455%29.jpg" style="width: 50%;" /&gt;
+&lt;p class="caption"&gt;The Wheel of Time turns, and movies come and pass, leaving sequel that becomes spinoff. Spinoff fades to reboot, and even the revival is long forgotten when the movie that gave them birth comes again.&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="blog-en"></category><category term="video"></category></entry><entry><title>Esperanto Star</title><link href="eo-star_metallic_faceted.html" rel="alternate"></link><published>2025-05-27T00:00:00-05:00</published><updated>2025-07-10T17:23:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2025-05-27:eo-star_metallic_faceted.html</id><summary type="html"></summary><content type="html">&lt;div class="figure align-center"&gt;
 &lt;object data="../../illustrations/mine/eo-star_metallic_faceted.svg" style="width: 50%;" type="image/svg+xml"&gt;star&lt;/object&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;a class="reference external" href="../../illustrations/mine/eo-star_metallic_faceted.svg"&gt;Download the file&lt;/a&gt;&lt;/p&gt;
@@ -15,7 +19,7 @@
 &lt;p class="caption"&gt;Gian Squid Holding Sailor&lt;/p&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;a class="reference external" href="../../illustrations/2000-leagues-under-the-sea_1871/tentacle-holding-sailor.svg"&gt;Download the file&lt;/a&gt;&lt;/p&gt;
-</content><category term="Illustrations"></category><category term="maritime"></category></entry><entry><title>Barrel</title><link href="barrel_A135.html" rel="alternate"></link><published>2025-05-22T00:00:00-05:00</published><updated>2025-07-10T17:23:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2025-05-22:barrel_A135.html</id><summary type="html"></summary><content type="html">&lt;div class="figure align-center"&gt;
+</content><category term="Illustrations"></category><category term="maritime"></category></entry><entry><title>Barrel</title><link href="barrel_A135.html" rel="alternate"></link><published>2025-05-22T00:00:00-05:00</published><updated>2025-05-22T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2025-05-22:barrel_A135.html</id><summary type="html"></summary><content type="html">&lt;div class="figure align-center"&gt;
 &lt;object data="../../illustrations/american-type-founders-specimen-book_1923/pg801_miscellaneous-cast-cuts/barrel_A135.svg" style="width: 50%;" type="image/svg+xml"&gt;barrel&lt;/object&gt;
 &lt;/div&gt;
 &lt;p&gt;&lt;a class="reference external" href="../../illustrations/american-type-founders-specimen-book_1923/pg801_miscellaneous-cast-cuts/barrel_A135.svg"&gt;Download the file&lt;/a&gt;&lt;/p&gt;
@@ -132,7 +136,7 @@
 &lt;p class="caption"&gt;Anonymous&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="EBooks"></category><category term="esperanto"></category><category term="english"></category><category term="translation"></category></entry><entry><title>Formatting a Dual-Language Glossary</title><link href="formatting-a-dual-language-glossary.html" rel="alternate"></link><published>2025-03-27T00:00:00-05:00</published><updated>2025-07-10T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2025-03-27:formatting-a-dual-language-glossary.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="esperanto-english-using-standard-ebooks-tools"&gt;
+</content><category term="EBooks"></category><category term="esperanto"></category><category term="book-eo"></category></entry><entry><title>Formatting a Dual-Language Glossary</title><link href="formatting-a-dual-language-glossary.html" rel="alternate"></link><published>2025-03-27T00:00:00-05:00</published><updated>2025-07-10T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2025-03-27:formatting-a-dual-language-glossary.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="esperanto-english-using-standard-ebooks-tools"&gt;
 &lt;h2&gt;Esperanto-English Using Standard Ebooks Tools&lt;/h2&gt;
 &lt;p&gt;An e-book glossary entry ordinarily consists of three parts:&lt;/p&gt;
 &lt;ol class="arabic simple"&gt;
@@ -333,7 +337,7 @@ dl dd p:nth-of-type(even) span:first-of-type{
 &lt;p class="caption"&gt;HP Lovecraft&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="EBooks"></category><category term="esperanto"></category><category term="english"></category><category term="translation"></category></entry><entry><title>Transiro</title><link href="transiro.html" rel="alternate"></link><published>2025-01-21T00:00:00-06:00</published><updated>2025-06-24T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2025-01-21:transiro.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
+</content><category term="EBooks"></category><category term="esperanto"></category><category term="book-eo"></category></entry><entry><title>Transiro</title><link href="transiro.html" rel="alternate"></link><published>2025-01-21T00:00:00-06:00</published><updated>2025-06-24T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2025-01-21:transiro.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
 &lt;img alt="Transiro" src="../books/cover/transiro_150x225.jpg" /&gt;
 &lt;p class="caption"&gt;&lt;strong&gt;Transiro&lt;/strong&gt; &lt;object data="icons/eo-flag.svg" style="width: 2em;" type="image/svg+xml"&gt;flag&lt;/object&gt;&lt;/p&gt;
 &lt;div class="legend"&gt;
@@ -398,7 +402,7 @@ dl dd p:nth-of-type(even) span:first-of-type{
 &lt;p class="caption"&gt;Algernon Blackwood&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="EBooks"></category><category term="esperanto"></category><category term="english"></category><category term="translation"></category></entry><entry><title>La Atesto de Randolfo Kartero</title><link href="la-atesto-de-randolfo-kartero.html" rel="alternate"></link><published>2025-01-03T00:00:00-06:00</published><updated>2025-06-24T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2025-01-03:la-atesto-de-randolfo-kartero.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
+</content><category term="EBooks"></category><category term="esperanto"></category><category term="book-eo"></category></entry><entry><title>La Atesto de Randolfo Kartero</title><link href="la-atesto-de-randolfo-kartero.html" rel="alternate"></link><published>2025-01-03T00:00:00-06:00</published><updated>2025-06-24T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2025-01-03:la-atesto-de-randolfo-kartero.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
 &lt;img alt="La Atesto de Randolfo Kartero" src="../books/cover/la-atesto-de-randolfo-kartero_150x225.jpg" /&gt;
 &lt;p class="caption"&gt;&lt;strong&gt;La Atesto de Randolfo Kartero&lt;/strong&gt; &lt;object data="icons/eo-flag.svg" style="width: 2em;" type="image/svg+xml"&gt;flag&lt;/object&gt;&lt;/p&gt;
 &lt;div class="legend"&gt;
@@ -463,7 +467,7 @@ dl dd p:nth-of-type(even) span:first-of-type{
 &lt;p class="caption"&gt;H P Lovecraft&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="EBooks"></category><category term="esperanto"></category><category term="english"></category><category term="translation"></category></entry><entry><title>Hello world!</title><link href="hello-world!-en-US.html" rel="alternate"></link><published>2024-11-20T00:00:00-06:00</published><updated>2024-11-20T00:00:00-06:00</updated><author><name>Paul King</name></author><id>tag:None,2024-11-20:hello-world!-en-US.html</id><content type="html"></content><category term="blog-en"></category><category term="general"></category></entry><entry><title>A True Ghost Story</title><link href="ghost-story.html" rel="alternate"></link><published>2024-10-31T00:00:00-05:00</published><updated>2025-06-15T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-10-31:ghost-story.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="vera-fantoma-rakonto"&gt;
+</content><category term="EBooks"></category><category term="esperanto"></category><category term="book-eo"></category></entry><entry><title>Hello world!</title><link href="hello-world!-en-US.html" rel="alternate"></link><published>2024-11-20T00:00:00-06:00</published><updated>2024-11-20T00:00:00-06:00</updated><author><name>Paul King</name></author><id>tag:None,2024-11-20:hello-world!-en-US.html</id><content type="html"></content><category term="blog-en"></category><category term="general"></category></entry><entry><title>A True Ghost Story</title><link href="ghost-story.html" rel="alternate"></link><published>2024-10-31T00:00:00-05:00</published><updated>2025-06-15T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-10-31:ghost-story.html</id><summary type="html"></summary><content type="html">&lt;div class="section" id="vera-fantoma-rakonto"&gt;
 &lt;h2&gt;Vera Fantoma Rakonto&lt;/h2&gt;
 &lt;div class="section" id="a-true-ghost-story-1"&gt;
 &lt;h3&gt;A True Ghost Story&lt;/h3&gt;
@@ -545,7 +549,7 @@ dl dd p:nth-of-type(even) span:first-of-type{
 &lt;p class="caption"&gt;Anonymous&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="EBooks"></category><category term="esperanto"></category><category term="translation"></category></entry><entry><title>Subĉiela Arto de Ŝandeler</title><link href="subciela-arto-de-sandeler-eo.html" rel="alternate"></link><published>2024-09-17T00:00:00-05:00</published><updated>2024-09-17T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-09-17:subciela-arto-de-sandeler-eo.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
+</content><category term="EBooks"></category><category term="esperanto"></category><category term="book-eo"></category></entry><entry><title>Subĉiela Arto de Ŝandeler</title><link href="subciela-arto-de-sandeler-eo.html" rel="alternate"></link><published>2024-09-17T00:00:00-05:00</published><updated>2024-09-17T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-09-17:subciela-arto-de-sandeler-eo.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
 &lt;img alt="Mural painting showing the Gulf of Mexico, over which the sun sets, on which a boat sails. Also seen are the Mississippi Gulf Coast including place-names, outlying islands, a lighthouse flying the state flag, a 4-points orientation marker, and the artist's signature." src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhZNEMDuVfqvMe5l1LrseaPmbcGIE2MKrEcoMp81ocpCxqoTNZS7aTpS3mqAY2ilMjl6C9zLdQhWoU2F-pFhPlMHQwpvpy3hCYPme_CBYhLylZpIz8N3GfWCgSUScor_X3-kTBx1mx_nhCz9SLaYzLChvMZWcwKjBvLdvSTtojGRJLokCNN7JCCdmJhMA/s1600/20240906_120334_rev.jpg" /&gt;
 &lt;/div&gt;
 </content><category term="blog-eo"></category><category term="esperanto"></category></entry><entry><title>Subĉiela Arto Enhavanta Diversajn Temojn</title><link href="subciela-arto-enhavanta-diversajn-temojn-eo.html" rel="alternate"></link><published>2024-09-14T00:00:00-05:00</published><updated>2024-09-14T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-09-14:subciela-arto-enhavanta-diversajn-temojn-eo.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
@@ -617,7 +621,7 @@ dl dd p:nth-of-type(even) span:first-of-type{
 &lt;p class="caption"&gt;Algernon Blackwood&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="EBooks"></category><category term="esperanto"></category><category term="english"></category><category term="translation"></category></entry><entry><title>Njarlatotepo</title><link href="njarlatotepo.html" rel="alternate"></link><published>2024-08-27T00:00:00-05:00</published><updated>2025-06-24T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-08-27:njarlatotepo.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
+</content><category term="EBooks"></category><category term="esperanto"></category><category term="book-eo"></category></entry><entry><title>Njarlatotepo</title><link href="njarlatotepo.html" rel="alternate"></link><published>2024-08-27T00:00:00-05:00</published><updated>2025-06-24T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-08-27:njarlatotepo.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
 &lt;img alt="Njarlatotepo" src="../books/cover/njarlatotepo_150x225.jpg" /&gt;
 &lt;p class="caption"&gt;&lt;strong&gt;Njarlatotepo&lt;/strong&gt; &lt;object data="icons/eo-flag.svg" style="width: 2em;" type="image/svg+xml"&gt;flag&lt;/object&gt;&lt;/p&gt;
 &lt;div class="legend"&gt;
@@ -682,7 +686,7 @@ dl dd p:nth-of-type(even) span:first-of-type{
 &lt;p class="caption"&gt;HP Lovecraft&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="EBooks"></category><category term="esperanto"></category><category term="english"></category><category term="translation"></category></entry><entry><title>Memoro</title><link href="memoro.html" rel="alternate"></link><published>2024-08-21T00:00:00-05:00</published><updated>2025-06-24T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-08-21:memoro.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
+</content><category term="EBooks"></category><category term="esperanto"></category><category term="book-eo"></category></entry><entry><title>Memoro</title><link href="memoro.html" rel="alternate"></link><published>2024-08-21T00:00:00-05:00</published><updated>2025-06-24T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-08-21:memoro.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
 &lt;img alt="Memoro" src="../books/cover/memoro_150x225.jpg" /&gt;
 &lt;p class="caption"&gt;&lt;strong&gt;Memoro&lt;/strong&gt; &lt;object data="icons/eo-flag.svg" style="width: 2em;" type="image/svg+xml"&gt;flag&lt;/object&gt;&lt;/p&gt;
 &lt;div class="legend"&gt;
@@ -747,7 +751,7 @@ dl dd p:nth-of-type(even) span:first-of-type{
 &lt;p class="caption"&gt;HP Lovecraft&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="EBooks"></category><category term="esperanto"></category><category term="english"></category><category term="translation"></category></entry><entry><title>La Tentoj</title><link href="la-tentoj-eo.html" rel="alternate"></link><published>2024-05-25T00:00:00-05:00</published><updated>2024-05-25T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-05-25:la-tentoj-eo.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
+</content><category term="EBooks"></category><category term="esperanto"></category><category term="book-eo"></category></entry><entry><title>La Tentoj</title><link href="la-tentoj-eo.html" rel="alternate"></link><published>2024-05-25T00:00:00-05:00</published><updated>2024-05-25T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-05-25:la-tentoj-eo.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
 &lt;img alt="Mural painting announces 'Welcome to Meridian, Hometown of David Ruffin and The Temptations' and pictures these musicians; the group in a line and him shown larger at a microphone wearing what appears to be fashion of the 1970s." src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWNLJQbUBxMoVkvyMWxi86rpAc2pu6QlZTauXmcXsQcQGgTYz9TBexLqfmUNnOhzON9nC1bD_8G3D-rk5g9ReT5KTFqS7XyPXSrfLb52Ot9XCZ1FdrtZqyW2AVqR_6HBTdwhWV-GoU9S8owu31sLYC99g2vtdi2CbmTnrpZNyAxEVCzCzECZj9HMWvrA/s1100/2024-04-22-144112.jpg" /&gt;
 &lt;p class="caption"&gt;Ĉi tiu murpentrajo montras malnova muzikistaro kiu nomitas La Tentoj.&lt;/p&gt;
 &lt;/div&gt;
@@ -851,7 +855,7 @@ dl dd p:nth-of-type(even) span:first-of-type{
 &lt;p class="caption"&gt;Philip K. Dick&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
-</content><category term="EBooks"></category><category term="esperanto"></category><category term="english"></category><category term="translation"></category></entry><entry><title>Luna Promenejo</title><link href="luna-promenejo-eo.html" rel="alternate"></link><published>2024-04-13T00:00:00-05:00</published><updated>2024-04-13T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-04-13:luna-promenejo-eo.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
+</content><category term="EBooks"></category><category term="esperanto"></category><category term="book-eo"></category></entry><entry><title>Luna Promenejo</title><link href="luna-promenejo-eo.html" rel="alternate"></link><published>2024-04-13T00:00:00-05:00</published><updated>2024-04-13T00:00:00-05:00</updated><author><name>Paul King</name></author><id>tag:None,2024-04-13:luna-promenejo-eo.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
 &lt;img alt="A mural along the sidewalk labeled Biloxi Moonwalk portrays a lunar-looking surface." src="http://ll.fosscu.org/IdtW5i" /&gt;
 &lt;p class="caption"&gt;La Luna Promenejo troviĝas apud la marbordo de la Golfo de Meksiko proksime la lumturo.&lt;/p&gt;
 &lt;/div&gt;
@@ -1177,8 +1181,4 @@ Only one taste in their mouths?” … “Does no one eat stew?”&lt;/p&gt;
 
 &lt;p&gt;— David Z. Albert , &lt;cite cite="https://www.bibliovault.org/BV.book.epl?BookId=8035"&gt;Quantum Mechanics and Experience. &lt;/cite&gt; (1992), (dust-jacket).&lt;/p&gt;
 
-&lt;/blockquote&gt;</content><category term="Review"></category><category term="book"></category><category term="review"></category></entry><entry><title>Signo</title><link href="signo-eo.html" rel="alternate"></link><published>2023-12-26T00:00:00-06:00</published><updated>2023-12-26T00:00:00-06:00</updated><author><name>Paul King</name></author><id>tag:None,2023-12-26:signo-eo.html</id><summary type="html"></summary><content type="html">&lt;div class="align-center figure"&gt;
-&lt;img alt="A sign identifying the Meridian Museum of art and portraying the top of a door." src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrSwVb5LD6FjKcskbTDQwk2M6eyGWzoS35_q6vLMa6RWsW7inyPPZdqwdVTDS1hQmsZXL35f1XTBa_ffwL9VcaDPl5e5pmYdBQv9F_hLdkq-2Mi5nenAyvujJLMMFGOpwMDbPlrVNIDXWTBnNdirFGrjAOS3H0xOiZIVDCoMPDyNj2P43a6dfuaKHMSg/s320/20231221_131356.jpg" /&gt;
-&lt;p class="caption"&gt;La signo rilatas al La Meridiana Muzeo de Arto.&lt;/p&gt;
-&lt;/div&gt;
-</content><category term="blog-eo"></category><category term="esperanto"></category></entry></feed>
+&lt;/blockquote&gt;</content><category term="Review"></category><category term="book"></category><category term="review"></category></entry></feed>
