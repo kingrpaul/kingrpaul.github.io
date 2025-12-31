@@ -456,3 +456,26 @@ line-height: 1;
   margin-top: 0.1em;
   margin-bottom: 0.1em;
 }
+
+
+/* BLOG POSTS */
+
+/* Poetry formatting */
+
+.poem {
+    margin-left: 0.2em;
+    font-family: serif;
+    font-size: larger;
+}
+
+.poem .line-block {
+    display: block;
+    margin-left: 0;
+}
+
+.poem .line-block > div {
+  display: block;
+    padding-left: 2em;        /* hanging indent */
+    text-indent: -2em;        /* first line back */
+    margin: 0;
+}
