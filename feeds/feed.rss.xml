@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PAIRKO</title><link>/</link><description/><atom:link href="feeds/feed.rss.xml" rel="self"/><lastBuildDate>Mon, 20 Jul 2026 00:00:00 -0500</lastBuildDate><item><title>Pattern Design by Lewis Foreman Day</title><link>pattern-design.html</link><description>&lt;div class="align-center figure"&gt;
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>PAIRKO</title><link>/</link><description/><atom:link href="feeds/feed.rss.xml" rel="self"/><lastBuildDate>Fri, 17 Jul 2026 00:00:00 -0500</lastBuildDate><item><title>The Hellbound Heart by Clive Barker</title><link>the-hellbound-heart.html</link><description>&lt;div class="align-center figure"&gt;
+&lt;img alt="book cover" src="https://upload.wikimedia.org/wikipedia/en/b/b6/Hellboundheart.jpg" style="width: 10em;" /&gt;
+&lt;/div&gt;
+&lt;p&gt;In general, a movie is but a diminished reflection of the book upon which it is based.
+As a rule, the book is better than the movie.&lt;/p&gt;
+&lt;p&gt;There are exceptions.
+They exists.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/The_Hellbound_Heart"&gt;The Hellbound Heart&lt;/a&gt; by by Clive Barker (1986) is not one of them.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Paul King</dc:creator><pubDate>Fri, 23 Jan 2026 00:00:00 -0600</pubDate><guid>tag:None,2026-01-23:the-hellbound-heart.html</guid><category>review-en</category><category>book</category></item><item><title>Pattern Design by Lewis Foreman Day</title><link>pattern-design.html</link><description>&lt;div class="align-center figure"&gt;
 &lt;img alt="book cover" src="https://ia601305.us.archive.org/6/items/patterndesignboo00dayl/__ia_thumb.jpg" style="width: 15em;" /&gt;
 &lt;/div&gt;
 &lt;p&gt;A book written to instruct in the creation of decoration, as one might find on wallpaper or cloth fabric, this  work’s material is well-presented and extensively illustrated. There is some fiddlyness, in the electronic format, that results from the figures and corresponding discussion being so often on different pages. And, the author’s use of language does tend to be quite formal and somewhat archaic. Reading it from outside the author’s field, on a different continent, in a different era, several times it became necessary to look up a word so as to ensure understanding. But none of this marred the experience provided by this book. Reading it as a non-specialist, it was an entirely approachable and pleasant read.&lt;/p&gt;
@@ -9020,12 +9028,4 @@ Kapitano Karolo Johanson (1724)&lt;/div&gt;
 &lt;img alt="The rough image of a face, mouth open, one eye blacked out, rendered with purple spray paint on a tan wall." src="http://ll.fosscu.org/sQAnyk" /&gt;
 &lt;p class="caption"&gt;Ĉi tiu vizaĝo ne ŝajnas tute sana.&lt;/p&gt;
 &lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Paul King</dc:creator><pubDate>Mon, 12 Feb 2024 00:00:00 -0600</pubDate><guid>tag:None,2024-02-12:malsaneta-vizago-eo.html</guid><category>blog-eo</category><category>esperanto</category></item><item><title>La Granda Dio Pajno</title><link>la-granda-dio-pajno-eo.html</link><description>&lt;div class="section" id="the-great-god-pan"&gt;
-&lt;h2&gt;The Great God Pan&lt;/h2&gt;
-&lt;div class="align-center figure"&gt;
-&lt;img alt="Book cover featuring a Pan-like horned figure with panpipes." src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Title_page--The_great_god_Pan.jpg/500px-Title_page--The_great_god_Pan.jpg" style="width: 15em;" /&gt;
-&lt;/div&gt;
-&lt;p&gt;&lt;a class="reference external" href="https://www.gutenberg.org/ebooks/389"&gt;La Granda Dio Pajno&lt;/a&gt;, Arturo Maĉen (1894)&lt;/p&gt;
-&lt;p&gt;Neniam rigardu tra la vualo, kiu dividas nian realon de la nevidita reala realo.&lt;/p&gt;
-&lt;/div&gt;
-</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Paul King</dc:creator><pubDate>Sun, 11 Feb 2024 00:00:00 -0600</pubDate><guid>tag:None,2024-02-11:la-granda-dio-pajno-eo.html</guid><category>review-eo</category><category>esperanto</category><category>book</category></item></channel></rss>
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Paul King</dc:creator><pubDate>Mon, 12 Feb 2024 00:00:00 -0600</pubDate><guid>tag:None,2024-02-12:malsaneta-vizago-eo.html</guid><category>blog-eo</category><category>esperanto</category></item></channel></rss>
